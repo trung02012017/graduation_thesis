@@ -1,0 +1,412 @@
+\documentclass[a4paper,12pt,3p]{report}
+
+\usepackage{graphicx}
+\usepackage[font=normalsize]{caption}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amstext}
+\usepackage[linesnumbered,ruled]{algorithm2e}
+\usepackage{multicol}
+\usepackage{multirow}
+
+\usepackage[bookmarks=false]{hyperref}
+\hypersetup{colorlinks,
+	linkcolor=blue,
+	citecolor=blue,
+	urlcolor=blue}
+\usepackage{titlesec}
+\setcounter{secnumdepth}{4}
+
+%\usepackage{csquotes}
+%\usepackage[style=verbose-ibid,backend=bibtex]{biblatex}
+%\bibliography{reference}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\graphicspath{ {./images/} }
+\usepackage[X2,T1]{fontenc}
+\usepackage[utf8]{vietnam}
+\usepackage{tabu}
+
+\DeclareTextSymbolDefault{\CYREPS}{X2}
+\DeclareTextSymbolDefault{\cyreps}{X2}
+
+\DeclareUnicodeCharacter{0190}{\CYREPS}
+\DeclareUnicodeCharacter{025B}{\cyreps}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=3cm]{geometry}
+\usepackage{indentfirst}
+\usepackage{color, colortbl}
+\definecolor{Gray}{gray}{0.9}
+
+\usepackage{graphicx}
+\graphicspath{{./images/}}	% declare the path(s) where your graphic files are
+\DeclareGraphicsExtensions{.pdf,.jpeg,.png} % and their extensions so you won't have to specify these with every instance of \includegraphics
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\include{thesis.preamble}
+
+\setlength{\parindent}{50pt}
+
+
+\renewcommand{\baselinestretch}{2.0}
+\DeclareUnicodeCharacter{2212}{-}
+\begin{document}
+
+\title{\LARGE {\bf Mô hình dự đoán chuỗi thời gian mờ đa chiều sử dụng LSTM và kĩ thuật phân tích\\ tương quan giữa các chiều dữ liệu \\áp dụng cho tài nguyên đám mây}\\
+ \vspace*{7mm}
+}
+
+\author{ Nguyễn Đức Thắng}
+\submitdate{Hà Nội, 12/2018}
+
+\normallinespacing
+\maketitle
+
+
+\body
+% body of thesis comes here
+
+\chapter{Introduction}
+\section{Problems}
+\section{Summary}
+
+
+\chapter{Materials and background}
+
+\label{ch:background}
+
+\section{Cloud Computing}
+\section{Auto-scaling problem}
+\section{Well-known machine learning models for Auto-scaling in cloud computing}
+\label{ml_timeseries}
+
+	Recent developments in cloud computing including resource management have resulted in a significant interest in resource usage prediction . Various methods have been proposed for solving this problem with different aspects, objectives and applications ~\cite{amiri2017survey}. In this section, we focus on several Artificial Neural Network (ANN) models that are used for tackling the time-series characteristic in resource usage forecast in cloud computing environment.
+	Deep Feed-forward Neural Network, also called Feed-forward Neural Network (FFNN) are the quintessential deep learning models. The goal of all FFNN is to approximate some functions $f^*$.  In Regression problems, $y = f^*(x)$ maps an input $x$ to a value $y$. A feed-forward network defines a mapping $y = f(x,\theta)$ and learns the value of the parameters $\theta$ that result in the best function approximation. ~\cite{Goodfellow-et-al-2016}. These models are called feed-forward because information flows through the function being evaluated from $x$, through the intermediate computations used to define $f$, and finally to the output $y$. There are no feedback connections in which outputs of the model are fed back into itself. When feed-forward neural networks are extended to include feedback connections, they are called recurrent neural networks, which will be discussed in ~\ref{model_rnn}.
+	
+	In general, Multi-Layer Perceptrons (MLPs) models contain several disparate layers. The first layer is input layer taking information $x$ as input for the network. The last layer is called output layer, whose value is the result of $y$ with input $x$. The layers between the input and output layers are hidden layers. The structures of hidden layers are extremely diverse, varying from model to model. As presented in Fig. ***, a hidden layer of a simple FFNN is a group of neurons with no connection to each other, while in Recurrent Neural Networks (RNN), and Convolution Neural Network (CNN) hidden layer is a recurrent layer, and convolution layer respectively. 
+	
+	The Deep Neural Networks that are applied for Time series prediction will have input neurons presenting the historical data. The models utilize information from data in the past for forecasting future data. Input data presented as $x_1, x_2, ..., x_t$ is considered as historical values up to time t, which is used to predict the value at the time $t+1$. In other words, Deep Neural Networks will learn from data and approximate a function transforming the historical data up to time $t$ to the data at the time $t+1$ as follows:
+\begin{equation} \label{eq_ffnn_1}
+x(t+1) = y = f(x_1, x_2, ..., x_t)
+\end{equation}
+	
+	 In this section, we summarize several Deep Neural Network models, which are widely used for time series forecasting. They are simple Multi-Layer Perceptrons (MLPs), Cascade Forward Neural Network (CFNN) and Recurrent-based Neural Network including traditional Recurrent Neural Network (RNN), Long-Short Term Memory (LSTM) and Gated Recurrent Units (GRU). Each method will be presented below with brief ideas and mathematical formulas. 
+	 
+\subsection{Multi-Layer Perceptrons (MLPs)}
+\label{model_mlp}
+	
+	The additional layers added between input layer and output layer make network architecture contain hidden layers and called Multi-Layer Perceptrons (MLPs). The input data is fed through input layer to hidden layers in the weighted form. The information from input data $X$ is distributed to the neurons in hidden layers and then processed by an activation function (see in Fig. ***). The activation function in hidden layers are non-linear function playing a role as a transfer function, helping MLPs learn non-linear characteristics of the data. The information after being processed by hidden layers then are sent to output layer in the weighted sum, and also go through an activation function as well, creating the output value $y$. MLPs model is used in predicting time series data ~\cite{azoff1994neural}, ~\cite{koskela1996time}.  Fig. *** shows a MLPs with a n-neuron input layer and one output layer. The mathematical equation of the architecture in Fig. *** can be written as follows:
+\begin{equation} \label{eq_mlp_1}
+H = f_h(W_h^TX + b_h)
+\end{equation}
+
+\begin{equation} \label{eq_mlp_2}
+y = O = f_o(W_o^TH + b_o)
+\end{equation}  
+
+Where $X$ is the input data, $H$ and $O$ are the information after being fed through the hidden and output layers. $W_h$, $b_h$ and $W_o$, $b_o$ are weights and biases, while $f_h$ and $f_o$ are activation functions of hidden layer and output layer, respectively.
+
+
+\subsubsection{Cascade Forward Neural Network (CFNN)}
+\label{model_cfnn}
+
+The main difference between CFNN and MLPs is that in CFNN, perceptron connection is added directly between neurons in input layer and output layer, while in MLPs, that connection is indirect through the hidden layer. The output layer of CFNN perceives both transformed information that is output of hidden layer, and the raw information from input data. This Deep Neural Network model was first used for forecasting monthly palm oil price in the Europe market in ~\cite{warsito2018cascade}. The architecture of CFNN is illustrated in Fig. ***, and the mathematical formulas for CFNN model are presented as follows:
+
+\begin{equation} \label{eq_cfnn_1}
+H = f_h(W_h^TX + b_h)
+\end{equation} 
+
+\begin{equation} \label{eq_cfnn_2}
+C = f_c(W_c^TX + b_c)
+\end{equation}
+
+\begin{equation} \label{eq_cfnn_3}
+y = O = f_o(W_o^TH + b_o) + C
+\end{equation}
+
+where $f_c$ is the activation function from the input layer to output layer, $C$ is the output value of $f_c$, and $W_c, b_c$ are weights and biases of the connection, respectively.
+
+
+\subsection{Recurrent Neural Network (RNN)}
+\label{model_rnn}
+	Recurrent neural networks (RNNs) are dynamical systems that are specifically designed for temporal problems, as they have both feed-back and feed-forward connections (Fig. \ref{model_rnn}). RNN remembers the past and  its decisions are influenced by what it has learned from the past. RNNs can take one or more input vectors and produce one or more output vectors and the output(s) are influenced not just by weights applied on inputs like a regular MLPs, but also by a state vector representing the context based on prior input(s)/output(s),  so the same input could produce a different output depending on previous inputs in the series. For that reason, RNN is one of the most popular models being used for modeling time series data~\cite{zhang2000predicting},~\cite{connor1994recurrent},~\cite{chandra2012cooperative}. There are two popular and efficient RNN models that work really well: Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU) which are discussed below. 
+\begin{figure}[!ht] 
+   \centering
+   \includegraphics[width=1.0\linewidth]{png/rnn_unrolled}
+  \caption{Traditional RNN architechture. Source: https://colah.github.io/posts/2015-08-Understanding-LSTMs/} 
+  \label{model_lstm_gru} 
+\end{figure}
+\subsection{Short Term Memory (LSTM)}
+	Long short-term memory (LSTM)~\cite{hochreiter1997long} is a special kind of RNN created for learning long-term dependencies. LSTM units have 3 gates managing the contents of the memory. These gates are simple logistic functions of weighted sums, where the weights might be learnt by backpropagation. It means that, even though it seems a bit complicated, the LSTM perfectly fits into the neural network and its training process. With combining a forget gate in LSTM units, LSTM is capable to determine what it needs to remember and forget, so LSTM can work very well with dependent data , especially with time series data ~\cite{gers2002applying}, ~\cite{guo2016robust}, ~\cite{fu2016using}. The architecture of LSTM units is illustrated in Fig. \ref{model_lstm_gru}, and its mathematical model is briefly described as follows:
+	 The input gate (\ref{eq_lstm_1}) and the forget gate (\ref{eq_lstm_2}) manage the cell state (\ref{eq_lstm_4}), which is the long-term memory. The output gate (\ref{eq_lstm_3}) produces the output vector or hidden state (\ref{eq_lstm_5}), which is the memory focused for use. This memory system enables the network to remember for a long time, which was badly missing from vanilla recurrent neural networks. 
+	
+\begin{equation} \label{eq_lstm_1}
+i_t = sigmoid(W_ix_t + U_ih_{t-1}+b_i)
+\end{equation}
+
+\begin{equation} \label{eq_lstm_2}
+f_t = sigmoid(W_fx_t + U_fh_{t-1}+b_f)
+\end{equation}
+
+\begin{equation} \label{eq_lstm_3}
+o_t = sigmoid(W_ox_t + U_oh_{t-1}+b_o)
+\end{equation}
+
+\begin{equation} \label{eq_lstm_4}
+c_t = f_t \odot c_{t-1} + i_t \odot tanh(W_cx_t + U_ch_{t-1} + b_c)
+\end{equation}
+
+\begin{equation} \label{eq_lstm_5}
+h_t = o_t \odot tanh(c_t)
+\end{equation}
+
+\begin{figure}[!ht] 
+   \centering
+   \includegraphics[width=1.0\linewidth]{png/lstm_gru}
+  \caption{LSTM and GRU architechture. Source: https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21} 
+  \label{model_lstm_gru} 
+\end{figure}
+
+\subsection{Gated Recurrent Units (GRU)}
+
+	Gated recurrent unit (GRU)~\cite{chung2014empirical} is essentially a simplified LSTM. Different form LSTM, GRU uses two gated called update gate and reset gate. Basically, these gates are two vectors managing what information should be passed to the output. In GRU, its gates can be trained to keep information from long ago, without washing it through time or remove information which is irrelevant to the prediction. It has the exact same role as LSTM in the network. The main difference is in the number of gates and weights — GRU is somewhat simpler. Like LSTM, GRU is also a widely chosen solution for time series forecasting such as in~\cite{langkvist2014review} and~\cite{bone2000recurrent} The srtucture of GRU units is presented in Fig. \ref{model_lstm_gru} following the mathematical model as below:
+	
+	The update gate~\ref{eq_gru_1} controls the information flow from the previous activation, and the addition of new information as well~\ref{eq_gru_3}, while the reset gate~\ref{eq_gru_2} is inserted into the candidate activation. Overall, it is pretty similar to LSTM. From these differences alone, it is hard to tell, which one is the better choice for a given problem. 
+	
+\begin{equation} \label{eq_gru_1}
+z_t = sigmoid(W_zx_t + U_zh_{t−1} + b_z)
+\end{equation}
+
+\begin{equation} \label{eq_gru_2}
+r_t = sigmoid(W_rx_t + U_rh_{t−1} + b_r)
+\end{equation}
+
+\begin{equation} \label{eq_gru_3}
+h_t = z_t\odot h_{t-1} + (1 - z_t)\odot tanh(W_hx_t + U_h(r_th_{t-1}) + b_h)
+\end{equation}
+
+\section{Fundamental knowledge}
+\label{fun_know}
+\subsection{Artificial Neural Network (ANN)}
+\label{ann_know}
+\subsubsection{Activation functions}
+\label{ann_act_func}
+	Activation functions also known as transfer functions are used to map input nodes to output nodes in certain fashion. Activation functions are extremely important for an ANN to learn and figure out features and characteristics of data which need a non-linear transformation to become outputs. There are the four most popular functions used in Deep Learning, their names are Sigmoid, Hyperbolic Tangent (Tanh), Rectified Linear Units (ReLU), Leaky ReLU and Exponential Linear Unit (ELU).
+	\paragraph{\textbf{Sigmoid function}}: takes a number as input and returns a value in $	[ \,0,1] \,$. (Fig. ****)
+	$$f(x) = \frac{1}{1+e^x}$$
+	\paragraph{\textbf{Hyperbolic Tangent (Tanh) function:}} $f(x) = \frac{2}{1+e^{-2x}} = 2\sigma(2x)-1$ is also like Sigmoid function but better, the range of the output from Tanh funtion is in $	[ \,-1,1] \,$. (Fig ***)
+	$$f(x) = \frac{2}{1+e^{-2x}} = 2\sigma(2x)-1$$
+	\paragraph{\textbf{Rectified Linear Unit (ReLU) function:}} is a function having threshold at $0$ value (Fig. ***). It helps accelerate the training process in ANN, so it is used in almost all the complicated deep learning models such as RNNs and CNNs.
+	$$f(x) = max(0, x)$$
+	\paragraph{\textbf{Leaky ReLU function:}} is like ReLU function, but instead of setting thresholf value at $0$, Leaky ReLU extends the domain to $\alpha x$. (Fig. ****)
+	\[
+    f(x)= 
+\begin{cases}
+    x,& \text{if } x > 1\\
+    \alpha x, & \text{otherwise}
+\end{cases}
+\]
+	\paragraph{\textbf{Exponential Linear Unit (ELU) function:}} This function was first proposed several years ago. In many experiments, it is proved that it can lead to a faster convergence and better result of deep learning models.
+	\[
+    f(x)= 
+\begin{cases}
+    x,& \text{if } x > 1\\
+    \alpha (e^x-1), & \text{otherwise}
+\end{cases}
+\]
+\subsubsection{Loss functions}
+\label{ann_loss_func}
+Neural Networks are trained by backpropagation algorithm, which updates the weights parameters of ANN according to a loss value. The loss value is calculated by a loss function, so loss functions are totally vital when an ANN model is built for learning information from data. These functions will essentially measure how poorly a model is performing by comparing what the model is predicting with the actual value it is supposed to output. Therefore, choosing a loss function that is appropriate for penalizing model effectively is one of the most important tasks while working with data. There are a number of loss functions for deep learning models, and each of them have its own pros and cons. The common loss functions that are widely used in time-series forecasting will be presented as below:
+\begin{itemize}
+\item  \textbf{Mean Absolute Error (MAE)}: 
+$$MAE = \frac{\sum|e_t|}{N}$$
+\item  \textbf{Sum Square Error (SSE)}: $$SSE = \sum(e_t^2)$$
+\item  \textbf{Mean Square Error (MSE)}: $$MSE = \frac{\sum(e_t^2)}{N}$$
+\item  \textbf{Root Mean Square Error (RMSE)}: $$RMSE = \sqrt{MSE}$$
+\item  \textbf{Mean Absolute Percentage Error (MAPE)}: $$MAPE = \frac{1}{N}\sum|\frac{e_t}{y_t}|$$
+Where $N$ is the number of data points, $y_t$ is the actual output value, $d_t$ is the output value predicted by models, $e_t = d_t - y_t$ is the error value of the data point $t$.
+\end{itemize}
+	 
+\subsubsection{Backpropagation - the ANN Training Algorithm}
+\label{ann_backprop_alg}
+
+\begin{algorithm}[!t]
+	\caption{Backpropagation algorithm applied for FFNN with 1 hidden layer}
+	\label{algorithm_backprop}
+	\SetAlgoLined
+	Initialize randomly weights' value $w_p$\\ 
+	\Repeat{Until convergence or the number of iterations is enough}{
+	\textbf{Calculate output value(s) according to weights and input}  \\
+	
+		\For{$j= 1$ to $h$}
+		{
+			$H_{j} = \phi(\sum_i^n {x_i*w_{ij}^{[1]} + b_{ij}^{[1]}})$ \\ 
+			
+		}
+		$\widehat {{y_j}} = \phi(\sum_i^h{H_i * w_j^{[2]} + b_j^{[2]}})$\\
+		
+		\textbf{Calculate Loss value by loss function} \\ 
+		
+		$L(w) = loss(\widehat {{y_j}},{y_j})  $ \\
+		
+		 \textbf{Backpropagating Loss to weights}\\
+		
+		$ \bigtriangleup(w_{ij}^2) = \frac{\partial (L(w))}{\partial (w_{ij}^2)}$ \\
+		$ \bigtriangleup(w_{ij}^1) = \frac{\partial (L(w))}{\partial (w_{ij}^1)}$ \\
+		
+		\textbf{Update weights' value} \\ 
+		
+		$w_{ij}^2 = w_{ij}^2 - \eta * \bigtriangleup(w_{ij}^2)$ \\
+		$w_{ij}^1 = w_{ij}^1 - \eta * \bigtriangleup(w_{ij}^1)$
+	}
+		
+\end{algorithm}
+
+Backpropagation algorithm is undoubtedly the most fundamental buiding block in an ANN. It It was first introduced in 1960s and almost 30 years later (1989) popularized by Rumelhart, Hinton and Williams in~\cite{rumelhart1988learning}. The algorithm is used to effectively train a neural network through a method called chain rule. In simple terms, after each forward pass through a network (propagation phase), backpropagation performs a backward pass while adjusting the model’s parameters (weights and biases) (weights updating phase).
+
+\paragraph{\textbf{forward propagation phase}}
+\begin{enumerate}
+\item The input values will be fed into ANN through input layer, going forward to hidden layers, and finally to output layer, creating predicted output values. While propagation process, each layer uses its own activation function (sec. \ref{ann_act_func})
+\item Error values are calculated by the loss function and propagated back to previous layers.
+\end{enumerate}
+\paragraph{\textbf{weights updating phase}}
+
+\begin{enumerate}
+\item Calculating gradients of loss function in weights and biases following the chain rule.
+\item Updating weights and biases is done according to gradients' values 
+\end{enumerate}
+
+These two phases are repeated in each iteration during training. The algorithm will be stopped when the error from loss function reach a acceptable value or when the training iteration is large enough. The algorithm's pseudo code is presented in short in Algorithm \ref{algorithm_backprop}.
+
+\subsection{Swarm Optimization Algorithms}
+\subsubsection{Idea and motivation}
+\subsubsection{Particle Swarm Optimization (PSO)}
+\subsubsection{Sea Lion Optimization Algorithm (SLnO)}
+\label{slno_standard}
+
+\begin{algorithm}[!t]
+\caption{Sea Lion Optimization (SLnO)}
+\label{algorithm_slno}
+\SetAlgoLined
+ Initialize the Sea Lion population $X_i (i=1,2,.., n)$ randomly. \\
+ Calculate fitness of each solution (sea lion). \\
+ $X_*\gets$ the best solution \\
+\For {$Iter=0 \to Iter_{max}$}{
+	Calculate the value of $C$ \\
+	\For {SeaLion in population}{\
+		Calculate $SP_{leader}$ using Eq. \ref{snlo_eq3}  \\
+		\uIf{$SP_{leader} < 0.25$}{
+			\uIf {$|C| < 1$}{\
+				Update the location of the current search agent using Eq. \ref{slno_eq1}
+				}
+			\Else {
+				Choose a random search agent $SL_{rand}$ \\
+				Update the locatiion of current search agent by Eq. \ref{slno_eq8} \\
+			}
+		}	
+		\Else{
+			Update the location of the current search agent by Eq. \ref{slno_eq6}
+		}
+	Evaluate population: fix if any solutions go beyond the boundary \\
+ 	Recompute the fitness of all solutions \\
+ 	Check and update $X_*$ if a better solution is found. \\
+	}
+	
+}
+ \textbf{Results:}  $X_*, f(X_*)$
+\end{algorithm} 
+
+	Sea lions are considered as one of the most intelligent animals in wildlife which live on both lands and the oceans. They usually live in a large swarm with thousands of members, and this large swarm may contains many subgroups with their own hierarchy as well. In each subgroup, there is a dominant sea lion playing a role as the leader of the subgroup. All activities of subgroups are decided following the leader ship of that sea lion.
+	
+%	The most important characteristics of sea lions is that they have senses helping them to recognize and analyze immediately the movement of their prey such as fish even in the dark underwater environments. Like many predators, sea lions have their eyes point forward so that they can easily focus on the prey, but what makes their eyes different is that they can open pupils so widely to let much of light go through their eyes which helps them to see more clearly in underwater environment. Moreover, sea lions have their super-sensitive whiskers to locate exactly where the fish are. This can be done when the fish swim around, they leave waves or wakes behind them, and according to the intensity as well as the direction of waves, by using whiskers sea lions are able to detect and follow them.
+	
+	The intelligence of sea lions can be seen through the way they organize their groups and hunt the prey. Hunting as a group allow sea lions to have more opportunities of obtaining more food especially when the amount of fish is quite large. Usually, sea lions capture their prey together by circling the prey in a narrow ball, and the size of this "ball" continues to be decrease until the prey is totally wiped out. The main phases of hunting behaviors of sea lions can be illustrated as 3 steps as follows:
+	
+\begin{itemize}
+\item Tracking and chasing the prey using their senses.
+\item Calling other members to gather and implement encircling strategy around the prey.
+\item Attack towards the prey which is captured in the circle.
+\end{itemize}
+
+	Those behaviors is the inspiration for the Sea Lion Optimization (SLnO) which was first introduced in ~\cite{masadeh2019sea}. The algorithm mimics the amazing social behaviors and interesting hunting activities of sea lions. The formulas of the phases \textit{Detecting and tracking phase}, \textit{Vocalization phase} and \textit{Attacking phase} illustrate perfectly encircling mechanisms which is utilized by sea lions. We summarize and discuss briefly each phase in the algorithm as below, meanwhile the pseudo-code of SLnO is provided in details in \textbf{Algorithm \ref{algorithm_slno}}.
+
+\begin{enumerate}
+\item \textbf{Detecting and tracking phase}
+
+	Sea lions can identify the location of the prey and gather other members that will join the subgroup to organize the net following the encircling mechanism. This sea lion plays an important role as a leader for this hunting behavior and other members' position will be updated following the position of the prey. In SLnO algorithm, the prey is considered as the current best solution or the solution closest to the optimal solution. This behaviors is presented mathematically using Eq. (\ref{slno_eq1}) and Eq. (\ref{snlo_eq2}) as follows:
+\begin{equation}\label{slno_eq1}
+Dist = |2B.P(t) - SL(t)|
+\end{equation}
+\begin{equation}\label{snlo_eq2}
+SL(t+1) = P(t) - Dist.C
+\end{equation}	
+	
+	Where $Dist$ indicates the distance between the prey and the current sea lion; $P(t)$ and $SL(t)$ represent the position vectors of best solution and the sea lion in iteration $t$ respectively; $B$ is random vector in the range $[0, 1]$ which is multiplied by 2 to increase the search space, helping the search agent find optimal or near optimal position. $SL(t+1)$ is the new position of search agent after updating and $C$ is linearly decreased from 2 to 0 over the course of iterations, indicating the encircling mechanism of sea lion group when they move towards the prey and surround them.
+
+\item \textbf{Vocalization phase}
+	
+	When a sea lion recognize a group of their prey (such as fish), it will call other sea lions in their group for gathering and creating a net to capture the prey. That sea lion is considered as the leader and it will lead the group of sea lions moving towards and decide the behaviors of the group. These behaviors are modeled mathematically as shown in Eq. (\ref{snlo_eq3}), (\ref{snlo_eq4}) and (\ref{snlo_eq5}):
+	
+\begin{equation} \label{snlo_eq3}
+SP_{leader} = |(V_1(1+V_2)/V_2|
+\end{equation}
+
+\begin{equation} \label{snlo_eq4}
+V_1 = \sin(\theta)
+\end{equation}
+
+\begin{equation}\label{snlo_eq5}
+V_2 = \sin(\phi)
+\end{equation}
+
+ Where $SP_{leader}$ is the value that illustrates the decision of the leader followed by other sea lions in the group; $\theta$ and $\phi$ are the angles of its voice's reflection and refraction in the water, respectively.
+ 
+\item \textbf{Attacking phase (Exploitation phase)}
+ 
+ The hunting activities of sea lions are led by the leader. In SLnO algorithm, the target prey is considered the current best candidate solution. In order to mathematically mimic the hunting behaviors of sea lions, two phases are introduced as follows:
+ 	
+\begin{itemize}
+\item \textit{Dwindling encircling technique:}
+	This behavior depends on the value of $C$ in Eq. \ref{snlo_eq2}. $C$ is linearly decreased from 2 to 0 over the course of iterations, so this allows the search space around the current best position to shrink and force other search agents to updated in this search space as well. Therefore, a new updated position of a sea lion can be located anywhere in the search space between its current position and the location of the present best agent.
+
+\item \textit{Circling updating position}: Sea lions chase bait ball of fishes and hunt them starting from edges. Eq. \ref{slno_eq6} is proposed in this regard:
+\begin{equation} \label{slno_eq6}
+SL(t+1) = |P(t) - SL(t)|.\cos(2 \pi m) + P(t)
+\end{equation}	
+\end{itemize}
+	Where $|P(t) - SL(t)|$ illustrates the distance between the best optimal solution (the prey) and the current search agent in t-th iteration, $||$ means the absolute value and $m$ is a random number in the range $[-1, 1]$.
+	
+\item \textbf{Searching for prey (Exploration phase)}
+	In exploration phase, the search agents update their positions based on a randomly selected sea lion. The condition that allows exploitation phase to happen is when the value of $C$ becomes greater than 1, and the process of finding a new agent is presented by Eq. (\ref{slno_eq7}) and (\ref{slno_eq8}) as below:
+\begin{equation}\label{slno_eq7}
+Dist = |2B.SL_{rnd}(t) - SL(t)|
+\end{equation}   
+\begin{equation} \label{slno_eq8}
+SL(t+1) = SL_{rnd}(t) - Dist.C
+\end{equation}
+
+	Where $SL_{rnd}(t)$ is a random sea lion that is selected randomly from current population.
+
+\end{enumerate}	
+
+\chapter{Sea Lion Optimization Improvements and Proposed Model for Auto-Scaling} 
+\label{architecture}
+\chapter{Experiments}
+\chapter{Conclusions}
+
+\appendix
+% appendices come here
+
+\section{References}
+\bibliographystyle{plain}
+\bibliography{references}
+%\addcontentsline{toc}{chapter}{Bibliography}
+%\bibliographystyle{alpha}
+%\bibliography{bibliography/bibliography}
+
+\end{document}

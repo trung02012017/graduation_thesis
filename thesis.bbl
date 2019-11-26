@@ -1,0 +1,100 @@
+\begin{thebibliography}{10}
+
+\bibitem{amiri2017survey}
+Maryam Amiri and Leyli Mohammad-Khanli.
+\newblock Survey on prediction models of applications for resources
+  provisioning in cloud.
+\newblock {\em Journal of Network and Computer Applications}, 82:93--113, 2017.
+
+\bibitem{azoff1994neural}
+E~Michael Azoff.
+\newblock {\em Neural network time series forecasting of financial markets}.
+\newblock John Wiley \& Sons, Inc., 1994.
+
+\bibitem{bone2000recurrent}
+R~Bon{\'e}.
+\newblock {\em Recurrent neural networks for time series forecasting}.
+\newblock PhD thesis, PhD thesis, Universit{\'e} de Tours, Tours, FRANCE, 2000.
+
+\bibitem{chandra2012cooperative}
+Rohitash Chandra and Mengjie Zhang.
+\newblock Cooperative coevolution of elman recurrent neural networks for
+  chaotic time series prediction.
+\newblock {\em Neurocomputing}, 86:116--123, 2012.
+
+\bibitem{chung2014empirical}
+Junyoung Chung, Caglar Gulcehre, KyungHyun Cho, and Yoshua Bengio.
+\newblock Empirical evaluation of gated recurrent neural networks on sequence
+  modeling.
+\newblock {\em arXiv preprint arXiv:1412.3555}, 2014.
+
+\bibitem{connor1994recurrent}
+Jerome~T Connor, R~Douglas Martin, and Les~E Atlas.
+\newblock Recurrent neural networks and robust time series prediction.
+\newblock {\em IEEE transactions on neural networks}, 5(2):240--254, 1994.
+
+\bibitem{fu2016using}
+Rui Fu, Zuo Zhang, and Li~Li.
+\newblock Using lstm and gru neural network methods for traffic flow
+  prediction.
+\newblock In {\em 2016 31st Youth Academic Annual Conference of Chinese
+  Association of Automation (YAC)}, pages 324--328. IEEE, 2016.
+
+\bibitem{gers2002applying}
+Felix~A Gers, Douglas Eck, and J{\"u}rgen Schmidhuber.
+\newblock Applying lstm to time series predictable through time-window
+  approaches.
+\newblock In {\em Neural Nets WIRN Vietri-01}, pages 193--200. Springer, 2002.
+
+\bibitem{Goodfellow-et-al-2016}
+Ian Goodfellow, Yoshua Bengio, and Aaron Courville.
+\newblock {\em Deep Learning}.
+\newblock MIT Press, 2016.
+\newblock \url{http://www.deeplearningbook.org}.
+
+\bibitem{guo2016robust}
+Tian Guo, Zhao Xu, Xin Yao, Haifeng Chen, Karl Aberer, and Koichi Funaya.
+\newblock Robust online time series prediction with recurrent neural networks.
+\newblock In {\em 2016 IEEE International Conference on Data Science and
+  Advanced Analytics (DSAA)}, pages 816--825. Ieee, 2016.
+
+\bibitem{hochreiter1997long}
+Sepp Hochreiter and J{\"u}rgen Schmidhuber.
+\newblock Long short-term memory.
+\newblock {\em Neural computation}, 9(8):1735--1780, 1997.
+
+\bibitem{koskela1996time}
+Timo Koskela, Mikko Lehtokangas, Jukka Saarinen, and Kimmo Kaski.
+\newblock Time series prediction with multilayer perceptron, fir and elman
+  neural networks.
+\newblock In {\em Proceedings of the World Congress on Neural Networks}, pages
+  491--496. Citeseer, 1996.
+
+\bibitem{langkvist2014review}
+Martin L{\"a}ngkvist, Lars Karlsson, and Amy Loutfi.
+\newblock A review of unsupervised feature learning and deep learning for
+  time-series modeling.
+\newblock {\em Pattern Recognition Letters}, 42:11--24, 2014.
+
+\bibitem{masadeh2019sea}
+Raja Masadeh, Basel~A Mahafzah, and Ahmad Sharieh.
+\newblock Sea lion optimization algorithm.
+\newblock {\em Sea}, 10(5), 2019.
+
+\bibitem{rumelhart1988learning}
+David~E Rumelhart, Geoffrey~E Hinton, Ronald~J Williams, et~al.
+\newblock Learning representations by back-propagating errors.
+\newblock {\em Cognitive modeling}, 5(3):1, 1988.
+
+\bibitem{warsito2018cascade}
+Budi Warsito, Rukun Santoso, Hasbi Yasin, et~al.
+\newblock Cascade forward neural network for time series prediction.
+\newblock In {\em Journal of Physics: Conference Series}, volume 1025, page
+  012097. IOP Publishing, 2018.
+
+\bibitem{zhang2000predicting}
+Jia-Shu Zhang and Xian-Ci Xiao.
+\newblock Predicting chaotic time series using recurrent neural network.
+\newblock {\em Chinese Physics Letters}, 17(2):88, 2000.
+
+\end{thebibliography}
