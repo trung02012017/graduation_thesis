@@ -33,6 +33,12 @@ Jerome~T Connor, R~Douglas Martin, and Les~E Atlas.
 \newblock Recurrent neural networks and robust time series prediction.
 \newblock {\em IEEE transactions on neural networks}, 5(2):240--254, 1994.
 
+\bibitem{eberhart1995particle}
+Russell Eberhart and James Kennedy.
+\newblock Particle swarm optimization.
+\newblock In {\em Proceedings of the IEEE international conference on neural
+  networks}, volume~4, pages 1942--1948. Citeseer, 1995.
+
 \bibitem{fu2016using}
 Rui Fu, Zuo Zhang, and Li~Li.
 \newblock Using lstm and gru neural network methods for traffic flow

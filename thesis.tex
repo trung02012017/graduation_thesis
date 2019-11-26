@@ -12,6 +12,7 @@
 \usepackage{multicol}
 \usepackage{multirow}
 
+
 \usepackage[bookmarks=false]{hyperref}
 \hypersetup{colorlinks,
 	linkcolor=blue,
@@ -25,9 +26,9 @@
 %\bibliography{reference}
 
 \titleformat{\paragraph}
-{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+{\normalfont\normalsize\bfseries}{\theparagraph}{0.5em}{}
 \titlespacing*{\paragraph}
-{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+{0pt}{1.25ex plus 1ex minus .2ex}{0.5ex plus .2ex}
 \graphicspath{ {./images/} }
 \usepackage[X2,T1]{fontenc}
 \usepackage[utf8]{vietnam}
@@ -57,8 +58,10 @@
 \DeclareUnicodeCharacter{2212}{-}
 \begin{document}
 
+\setlength{\abovedisplayskip}{3pt}
+\setlength{\belowdisplayskip}{3pt}
+
 \title{\LARGE {\bf Mô hình dự đoán chuỗi thời gian mờ đa chiều sử dụng LSTM và kĩ thuật phân tích\\ tương quan giữa các chiều dữ liệu \\áp dụng cho tài nguyên đám mây}\\
- \vspace*{7mm}
 }
 
 \author{ Nguyễn Đức Thắng}
@@ -101,13 +104,10 @@ x(t+1) = y = f(x_1, x_2, ..., x_t)
 \label{model_mlp}
 	
 	The additional layers added between input layer and output layer make network architecture contain hidden layers and called Multi-Layer Perceptrons (MLPs). The input data is fed through input layer to hidden layers in the weighted form. The information from input data $X$ is distributed to the neurons in hidden layers and then processed by an activation function (see in Fig. ***). The activation function in hidden layers are non-linear function playing a role as a transfer function, helping MLPs learn non-linear characteristics of the data. The information after being processed by hidden layers then are sent to output layer in the weighted sum, and also go through an activation function as well, creating the output value $y$. MLPs model is used in predicting time series data ~\cite{azoff1994neural}, ~\cite{koskela1996time}.  Fig. *** shows a MLPs with a n-neuron input layer and one output layer. The mathematical equation of the architecture in Fig. *** can be written as follows:
-\begin{equation} \label{eq_mlp_1}
-H = f_h(W_h^TX + b_h)
-\end{equation}
-
-\begin{equation} \label{eq_mlp_2}
-y = O = f_o(W_o^TH + b_o)
-\end{equation}  
+\begin{align}
+H = f_h(W_h^TX + b_h) \label{eq_mlp_1} \\
+y = O = f_o(W_o^TH + b_o) \label{eq_mlp_2}
+\end{align} 
 
 Where $X$ is the input data, $H$ and $O$ are the information after being fed through the hidden and output layers. $W_h$, $b_h$ and $W_o$, $b_o$ are weights and biases, while $f_h$ and $f_o$ are activation functions of hidden layer and output layer, respectively.
 
@@ -117,17 +117,11 @@ Where $X$ is the input data, $H$ and $O$ are the information after being fed thr
 
 The main difference between CFNN and MLPs is that in CFNN, perceptron connection is added directly between neurons in input layer and output layer, while in MLPs, that connection is indirect through the hidden layer. The output layer of CFNN perceives both transformed information that is output of hidden layer, and the raw information from input data. This Deep Neural Network model was first used for forecasting monthly palm oil price in the Europe market in ~\cite{warsito2018cascade}. The architecture of CFNN is illustrated in Fig. ***, and the mathematical formulas for CFNN model are presented as follows:
 
-\begin{equation} \label{eq_cfnn_1}
-H = f_h(W_h^TX + b_h)
-\end{equation} 
-
-\begin{equation} \label{eq_cfnn_2}
-C = f_c(W_c^TX + b_c)
-\end{equation}
-
-\begin{equation} \label{eq_cfnn_3}
-y = O = f_o(W_o^TH + b_o) + C
-\end{equation}
+\begin{align} 
+H = f_h(W_h^TX + b_h) \label{eq_cfnn_1} \\
+C = f_c(W_c^TX + b_c) \label{eq_cfnn_2} \\
+y = O = f_o(W_o^TH + b_o) + C \label{eq_cfnn_3}
+\end{align} 
 
 where $f_c$ is the activation function from the input layer to output layer, $C$ is the output value of $f_c$, and $W_c, b_c$ are weights and biases of the connection, respectively.
 
@@ -145,25 +139,13 @@ where $f_c$ is the activation function from the input layer to output layer, $C$
 	Long short-term memory (LSTM)~\cite{hochreiter1997long} is a special kind of RNN created for learning long-term dependencies. LSTM units have 3 gates managing the contents of the memory. These gates are simple logistic functions of weighted sums, where the weights might be learnt by backpropagation. It means that, even though it seems a bit complicated, the LSTM perfectly fits into the neural network and its training process. With combining a forget gate in LSTM units, LSTM is capable to determine what it needs to remember and forget, so LSTM can work very well with dependent data , especially with time series data ~\cite{gers2002applying}, ~\cite{guo2016robust}, ~\cite{fu2016using}. The architecture of LSTM units is illustrated in Fig. \ref{model_lstm_gru}, and its mathematical model is briefly described as follows:
 	 The input gate (\ref{eq_lstm_1}) and the forget gate (\ref{eq_lstm_2}) manage the cell state (\ref{eq_lstm_4}), which is the long-term memory. The output gate (\ref{eq_lstm_3}) produces the output vector or hidden state (\ref{eq_lstm_5}), which is the memory focused for use. This memory system enables the network to remember for a long time, which was badly missing from vanilla recurrent neural networks. 
 	
-\begin{equation} \label{eq_lstm_1}
-i_t = sigmoid(W_ix_t + U_ih_{t-1}+b_i)
-\end{equation}
-
-\begin{equation} \label{eq_lstm_2}
-f_t = sigmoid(W_fx_t + U_fh_{t-1}+b_f)
-\end{equation}
-
-\begin{equation} \label{eq_lstm_3}
-o_t = sigmoid(W_ox_t + U_oh_{t-1}+b_o)
-\end{equation}
-
-\begin{equation} \label{eq_lstm_4}
-c_t = f_t \odot c_{t-1} + i_t \odot tanh(W_cx_t + U_ch_{t-1} + b_c)
-\end{equation}
-
-\begin{equation} \label{eq_lstm_5}
-h_t = o_t \odot tanh(c_t)
-\end{equation}
+\begin{align} 
+i_t = sigmoid(W_ix_t + U_ih_{t-1}+b_i) \label{eq_lstm_1} \\
+f_t = sigmoid(W_fx_t + U_fh_{t-1}+b_f) \label{eq_lstm_2} \\
+o_t = sigmoid(W_ox_t + U_oh_{t-1}+b_o) \label{eq_lstm_3} \\
+c_t = f_t \odot c_{t-1} + i_t \odot tanh(W_cx_t + U_ch_{t-1} + b_c) \label{eq_lstm_4} \\
+h_t = o_t \odot tanh(c_t) \label{eq_lstm_5}
+\end{align}
 
 \begin{figure}[!ht] 
    \centering
@@ -178,18 +160,11 @@ h_t = o_t \odot tanh(c_t)
 	
 	The update gate~\ref{eq_gru_1} controls the information flow from the previous activation, and the addition of new information as well~\ref{eq_gru_3}, while the reset gate~\ref{eq_gru_2} is inserted into the candidate activation. Overall, it is pretty similar to LSTM. From these differences alone, it is hard to tell, which one is the better choice for a given problem. 
 	
-\begin{equation} \label{eq_gru_1}
-z_t = sigmoid(W_zx_t + U_zh_{t−1} + b_z)
-\end{equation}
-
-\begin{equation} \label{eq_gru_2}
-r_t = sigmoid(W_rx_t + U_rh_{t−1} + b_r)
-\end{equation}
-
-\begin{equation} \label{eq_gru_3}
-h_t = z_t\odot h_{t-1} + (1 - z_t)\odot tanh(W_hx_t + U_h(r_th_{t-1}) + b_h)
-\end{equation}
-
+\begin{align} 
+z_t = sigmoid(W_zx_t + U_zh_{t−1} + b_z) \label{eq_gru_1} \\
+r_t = sigmoid(W_rx_t + U_rh_{t−1} + b_r) \label{eq_gru_2} \\
+h_t = z_t\odot h_{t-1} + (1 - z_t)\odot tanh(W_hx_t + U_h(r_th_{t-1}) + b_h) \label{eq_gru_3} \\
+\end{align}
 \section{Fundamental knowledge}
 \label{fun_know}
 \subsection{Artificial Neural Network (ANN)}
@@ -284,8 +259,11 @@ Backpropagation algorithm is undoubtedly the most fundamental buiding block in a
 These two phases are repeated in each iteration during training. The algorithm will be stopped when the error from loss function reach a acceptable value or when the training iteration is large enough. The algorithm's pseudo code is presented in short in Algorithm \ref{algorithm_backprop}.
 
 \subsection{Swarm Optimization Algorithms}
+\label{swarm_opt}
 \subsubsection{Idea and motivation}
+\label{opt_idea}
 \subsubsection{Particle Swarm Optimization (PSO)}
+\label{pso_standard}
 \subsubsection{Sea Lion Optimization Algorithm (SLnO)}
 \label{slno_standard}
 
@@ -339,12 +317,10 @@ These two phases are repeated in each iteration during training. The algorithm w
 \item \textbf{Detecting and tracking phase}
 
 	Sea lions can identify the location of the prey and gather other members that will join the subgroup to organize the net following the encircling mechanism. This sea lion plays an important role as a leader for this hunting behavior and other members' position will be updated following the position of the prey. In SLnO algorithm, the prey is considered as the current best solution or the solution closest to the optimal solution. This behaviors is presented mathematically using Eq. (\ref{slno_eq1}) and Eq. (\ref{snlo_eq2}) as follows:
-\begin{equation}\label{slno_eq1}
-Dist = |2B.P(t) - SL(t)|
-\end{equation}
-\begin{equation}\label{snlo_eq2}
-SL(t+1) = P(t) - Dist.C
-\end{equation}	
+\begin{align}
+Dist = |2B.P(t) - SL(t)| \label{slno_eq1} \\
+SL(t+1) = P(t) - Dist.C  \label{snlo_eq2}
+\end{align}
 	
 	Where $Dist$ indicates the distance between the prey and the current sea lion; $P(t)$ and $SL(t)$ represent the position vectors of best solution and the sea lion in iteration $t$ respectively; $B$ is random vector in the range $[0, 1]$ which is multiplied by 2 to increase the search space, helping the search agent find optimal or near optimal position. $SL(t+1)$ is the new position of search agent after updating and $C$ is linearly decreased from 2 to 0 over the course of iterations, indicating the encircling mechanism of sea lion group when they move towards the prey and surround them.
 
@@ -352,17 +328,12 @@ SL(t+1) = P(t) - Dist.C
 	
 	When a sea lion recognize a group of their prey (such as fish), it will call other sea lions in their group for gathering and creating a net to capture the prey. That sea lion is considered as the leader and it will lead the group of sea lions moving towards and decide the behaviors of the group. These behaviors are modeled mathematically as shown in Eq. (\ref{snlo_eq3}), (\ref{snlo_eq4}) and (\ref{snlo_eq5}):
 	
-\begin{equation} \label{snlo_eq3}
-SP_{leader} = |(V_1(1+V_2)/V_2|
-\end{equation}
+\begin{align} 
+SP_{leader} = |(V_1(1+V_2)/V_2| \label{snlo_eq3} \\
+V_1 = \sin(\theta) \label{snlo_eq4} \\
+V_2 = \sin(\phi) \label{snlo_eq5}
+\end{align}
 
-\begin{equation} \label{snlo_eq4}
-V_1 = \sin(\theta)
-\end{equation}
-
-\begin{equation}\label{snlo_eq5}
-V_2 = \sin(\phi)
-\end{equation}
 
  Where $SP_{leader}$ is the value that illustrates the decision of the leader followed by other sea lions in the group; $\theta$ and $\phi$ are the angles of its voice's reflection and refraction in the water, respectively.
  
@@ -383,18 +354,38 @@ SL(t+1) = |P(t) - SL(t)|.\cos(2 \pi m) + P(t)
 	
 \item \textbf{Searching for prey (Exploration phase)}
 	In exploration phase, the search agents update their positions based on a randomly selected sea lion. The condition that allows exploitation phase to happen is when the value of $C$ becomes greater than 1, and the process of finding a new agent is presented by Eq. (\ref{slno_eq7}) and (\ref{slno_eq8}) as below:
-\begin{equation}\label{slno_eq7}
-Dist = |2B.SL_{rnd}(t) - SL(t)|
-\end{equation}   
-\begin{equation} \label{slno_eq8}
-SL(t+1) = SL_{rnd}(t) - Dist.C
-\end{equation}
+\begin{align}
+Dist = |2B.SL_{rnd}(t) - SL(t)| \label{slno_eq7} \\
+SL(t+1) = SL_{rnd}(t) - Dist.C \label{slno_eq8}
+\end{align}   
 
 	Where $SL_{rnd}(t)$ is a random sea lion that is selected randomly from current population.
 
 \end{enumerate}	
 
-\chapter{Sea Lion Optimization Improvements and Proposed Model for Auto-Scaling} 
+\chapter{Improved Sea Lion Optimization (ISLO) algorithm and Proposed Model for Auto-Scaling (ISLO-CFNN)}
+\section{Improved Sea Lion Optimization (ISLO)}
+\label{improved_ISLO}
+	Sea Lion Optimization (SLnO) is one of the newest swarm-based optimization algorithm. In experiments in SLnO origin paper \cite{masadeh2019sea}, SLnO is proved that it outperformed several well-known bio-inspired model such as Generic Algorithm (GA), Particle Swarm Optimization (PSO) and Whale Optimization Algorithm (WOA). However, like many other algorithms, SLnO also faces the problem of local minimum, slow convergence and diversity degradation of population. In SLnO's exploitation phase, the updating operation \ref{slno_eq2} only takes the distance between the current agent and the best solution into account, which makes updated position always oriented to one direction, leading to poverty of exploitation ability. Also, in exploration phase, although the participation of two agents that already exist in population in the updating operation \ref{slno_eq8} helps the new-born solution inherits current decent features of population, new solution has no way to reach another position outside of existing positions. This results in a dramatic decrease in the diversity of population, and significantly influences the ability of escaping local minimum of SLnO algorithm. All things considered, we decided to enhance those 2 operators by taking individual information into account for exploitation phase, and using a technique called opposition-based operation for exploration phase. Our improvements would be discussed in detail in \ref{imprv_exploit} and \ref{imprv_explore} as below.     
+\subsection{Exploitation phase improvement}
+\label{imprv_exploit}
+As mentioned above, SLnO have its own drawbacks in its exploitation phase. In order to enhance the performance of the operation \ref{slno_eq2}, not only distance between the current agent and the best agent, but also the influences of an individual experiment in history is considered in new improved operation. This idea stems from the updating mechanism of PSO \cite{eberhart1995particle} where the velocity of a particular particle is influenced by both the best individual and best personal information. ***************
+	Following that idea, we apply the information sent from best individual experiment in the same way as best agent position. The direction of position movement affected by two factors is presented in Fig. ***, and along with it,  the formulas of new updating mechanism for exploitation phase is as follows:
+\begin{equation}\label{islo_eq1}
+Dist_1 = |2B.P(t) - SL(t)| 
+\end{equation}
+\begin{equation}\label{islo_eq2}
+Dist_2 = |2B.P_i(t) - SL(t)| 
+\end{equation}
+\begin{equation}\label{islo_eq3}
+SL(t+1) = r_1(P(t) - Dist_1.C) + r_2(P_i(t) - Dist_2.C)
+\end{equation}
+where $P_i(t)$ is the personal best position of agent $i$ up to time $t$, and $r1, r2$ are random numbers in range $[\, 0,1 ] \,$.
+
+	In new operation \ref{islo_eq3}, the new-updated position of an individual is the result of adding two vectors, one is the vector presenting the direction of that individual towards the best agent, and another is the direction towards its own experiences in history. The influences of both two factors are determined by two random numbers $r_1$ and $r_2$. $r_1$ and $r_2$ play an extremely important role in the updating mechanism,  because  they create random characteristics for the operation, helping ISLO avoiding local minimum and taking advantages of the two factors. Without the appearance of $r_1$ and $r_2$, the updated position is always affected half by best agent and half by its experience, which may lead to degradation of the diversity of population. 
+
+\subsection{Exploration phase improvement}
+\label{imprv_explore} 
 \label{architecture}
 \chapter{Experiments}
 \chapter{Conclusions}
