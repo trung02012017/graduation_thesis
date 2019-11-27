@@ -366,10 +366,43 @@ SL(t+1) = SL_{rnd}(t) - Dist.C \label{slno_eq8}
 \chapter{Improved Sea Lion Optimization (ISLO) algorithm and Proposed Model for Auto-Scaling (ISLO-CFNN)}
 \section{Improved Sea Lion Optimization (ISLO)}
 \label{improved_ISLO}
-	Sea Lion Optimization (SLnO) is one of the newest swarm-based optimization algorithm. In experiments in SLnO origin paper \cite{masadeh2019sea}, SLnO is proved that it outperformed several well-known bio-inspired model such as Generic Algorithm (GA), Particle Swarm Optimization (PSO) and Whale Optimization Algorithm (WOA). However, like many other algorithms, SLnO also faces the problem of local minimum, slow convergence and diversity degradation of population. In SLnO's exploitation phase, the updating operation \ref{slno_eq2} only takes the distance between the current agent and the best solution into account, which makes updated position always oriented to one direction, leading to poverty of exploitation ability. Also, in exploration phase, although the participation of two agents that already exist in population in the updating operation \ref{slno_eq8} helps the new-born solution inherits current decent features of population, new solution has no way to reach another position outside of existing positions. This results in a dramatic decrease in the diversity of population, and significantly influences the ability of escaping local minimum of SLnO algorithm. All things considered, we decided to enhance those 2 operators by taking individual information into account for exploitation phase, and using a technique called opposition-based operation for exploration phase. Our improvements would be discussed in detail in \ref{imprv_exploit} and \ref{imprv_explore} as below.     
+	Sea Lion Optimization (SLnO) is one of the newest swarm-based optimization algorithm. In experiments in SLnO origin paper \cite{masadeh2019sea}, SLnO is proved that it outperformed several well-known bio-inspired model such as Generic Algorithm (GA), Particle Swarm Optimization (PSO) and Whale Optimization Algorithm (WOA). However, like many other algorithms, SLnO also faces the problem of local minimum, slow convergence and diversity degradation of population. In SLnO's exploitation phase, the updating operation \ref{slno_eq2} only takes the distance between the current agent and the best solution into account, which makes updated position always oriented to one direction, leading to poverty of exploitation ability. Also, in exploration phase, although the participation of two agents that already exist in population in the updating operation \ref{slno_eq8} helps the new-born solution inherits current decent features of population, new solution has no way to reach another position outside of existing positions. This results in a dramatic decrease in the diversity of population, and significantly influences the ability of escaping local minimum of SLnO algorithm. All things considered, we decided to enhance those 2 operators by taking individual information into account for exploitation phase, and using a technique called opposition-based operation for exploration phase. These two improvements form a new version of SLnO called Improved Sea Lion Optimization (ISLO) algorithm. The pseudo code of the algorithm is presented in Algorithm \ref{algorithm_islo}, and  our improvements would be discussed in detail in \ref{imprv_exploit} and \ref{imprv_explore} as below.  
+\begin{algorithm}[!t]
+\caption{Improved Sea Lion Optimization (ISLO)}
+\label{algorithm_islo}
+\SetAlgoLined
+ Initialize the Sea Lion population $X_i (i=1,2,.., n)$ randomly. \\
+ Calculate fitness of each solution (sea lion). \\
+ $X_*\gets$ the best solution \\
+\For {$Iter=0 \to Iter_{max}$}{
+	Calculate the value of $C$ \\
+	\For {SeaLion in population}{\
+		Calculate $SP_{leader}$ using Eq. \ref{snlo_eq3}  \\
+		\uIf{$SP_{leader} < 0.25$}{
+			\uIf {$|C| < 1$}{\
+				Calculate $Dist_1$ and $Dist_2$ using Eq. \ref{islo_eq1} and \ref{islo_eq2}
+				Update the location of the current search agent using Eq. \ref{islo_eq3}
+				}
+			\Else {
+				Choose a random search agent $SL1_{rand}$ and $SL2_{rand}$ \\
+				Update the location of current search agent by Eq. \ref{islo_eq4} \\
+			}
+		}	
+		\Else{
+			Update the location of the current search agent by Eq. \ref{slno_eq6}
+		}
+	Evaluate population: fix if any solutions go beyond the boundary \\
+ 	Recompute the fitness of all solutions \\
+ 	Check and update $X_*$ if a better solution is found. \\
+	}
+
+}
+ \textbf{Results:}  $X_*, f(X_*)$
+\end{algorithm}   
 \subsection{Exploitation phase improvement}
 \label{imprv_exploit}
-As mentioned above, SLnO have its own drawbacks in its exploitation phase. In order to enhance the performance of the operation \ref{slno_eq2}, not only distance between the current agent and the best agent, but also the influences of an individual experiment in history is considered in new improved operation. This idea stems from the updating mechanism of PSO \cite{eberhart1995particle} where the velocity of a particular particle is influenced by both the best individual and best personal information. ***************
+	As mentioned above, SLnO have its own drawbacks in its exploitation phase. In order to enhance the performance of the operation \ref{slno_eq2}, not only distance between the current agent and the best agent, but also the influences of an individual experiment in history is considered in new improved operation. This idea stems from the updating mechanism of PSO \cite{eberhart1995particle} where the velocity of a particular particle is influenced by both the best individual and best personal information. ***************.
+	
 	Following that idea, we apply the information sent from best individual experiment in the same way as best agent position. The direction of position movement affected by two factors is presented in Fig. ***, and along with it,  the formulas of new updating mechanism for exploitation phase is as follows:
 \begin{equation}\label{islo_eq1}
 Dist_1 = |2B.P(t) - SL(t)| 
@@ -382,9 +415,25 @@ SL(t+1) = r_1(P(t) - Dist_1.C) + r_2(P_i(t) - Dist_2.C)
 \end{equation}
 where $P_i(t)$ is the personal best position of agent $i$ up to time $t$, and $r1, r2$ are random numbers in range $[\, 0,1 ] \,$.
 
-	In new operation \ref{islo_eq3}, the new-updated position of an individual is the result of adding two vectors, one is the vector presenting the direction of that individual towards the best agent, and another is the direction towards its own experiences in history. The influences of both two factors are determined by two random numbers $r_1$ and $r_2$. $r_1$ and $r_2$ play an extremely important role in the updating mechanism,  because  they create random characteristics for the operation, helping ISLO avoiding local minimum and taking advantages of the two factors. Without the appearance of $r_1$ and $r_2$, the updated position is always affected half by best agent and half by its experience, which may lead to degradation of the diversity of population. 
+	In new operation \ref{islo_eq3}, the new-updated position of an individual is the result of adding two vectors, one is the vector presenting the direction of that individual towards the best agent, and another is the direction towards its own experiences in history. The influences of both two factors are determined by two random numbers $r_1$ and $r_2$. $r_1$ and $r_2$ play an extremely important role in the updating mechanism,  because  they create random characteristics for the operation, helping ISLO avoiding local minimum and taking advantages of the two factors. Without the appearance of $r_1$ and $r_2$, the updated position is always affected exactly half by best agent and half by its experience, which may lead to degradation of the diversity of population. 
 
 \subsection{Exploration phase improvement}
+	
+	In origin SLnO algorithm, new-born agents that are created in exploration phase cause a poor exploration search ability because of inheriting features of existing solutions. In order to tackle this problem, exploration phase is required the operation to have the ability of creating a decent new-born solution. New updated position need to satify two characteristics: carrying random features for ensuring a strong capability of exploration phase, and landing in a position decent enough (close enough to the best agent position) for updating positions in the next generation. From that motivation, a method called Opposition-based Learning (OBL) \cite{tizhoosh2005opposition}, which is successfully applied for enhancing bio-inspired optimization algorithms such as GA \cite{tizhoosh2005opposition}, PSO \cite{wang2007opposition} \cite{tang2009enhanced} in solving several optimization problems including finding parameter for deep learning models \cite{rashid2010improved} \cite{nguyen2019efficient} is utilized as a base model for our improvement in exploration operation of SLnO. 
+	
+	
+	The idea of OBL is apllied in the operation in the way of finding a new random optimal solution, but still retain a part of features from existing solutions. This is done by calculating the opposed position to the current position of an living agent in population. For ensuring random charateristics of new found position, a random agent from population, and a random agent in the search space will be chosen for paticipating in this operation. Fig. *** illustrates corresponding position of new solution given two positions of each factor, and the process as well as mathematical formulas are given as follows:
+\begin{enumerate}
+\item Select a random solution $SL1_{rand}$ in the search space.
+\item Select a random existing solution $SL2_{rand}$ in the population.
+\item Create a new solution $SL_{rand}$ by calculating the opposed position to $SL1_{rand}$ through $SL2_{rand}$.
+\begin{equation} \label{islo_eq4}
+SL_{rand} = 2*SL2_{rand} - SL1_{rand}
+\end{equation}
+\end{enumerate}   
+	 
+	
+
 \label{imprv_explore} 
 \label{architecture}
 \chapter{Experiments}

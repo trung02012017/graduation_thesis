@@ -87,10 +87,44 @@ Raja Masadeh, Basel~A Mahafzah, and Ahmad Sharieh.
 \newblock Sea lion optimization algorithm.
 \newblock {\em Sea}, 10(5), 2019.
 
+\bibitem{nguyen2019efficient}
+Thieu Nguyen, Tu~Nguyen, Binh~Minh Nguyen, and Giang Nguyen.
+\newblock Efficient time-series forecasting using neural network and
+  opposition-based coral reefs optimization.
+\newblock {\em International Journal of Computational Intelligence Systems},
+  12(2):1144--1161, 2019.
+
+\bibitem{rashid2010improved}
+Muhammad Rashid and Abdul~Rauf Baig.
+\newblock Improved opposition-based pso for feedforward neural network
+  training.
+\newblock In {\em 2010 International Conference on Information Science and
+  Applications}, pages 1--6. IEEE, 2010.
+
 \bibitem{rumelhart1988learning}
 David~E Rumelhart, Geoffrey~E Hinton, Ronald~J Williams, et~al.
 \newblock Learning representations by back-propagating errors.
 \newblock {\em Cognitive modeling}, 5(3):1, 1988.
+
+\bibitem{tang2009enhanced}
+Jun Tang and Xiaojuan Zhao.
+\newblock An enhanced opposition-based particle swarm optimization.
+\newblock In {\em 2009 WRI Global Congress on Intelligent Systems}, volume~1,
+  pages 149--153. IEEE, 2009.
+
+\bibitem{tizhoosh2005opposition}
+Hamid~R Tizhoosh.
+\newblock Opposition-based learning: a new scheme for machine intelligence.
+\newblock In {\em International Conference on Computational Intelligence for
+  Modelling, Control and Automation and International Conference on Intelligent
+  Agents, Web Technologies and Internet Commerce (CIMCA-IAWTIC'06)}, volume~1,
+  pages 695--701. IEEE, 2005.
+
+\bibitem{wang2007opposition}
+Hui Wang, Hui Li, Yong Liu, Changhe Li, and Sanyou Zeng.
+\newblock Opposition-based particle swarm algorithm with cauchy mutation.
+\newblock In {\em 2007 IEEE Congress on Evolutionary Computation}, pages
+  4750--4756. IEEE, 2007.
 
 \bibitem{warsito2018cascade}
 Budi Warsito, Rukun Santoso, Hasbi Yasin, et~al.

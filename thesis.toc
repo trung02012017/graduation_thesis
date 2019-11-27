@@ -30,6 +30,6 @@
 \contentsline {section}{\numberline {3.1}Improved Sea Lion Optimization (ISLO)}{21}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Exploitation phase improvement}{22}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}Exploration phase improvement}{23}{subsection.3.1.2}
-\contentsline {chapter}{\numberline {4}Experiments}{24}{chapter.4}
-\contentsline {chapter}{\numberline {5}Conclusions}{25}{chapter.5}
-\contentsline {section}{\numberline {.1}References}{25}{section.0.1}
+\contentsline {chapter}{\numberline {4}Experiments}{25}{chapter.4}
+\contentsline {chapter}{\numberline {5}Conclusions}{26}{chapter.5}
+\contentsline {section}{\numberline {.1}References}{26}{section.0.1}
