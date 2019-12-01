@@ -64,8 +64,8 @@
 \title{\LARGE {\bf Mô hình dự đoán chuỗi thời gian mờ đa chiều sử dụng LSTM và kĩ thuật phân tích\\ tương quan giữa các chiều dữ liệu \\áp dụng cho tài nguyên đám mây}\\
 }
 
-\author{ Nguyễn Đức Thắng}
-\submitdate{Hà Nội, 12/2018}
+\author{Tran Quang Trung}
+\submitdate{Hanoi, 12/2019}
 
 \normallinespacing
 \maketitle
@@ -419,10 +419,10 @@ where $P_i(t)$ is the personal best position of agent $i$ up to time $t$, and $r
 
 \subsection{Exploration phase improvement}
 	
-	In origin SLnO algorithm, new-born agents that are created in exploration phase cause a poor exploration search ability because of inheriting features of existing solutions. In order to tackle this problem, exploration phase is required the operation to have the ability of creating a decent new-born solution. New updated position need to satify two characteristics: carrying random features for ensuring a strong capability of exploration phase, and landing in a position decent enough (close enough to the best agent position) for updating positions in the next generation. From that motivation, a method called Opposition-based Learning (OBL) \cite{tizhoosh2005opposition}, which is successfully applied for enhancing bio-inspired optimization algorithms such as GA \cite{tizhoosh2005opposition}, PSO \cite{wang2007opposition} \cite{tang2009enhanced} in solving several optimization problems including finding parameter for deep learning models \cite{rashid2010improved} \cite{nguyen2019efficient} is utilized as a base model for our improvement in exploration operation of SLnO. 
+	In origin SLnO algorithm, new-born agents that are created in exploration phase cause a poor exploration search ability because of inheriting features of existing solutions. In order to tackle this problem, exploration phase is required the operation to have the ability of creating a decent new-born solution. New updated position need to satisfy two characteristics: carrying random features for ensuring a strong capability of exploration phase, and landing in a position decent enough (close enough to the best agent position) for updating positions in the next generation. From that motivation, a method called Opposition-based Learning (OBL) \cite{tizhoosh2005opposition}, which is successfully applied for enhancing bio-inspired optimization algorithms such as GA \cite{tizhoosh2005opposition}, PSO \cite{wang2007opposition} \cite{tang2009enhanced} in solving several optimization problems including finding parameter for deep learning models \cite{rashid2010improved} \cite{nguyen2019efficient} is utilized as a base model for our improvement in exploration operation of SLnO. 
 	
 	
-	The idea of OBL is apllied in the operation in the way of finding a new random optimal solution, but still retain a part of features from existing solutions. This is done by calculating the opposed position to the current position of an living agent in population. For ensuring random charateristics of new found position, a random agent from population, and a random agent in the search space will be chosen for paticipating in this operation. Fig. *** illustrates corresponding position of new solution given two positions of each factor, and the process as well as mathematical formulas are given as follows:
+	The idea of OBL is applied in the operation in the way of finding a new random optimal solution, but still retain a part of features from existing solutions. This is done by calculating the opposed position to the current position of an living agent in population. For ensuring random characteristics of new found position, a random agent from population, and a random agent in the search space will be chosen for participating in this operation. Fig. *** illustrates corresponding position of new solution given two positions of each factor, and the process as well as mathematical formulas are given as follows:
 \begin{enumerate}
 \item Select a random solution $SL1_{rand}$ in the search space.
 \item Select a random existing solution $SL2_{rand}$ in the population.
@@ -430,19 +430,93 @@ where $P_i(t)$ is the personal best position of agent $i$ up to time $t$, and $r
 \begin{equation} \label{islo_eq4}
 SL_{rand} = 2*SL2_{rand} - SL1_{rand}
 \end{equation}
-\end{enumerate}   
-	 
+\end{enumerate}
+
+\section{Proposed model for auto-scaling problem in Cloud Computing}
+\label{proposed_model}
+	
+	In chapter \ref{ch:background}, we generally discussed about Cloud Computing and the problem of auto-scaling with the existing methods for solving this. In general, it is relatively necessary to build cloud computing servers with the capacity of automatically expanding and  shrinking the resources allocated. Although there are a number of solutions proposed for tackling this issue, they all have their own drawbacks.
+	
+	The FFNN model, which is widely used for solving many real-world issues, is too simple to capture the characteristics of time-series data because after feed-forwarding through hidden layers, the origin information of the input neural could be forgotten. On the other hand, RNN-based models such as LSTM or GRU have to face the problem of extremely complex structures that potentially lead to over-fitting, or the huge number of hyper-parameters which are needed to tuned.
+	
+	The CFNN can take the advantages of its structure and diminish the problem raising when the model structures are too simple (FFNN) or too complex (LSTM, GRU) because of the connection added between the input layer and output layer. However, the gradient descent (GD) algorithm which is used for optimizing CFNN still have its own drawback of being stuck in local minimum and slow convergence speed. 
+	
+	All thing considered, we proposed a new model ISLO-CFNN to improve the weak points of origin CFNN model by replacing GD algorithm by above proposed ISLO algorithm in optimizing the parameters of the network while training process. Also, in order to evaluate the performance of our proposed model, we would build both our model and existing models for the purposes of evaluation and comparison.
+	
+	Fig. *** illustrates the skeleton of forecasting system designed. There are four main phases, each of them is indispensable in our model. The phases are Collecting data, Data pre-processing, Building and Training model and Deploy prediction model. Firstly, historical records about resources used are collected and saved in lines in a log file. These information is extracted and pre-processed before being used for training the prediction model that is designed. In the final stage, the trained model is applied for data in current time, and it will predict the amount of resources needed. Specifically, in Building and Training model stage, CFNN model is built with fixed nodes in all layers, and it will be optimized by ISLO algorithm, which is discussed in detail in Section \ref{improved_ISLO}. We will discuss about each phase as below.
+	
+\subsection{Collecting data}
+\label{collect_data}
+	
+	Before building any forecasting systems, the very first and the most important task that must be done is collecting data. Therefore, we collect data recording the resource usage of Google (Google Cluster Trace data) and Internet Traffic data collected from a private internet service provider (ISP) in Europe and the United Kingdom (these datasets  will be discuss in detail in Chapter \ref{experiments}). The data collected contains two main parts: the data from history that we use for training, and current time data that we use for predicting resource usage in the future.  
 	
 
-\label{imprv_explore} 
-\label{architecture}
+\subsection{Data pre-processing}
+\label{data-pre}
+
+\begin{table}[!t]
+\caption{Time-series data and Supervised learning data comparison}
+\label{tbl_data_cmp}
+\centering
+\begin{tabular}{|p{6cm}|p{6cm}|}
+ \hline
+ Time-series data & Supervised Learning data  \\ 
+ \hline
+ 1. Time 1, value 1 & 1. Input 1, output 1  \\ 
+ 2. Time 2, value 2 & 2. Input 2, output 2  \\ 
+ 3. Time 3, value 3 & 3. Input 3, output 3  \\ 
+ \hline
+\end{tabular}
+\end{table}
+	
+	This phase play a role as a pre-processor transforming the raw data into the kind of data that can be used in neural networks. In order to learn, models need both training data and testing data. We create the data for models through several steps as follows:
+
+\begin{itemize}
+\item  Evaluate and choose carefully which columns of data are needed for the forecasting model.
+\item  The parts of data chosen are then normalized in the range $[ \, 0, 1 ] \,$.
+\item Transform time-series data into supervised learning data using \textit{Sliding window} technique.
+\item Divide processed data into two sets: training set and testing set.
+\end{itemize}
+
+	The step $3th$ of the pre-processing phase is necessary because time-series data is the data recorded through time, and there is no term of features and output data. Therefore, we need to transform this data into supervised learning data, that contains input features, and output. Table \ref{tbl_data_cmp} depicts the difference between time-series data and normal data used in supervised learning.
+
+
+	In order to create data for supervised learning, we use the method called \textit{Sliding window}. This method takes the data of $k$ values before the time $t$ as the features and output data is the value at the time $t$. For example, when $k=3$, the results of data transformation is shown as in Table \ref{tbl_sliding_window}.
+	
+\begin{table}[!t]
+\caption{Example of data transformation using Sliding window method}
+\label{tbl_sliding_window}
+\centering
+\begin{tabular}{|p{4cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
+ \hline
+ \multicolumn{1}{|c|}{Time-series data} & \multicolumn{4}{c|}{Transformed data} \\ 
+ \hline
+ \multicolumn{1}{|c}{} & \multicolumn{3}{|c}{Input} & \multicolumn{1}{|c|}{Output} \\
+ \hline
+  Time $(t=4)$, Value 4 & Value 1 & Value 2 & Value 3 & Value 4 \\
+  Time $(t=5)$, Value 5 & Value 2 & Value 3 & Value 4 & Value 5 \\
+  Time $(t=6)$, Value 6 & Value 3 & Value 4 & Value 5 & Value 6 \\
+  Time $(t=7)$, Value 7 & Value 4 & Value 5 & Value 6 & Value 7 \\
+ ... & ... & ... & ...  & ... \\
+ \hline
+\end{tabular}
+\end{table}	
+	 
+\subsection{Building and Training model}
+\label{main_model}
+	
+	
+	
+
+\subsection{Deploy prediction model}
+\label{deploy}  
+	  
 \chapter{Experiments}
 \chapter{Conclusions}
 
 \appendix
 % appendices come here
 
-\section{References}
 \bibliographystyle{plain}
 \bibliography{references}
 %\addcontentsline{toc}{chapter}{Bibliography}

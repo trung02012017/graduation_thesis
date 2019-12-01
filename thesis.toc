@@ -30,6 +30,10 @@
 \contentsline {section}{\numberline {3.1}Improved Sea Lion Optimization (ISLO)}{21}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Exploitation phase improvement}{22}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}Exploration phase improvement}{23}{subsection.3.1.2}
-\contentsline {chapter}{\numberline {4}Experiments}{25}{chapter.4}
-\contentsline {chapter}{\numberline {5}Conclusions}{26}{chapter.5}
-\contentsline {section}{\numberline {.1}References}{26}{section.0.1}
+\contentsline {section}{\numberline {3.2}Proposed model for auto-scaling problem in Cloud Computing}{24}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Collecting data}{26}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Data pre-processing}{26}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Building and Training model}{27}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Deploy prediction model}{27}{subsection.3.2.4}
+\contentsline {chapter}{\numberline {4}Experiments}{28}{chapter.4}
+\contentsline {chapter}{\numberline {5}Conclusions}{29}{chapter.5}
