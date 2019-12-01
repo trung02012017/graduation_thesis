@@ -443,7 +443,16 @@ SL_{rand} = 2*SL2_{rand} - SL1_{rand}
 	
 	All thing considered, we proposed a new model ISLO-CFNN to improve the weak points of origin CFNN model by replacing GD algorithm by above proposed ISLO algorithm in optimizing the parameters of the network while training process. Also, in order to evaluate the performance of our proposed model, we would build both our model and existing models for the purposes of evaluation and comparison.
 	
-	Fig. *** illustrates the skeleton of forecasting system designed. There are four main phases, each of them is indispensable in our model. The phases are Collecting data, Data pre-processing, Building and Training model and Deploy prediction model. Firstly, historical records about resources used are collected and saved in lines in a log file. These information is extracted and pre-processed before being used for training the prediction model that is designed. In the final stage, the trained model is applied for data in current time, and it will predict the amount of resources needed. Specifically, in Building and Training model stage, CFNN model is built with fixed nodes in all layers, and it will be optimized by ISLO algorithm, which is discussed in detail in Section \ref{improved_ISLO}. We will discuss about each phase as below.
+	
+	
+	Fig. \ref{fig_model_phases} illustrates the skeleton of forecasting system designed. There are four main phases, each of them is indispensable in our model. The phases are Collecting data, Data pre-processing, Building and Training model and Deploy prediction model. Firstly, historical records about resources used are collected and saved in lines in a log file. These information is extracted and pre-processed before being used for training the prediction model that is designed. In the final stage, the trained model is applied for data in current time, and it will predict the amount of resources needed. Specifically, in Building and Training model stage, CFNN model is built with fixed nodes in all layers, and it will be optimized by ISLO algorithm, which is discussed in detail in Section \ref{improved_ISLO}. We will discuss about each phase as below.
+	
+\begin{figure}[!ht] 
+   \centering
+   \includegraphics[width=1.0\linewidth]{/pdf/model/model_phases}
+  \caption{Proposed model design} 
+  \label{fig_model_phases} 
+\end{figure}
 	
 \subsection{Collecting data}
 \label{collect_data}
@@ -504,6 +513,27 @@ SL_{rand} = 2*SL2_{rand} - SL1_{rand}
 	 
 \subsection{Building and Training model}
 \label{main_model}
+
+	In this phase, pre-processed data is used for training our proposed model called ISLO-CFNN, which is CFNN trained under the optimization of ISLO algorithm. ISLO algorithm is applied to train a CFNN model with one hidden layer. There is two key aspects needed to be taken into consideration: firstly, the formation of an agent in ISLO and the selection of fitness function.
+	
+	Firstly, each agent in the population in ISLO are presented as one solution for CFNN model, which means a search agent is a one-dimensional vector created by concatenating weights and biases of CFNN. Therefore, the features of a search agent contains three elements: a set of weights connecting the input layer with hidden layer, a set of weights connecting the hidden layer with output layer and also, a set of weights connecting the input layer with output layer. Therefore,  the length of a solution can be calculated by Eq. \ref{eq_length_solution}.
+	
+\begin{equation} \label{eq_length_solution}
+	Solution\_length = (1+i)*h + (1+h)*o + (1+i)*o
+\end{equation}
+Where $i, h, o$ is the number of input, hidden and output neurons,  respectively (in time-series prediction, the number of output neurons is one).
+	
+	Secondly, the fitness value of each agent in ISLO is considered as the loss value of the CFNN model with the parameter set from the agent and input data. We utilize the loss function Mean Square Error (MSE) to calculate the difference between the actual and predicted output values by generated agent for all samples in the training set. 
+	
+	The workflow of ISLO applied in this work for training CFNN can be presented by the following steps:
+	
+\begin{enumerate}
+\item Initialization: pre-define the number of search agents in ISLO, which are randomly generated in the range [0, 1]. Each search agent presents a solution for CFNN model.
+\item Calculate fitness value for each search agent: The quality of a solution is measured by the loss value of CFNN output. After being decoded into weights and biases vectors, a solution will be applied to form a CFNN model. Data samples in training set is then feed-forwarded through the network, generating predicted output values. Finally, the fitness value is calculated as the difference between predicted and actual output values through the MSE loss function.
+\item Update positions of all search agents following formulas of ISLO algorithm.
+\item Steps 2 and 3 are repeated until the difference is close enough, or the maximum number of iterations is reached.
+\end{enumerate}
+	     
 	
 	
 	
