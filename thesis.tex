@@ -47,6 +47,7 @@
 
 
 \renewcommand{\baselinestretch}{2.0}
+\DeclareUnicodeCharacter{2212}{-}
 \begin{document}
 
 \setlength{\abovedisplayskip}{3pt}
@@ -82,7 +83,7 @@
 	Recent developments in cloud computing including resource management have resulted in a significant interest in resource usage prediction . Various methods have been proposed for solving this problem with different aspects, objectives and applications ~\cite{amiri2017survey}. In this section, we focus on several Artificial Neural Network (ANN) models that are used for tackling the time-series characteristic in resource usage forecast in cloud computing environment.
 	Deep Feed-forward Neural Network, also called Feed-forward Neural Network (FFNN) are the quintessential deep learning models. The goal of all FFNN is to approximate some functions $f^*$.  In Regression problems, $y = f^*(x)$ maps an input $x$ to a value $y$. A feed-forward network defines a mapping $y = f(x,\theta)$ and learns the value of the parameters $\theta$ that result in the best function approximation. ~\cite{Goodfellow-et-al-2016}. These models are called feed-forward because information flows through the function being evaluated from $x$, through the intermediate computations used to define $f$, and finally to the output $y$. There are no feedback connections in which outputs of the model are fed back into itself. When feed-forward neural networks are extended to include feedback connections, they are called recurrent neural networks, which will be discussed in ~\ref{model_rnn}.
 	
-	In general, Multi-Layer Perceptrons (MLPs) models contain several disparate layers. The first layer is input layer taking information $x$ as input for the network. The last layer is called output layer, whose value is the result of $y$ with input $x$. The layers between the input and output layers are hidden layers. The structures of hidden layers are extremely diverse, varying from model to model. As presented in Fig. ***, a hidden layer of a simple FFNN is a group of neurons with no connection to each other, while in Recurrent Neural Networks (RNN), and Convolution Neural Network (CNN) hidden layer is a recurrent layer, and convolution layer respectively. 
+	In general, Multi-Layer Perceptrons (MLPs) models contain several disparate layers. The first layer is input layer taking information $x$ as input for the network. The last layer is called output layer, whose value is the result of $y$ with input $x$. The layers between the input and output layers are hidden layers. The structures of hidden layers are extremely diverse, varying from model to model. As presented in Fig. \ref{fig_model_mlp}, a hidden layer of a simple FFNN is a group of neurons with no connection to each other, while in Recurrent Neural Networks (RNN), and Convolution Neural Network (CNN) hidden layer is a recurrent layer, and convolution layer respectively. 
 	
 	The Deep Neural Networks that are applied for Time series prediction will have input neurons presenting the historical data. The models utilize information from data in the past for forecasting future data. Input data presented as $x_1, x_2, ..., x_t$ is considered as historical values up to time t, which is used to predict the value at the time $t+1$. In other words, Deep Neural Networks will learn from data and approximate a function transforming the historical data up to time $t$ to the data at the time $t+1$ as follows:
 \begin{equation} \label{eq_ffnn_1}
@@ -90,15 +91,24 @@ x(t+1) = y = f(x_1, x_2, ..., x_t)
 \end{equation}
 	
 	 In this section, we summarize several Deep Neural Network models, which are widely used for time series forecasting. They are simple Multi-Layer Perceptrons (MLPs), Cascade Forward Neural Network (CFNN) and Recurrent-based Neural Network including traditional Recurrent Neural Network (RNN), Long-Short Term Memory (LSTM) and Gated Recurrent Units (GRU). Each method will be presented below with brief ideas and mathematical formulas. 
-	 
+
+\begin{figure}[!ht] 
+   \centering
+   \includegraphics[width=0.75\linewidth]{pdf/model/model_ffnn}
+  \caption{An example of MLPs model in time-series prediction.} 
+  \label{fig_model_mlp} 
+\end{figure}
+
 \subsection{Multi-Layer Perceptrons (MLPs)}
 \label{model_mlp}
 	
-	The additional layers added between input layer and output layer make network architecture contain hidden layers and called Multi-Layer Perceptrons (MLPs). The input data is fed through input layer to hidden layers in the weighted form. The information from input data $X$ is distributed to the neurons in hidden layers and then processed by an activation function (see in Fig. ***). The activation function in hidden layers are non-linear function playing a role as a transfer function, helping MLPs learn non-linear characteristics of the data. The information after being processed by hidden layers then are sent to output layer in the weighted sum, and also go through an activation function as well, creating the output value $y$. MLPs model is used in predicting time series data ~\cite{azoff1994neural}, ~\cite{koskela1996time}.  Fig. *** shows a MLPs with a n-neuron input layer and one output layer. The mathematical equation of the architecture in Fig. *** can be written as follows:
-\begin{align}
-H = f_h(W_h^TX + b_h) \label{eq_mlp_1} \\
-y = O = f_o(W_o^TH + b_o) \label{eq_mlp_2}
-\end{align} 
+	The additional layers added between input layer and output layer make network architecture contain hidden layers and called Multi-Layer Perceptrons (MLPs). The input data is fed through input layer to hidden layers in the weighted form. The information from input data $X$ is distributed to the neurons in hidden layers and then processed by an activation function. The activation function in hidden layers are non-linear function playing a role as a transfer function, helping MLPs learn non-linear characteristics of the data. The information after being processed by hidden layers then are sent to output layer in the weighted sum, and also go through an activation function as well, creating the output value $y$. MLPs model is used in predicting time series data ~\cite{azoff1994neural}, ~\cite{koskela1996time}.  Fig. \ref{fig_model_mlp} shows a MLPs with a 4-neuron input layer and one output layer. In general,  the mathematical equation of the MLPs architecture can be written as follows:
+\begin{equation} \label{eq_mlp_1}
+H = f_h(W_h^TX + b_h)
+\end{equation}
+\begin{equation} \label{eq_mlp_2}
+y = O = f_o(W_o^TH + b_o
+\end{equation}
 
 Where $X$ is the input data, $H$ and $O$ are the information after being fed through the hidden and output layers. $W_h$, $b_h$ and $W_o$, $b_o$ are weights and biases, while $f_h$ and $f_o$ are activation functions of hidden layer and output layer, respectively.
 
@@ -106,15 +116,24 @@ Where $X$ is the input data, $H$ and $O$ are the information after being fed thr
 \subsubsection{Cascade Forward Neural Network (CFNN)}
 \label{model_cfnn}
 
-The main difference between CFNN and MLPs is that in CFNN, perceptron connection is added directly between neurons in input layer and output layer, while in MLPs, that connection is indirect through the hidden layer. The output layer of CFNN perceives both transformed information that is output of hidden layer, and the raw information from input data. This Deep Neural Network model was first used for forecasting monthly palm oil price in the Europe market in ~\cite{warsito2018cascade}. The architecture of CFNN is illustrated in Fig. ***, and the mathematical formulas for CFNN model are presented as follows:
-
-\begin{align} 
-H = f_h(W_h^TX + b_h) \label{eq_cfnn_1} \\
-C = f_c(W_c^TX + b_c) \label{eq_cfnn_2} \\
-y = O = f_o(W_o^TH + b_o) + C \label{eq_cfnn_3}
-\end{align} 
-
+The main difference between CFNN and MLPs is that in CFNN, perceptron connection is added directly between neurons in input layer and output layer, while in MLPs, that connection is indirect through the hidden layer. The output layer of CFNN perceives both transformed information that is output of hidden layer, and the raw information from input data. This Deep Neural Network model was first used for forecasting monthly palm oil price in the Europe market in ~\cite{warsito2018cascade}. The architecture of CFNN with 4-neuron input layer is illustrated in Fig. \ref{fig_model_cfnn}, and the mathematical formulas for CFNN model are presented as follows:
+\begin{equation}\label{eq_cfnn_1}
+H = f_h(W_h^TX + b_h)
+\end{equation}
+\begin{equation}\label{eq_cfnn_2}
+C = f_c(W_c^TX) + b_c
+\end{equation}
+\begin{equation}\label{eq_cfnn_3}
+y = O = f_o(W_o^TH + b_o) + C
+\end{equation} 
 where $f_c$ is the activation function from the input layer to output layer, $C$ is the output value of $f_c$, and $W_c, b_c$ are weights and biases of the connection, respectively.
+
+\begin{figure}[!ht] 
+   \centering
+   \includegraphics[width=0.75\linewidth]{pdf/model/model_cfnn}
+  \caption{An example of CFNN model in time-series prediction.} 
+  \label{fig_model_cfnn} 
+\end{figure}
 
 
 \subsection{Recurrent Neural Network (RNN)}
@@ -162,27 +181,30 @@ h_t = z_t\odot h_{t-1} + (1 - z_t)\odot tanh(W_hx_t + U_h(r_th_{t-1}) + b_h) \la
 \label{ann_know}
 \subsubsection{Activation functions}
 \label{ann_act_func}
-	Activation functions also known as transfer functions are used to map input nodes to output nodes in certain fashion. Activation functions are extremely important for an ANN to learn and figure out features and characteristics of data which need a non-linear transformation to become outputs. There are the four most popular functions used in Deep Learning, their names are Sigmoid, Hyperbolic Tangent (Tanh), Rectified Linear Units (ReLU), Leaky ReLU and Exponential Linear Unit (ELU).
-	\paragraph{\textbf{Sigmoid function}}: takes a number as input and returns a value in $	[ \,0,1] \,$. (Fig. ****)
+
+\begin{figure}[!ht] 
+   \centering
+   \includegraphics[width=0.33\linewidth]{png/sigmoid}
+   \includegraphics[width=0.33\linewidth]{png/tanh}
+   \includegraphics[width=0.33\linewidth]{png/relu}
+   \includegraphics[width=0.33\linewidth]{png/leakyrelu}
+  \caption{Activation functions. Source: https://medium.com/@srnghn/deep-learning-overview-of-neurons-and-activation-functions-1d98286cf1e4} 
+  \label{fig_activation} 
+\end{figure}
+
+	Activation functions also known as transfer functions are used to map input nodes to output nodes in certain fashion. Activation functions are extremely important for an ANN to learn and figure out features and characteristics of data which need a non-linear transformation to become outputs. There are the four most popular functions used in Deep Learning, their names are Sigmoid, Hyperbolic Tangent (Tanh), Rectified Linear Units (ReLU), Leaky ReLU and Exponential Linear Unit (ELU) (See in Fig. \ref{fig_activation}).
+	\paragraph{\textbf{Sigmoid function}}: takes a number as input and returns a value in $	[ \,0,1] \,$.
 	$$f(x) = \frac{1}{1+e^x}$$
-	\paragraph{\textbf{Hyperbolic Tangent (Tanh) function:}} $f(x) = \frac{2}{1+e^{-2x}} = 2\sigma(2x)-1$ is also like Sigmoid function but better, the range of the output from Tanh funtion is in $	[ \,-1,1] \,$. (Fig ***)
+	\paragraph{\textbf{Hyperbolic Tangent (Tanh) function:}} $f(x) = \frac{2}{1+e^{-2x}} = 2\sigma(2x)-1$ is also like Sigmoid function but better, the range of the output from Tanh funtion is in $	[ \,-1,1] \,$. 
 	$$f(x) = \frac{2}{1+e^{-2x}} = 2\sigma(2x)-1$$
-	\paragraph{\textbf{Rectified Linear Unit (ReLU) function:}} is a function having threshold at $0$ value (Fig. ***). It helps accelerate the training process in ANN, so it is used in almost all the complicated deep learning models such as RNNs and CNNs.
+	\paragraph{\textbf{Rectified Linear Unit (ReLU) function:}} is a function having threshold at $0$ value. It helps accelerate the training process in ANN, so it is used in almost all the complicated deep learning models such as RNNs and CNNs.
 	$$f(x) = max(0, x)$$
-	\paragraph{\textbf{Leaky ReLU function:}} is like ReLU function, but instead of setting thresholf value at $0$, Leaky ReLU extends the domain to $\alpha x$. (Fig. ****)
+	\paragraph{\textbf{Leaky ReLU function:}} is like ReLU function, but instead of setting thresholf value at $0$, Leaky ReLU extends the domain to $\alpha x$.
 	\[
     f(x)= 
 \begin{cases}
     x,& \text{if } x > 1\\
     \alpha x, & \text{otherwise}
-\end{cases}
-\]
-	\paragraph{\textbf{Exponential Linear Unit (ELU) function:}} This function was first proposed several years ago. In many experiments, it is proved that it can lead to a faster convergence and better result of deep learning models.
-	\[
-    f(x)= 
-\begin{cases}
-    x,& \text{if } x > 1\\
-    \alpha (e^x-1), & \text{otherwise}
 \end{cases}
 \]
 \subsubsection{Loss functions}
@@ -507,8 +529,7 @@ SL_{rand} = 2*SL2_{rand} - SL1_{rand}
 
 	In this phase, pre-processed data is used for training our proposed model called ISLO-CFNN, which is CFNN trained under the optimization of ISLO algorithm. ISLO algorithm is applied to train a CFNN model with one hidden layer. There is two key aspects needed to be taken into consideration: firstly, the formation of an agent in ISLO and the selection of fitness function.
 	
-	Firstly, each agent in the population in ISLO are presented as one solution for CFNN model, which means a search agent is a one-dimensional vector created by concatenating weights and biases of CFNN. Therefore, the features of a search agent contains three elements: a set of weights connecting the input layer with hidden layer, a set of weights connecting the hidden layer with output layer and also, a set of weights connecting the input layer with output layer. Therefore,  the length of a solution can be calculated by Eq. \ref{eq_length_solution}.
-	
+	Firstly, each agent in the population in ISLO are presented as one solution for CFNN model, which means a search agent is a one-dimensional vector created by concatenating weights and biases of CFNN. Therefore, the features of a search agent contains three elements: a set of weights connecting the input layer with hidden layer, a set of weights connecting the hidden layer with output layer and also, a set of weights connecting the input layer with output layer. Therefore,  the length of a solution can be calculated by Eq. \ref{eq_length_solution}.	
 \begin{equation} \label{eq_length_solution}
 	Solution\_length = (1+i)*h + (1+h)*o + (1+i)*o
 \end{equation}
@@ -516,10 +537,17 @@ Where $i, h, o$ is the number of input, hidden and output neurons,  respectively
 	
 	Secondly, the fitness value of each agent in ISLO is considered as the loss value of the CFNN model with the parameter set from the agent and input data. We utilize the loss function Mean Square Error (MSE) to calculate the difference between the actual and predicted output values by generated agent for all samples in the training set. 
 	
+\begin{figure}[!ht] 
+   \centering
+   \includegraphics[width=0.75\linewidth]{pdf/model/solution_creation}
+  \caption{Encoding process transforming a parameter set in CFNN into an agent in ISLO algorithm. ($W^*$ indicates weights and biases between 2 layers)} 
+  \label{fig_solution_encode} 
+\end{figure}
+	
 	The workflow of ISLO applied in this work for training CFNN can be presented by the following steps:
 	
 \begin{enumerate}
-\item Initialization: pre-define the number of search agents in ISLO, which are randomly generated in the range [0, 1]. Each search agent presents a solution for CFNN model.
+\item Initialization: pre-define the number of search agents in ISLO, which are randomly generated in the range [-1, 1]. Each parameter set of CFNN model is encoded to a vector playing a role as an agent in ISLO population. (See in Fig. \ref{fig_solution_encode}
 \item Calculate fitness value for each search agent: The quality of a solution is measured by the loss value of CFNN output. After being decoded into weights and biases vectors, a solution will be applied to form a CFNN model. Data samples in training set is then feed-forwarded through the network, generating predicted output values. Finally, the fitness value is calculated as the difference between predicted and actual output values through the MSE loss function.
 \item Update positions of all search agents following formulas of ISLO algorithm.
 \item Steps 2 and 3 are repeated until the difference is close enough, or the maximum number of iterations is reached.
