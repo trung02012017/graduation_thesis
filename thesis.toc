@@ -28,8 +28,8 @@
 \contentsline {chapter}{\numberline {3}Improved Sea Lion Optimization (ISLO) algorithm and Proposed Model for Auto-Scaling (ISLO-CFNN)}{23}{chapter.3}
 \contentsline {section}{\numberline {3.1}Improved Sea Lion Optimization (ISLO)}{23}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Exploitation phase improvement}{24}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Exploration phase improvement}{26}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}Proposed model for auto-scaling problem in Cloud Computing}{27}{section.3.2}
+\contentsline {subsection}{\numberline {3.1.2}Exploration phase improvement}{25}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Proposed model for auto-scaling problem in Cloud Computing}{26}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Collecting data}{28}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Data pre-processing}{29}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}Building and Training model}{30}{subsection.3.2.3}

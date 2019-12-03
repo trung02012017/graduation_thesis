@@ -1,4 +1,4 @@
-\documentclass[a4paper,12pt,3p]{report}
+\documentclass[a4paper,12pt,2p]{report}
 
 \usepackage{graphicx}
 \usepackage[font=normalsize]{caption}
@@ -26,7 +26,7 @@
 %\bibliography{reference}
 
 \titleformat{\paragraph}
-{\normalfont\normalsize\bfseries}{\theparagraph}{0.5em}{}
+{\normalfont\normalsize\bfseries}{\theparagraph}{0.25em}{}
 
 \graphicspath{ {./images/} }
 \usepackage[X2,T1]{fontenc}
@@ -46,7 +46,8 @@
 \setlength{\parindent}{50pt}
 
 
-\renewcommand{\baselinestretch}{2.0}
+\renewcommand{\baselinestretch}{1.0}
+\DeclareUnicodeCharacter{2212}{-}
 \begin{document}
 
 \setlength{\abovedisplayskip}{3pt}
@@ -428,7 +429,7 @@ Where $SL_{rnd}(t)$ is a random sea lion that is selected randomly from current 
 \label{imprv_exploit}
 	As mentioned above, SLnO have its own drawbacks in its exploitation phase. In order to enhance the performance of the operation \ref{slno_eq2}, not only distance between the current agent and the best agent, but also the influences of an individual experiment in history is considered in new improved operation. This idea stems from the updating mechanism of PSO \cite{eberhart1995particle} where the velocity of a particular particle is influenced by both the best individual and best personal information. ***************.
 	
-	Following that idea, we apply the information sent from best individual experiment in the same way as best agent position. The direction of position movement affected by two factors is presented in Fig. ***, and along with it,  the formulas of new updating mechanism for exploitation phase is as follows:
+	Following that idea, we apply the information sent from best individual experiment in the same way as best agent position. The formulas of new updating mechanism for exploitation phase is as follows:
 \begin{equation}\label{islo_eq1}
 Dist_1 = |2B.P(t) - SL(t)| 
 \end{equation}
@@ -448,7 +449,7 @@ where $P_i(t)$ is the personal best position of agent $i$ up to time $t$, and $r
 	In origin SLnO algorithm, new-born agents that are created in exploration phase cause a poor exploration search ability because of inheriting features of existing solutions. In order to tackle this problem, exploration phase is required the operation to have the ability of creating a decent new-born solution. New updated position need to satisfy two characteristics: carrying random features for ensuring a strong capability of exploration phase, and landing in a position decent enough (close enough to the best agent position) for updating positions in the next generation. From that motivation, a method called Opposition-based Learning (OBL) \cite{tizhoosh2005opposition}, which is successfully applied for enhancing bio-inspired optimization algorithms such as GA \cite{tizhoosh2005opposition}, PSO \cite{wang2007opposition} \cite{tang2009enhanced} in solving several optimization problems including finding parameter for deep learning models \cite{rashid2010improved} \cite{nguyen2019efficient} is utilized as a base model for our improvement in exploration operation of SLnO. 
 	
 	
-	The idea of OBL is applied in the operation in the way of finding a new random optimal solution, but still retain a part of features from existing solutions. This is done by calculating the opposed position to the current position of an living agent in population. For ensuring random characteristics of new found position, a random agent from population, and a random agent in the search space will be chosen for participating in this operation. Fig. *** illustrates corresponding position of new solution given two positions of each factor, and the process as well as mathematical formulas are given as follows:
+	The idea of OBL is applied in the operation in the way of finding a new random optimal solution, but still retain a part of features from existing solutions. This is done by calculating the opposed position to the current position of an living agent in population. For ensuring random characteristics of new found position, a random agent from population, and a random agent in the search space will be chosen for participating in this operation. The mathematical formulas are given as follows:
 \begin{enumerate}
 \item Select a random solution $SL1_{rand}$ in the search space.
 \item Select a random existing solution $SL2_{rand}$ in the population.
@@ -468,8 +469,6 @@ SL_{rand} = 2*SL2_{rand} - SL1_{rand}
 	The CFNN can take the advantages of its structure and diminish the problem raising when the model structures are too simple (FFNN) or too complex (LSTM, GRU) because of the connection added between the input layer and output layer. However, the gradient descent (GD) algorithm which is used for optimizing CFNN still have its own drawback of being stuck in local minimum and slow convergence speed. 
 	
 	All thing considered, we proposed a new model ISLO-CFNN to improve the weak points of origin CFNN model by replacing GD algorithm by above proposed ISLO algorithm in optimizing the parameters of the network while training process. Also, in order to evaluate the performance of our proposed model, we would build both our model and existing models for the purposes of evaluation and comparison.
-	
-	
 	
 	Fig. \ref{fig_model_phases} illustrates the skeleton of forecasting system designed. There are four main phases, each of them is indispensable in our model. The phases are Collecting data, Data pre-processing, Building and Training model and Deploy prediction model. Firstly, historical records about resources used are collected and saved in lines in a log file. These information is extracted and pre-processed before being used for training the prediction model that is designed. In the final stage, the trained model is applied for data in current time, and it will predict the amount of resources needed. Specifically, in Building and Training model stage, CFNN model is built with fixed nodes in all layers, and it will be optimized by ISLO algorithm, which is discussed in detail in Section \ref{improved_ISLO}. We will discuss about each phase as below.
 	
@@ -547,9 +546,6 @@ SL_{rand} = 2*SL2_{rand} - SL1_{rand}
 	Solution\_length = (1+i)*h + (1+h)*o + (1+i)*o
 \end{equation}
 Where $i, h, o$ is the number of input, hidden and output neurons,  respectively (in time-series prediction, the number of output neurons is one).
-	
-	Secondly, the fitness value of each agent in ISLO is considered as the loss value of the CFNN model with the parameter set from the agent and input data. We utilize the loss function Mean Square Error (MSE) to calculate the difference between the actual and predicted output values by generated agent for all samples in the training set. 
-	
 \begin{figure}[!ht] 
    \centering
    \includegraphics[width=0.75\linewidth]{pdf/model/solution_creation}
@@ -557,21 +553,28 @@ Where $i, h, o$ is the number of input, hidden and output neurons,  respectively
   \label{fig_solution_encode} 
 \end{figure}
 	
-	The workflow of ISLO applied in this work for training CFNN can be presented by the following steps:
+	Secondly, the fitness value of each agent in ISLO is considered as the loss value of the CFNN model with the parameter set from the agent and input data. We utilize the loss function Mean Square Error (MSE) to calculate the difference between the actual and predicted output values by generated agent for all samples in the training set. 
+\begin{figure}[!ht] 
+   \centering
+   \includegraphics[width=1.0\linewidth]{pdf/model/islo_cfnn_workflow}
+  \caption{The work flow of ISLO-CFNN model.} 
+  \label{fig_islo_cfnn_workflow} 
+\end{figure}	
+
+	The workflow of ISLO applied in this work for training CFNN are depicted in Fig. \ref{fig_islo_cfnn_workflow}, and can be generally presented by the following steps:
 	
 \begin{enumerate}
-\item Initialization: pre-define the number of search agents in ISLO, which are randomly generated in the range [-1, 1]. Each parameter set of CFNN model is encoded to a vector playing a role as an agent in ISLO population. (See in Fig. \ref{fig_solution_encode}
+\item Initialization: pre-define the number of search agents in ISLO, which are randomly generated in the range [-1, 1]. Each parameter set of CFNN model is encoded to a vector playing a role as an agent in ISLO population. (See in Fig. \ref{fig_solution_encode})
 \item Calculate fitness value for each search agent: The quality of a solution is measured by the loss value of CFNN output. After being decoded into weights and biases vectors, a solution will be applied to form a CFNN model. Data samples in training set is then feed-forwarded through the network, generating predicted output values. Finally, the fitness value is calculated as the difference between predicted and actual output values through the MSE loss function.
 \item Update positions of all search agents following formulas of ISLO algorithm.
 \item Steps 2 and 3 are repeated until the difference is close enough, or the maximum number of iterations is reached.
+\item Return the best CFNN parameter set. 
 \end{enumerate}
 	     
-	
-	
-	
-
 \subsection{Deploy prediction model}
-\label{deploy}  
+\label{deploy}
+	
+	After obtaining CFNN model with the best parameter set by ISLO algorithm, the model is installed on servers and ready to predict the demand for resources in the future based on historical data.   
 	  
 \chapter{Experiments}
 \label{experiments}
