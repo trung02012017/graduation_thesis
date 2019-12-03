@@ -11,7 +11,7 @@
 \usepackage[linesnumbered,ruled]{algorithm2e}
 \usepackage{multicol}
 \usepackage{multirow}
-
+\usepackage{textcomp}
 
 \usepackage[bookmarks=false]{hyperref}
 \hypersetup{colorlinks,
@@ -47,7 +47,6 @@
 
 
 \renewcommand{\baselinestretch}{2.0}
-\DeclareUnicodeCharacter{2212}{-}
 \begin{document}
 
 \setlength{\abovedisplayskip}{3pt}
@@ -148,15 +147,21 @@ where $f_c$ is the activation function from the input layer to output layer, $C$
 \subsection{Short Term Memory (LSTM)}
 	Long short-term memory (LSTM)~\cite{hochreiter1997long} is a special kind of RNN created for learning long-term dependencies. LSTM units have 3 gates managing the contents of the memory. These gates are simple logistic functions of weighted sums, where the weights might be learnt by backpropagation. It means that, even though it seems a bit complicated, the LSTM perfectly fits into the neural network and its training process. With combining a forget gate in LSTM units, LSTM is capable to determine what it needs to remember and forget, so LSTM can work very well with dependent data , especially with time series data ~\cite{gers2002applying}, ~\cite{guo2016robust}, ~\cite{fu2016using}. The architecture of LSTM units is illustrated in Fig. \ref{model_lstm_gru}, and its mathematical model is briefly described as follows:
 	 The input gate (\ref{eq_lstm_1}) and the forget gate (\ref{eq_lstm_2}) manage the cell state (\ref{eq_lstm_4}), which is the long-term memory. The output gate (\ref{eq_lstm_3}) produces the output vector or hidden state (\ref{eq_lstm_5}), which is the memory focused for use. This memory system enables the network to remember for a long time, which was badly missing from vanilla recurrent neural networks. 
-	
-\begin{align} 
-i_t = sigmoid(W_ix_t + U_ih_{t-1}+b_i) \label{eq_lstm_1} \\
-f_t = sigmoid(W_fx_t + U_fh_{t-1}+b_f) \label{eq_lstm_2} \\
-o_t = sigmoid(W_ox_t + U_oh_{t-1}+b_o) \label{eq_lstm_3} \\
-c_t = f_t \odot c_{t-1} + i_t \odot tanh(W_cx_t + U_ch_{t-1} + b_c) \label{eq_lstm_4} \\
-h_t = o_t \odot tanh(c_t) \label{eq_lstm_5}
-\end{align}
-
+\begin{equation}\label{eq_lstm_1}
+i_t = sigmoid(W_ix_t + U_ih_{t-1}+b_i)
+\end{equation}
+\begin{equation}\label{eq_lstm_2}
+f_t = sigmoid(W_fx_t + U_fh_{t-1}+b_f)
+\end{equation}
+\begin{equation}\label{eq_lstm_3}
+o_t = sigmoid(W_ox_t + U_oh_{t-1}+b_o)
+\end{equation}
+\begin{equation}\label{eq_lstm_4}
+c_t = f_t \odot c_{t-1} + i_t \odot tanh(W_cx_t + U_ch_{t-1} + b_c)
+\end{equation}
+\begin{equation}\label{eq_lstm_5}
+h_t = o_t \odot tanh(c_t)
+\end{equation}
 \begin{figure}[!ht] 
    \centering
    \includegraphics[width=1.0\linewidth]{png/lstm_gru}
@@ -169,12 +174,15 @@ h_t = o_t \odot tanh(c_t) \label{eq_lstm_5}
 	Gated recurrent unit (GRU)~\cite{chung2014empirical} is essentially a simplified LSTM. Different form LSTM, GRU uses two gated called update gate and reset gate. Basically, these gates are two vectors managing what information should be passed to the output. In GRU, its gates can be trained to keep information from long ago, without washing it through time or remove information which is irrelevant to the prediction. It has the exact same role as LSTM in the network. The main difference is in the number of gates and weights — GRU is somewhat simpler. Like LSTM, GRU is also a widely chosen solution for time series forecasting such as in~\cite{langkvist2014review} and~\cite{bone2000recurrent} The srtucture of GRU units is presented in Fig. \ref{model_lstm_gru} following the mathematical model as below:
 	
 	The update gate~\ref{eq_gru_1} controls the information flow from the previous activation, and the addition of new information as well~\ref{eq_gru_3}, while the reset gate~\ref{eq_gru_2} is inserted into the candidate activation. Overall, it is pretty similar to LSTM. From these differences alone, it is hard to tell, which one is the better choice for a given problem. 
-	
-\begin{align} 
-z_t = sigmoid(W_zx_t + U_zh_{t−1} + b_z) \label{eq_gru_1} \\
-r_t = sigmoid(W_rx_t + U_rh_{t−1} + b_r) \label{eq_gru_2} \\
-h_t = z_t\odot h_{t-1} + (1 - z_t)\odot tanh(W_hx_t + U_h(r_th_{t-1}) + b_h) \label{eq_gru_3} \\
-\end{align}
+\begin{equation}\label{eq_gru_1}
+z_t = sigmoid(W_zx_t + U_zh_{t−1} + b_z)
+\end{equation}
+\begin{equation}\label{eq_gru_2}
+r_t = sigmoid(W_rx_t + U_rh_{t−1} + b_r)
+\end{equation}
+\begin{equation}\label{eq_gru_3}
+h_t = z_t\odot h_{t-1} + (1 - z_t)\odot tanh(W_hx_t + U_h(r_th_{t-1}) + b_h)
+\end{equation}
 \section{Fundamental knowledge}
 \label{fun_know}
 \subsection{Artificial Neural Network (ANN)}
@@ -255,7 +263,7 @@ Where $N$ is the number of data points, $y_t$ is the actual output value, $d_t$ 
 		
 \end{algorithm}
 
-Backpropagation algorithm is undoubtedly the most fundamental buiding block in an ANN. It It was first introduced in 1960s and almost 30 years later (1989) popularized by Rumelhart, Hinton and Williams in~\cite{rumelhart1988learning}. The algorithm is used to effectively train a neural network through a method called chain rule. In simple terms, after each forward pass through a network (propagation phase), backpropagation performs a backward pass while adjusting the model’s parameters (weights and biases) (weights updating phase).
+Backpropagation algorithm is undoubtedly the most fundamental buiding block in an ANN. It It was first introduced in 1960s and almost 30 years later (1989) popularized by Rumelhart, Hinton and Williams in~\cite{rumelhart1988learning}. The algorithm is used to effectively train a neural network through a method called chain rule. In simple terms, after each forward pass through a network (propagation phase), backpropagation performs a backward pass while adjusting the model\textquotesingle s parameters (weights and biases) (weights updating phase).
 
 \paragraph{\textbf{forward propagation phase}}
 \begin{enumerate}
@@ -269,7 +277,7 @@ Backpropagation algorithm is undoubtedly the most fundamental buiding block in a
 \item Updating weights and biases is done according to gradients' values 
 \end{enumerate}
 
-These two phases are repeated in each iteration during training. The algorithm will be stopped when the error from loss function reach a acceptable value or when the training iteration is large enough. The algorithm's pseudo code is presented in short in Algorithm \ref{algorithm_backprop}.
+These two phases are repeated in each iteration during training. The algorithm will be stopped when the error from loss function reach a acceptable value or when the training iteration is large enough. The algorithm\textquotesingle s pseudo code is presented in short in Algorithm \ref{algorithm_backprop}.
 
 \subsection{Swarm Optimization Algorithms}
 \label{swarm_opt}
@@ -329,25 +337,28 @@ These two phases are repeated in each iteration during training. The algorithm w
 \begin{enumerate}
 \item \textbf{Detecting and tracking phase}
 
-	Sea lions can identify the location of the prey and gather other members that will join the subgroup to organize the net following the encircling mechanism. This sea lion plays an important role as a leader for this hunting behavior and other members' position will be updated following the position of the prey. In SLnO algorithm, the prey is considered as the current best solution or the solution closest to the optimal solution. This behaviors is presented mathematically using Eq. (\ref{slno_eq1}) and Eq. (\ref{snlo_eq2}) as follows:
-\begin{align}
-Dist = |2B.P(t) - SL(t)| \label{slno_eq1} \\
-SL(t+1) = P(t) - Dist.C  \label{snlo_eq2}
-\end{align}
+	Sea lions can identify the location of the prey and gather other members that will join the subgroup to organize the net following the encircling mechanism. This sea lion plays an important role as a leader for this hunting behavior and other members' position will be updated following the position of the prey. In SLnO algorithm, the prey is considered as the current best solution or the solution closest to the optimal solution. This behaviors is presented mathematically using Eq. (\ref{slno_eq1}) and Eq. (\ref{slno_eq2}) as follows:
+\begin{equation}\label{slno_eq1}
+Dist = |2B.P(t) - SL(t)|
+\end{equation}
+\begin{equation}\label{slno_eq2}
+SL(t+1) = P(t) - Dist.C
+\end{equation}
 	
 	Where $Dist$ indicates the distance between the prey and the current sea lion; $P(t)$ and $SL(t)$ represent the position vectors of best solution and the sea lion in iteration $t$ respectively; $B$ is random vector in the range $[0, 1]$ which is multiplied by 2 to increase the search space, helping the search agent find optimal or near optimal position. $SL(t+1)$ is the new position of search agent after updating and $C$ is linearly decreased from 2 to 0 over the course of iterations, indicating the encircling mechanism of sea lion group when they move towards the prey and surround them.
 
 \item \textbf{Vocalization phase}
 	
 	When a sea lion recognize a group of their prey (such as fish), it will call other sea lions in their group for gathering and creating a net to capture the prey. That sea lion is considered as the leader and it will lead the group of sea lions moving towards and decide the behaviors of the group. These behaviors are modeled mathematically as shown in Eq. (\ref{snlo_eq3}), (\ref{snlo_eq4}) and (\ref{snlo_eq5}):
-	
-\begin{align} 
-SP_{leader} = |(V_1(1+V_2)/V_2| \label{snlo_eq3} \\
-V_1 = \sin(\theta) \label{snlo_eq4} \\
-V_2 = \sin(\phi) \label{snlo_eq5}
-\end{align}
-
-
+\begin{equation}\label{snlo_eq3}
+SP_{leader} = |(V_1(1+V_2)/V_2|
+\end{equation}
+\begin{equation}\label{snlo_eq4}
+V_1 = \sin(\theta)
+\end{equation}
+\begin{equation}\label{snlo_eq5}
+V_2 = \sin(\phi)
+\end{equation}
  Where $SP_{leader}$ is the value that illustrates the decision of the leader followed by other sea lions in the group; $\theta$ and $\phi$ are the angles of its voice's reflection and refraction in the water, respectively.
  
 \item \textbf{Attacking phase (Exploitation phase)}
@@ -356,7 +367,7 @@ V_2 = \sin(\phi) \label{snlo_eq5}
  	
 \begin{itemize}
 \item \textit{Dwindling encircling technique:}
-	This behavior depends on the value of $C$ in Eq. \ref{snlo_eq2}. $C$ is linearly decreased from 2 to 0 over the course of iterations, so this allows the search space around the current best position to shrink and force other search agents to updated in this search space as well. Therefore, a new updated position of a sea lion can be located anywhere in the search space between its current position and the location of the present best agent.
+	This behavior depends on the value of $C$ in Eq. \ref{slno_eq2}. $C$ is linearly decreased from 2 to 0 over the course of iterations, so this allows the search space around the current best position to shrink and force other search agents to updated in this search space as well. Therefore, a new updated position of a sea lion can be located anywhere in the search space between its current position and the location of the present best agent.
 
 \item \textit{Circling updating position}: Sea lions chase bait ball of fishes and hunt them starting from edges. Eq. \ref{slno_eq6} is proposed in this regard:
 \begin{equation} \label{slno_eq6}
@@ -367,12 +378,13 @@ SL(t+1) = |P(t) - SL(t)|.\cos(2 \pi m) + P(t)
 	
 \item \textbf{Searching for prey (Exploration phase)}
 	In exploration phase, the search agents update their positions based on a randomly selected sea lion. The condition that allows exploitation phase to happen is when the value of $C$ becomes greater than 1, and the process of finding a new agent is presented by Eq. (\ref{slno_eq7}) and (\ref{slno_eq8}) as below:
-\begin{align}
-Dist = |2B.SL_{rnd}(t) - SL(t)| \label{slno_eq7} \\
-SL(t+1) = SL_{rnd}(t) - Dist.C \label{slno_eq8}
-\end{align}   
-
-	Where $SL_{rnd}(t)$ is a random sea lion that is selected randomly from current population.
+\begin{equation}\label{slno_eq7}
+Dist = |2B.SL_{rnd}(t) - SL(t)|
+\end{equation}
+\begin{equation}\label{slno_eq8}
+SL(t+1) = SL_{rnd}(t) - Dist.C 
+\end{equation}  
+Where $SL_{rnd}(t)$ is a random sea lion that is selected randomly from current population.
 
 \end{enumerate}	
 
@@ -431,6 +443,7 @@ where $P_i(t)$ is the personal best position of agent $i$ up to time $t$, and $r
 	In new operation \ref{islo_eq3}, the new-updated position of an individual is the result of adding two vectors, one is the vector presenting the direction of that individual towards the best agent, and another is the direction towards its own experiences in history. The influences of both two factors are determined by two random numbers $r_1$ and $r_2$. $r_1$ and $r_2$ play an extremely important role in the updating mechanism,  because  they create random characteristics for the operation, helping ISLO avoiding local minimum and taking advantages of the two factors. Without the appearance of $r_1$ and $r_2$, the updated position is always affected exactly half by best agent and half by its experience, which may lead to degradation of the diversity of population. 
 
 \subsection{Exploration phase improvement}
+\label{imprv_explore}
 	
 	In origin SLnO algorithm, new-born agents that are created in exploration phase cause a poor exploration search ability because of inheriting features of existing solutions. In order to tackle this problem, exploration phase is required the operation to have the ability of creating a decent new-born solution. New updated position need to satisfy two characteristics: carrying random features for ensuring a strong capability of exploration phase, and landing in a position decent enough (close enough to the best agent position) for updating positions in the next generation. From that motivation, a method called Opposition-based Learning (OBL) \cite{tizhoosh2005opposition}, which is successfully applied for enhancing bio-inspired optimization algorithms such as GA \cite{tizhoosh2005opposition}, PSO \cite{wang2007opposition} \cite{tang2009enhanced} in solving several optimization problems including finding parameter for deep learning models \cite{rashid2010improved} \cite{nguyen2019efficient} is utilized as a base model for our improvement in exploration operation of SLnO. 
 	
@@ -527,9 +540,9 @@ SL_{rand} = 2*SL2_{rand} - SL1_{rand}
 \subsection{Building and Training model}
 \label{main_model}
 
-	In this phase, pre-processed data is used for training our proposed model called ISLO-CFNN, which is CFNN trained under the optimization of ISLO algorithm. ISLO algorithm is applied to train a CFNN model with one hidden layer. There is two key aspects needed to be taken into consideration: firstly, the formation of an agent in ISLO and the selection of fitness function.
+	In this phase, pre-processed data is used for training our proposed model called ISLO-CFNN, which is CFNN being trained by the optimization of ISLO algorithm. ISLO algorithm is applied to train a CFNN model with one hidden layer. There is two key aspects needed to be taken into consideration: firstly, the formation of an agent in ISLO and the selection of fitness function.
 	
-	Firstly, each agent in the population in ISLO are presented as one solution for CFNN model, which means a search agent is a one-dimensional vector created by concatenating weights and biases of CFNN. Therefore, the features of a search agent contains three elements: a set of weights connecting the input layer with hidden layer, a set of weights connecting the hidden layer with output layer and also, a set of weights connecting the input layer with output layer. Therefore,  the length of a solution can be calculated by Eq. \ref{eq_length_solution}.	
+	Firstly, each agent in the population in ISLO are presented as one solution for CFNN model, which means that a search agent is a one-dimensional vector created by concatenating weights and biases of CFNN. Therefore, the features of a search agent contains three elements: a set of weights connecting the input layer with hidden layer, a set of weights connecting the hidden layer with output layer and also and a set of weights connecting the input layer with output layer. Therefore,  the length of a solution can be calculated by Eq. \ref{eq_length_solution}.	
 \begin{equation} \label{eq_length_solution}
 	Solution\_length = (1+i)*h + (1+h)*o + (1+i)*o
 \end{equation}
@@ -561,6 +574,8 @@ Where $i, h, o$ is the number of input, hidden and output neurons,  respectively
 \label{deploy}  
 	  
 \chapter{Experiments}
+\label{experiments}
+
 \chapter{Conclusions}
 
 \appendix
