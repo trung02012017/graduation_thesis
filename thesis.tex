@@ -47,7 +47,7 @@
 
 
 \renewcommand{\baselinestretch}{1.0}
-\DeclareUnicodeCharacter{2212}{-}
+% \DeclareUnicodeCharacter{2212}{-}
 \begin{document}
 
 \setlength{\abovedisplayskip}{3pt}
@@ -172,7 +172,7 @@ h_t = o_t \odot tanh(c_t)
 
 \subsection{Gated Recurrent Units (GRU)}
 
-	Gated recurrent unit (GRU)~\cite{chung2014empirical} is essentially a simplified LSTM. Different form LSTM, GRU uses two gated called update gate and reset gate. Basically, these gates are two vectors managing what information should be passed to the output. In GRU, its gates can be trained to keep information from long ago, without washing it through time or remove information which is irrelevant to the prediction. It has the exact same role as LSTM in the network. The main difference is in the number of gates and weights — GRU is somewhat simpler. Like LSTM, GRU is also a widely chosen solution for time series forecasting such as in~\cite{langkvist2014review} and~\cite{bone2000recurrent} The srtucture of GRU units is presented in Fig. \ref{model_lstm_gru} following the mathematical model as below:
+	Gated recurrent unit (GRU)~\cite{chung2014empirical} is essentially a simplified LSTM. Different form LSTM, GRU uses two gated called update gate and reset gate. Basically, these gates are two vectors managing what information should be passed to the output. In GRU, its gates can be trained to keep information from long ago, without washing it through time or remove information which is irrelevant to the prediction. It has the exact same role as LSTM in the network. The main difference is in the number of gates and weights - GRU is somewhat simpler. Like LSTM, GRU is also a widely chosen solution for time series forecasting such as in~\cite{langkvist2014review} and~\cite{bone2000recurrent} The srtucture of GRU units is presented in Fig. \ref{model_lstm_gru} following the mathematical model as below:
 	
 	The update gate~\ref{eq_gru_1} controls the information flow from the previous activation, and the addition of new information as well~\ref{eq_gru_3}, while the reset gate~\ref{eq_gru_2} is inserted into the candidate activation. Overall, it is pretty similar to LSTM. From these differences alone, it is hard to tell, which one is the better choice for a given problem. 
 \begin{equation}\label{eq_gru_1}
@@ -286,9 +286,45 @@ These two phases are repeated in each iteration during training. The algorithm w
 \label{opt_idea}
 \subsubsection{Particle Swarm Optimization (PSO)}
 \label{pso_standard}
-\subsubsection{Sea Lion Optimization Algorithm (SLnO)}
-\label{slno_standard}
+PSO~\cite{kennedy2010particle} is a very first swarm-based optimization, which is the premise of many other algorithms proposed in recent years. It emulates the behaviors of birds, fish and so forth when they forage for food and communicate as a swarm. In PSO system, a swarm contains several candidate solutions (also known as particles), which coexist in the search space of the problem with $D$ dimensions. The solution often cooperate and fly together to land on personal optimal positions. Over the course of time, the best personal position (its own best position in the past) of each particle and the global best position (the current best position of entire swarm) are recorded. The next position of a particle is updated based on the personal best (cognitive behavior) and the global best (social communication). With this approach, PSO combines local search (through personal best) with global search (through global best) to balance exploitation and exploration processes. PSO operation workflow is presented in Figure~\ref{fig_pso_algo}.
+	 
+\begin{figure}[!ht] 
+   \centering
+   \includegraphics[width=0.75\linewidth]{pdf/model/pso}
+  \caption{PSO flowchart} 
+  \label{fig_pso_algo} 
+\end{figure}
+	 
+Thus, each particle $i$ in swarm is described by two properties: its velocity $v_i$ and position $x_i$ in the search space. In each iteration, they are updated following the equation: 
 
+\begin{equation} \label{eq_pso_1}
+v_i^{t+1} = \omega.v_i^t + c_1.r_1(p_i^t - x_i^t) + c_2.r_2(g^t - x_i^t)
+\end{equation}
+\begin{equation} \label{eq_pso_2}
+x_i^{t+1} = x_i^t + v_i^t
+\end{equation}
+where 
+\begin{tabbing}
+	xxx\=xxxxxxi\=\kill
+	\>	$\omega$			\>	is inertia weight reduced linearly to zero through time; \\
+	\>	$v_i^t$			\>	$v_i^t = [v_{i1}, v_{i2}, ..., v_{iD}]$ and is the velocity;	\\
+	\>	$x_i^t$			\>	$x_i^t = [x_{i1}, x_{i2}, ..., x_{iD}]$ and is the position of 	\\
+	\> 	\phantom{inv}	\> 	particle $i$ in current time $t$ respectively;\\
+	\>	$p_i^t$			\>	is its personal best position in current time $t$; \\
+	\>	$g^t$			\>	is global best position ever of entire swarm up to time $t$; \\
+	\>	$c_1, c_2$ 		\>	are acceleration coefficients that pull particles \\
+	\>	\phantom{inv} 	\>	faster to personal best and global best respectively;\\
+	\>	$r_1, r_2$ 		\>	are random number which is uniformly distributed in $[0,1]$; \\
+\end{tabbing}
+\subsubsection{Sea Lion Optimization Algorithm (SLnO)}
+\label{slno_standard} 
+
+	Sea lions are considered as one of the most intelligent animals in wildlife which live on both lands and the oceans. They usually live in a large swarm with thousands of members, and this large swarm may contains many subgroups with their own hierarchy as well. In each subgroup, there is a dominant sea lion playing a role as the leader of the subgroup. All activities of subgroups are decided following the leader ship of that sea lion.
+	
+%	The most important characteristics of sea lions is that they have senses helping them to recognize and analyze immediately the movement of their prey such as fish even in the dark underwater environments. Like many predators, sea lions have their eyes point forward so that they can easily focus on the prey, but what makes their eyes different is that they can open pupils so widely to let much of light go through their eyes which helps them to see more clearly in underwater environment. Moreover, sea lions have their super-sensitive whiskers to locate exactly where the fish are. This can be done when the fish swim around, they leave waves or wakes behind them, and according to the intensity as well as the direction of waves, by using whiskers sea lions are able to detect and follow them.
+	
+	The intelligence of sea lions can be seen through the way they organize their groups and hunt the prey. Hunting as a group allow sea lions to have more opportunities of obtaining more food especially when the amount of fish is quite large. Usually, sea lions capture their prey together by circling the prey in a narrow ball, and the size of this "ball" continues to be decrease until the prey is totally wiped out. The main phases of hunting behaviors of sea lions can be illustrated as 3 steps as follows:
+	
 \begin{algorithm}[!t]
 \caption{Sea Lion Optimization (SLnO)}
 \label{algorithm_slno}
@@ -319,13 +355,7 @@ These two phases are repeated in each iteration during training. The algorithm w
 	
 }
  \textbf{Results:}  $X_*, f(X_*)$
-\end{algorithm} 
-
-	Sea lions are considered as one of the most intelligent animals in wildlife which live on both lands and the oceans. They usually live in a large swarm with thousands of members, and this large swarm may contains many subgroups with their own hierarchy as well. In each subgroup, there is a dominant sea lion playing a role as the leader of the subgroup. All activities of subgroups are decided following the leader ship of that sea lion.
-	
-%	The most important characteristics of sea lions is that they have senses helping them to recognize and analyze immediately the movement of their prey such as fish even in the dark underwater environments. Like many predators, sea lions have their eyes point forward so that they can easily focus on the prey, but what makes their eyes different is that they can open pupils so widely to let much of light go through their eyes which helps them to see more clearly in underwater environment. Moreover, sea lions have their super-sensitive whiskers to locate exactly where the fish are. This can be done when the fish swim around, they leave waves or wakes behind them, and according to the intensity as well as the direction of waves, by using whiskers sea lions are able to detect and follow them.
-	
-	The intelligence of sea lions can be seen through the way they organize their groups and hunt the prey. Hunting as a group allow sea lions to have more opportunities of obtaining more food especially when the amount of fish is quite large. Usually, sea lions capture their prey together by circling the prey in a narrow ball, and the size of this "ball" continues to be decrease until the prey is totally wiped out. The main phases of hunting behaviors of sea lions can be illustrated as 3 steps as follows:
+\end{algorithm}
 	
 \begin{itemize}
 \item Tracking and chasing the prey using their senses.

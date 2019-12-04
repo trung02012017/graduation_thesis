@@ -5,9 +5,10 @@
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Traditional RNN architechture. Source: https://colah.github.io/posts/2015-08-Understanding-LSTMs/\relax }}{11}{figure.caption.6}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces LSTM and GRU architechture. Source: https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21\relax }}{13}{figure.caption.7}
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Activation functions. Source: https://medium.com/@srnghn/deep-learning-overview-of-neurons-and-activation-functions-1d98286cf1e4\relax }}{14}{figure.caption.8}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces PSO flowchart\relax }}{19}{figure.caption.10}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Proposed model design\relax }}{28}{figure.caption.12}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Encoding process transforming a parameter set in CFNN into an agent in ISLO algorithm. ($W^*$ indicates weights and biases between 2 layers)\relax }}{31}{figure.caption.15}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces The work flow of ISLO-CFNN model.\relax }}{31}{figure.caption.16}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Proposed model design\relax }}{29}{figure.caption.13}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Encoding process transforming a parameter set in CFNN into an agent in ISLO algorithm. ($W^*$ indicates weights and biases between 2 layers)\relax }}{32}{figure.caption.16}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces The work flow of ISLO-CFNN model.\relax }}{32}{figure.caption.17}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

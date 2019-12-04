@@ -4,45 +4,45 @@ The top-level auxiliary file: thesis.aux
 The style file: plain.bst
 Database file #1: references.bib
 Warning--can't use both volume and number fields in warsito2018cascade
-You've used 23 entries,
+You've used 24 entries,
             2118 wiz_defined-function locations,
-            642 strings with 8313 characters,
-and the built_in function-call counts, 9052 in all, are:
-= -- 935
-> -- 396
-< -- 14
-+ -- 157
-- -- 132
-* -- 602
-:= -- 1424
-add.period$ -- 80
-call.type$ -- 23
-change.case$ -- 130
+            646 strings with 8386 characters,
+and the built_in function-call counts, 9440 in all, are:
+= -- 979
+> -- 403
+< -- 15
++ -- 160
+- -- 134
+* -- 621
+:= -- 1479
+add.period$ -- 83
+call.type$ -- 24
+change.case$ -- 134
 chr.to.int$ -- 0
-cite$ -- 24
-duplicate$ -- 376
-empty$ -- 701
-format.name$ -- 132
-if$ -- 1976
+cite$ -- 25
+duplicate$ -- 396
+empty$ -- 733
+format.name$ -- 134
+if$ -- 2066
 int.to.chr$ -- 0
-int.to.str$ -- 23
-missing$ -- 24
-newline$ -- 119
-num.names$ -- 46
-pop$ -- 147
+int.to.str$ -- 24
+missing$ -- 25
+newline$ -- 124
+num.names$ -- 48
+pop$ -- 151
 preamble$ -- 1
-purify$ -- 110
+purify$ -- 113
 quote$ -- 0
-skip$ -- 286
+skip$ -- 305
 stack$ -- 0
-substring$ -- 579
-swap$ -- 131
-text.length$ -- 14
+substring$ -- 616
+swap$ -- 141
+text.length$ -- 15
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 88
+type$ -- 92
 warning$ -- 1
-while$ -- 88
-width$ -- 25
-write$ -- 268
+while$ -- 93
+width$ -- 26
+write$ -- 279
 (There was 1 warning)

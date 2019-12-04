@@ -69,6 +69,11 @@ Sepp Hochreiter and J{\"u}rgen Schmidhuber.
 \newblock Long short-term memory.
 \newblock {\em Neural computation}, 9(8):1735--1780, 1997.
 
+\bibitem{kennedy2010particle}
+James Kennedy.
+\newblock Particle swarm optimization.
+\newblock {\em Encyclopedia of machine learning}, pages 760--766, 2010.
+
 \bibitem{koskela1996time}
 Timo Koskela, Mikko Lehtokangas, Jukka Saarinen, and Kimmo Kaski.
 \newblock Time series prediction with multilayer perceptron, fir and elman

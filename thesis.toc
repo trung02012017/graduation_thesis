@@ -24,15 +24,15 @@
 \contentsline {subsection}{\numberline {2.4.2}Swarm Optimization Algorithms}{18}{subsection.2.4.2}
 \contentsline {subsubsection}{\numberline {2.4.2.1}Idea and motivation}{18}{subsubsection.2.4.2.1}
 \contentsline {subsubsection}{\numberline {2.4.2.2}Particle Swarm Optimization (PSO)}{18}{subsubsection.2.4.2.2}
-\contentsline {subsubsection}{\numberline {2.4.2.3}Sea Lion Optimization Algorithm (SLnO)}{18}{subsubsection.2.4.2.3}
-\contentsline {chapter}{\numberline {3}Improved Sea Lion Optimization (ISLO) algorithm and Proposed Model for Auto-Scaling (ISLO-CFNN)}{23}{chapter.3}
-\contentsline {section}{\numberline {3.1}Improved Sea Lion Optimization (ISLO)}{23}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Exploitation phase improvement}{24}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Exploration phase improvement}{25}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}Proposed model for auto-scaling problem in Cloud Computing}{26}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Collecting data}{28}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Data pre-processing}{29}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Building and Training model}{30}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Deploy prediction model}{32}{subsection.3.2.4}
-\contentsline {chapter}{\numberline {4}Experiments}{33}{chapter.4}
-\contentsline {chapter}{\numberline {5}Conclusions}{34}{chapter.5}
+\contentsline {subsubsection}{\numberline {2.4.2.3}Sea Lion Optimization Algorithm (SLnO)}{20}{subsubsection.2.4.2.3}
+\contentsline {chapter}{\numberline {3}Improved Sea Lion Optimization (ISLO) algorithm and Proposed Model for Auto-Scaling (ISLO-CFNN)}{24}{chapter.3}
+\contentsline {section}{\numberline {3.1}Improved Sea Lion Optimization (ISLO)}{24}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Exploitation phase improvement}{25}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Exploration phase improvement}{26}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Proposed model for auto-scaling problem in Cloud Computing}{27}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Collecting data}{29}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Data pre-processing}{30}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Building and Training model}{31}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Deploy prediction model}{33}{subsection.3.2.4}
+\contentsline {chapter}{\numberline {4}Experiments}{34}{chapter.4}
+\contentsline {chapter}{\numberline {5}Conclusions}{35}{chapter.5}
