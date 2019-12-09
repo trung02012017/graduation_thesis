@@ -1,4 +1,4 @@
-\documentclass[a4paper,12pt,2p]{report}
+\documentclass[a4paper,13pt,2p]{report}
 
 \usepackage{graphicx}
 \usepackage[font=normalsize]{caption}
@@ -46,7 +46,7 @@
 \setlength{\parindent}{50pt}
 
 
-\renewcommand{\baselinestretch}{1.0}
+\renewcommand{\baselinestretch}{1.5}
 % \DeclareUnicodeCharacter{2212}{-}
 \begin{document}
 
@@ -67,224 +67,21 @@
 % body of thesis comes here
 
 \chapter{Introduction}
+\label{ch:introduction}
 \section{Problems}
 \section{Summary}
 
 
 \chapter{Materials and background}
-
 \label{ch:background}
 
-\section{Cloud Computing}
-\section{Auto-scaling problem}
-\section{Well-known machine learning models for Auto-scaling in cloud computing}
-\label{ml_timeseries}
 
-	Recent developments in cloud computing including resource management have resulted in a significant interest in resource usage prediction . Various methods have been proposed for solving this problem with different aspects, objectives and applications ~\cite{amiri2017survey}. In this section, we focus on several Artificial Neural Network (ANN) models that are used for tackling the time-series characteristic in resource usage forecast in cloud computing environment.
-	Deep Feed-forward Neural Network, also called Feed-forward Neural Network (FFNN) are the quintessential deep learning models. The goal of all FFNN is to approximate some functions $f^*$.  In Regression problems, $y = f^*(x)$ maps an input $x$ to a value $y$. A feed-forward network defines a mapping $y = f(x,\theta)$ and learns the value of the parameters $\theta$ that result in the best function approximation. ~\cite{Goodfellow-et-al-2016}. These models are called feed-forward because information flows through the function being evaluated from $x$, through the intermediate computations used to define $f$, and finally to the output $y$. There are no feedback connections in which outputs of the model are fed back into itself. When feed-forward neural networks are extended to include feedback connections, they are called recurrent neural networks, which will be discussed in ~\ref{model_rnn}.
-	
-	In general, Multi-Layer Perceptrons (MLPs) models contain several disparate layers. The first layer is input layer taking information $x$ as input for the network. The last layer is called output layer, whose value is the result of $y$ with input $x$. The layers between the input and output layers are hidden layers. The structures of hidden layers are extremely diverse, varying from model to model. As presented in Fig. \ref{fig_model_mlp}, a hidden layer of a simple FFNN is a group of neurons with no connection to each other, while in Recurrent Neural Networks (RNN), and Convolution Neural Network (CNN) hidden layer is a recurrent layer, and convolution layer respectively. 
-	
-	The Deep Neural Networks that are applied for Time series prediction will have input neurons presenting the historical data. The models utilize information from data in the past for forecasting future data. Input data presented as $x_1, x_2, ..., x_t$ is considered as historical values up to time t, which is used to predict the value at the time $t+1$. In other words, Deep Neural Networks will learn from data and approximate a function transforming the historical data up to time $t$ to the data at the time $t+1$ as follows:
-\begin{equation} \label{eq_ffnn_1}
-x(t+1) = y = f(x_1, x_2, ..., x_t)
-\end{equation}
-	
-	 In this section, we summarize several Deep Neural Network models, which are widely used for time series forecasting. They are simple Multi-Layer Perceptrons (MLPs), Cascade Forward Neural Network (CFNN) and Recurrent-based Neural Network including traditional Recurrent Neural Network (RNN), Long-Short Term Memory (LSTM) and Gated Recurrent Units (GRU). Each method will be presented below with brief ideas and mathematical formulas. 
+\section{Meta-heuristic Optimization}
+\label{sec:meta_heuristic}
+\subsection{Idea and motivation}
+\label{meta_heuristic_idea}
 
-\begin{figure}[!ht] 
-   \centering
-   \includegraphics[width=0.75\linewidth]{pdf/model/model_ffnn}
-  \caption{An example of MLPs model in time-series prediction.} 
-  \label{fig_model_mlp} 
-\end{figure}
-
-\subsection{Multi-Layer Perceptrons (MLPs)}
-\label{model_mlp}
-	
-	The additional layers added between input layer and output layer make network architecture contain hidden layers and called Multi-Layer Perceptrons (MLPs). The input data is fed through input layer to hidden layers in the weighted form. The information from input data $X$ is distributed to the neurons in hidden layers and then processed by an activation function. The activation function in hidden layers are non-linear function playing a role as a transfer function, helping MLPs learn non-linear characteristics of the data. The information after being processed by hidden layers then are sent to output layer in the weighted sum, and also go through an activation function as well, creating the output value $y$. MLPs model is used in predicting time series data ~\cite{azoff1994neural}, ~\cite{koskela1996time}.  Fig. \ref{fig_model_mlp} shows a MLPs with a 4-neuron input layer and one output layer. In general,  the mathematical equation of the MLPs architecture can be written as follows:
-\begin{equation} \label{eq_mlp_1}
-H = f_h(W_h^TX + b_h)
-\end{equation}
-\begin{equation} \label{eq_mlp_2}
-y = O = f_o(W_o^TH + b_o
-\end{equation}
-
-Where $X$ is the input data, $H$ and $O$ are the information after being fed through the hidden and output layers. $W_h$, $b_h$ and $W_o$, $b_o$ are weights and biases, while $f_h$ and $f_o$ are activation functions of hidden layer and output layer, respectively.
-
-
-\subsubsection{Cascade Forward Neural Network (CFNN)}
-\label{model_cfnn}
-
-The main difference between CFNN and MLPs is that in CFNN, perceptron connection is added directly between neurons in input layer and output layer, while in MLPs, that connection is indirect through the hidden layer. The output layer of CFNN perceives both transformed information that is output of hidden layer, and the raw information from input data. This Deep Neural Network model was first used for forecasting monthly palm oil price in the Europe market in ~\cite{warsito2018cascade}. The architecture of CFNN with 4-neuron input layer is illustrated in Fig. \ref{fig_model_cfnn}, and the mathematical formulas for CFNN model are presented as follows:
-\begin{equation}\label{eq_cfnn_1}
-H = f_h(W_h^TX + b_h)
-\end{equation}
-\begin{equation}\label{eq_cfnn_2}
-C = f_c(W_c^TX) + b_c
-\end{equation}
-\begin{equation}\label{eq_cfnn_3}
-y = O = f_o(W_o^TH + b_o) + C
-\end{equation} 
-where $f_c$ is the activation function from the input layer to output layer, $C$ is the output value of $f_c$, and $W_c, b_c$ are weights and biases of the connection, respectively.
-
-\begin{figure}[!ht] 
-   \centering
-   \includegraphics[width=0.75\linewidth]{pdf/model/model_cfnn}
-  \caption{An example of CFNN model in time-series prediction.} 
-  \label{fig_model_cfnn} 
-\end{figure}
-
-
-\subsection{Recurrent Neural Network (RNN)}
-\label{model_rnn}
-	Recurrent neural networks (RNNs) are dynamical systems that are specifically designed for temporal problems, as they have both feed-back and feed-forward connections (Fig. \ref{model_rnn}). RNN remembers the past and  its decisions are influenced by what it has learned from the past. RNNs can take one or more input vectors and produce one or more output vectors and the output(s) are influenced not just by weights applied on inputs like a regular MLPs, but also by a state vector representing the context based on prior input(s)/output(s),  so the same input could produce a different output depending on previous inputs in the series. For that reason, RNN is one of the most popular models being used for modeling time series data~\cite{zhang2000predicting},~\cite{connor1994recurrent},~\cite{chandra2012cooperative}. There are two popular and efficient RNN models that work really well: Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU) which are discussed below. 
-\begin{figure}[!ht] 
-   \centering
-   \includegraphics[width=1.0\linewidth]{png/rnn_unrolled}
-  \caption{Traditional RNN architechture. Source: https://colah.github.io/posts/2015-08-Understanding-LSTMs/} 
-  \label{model_lstm_gru} 
-\end{figure}
-\subsection{Short Term Memory (LSTM)}
-	Long short-term memory (LSTM)~\cite{hochreiter1997long} is a special kind of RNN created for learning long-term dependencies. LSTM units have 3 gates managing the contents of the memory. These gates are simple logistic functions of weighted sums, where the weights might be learnt by backpropagation. It means that, even though it seems a bit complicated, the LSTM perfectly fits into the neural network and its training process. With combining a forget gate in LSTM units, LSTM is capable to determine what it needs to remember and forget, so LSTM can work very well with dependent data , especially with time series data ~\cite{gers2002applying}, ~\cite{guo2016robust}, ~\cite{fu2016using}. The architecture of LSTM units is illustrated in Fig. \ref{model_lstm_gru}, and its mathematical model is briefly described as follows:
-	 The input gate (\ref{eq_lstm_1}) and the forget gate (\ref{eq_lstm_2}) manage the cell state (\ref{eq_lstm_4}), which is the long-term memory. The output gate (\ref{eq_lstm_3}) produces the output vector or hidden state (\ref{eq_lstm_5}), which is the memory focused for use. This memory system enables the network to remember for a long time, which was badly missing from vanilla recurrent neural networks. 
-\begin{equation}\label{eq_lstm_1}
-i_t = sigmoid(W_ix_t + U_ih_{t-1}+b_i)
-\end{equation}
-\begin{equation}\label{eq_lstm_2}
-f_t = sigmoid(W_fx_t + U_fh_{t-1}+b_f)
-\end{equation}
-\begin{equation}\label{eq_lstm_3}
-o_t = sigmoid(W_ox_t + U_oh_{t-1}+b_o)
-\end{equation}
-\begin{equation}\label{eq_lstm_4}
-c_t = f_t \odot c_{t-1} + i_t \odot tanh(W_cx_t + U_ch_{t-1} + b_c)
-\end{equation}
-\begin{equation}\label{eq_lstm_5}
-h_t = o_t \odot tanh(c_t)
-\end{equation}
-\begin{figure}[!ht] 
-   \centering
-   \includegraphics[width=1.0\linewidth]{png/lstm_gru}
-  \caption{LSTM and GRU architechture. Source: https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21} 
-  \label{model_lstm_gru} 
-\end{figure}
-
-\subsection{Gated Recurrent Units (GRU)}
-
-	Gated recurrent unit (GRU)~\cite{chung2014empirical} is essentially a simplified LSTM. Different form LSTM, GRU uses two gated called update gate and reset gate. Basically, these gates are two vectors managing what information should be passed to the output. In GRU, its gates can be trained to keep information from long ago, without washing it through time or remove information which is irrelevant to the prediction. It has the exact same role as LSTM in the network. The main difference is in the number of gates and weights - GRU is somewhat simpler. Like LSTM, GRU is also a widely chosen solution for time series forecasting such as in~\cite{langkvist2014review} and~\cite{bone2000recurrent} The srtucture of GRU units is presented in Fig. \ref{model_lstm_gru} following the mathematical model as below:
-	
-	The update gate~\ref{eq_gru_1} controls the information flow from the previous activation, and the addition of new information as well~\ref{eq_gru_3}, while the reset gate~\ref{eq_gru_2} is inserted into the candidate activation. Overall, it is pretty similar to LSTM. From these differences alone, it is hard to tell, which one is the better choice for a given problem. 
-\begin{equation}\label{eq_gru_1}
-z_t = sigmoid(W_zx_t + U_zh_{t−1} + b_z)
-\end{equation}
-\begin{equation}\label{eq_gru_2}
-r_t = sigmoid(W_rx_t + U_rh_{t−1} + b_r)
-\end{equation}
-\begin{equation}\label{eq_gru_3}
-h_t = z_t\odot h_{t-1} + (1 - z_t)\odot tanh(W_hx_t + U_h(r_th_{t-1}) + b_h)
-\end{equation}
-\section{Fundamental knowledge}
-\label{fun_know}
-\subsection{Artificial Neural Network (ANN)}
-\label{ann_know}
-\subsubsection{Activation functions}
-\label{ann_act_func}
-
-\begin{figure}[!ht] 
-   \centering
-   \includegraphics[width=0.33\linewidth]{png/sigmoid}
-   \includegraphics[width=0.33\linewidth]{png/tanh}
-   \includegraphics[width=0.33\linewidth]{png/relu}
-   \includegraphics[width=0.33\linewidth]{png/leakyrelu}
-  \caption{Activation functions. Source: https://medium.com/@srnghn/deep-learning-overview-of-neurons-and-activation-functions-1d98286cf1e4} 
-  \label{fig_activation} 
-\end{figure}
-
-	Activation functions also known as transfer functions are used to map input nodes to output nodes in certain fashion. Activation functions are extremely important for an ANN to learn and figure out features and characteristics of data which need a non-linear transformation to become outputs. There are the four most popular functions used in Deep Learning, their names are Sigmoid, Hyperbolic Tangent (Tanh), Rectified Linear Units (ReLU), Leaky ReLU and Exponential Linear Unit (ELU) (See in Fig. \ref{fig_activation}).
-	\paragraph{\textbf{Sigmoid function}}: takes a number as input and returns a value in $	[ \,0,1] \,$.
-	$$f(x) = \frac{1}{1+e^x}$$
-	\paragraph{\textbf{Hyperbolic Tangent (Tanh) function:}} $f(x) = \frac{2}{1+e^{-2x}} = 2\sigma(2x)-1$ is also like Sigmoid function but better, the range of the output from Tanh funtion is in $	[ \,-1,1] \,$. 
-	$$f(x) = \frac{2}{1+e^{-2x}} = 2\sigma(2x)-1$$
-	\paragraph{\textbf{Rectified Linear Unit (ReLU) function:}} is a function having threshold at $0$ value. It helps accelerate the training process in ANN, so it is used in almost all the complicated deep learning models such as RNNs and CNNs.
-	$$f(x) = max(0, x)$$
-	\paragraph{\textbf{Leaky ReLU function:}} is like ReLU function, but instead of setting thresholf value at $0$, Leaky ReLU extends the domain to $\alpha x$.
-	\[
-    f(x)= 
-\begin{cases}
-    x,& \text{if } x > 1\\
-    \alpha x, & \text{otherwise}
-\end{cases}
-\]
-\subsubsection{Loss functions}
-\label{ann_loss_func}
-Neural Networks are trained by backpropagation algorithm, which updates the weights parameters of ANN according to a loss value. The loss value is calculated by a loss function, so loss functions are totally vital when an ANN model is built for learning information from data. These functions will essentially measure how poorly a model is performing by comparing what the model is predicting with the actual value it is supposed to output. Therefore, choosing a loss function that is appropriate for penalizing model effectively is one of the most important tasks while working with data. There are a number of loss functions for deep learning models, and each of them have its own pros and cons. The common loss functions that are widely used in time-series forecasting will be presented as below:
-\begin{itemize}
-\item  \textbf{Mean Absolute Error (MAE)}: 
-$$MAE = \frac{\sum|e_t|}{N}$$
-\item  \textbf{Sum Square Error (SSE)}: $$SSE = \sum(e_t^2)$$
-\item  \textbf{Mean Square Error (MSE)}: $$MSE = \frac{\sum(e_t^2)}{N}$$
-\item  \textbf{Root Mean Square Error (RMSE)}: $$RMSE = \sqrt{MSE}$$
-\item  \textbf{Mean Absolute Percentage Error (MAPE)}: $$MAPE = \frac{1}{N}\sum|\frac{e_t}{y_t}|$$
-Where $N$ is the number of data points, $y_t$ is the actual output value, $d_t$ is the output value predicted by models, $e_t = d_t - y_t$ is the error value of the data point $t$.
-\end{itemize}
-	 
-\subsubsection{Backpropagation - the ANN Training Algorithm}
-\label{ann_backprop_alg}
-
-\begin{algorithm}[!t]
-	\caption{Backpropagation algorithm applied for FFNN with 1 hidden layer}
-	\label{algorithm_backprop}
-	\SetAlgoLined
-	Initialize randomly weights' value $w_p$\\ 
-	\Repeat{Until convergence or the number of iterations is enough}{
-	\textbf{Calculate output value(s) according to weights and input}  \\
-	
-		\For{$j= 1$ to $h$}
-		{
-			$H_{j} = \phi(\sum_i^n {x_i*w_{ij}^{[1]} + b_{ij}^{[1]}})$ \\ 
-			
-		}
-		$\widehat {{y_j}} = \phi(\sum_i^h{H_i * w_j^{[2]} + b_j^{[2]}})$\\
-		
-		\textbf{Calculate Loss value by loss function} \\ 
-		
-		$L(w) = loss(\widehat {{y_j}},{y_j})  $ \\
-		
-		 \textbf{Backpropagating Loss to weights}\\
-		
-		$ \bigtriangleup(w_{ij}^2) = \frac{\partial (L(w))}{\partial (w_{ij}^2)}$ \\
-		$ \bigtriangleup(w_{ij}^1) = \frac{\partial (L(w))}{\partial (w_{ij}^1)}$ \\
-		
-		\textbf{Update weights' value} \\ 
-		
-		$w_{ij}^2 = w_{ij}^2 - \eta * \bigtriangleup(w_{ij}^2)$ \\
-		$w_{ij}^1 = w_{ij}^1 - \eta * \bigtriangleup(w_{ij}^1)$
-	}
-		
-\end{algorithm}
-
-Backpropagation algorithm is undoubtedly the most fundamental buiding block in an ANN. It It was first introduced in 1960s and almost 30 years later (1989) popularized by Rumelhart, Hinton and Williams in~\cite{rumelhart1988learning}. The algorithm is used to effectively train a neural network through a method called chain rule. In simple terms, after each forward pass through a network (propagation phase), backpropagation performs a backward pass while adjusting the model\textquotesingle s parameters (weights and biases) (weights updating phase).
-
-\paragraph{\textbf{forward propagation phase}}
-\begin{enumerate}
-\item The input values will be fed into ANN through input layer, going forward to hidden layers, and finally to output layer, creating predicted output values. While propagation process, each layer uses its own activation function (sec. \ref{ann_act_func})
-\item Error values are calculated by the loss function and propagated back to previous layers.
-\end{enumerate}
-\paragraph{\textbf{weights updating phase}}
-
-\begin{enumerate}
-\item Calculating gradients of loss function in weights and biases following the chain rule.
-\item Updating weights and biases is done according to gradients' values 
-\end{enumerate}
-
-These two phases are repeated in each iteration during training. The algorithm will be stopped when the error from loss function reach a acceptable value or when the training iteration is large enough. The algorithm\textquotesingle s pseudo code is presented in short in Algorithm \ref{algorithm_backprop}.
-
-\subsection{Swarm Optimization Algorithms}
-\label{swarm_opt}
-\subsubsection{Idea and motivation}
-\label{opt_idea}
-\subsubsection{Particle Swarm Optimization (PSO)}
+\subsection{Particle Swarm Optimization (PSO)}
 \label{pso_standard}
 PSO~\cite{kennedy2010particle} is a very first swarm-based optimization, which is the premise of many other algorithms proposed in recent years. It emulates the behaviors of birds, fish and so forth when they forage for food and communicate as a swarm. In PSO system, a swarm contains several candidate solutions (also known as particles), which coexist in the search space of the problem with $D$ dimensions. The solution often cooperate and fly together to land on personal optimal positions. Over the course of time, the best personal position (its own best position in the past) of each particle and the global best position (the current best position of entire swarm) are recorded. The next position of a particle is updated based on the personal best (cognitive behavior) and the global best (social communication). With this approach, PSO combines local search (through personal best) with global search (through global best) to balance exploitation and exploration processes. PSO operation workflow is presented in Figure~\ref{fig_pso_algo}.
 	 
@@ -316,7 +113,7 @@ where
 	\>	\phantom{inv} 	\>	faster to personal best and global best respectively;\\
 	\>	$r_1, r_2$ 		\>	are random number which is uniformly distributed in $[0,1]$; \\
 \end{tabbing}
-\subsubsection{Sea Lion Optimization Algorithm (SLnO)}
+\subsection{Sea Lion Optimization Algorithm (SLnO)}
 \label{slno_standard} 
 
 	Sea lions are considered as one of the most intelligent animals in wildlife which live on both lands and the oceans. They usually live in a large swarm with thousands of members, and this large swarm may contains many subgroups with their own hierarchy as well. In each subgroup, there is a dominant sea lion playing a role as the leader of the subgroup. All activities of subgroups are decided following the leader ship of that sea lion.
@@ -419,6 +216,223 @@ Where $SL_{rnd}(t)$ is a random sea lion that is selected randomly from current 
 
 \end{enumerate}	
 
+\section{Artificial Neural Network (ANN)}
+\label{sec:ann}
+\subsection{Activation functions}
+\label{ann_act_func}
+
+\begin{figure}[!ht] 
+   \centering
+   \includegraphics[width=0.33\linewidth]{png/sigmoid}
+   \includegraphics[width=0.33\linewidth]{png/tanh}
+   \includegraphics[width=0.33\linewidth]{png/relu}
+   \includegraphics[width=0.33\linewidth]{png/leakyrelu}
+  \caption{Activation functions. Source: https://medium.com/@srnghn/deep-learning-overview-of-neurons-and-activation-functions-1d98286cf1e4} 
+  \label{fig_activation} 
+\end{figure}
+
+	Activation functions also known as transfer functions are used to map input nodes to output nodes in certain fashion. Activation functions are extremely important for an ANN to learn and figure out features and characteristics of data which need a non-linear transformation to become outputs. There are the four most popular functions used in Deep Learning, their names are Sigmoid, Hyperbolic Tangent (Tanh), Rectified Linear Units (ReLU), Leaky ReLU and Exponential Linear Unit (ELU) (See in Fig. \ref{fig_activation}).
+
+\begin{itemize}
+\item \textbf{Sigmoid function}: takes a number as input and returns a value in $	[ \,0,1] \,$.
+	$$f(x) = \frac{1}{1+e^x}$$
+\item \textbf{Hyperbolic Tangent (Tanh) function}: is also like Sigmoid function but better, the range of the output from Tanh funtion is in $	[ \,-1,1] \,$.
+ $$f(x) = \frac{2}{1+e^{-2x}} = 2\sigma(2x)-1$$
+\item \textbf{Rectified Linear Unit (ReLU) function}: is a function having threshold at $0$ value. It helps accelerate the training process in ANN, so it is used in almost all the complicated deep learning models such as RNNs and CNNs.
+$$f(x) = max(0, x)$$
+\item \textbf{Leaky ReLU function}: is like ReLU function, but instead of setting thresholf value at $0$, Leaky ReLU extends the domain to $\alpha x$.
+\[
+    f(x)= 
+\begin{cases}
+    x,& \text{if } x > 1\\
+    \alpha x, & \text{otherwise}
+\end{cases}
+\]
+\end{itemize}
+	
+\subsection{Loss functions}
+\label{ann_loss_func}
+Neural Networks are trained by backpropagation algorithm, which updates the weights parameters of ANN according to a loss value. The loss value is calculated by a loss function, so loss functions are totally vital when an ANN model is built for learning information from data. These functions will essentially measure how poorly a model is performing by comparing what the model is predicting with the actual value it is supposed to output. Therefore, choosing a loss function that is appropriate for penalizing model effectively is one of the most important tasks while working with data. There are a number of loss functions for deep learning models, and each of them have its own pros and cons. The common loss functions that are widely used in time-series forecasting will be presented as below:
+\begin{itemize}
+\item  \textbf{Mean Absolute Error (MAE)}: 
+$$MAE = \frac{\sum|e_t|}{N}$$
+\item  \textbf{Sum Square Error (SSE)}: $$SSE = \sum(e_t^2)$$
+\item  \textbf{Mean Square Error (MSE)}: $$MSE = \frac{\sum(e_t^2)}{N}$$
+\item  \textbf{Root Mean Square Error (RMSE)}: $$RMSE = \sqrt{MSE}$$
+\item  \textbf{Mean Absolute Percentage Error (MAPE)}: $$MAPE = \frac{1}{N}\sum|\frac{e_t}{y_t}|$$
+Where $N$ is the number of data points, $y_t$ is the actual output value, $d_t$ is the output value predicted by models, $e_t = d_t - y_t$ is the error value of the data point $t$.
+\end{itemize}
+	 
+\subsection{Backpropagation - the ANN Training Algorithm}
+\label{ann_backprop_alg}
+
+\begin{algorithm}[!t]
+	\caption{Backpropagation algorithm applied for FFNN with 1 hidden layer}
+	\label{algorithm_backprop}
+	\SetAlgoLined
+	Initialize randomly weights' value $w_p$\\ 
+	\Repeat{Until convergence or the number of iterations is enough}{
+	\textbf{Calculate output value(s) according to weights and input}  \\
+	
+		\For{$j= 1$ to $h$}
+		{
+			$H_{j} = \phi(\sum_i^n {x_i*w_{ij}^{[1]} + b_{ij}^{[1]}})$ \\ 
+			
+		}
+		$\widehat {{y_j}} = \phi(\sum_i^h{H_i * w_j^{[2]} + b_j^{[2]}})$\\
+		
+		\textbf{Calculate Loss value by loss function} \\ 
+		
+		$L(w) = loss(\widehat {{y_j}},{y_j})  $ \\
+		
+		 \textbf{Backpropagating Loss to weights}\\
+		
+		$ \bigtriangleup(w_{ij}^2) = \frac{\partial (L(w))}{\partial (w_{ij}^2)}$ \\
+		$ \bigtriangleup(w_{ij}^1) = \frac{\partial (L(w))}{\partial (w_{ij}^1)}$ \\
+		
+		\textbf{Update weights' value} \\ 
+		
+		$w_{ij}^2 = w_{ij}^2 - \eta * \bigtriangleup(w_{ij}^2)$ \\
+		$w_{ij}^1 = w_{ij}^1 - \eta * \bigtriangleup(w_{ij}^1)$
+	}
+		
+\end{algorithm}
+
+Back-propagation algorithm is undoubtedly the most fundamental building block in an ANN. It It was first introduced in 1960s and almost 30 years later (1989) popularized by Rumelhart, Hinton and Williams in~\cite{rumelhart1988learning}. The algorithm is used to effectively train a neural network through a method called chain rule. In simple terms, after each forward pass through a network (propagation phase), back-propagation performs a backward pass while adjusting the model\textquotesingle s parameters (weights and biases) (weights updating phase).
+
+\subsubsection{Forward propagation phase}
+\begin{enumerate}
+\item The input values will be fed into ANN through input layer, going forward to hidden layers, and finally to output layer, creating predicted output values. While propagation process, each layer uses its own activation function (sec. \ref{ann_act_func})
+\item Error values are calculated by the loss function and propagated back to previous layers.
+\end{enumerate}
+\subsubsection{Weights updating phase}
+
+\begin{enumerate}
+\item Calculating gradients of loss function in weights and biases following the chain rule.
+\item Updating weights and biases is done according to gradients' values 
+\end{enumerate}
+
+These two phases are repeated in each iteration during training. The algorithm will be stopped when the error from loss function reach a acceptable value or when the training iteration is large enough. The algorithm\textquotesingle s pseudo code is presented in short in Algorithm \ref{algorithm_backprop}.
+
+\section{Time-series prediction and Auto-scaling problem in Cloud Computing}
+\label{sec:application}
+
+\subsection{Cloud Computing}
+\label{cloud}
+
+\subsection{Auto-scaling problem}
+\label{auto_scale}
+
+\subsection{Well-known machine learning models for Auto-scaling in cloud computing}
+\label{wl_known_models}
+
+	Recent developments in cloud computing including resource management have resulted in a significant interest in resource usage prediction . Various methods have been proposed for solving this problem with different aspects, objectives and applications ~\cite{amiri2017survey}. In this section, we focus on several Artificial Neural Network (ANN) models that are used for tackling the time-series characteristic in resource usage forecast in cloud computing environment.
+	Deep Feed-forward Neural Network, also called Feed-forward Neural Network (FFNN) are the quintessential deep learning models. The goal of all FFNN is to approximate some functions $f^*$.  In Regression problems, $y = f^*(x)$ maps an input $x$ to a value $y$. A feed-forward network defines a mapping $y = f(x,\theta)$ and learns the value of the parameters $\theta$ that result in the best function approximation. ~\cite{Goodfellow-et-al-2016}. These models are called feed-forward because information flows through the function being evaluated from $x$, through the intermediate computations used to define $f$, and finally to the output $y$. There are no feedback connections in which outputs of the model are fed back into itself. When feed-forward neural networks are extended to include feedback connections, they are called recurrent neural networks, which will be discussed in ~\ref{model_rnn}.
+	
+	In general, Multi-Layer Perceptrons (MLPs) models contain several disparate layers. The first layer is input layer taking information $x$ as input for the network. The last layer is called output layer, whose value is the result of $y$ with input $x$. The layers between the input and output layers are hidden layers. The structures of hidden layers are extremely diverse, varying from model to model. As presented in Fig. \ref{fig_model_mlp}, a hidden layer of a simple FFNN is a group of neurons with no connection to each other, while in Recurrent Neural Networks (RNN), and Convolution Neural Network (CNN) hidden layer is a recurrent layer, and convolution layer respectively. 
+	
+	The Deep Neural Networks that are applied for Time series prediction will have input neurons presenting the historical data. The models utilize information from data in the past for forecasting future data. Input data presented as $x_1, x_2, ..., x_t$ is considered as historical values up to time t, which is used to predict the value at the time $t+1$. In other words, Deep Neural Networks will learn from data and approximate a function transforming the historical data up to time $t$ to the data at the time $t+1$ as follows:
+\begin{equation} \label{eq_ffnn_1}
+x(t+1) = y = f(x_1, x_2, ..., x_t)
+\end{equation}
+	
+	 In this section, we summarize several Deep Neural Network models, which are widely used for time series forecasting. They are simple Multi-Layer Perceptrons (MLPs), Cascade Forward Neural Network (CFNN) and Recurrent-based Neural Network including traditional Recurrent Neural Network (RNN), Long-Short Term Memory (LSTM) and Gated Recurrent Units (GRU). Each method will be presented below with brief ideas and mathematical formulas. 
+
+\begin{figure}[!ht] 
+   \centering
+   \includegraphics[width=0.75\linewidth]{pdf/model/model_ffnn}
+  \caption{An example of MLPs model in time-series prediction.} 
+  \label{fig_model_mlp} 
+\end{figure}
+
+\subsubsection{Multi-Layer Perceptrons (MLPs)}
+\label{model_mlp}
+	
+	The additional layers added between input layer and output layer make network architecture contain hidden layers and called Multi-Layer Perceptrons (MLPs). The input data is fed through input layer to hidden layers in the weighted form. The information from input data $X$ is distributed to the neurons in hidden layers and then processed by an activation function. The activation function in hidden layers are non-linear function playing a role as a transfer function, helping MLPs learn non-linear characteristics of the data. The information after being processed by hidden layers then are sent to output layer in the weighted sum, and also go through an activation function as well, creating the output value $y$. MLPs model is used in predicting time series data ~\cite{azoff1994neural}, ~\cite{koskela1996time}.  Fig. \ref{fig_model_mlp} shows a MLPs with a 4-neuron input layer and one output layer. In general,  the mathematical equation of the MLPs architecture can be written as follows:
+\begin{equation} \label{eq_mlp_1}
+H = f_h(W_h^TX + b_h)
+\end{equation}
+\begin{equation} \label{eq_mlp_2}
+y = O = f_o(W_o^TH + b_o
+\end{equation}
+
+Where $X$ is the input data, $H$ and $O$ are the information after being fed through the hidden and output layers. $W_h$, $b_h$ and $W_o$, $b_o$ are weights and biases, while $f_h$ and $f_o$ are activation functions of hidden layer and output layer, respectively.
+
+
+\subsubsection{Cascade Forward Neural Network (CFNN)}
+\label{model_cfnn}
+
+The main difference between CFNN and MLPs is that in CFNN, perceptron connection is added directly between neurons in input layer and output layer, while in MLPs, that connection is indirect through the hidden layer. The output layer of CFNN perceives both transformed information that is output of hidden layer, and the raw information from input data. This Deep Neural Network model was first used for forecasting monthly palm oil price in the Europe market in ~\cite{warsito2018cascade}. The architecture of CFNN with 4-neuron input layer is illustrated in Fig. \ref{fig_model_cfnn}, and the mathematical formulas for CFNN model are presented as follows:
+\begin{equation}\label{eq_cfnn_1}
+H = f_h(W_h^TX + b_h)
+\end{equation}
+\begin{equation}\label{eq_cfnn_2}
+C = f_c(W_c^TX) + b_c
+\end{equation}
+\begin{equation}\label{eq_cfnn_3}
+y = O = f_o(W_o^TH + b_o) + C
+\end{equation} 
+where $f_c$ is the activation function from the input layer to output layer, $C$ is the output value of $f_c$, and $W_c, b_c$ are weights and biases of the connection, respectively.
+
+\begin{figure}[!ht] 
+   \centering
+   \includegraphics[width=0.75\linewidth]{pdf/model/model_cfnn}
+  \caption{An example of CFNN model in time-series prediction.} 
+  \label{fig_model_cfnn} 
+\end{figure}
+
+
+\subsubsection{Recurrent Neural Network (RNN)}
+\label{model_rnn}
+	Recurrent neural networks (RNNs) are dynamical systems that are specifically designed for temporal problems, as they have both feed-back and feed-forward connections (Fig. \ref{model_rnn}). RNN remembers the past and  its decisions are influenced by what it has learned from the past. RNNs can take one or more input vectors and produce one or more output vectors and the output(s) are influenced not just by weights applied on inputs like a regular MLPs, but also by a state vector representing the context based on prior input(s)/output(s),  so the same input could produce a different output depending on previous inputs in the series. For that reason, RNN is one of the most popular models being used for modeling time series data~\cite{zhang2000predicting},~\cite{connor1994recurrent},~\cite{chandra2012cooperative}. There are two popular and efficient RNN models that work really well: Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU) which are discussed below. 
+\begin{figure}[!ht] 
+   \centering
+   \includegraphics[width=1.0\linewidth]{png/rnn_unrolled}
+  \caption{Traditional RNN architechture. Source: https://colah.github.io/posts/2015-08-Understanding-LSTMs/} 
+  \label{model_lstm_gru} 
+\end{figure}
+
+\subsubsection{Long Short-Term Memory (LSTM)}
+	Long short-term memory (LSTM)~\cite{hochreiter1997long} is a special kind of RNN created for learning long-term dependencies. LSTM units have 3 gates managing the contents of the memory. These gates are simple logistic functions of weighted sums, where the weights might be learnt by backpropagation. It means that, even though it seems a bit complicated, the LSTM perfectly fits into the neural network and its training process. With combining a forget gate in LSTM units, LSTM is capable to determine what it needs to remember and forget, so LSTM can work very well with dependent data , especially with time series data ~\cite{gers2002applying}, ~\cite{guo2016robust}, ~\cite{fu2016using}. The architecture of LSTM units is illustrated in Fig. \ref{model_lstm_gru}, and its mathematical model is briefly described as follows:
+	 The input gate (\ref{eq_lstm_1}) and the forget gate (\ref{eq_lstm_2}) manage the cell state (\ref{eq_lstm_4}), which is the long-term memory. The output gate (\ref{eq_lstm_3}) produces the output vector or hidden state (\ref{eq_lstm_5}), which is the memory focused for use. This memory system enables the network to remember for a long time, which was badly missing from vanilla recurrent neural networks. 
+\begin{equation}\label{eq_lstm_1}
+i_t = sigmoid(W_ix_t + U_ih_{t-1}+b_i)
+\end{equation}
+\begin{equation}\label{eq_lstm_2}
+f_t = sigmoid(W_fx_t + U_fh_{t-1}+b_f)
+\end{equation}
+\begin{equation}\label{eq_lstm_3}
+o_t = sigmoid(W_ox_t + U_oh_{t-1}+b_o)
+\end{equation}
+\begin{equation}\label{eq_lstm_4}
+c_t = f_t \odot c_{t-1} + i_t \odot tanh(W_cx_t + U_ch_{t-1} + b_c)
+\end{equation}
+\begin{equation}\label{eq_lstm_5}
+h_t = o_t \odot tanh(c_t)
+\end{equation}
+\begin{figure}[!ht] 
+   \centering
+   \includegraphics[width=1.0\linewidth]{png/lstm_gru}
+  \caption{LSTM and GRU architechture. Source: https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21} 
+  \label{model_lstm_gru} 
+\end{figure}
+
+\subsubsection{Gated Recurrent Units (GRU)}
+
+	Gated recurrent unit (GRU)~\cite{chung2014empirical} is essentially a simplified LSTM. Different form LSTM, GRU uses two gated called update gate and reset gate. Basically, these gates are two vectors managing what information should be passed to the output. In GRU, its gates can be trained to keep information from long ago, without washing it through time or remove information which is irrelevant to the prediction. It has the exact same role as LSTM in the network. The main difference is in the number of gates and weights - GRU is somewhat simpler. Like LSTM, GRU is also a widely chosen solution for time series forecasting such as in~\cite{langkvist2014review} and~\cite{bone2000recurrent} The srtucture of GRU units is presented in Fig. \ref{model_lstm_gru} following the mathematical model as below:
+	
+	The update gate~\ref{eq_gru_1} controls the information flow from the previous activation, and the addition of new information as well~\ref{eq_gru_3}, while the reset gate~\ref{eq_gru_2} is inserted into the candidate activation. Overall, it is pretty similar to LSTM. From these differences alone, it is hard to tell, which one is the better choice for a given problem. 
+\begin{equation}\label{eq_gru_1}
+z_t = sigmoid(W_zx_t + U_zh_{t−1} + b_z)
+\end{equation}
+\begin{equation}\label{eq_gru_2}
+r_t = sigmoid(W_rx_t + U_rh_{t−1} + b_r)
+\end{equation}
+\begin{equation}\label{eq_gru_3}
+h_t = z_t\odot h_{t-1} + (1 - z_t)\odot tanh(W_hx_t + U_h(r_th_{t-1}) + b_h)
+\end{equation}
+
+
 \chapter{Improved Sea Lion Optimization (ISLO) algorithm and Proposed Model for Auto-Scaling (ISLO-CFNN)}
 \section{Improved Sea Lion Optimization (ISLO)}
 \label{improved_ISLO}
@@ -467,9 +481,9 @@ Dist_1 = |2B.P(t) - SL(t)|
 Dist_2 = |2B.P_i(t) - SL(t)| 
 \end{equation}
 \begin{equation}\label{islo_eq3}
-SL(t+1) = r_1(P(t) - Dist_1.C) + r_2(P_i(t) - Dist_2.C)
+SL(t+1) = c_1r_1(P(t) - Dist_1.C) + c_2r_2(P_i(t) - Dist_2.C)
 \end{equation}
-where $P_i(t)$ is the personal best position of agent $i$ up to time $t$, and $r1, r2$ are random numbers in range $[\, 0,1 ] \,$.
+where $P_i(t)$ is the personal best position of agent $i$ up to time $t$, $c_1$, $c_2$ 2 are positive constant parameters called acceleration coefficients and $r1, r2$ are random numbers in range $[\, 0,1 ] \,$.
 
 	In new operation \ref{islo_eq3}, the new-updated position of an individual is the result of adding two vectors, one is the vector presenting the direction of that individual towards the best agent, and another is the direction towards its own experiences in history. The influences of both two factors are determined by two random numbers $r_1$ and $r_2$. $r_1$ and $r_2$ play an extremely important role in the updating mechanism,  because  they create random characteristics for the operation, helping ISLO avoiding local minimum and taking advantages of the two factors. Without the appearance of $r_1$ and $r_2$, the updated position is always affected exactly half by best agent and half by its experience, which may lead to degradation of the diversity of population. 
 
@@ -490,7 +504,7 @@ SL_{rand} = 2*SL2_{rand} - SL1_{rand}
 \end{enumerate}
 
 \section{Proposed model for auto-scaling problem in Cloud Computing}
-\label{proposed_model}
+\label{sec:proposed_model}
 	
 	In chapter \ref{ch:background}, we generally discussed about Cloud Computing and the problem of auto-scaling with the existing methods for solving this. In general, it is relatively necessary to build cloud computing servers with the capacity of automatically expanding and  shrinking the resources allocated. Although there are a number of solutions proposed for tackling this issue, they all have their own drawbacks.
 	
@@ -607,7 +621,140 @@ Where $i, h, o$ is the number of input, hidden and output neurons,  respectively
 	After obtaining CFNN model with the best parameter set by ISLO algorithm, the model is installed on servers and ready to predict the demand for resources in the future based on historical data.   
 	  
 \chapter{Experiments}
-\label{experiments}
+\label{ch:experiments}
+The optimization capacity of ISLO algorithm developed in this study would be tested by solving two experiments: one for theoretical test and another for an optimizing application in the real world.
+ 
+	In the theoretical test, 30 benchmark functions are used for testing the numerical efficiency of ISLO. The set of benchmark functions cover a wide range function groups including: classical unimodal and multimodal functions, hybrid functions and composition functions which are considered in CEC 2014 and CEC 2015 special session (See \cite{liang2013problem} and \cite{liang2014problem} for more information about the annual competition). ISLO will be compared with several well-known algorithms in all four groups in meta-heuristic optimization algorithms including evolutionary, swarm-based, physical-based and human-based algorithms.
+	
+	On the other hand, the optimizing performance of ISLO is also tested in a time-series prediction problem. Specifically, the proposed model in \ref{sec:proposed_model} is used for the experiment with three real-world datasets, which are Google Trace data, EU Internet Traffic data and UK Internet Traffic data in different perspectives. The results are compared with that of several deep learning models that are widely used for time-series prediction, and additionally, the performance of ISLO in optimizing CFNN is also compared with several algorithms in the first experiment. 
+	
+	The detail of each experiment as well as results and analysis are presented as below.
+	
+\section{Theoretical experiments}
+\label{sec:exp_theory}
+
+	The performance of ISLO is theoretically experimented by 30 benchmark functions. They are divided into four groups of functions:
+\begin{itemize}
+\item Unimodal benchmark functions: they have only one global optimal point in the search space.
+\item Multimodal benchmark functions: they have one global optimal point going along with local minimum points.
+\item Hybrid functions:  the variables are
+randomly divided into some sub-components and then different basic unimodal and multimodal functions are used for different sub-components.
+\item Composition functions: they merge the properties of the sub-functions better and maintains continuity around the global/local optima. 
+\end{itemize}
+The detail such as name, formula, search space and optimal value of each function is shown in Table. ***. Also, Fig. *** presents he typical 2D and 3D plots of
+the cost function for some test cases considered in this study. 
+
+\begin{table}[!t]
+\caption{Description of unimodal benchmark functions}
+\label{tbl_uni_funcs}
+\centering
+\begin{tabular}{p{9cm} p{2cm} p{1cm}}
+ \hline Mathematical Definition & Range & $f_{min}$  \\ 
+ \hline
+$f_1(x) = \sum_{i=1}^n x_i^2$ & [-500, 500] & 0 \\
+$f_2(x) =  \sum_{i=1}^n |x_i|$ & [-500, 500] & 0 \\
+$f_3(x) =  max_{i = 1, 2,...,n}|x_i|)$ & [-500, 500] & 0 \\
+$f_4(x) =  \sum_{i=1}^n |x_i| + \prod_{i=1}^n |x_i|$  & [-500, 500] & 0 \\
+$f_5(x) =  \sum_{i=1}^n ix_i^2$ & [-500, 500] & 0 \\
+$f_6(x) =  \sum_{i=1}^{n-1} (x_i^2)^{x_{i+1}^2+1} + (x_{i+1}^2)^{x_{i}^2+1}$ & [-500, 500] & 0 \\
+$f_7(x) =  \sum_{i=1}^n (10^6)^{\frac{x_i-1}{n-1}} + 100$ & [-500, 500] & 100 \\
+$f_8(x) = x_1^2 + 10^6\sum_{i=2}^n x_i^2$ + 200 & [-500, 500] & 200 \\
+ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[!t]
+\caption{Description of multimodal benchmark functions}
+\label{tbl_multi_funcs}
+\centering
+\begin{tabular}{p{9cm} p{2cm} p{1cm}}
+ \hline 
+ Mathematical Definition & Range & $f_{min}$  \\ 
+ \hline
+$f_9(x) = -a.exp(-b\sqrt{\frac{1}{n}\sum_{i=1}^{n}x_i^2})-exp(\frac{1}{n}\sum_{i=1}^{n}cos(cx_i))+ a + exp(1)$ with a = 20 and b = 0.2 & [-500, 500] & 0 \\
+$f_{10}(x) =\left[\left(||\textbf{x}||^2 - n\right)^2\right]^\alpha + \frac{1}{n}\left(\frac{1}{2}||\textbf{x}||^2+\sum_{i=1}^{n}x_i\right)+\frac{1}{2}$ & [-500, 500] & 0 \\
+$f_{11}(x) =\sum_{i=1}^{n}(x^2-i)^2$ & [-500, 500] & 0 \\
+$f_{12}(x)=1-cos(2\pi\sqrt{\sum_{i=1}^{D}x_i^2})+0.1\sqrt{\sum_{i=1}^{D}x_i^2}$ & [-500, 500] & 0 \\
+$f_{13}f(x)=\sum_{i=1}^{n}[b (x_{i+1} - x_i^2)^ 2 + (a - x_i)^2]$ & [-500, 500] & 0 \\
+$f_{14}(x) = \sum_{i=1}^{n}{\sum_{j=1}^5{j sin((j+1)x_i+j)} + 300}$ & [-500, 500] & 300 \\
+$f_{15}(x)=10n + \sum_{i=1}^{n}(x_i^2 - 10cos(2\pi x_i)) + 400$ & [-500, 500] & 400 \\
+$f_{16}(x) = 418.9829D -{\sum_{i=1}^{n} x_i sin(\sqrt{|x_i|})}. + 500$ & [-500, 500] & 500 \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[!t]
+\caption{Description of hybrid benchmark functions}
+\label{tbl_hybrid_funcs}
+\centering
+\begin{tabular}{p{9cm} p{2cm} p{1cm}}
+ \hline Mathematical Definition & Range & $f_{min}$  \\ 
+ \hline
+$f_{17}$ (function 17 in CEC 2014) & \multirow{3}{*}{[-500, 500]} & \multirow{3}{*}{1700} \\
+p = [0.3, 0.4, 0.3] & \\
+Modified Schwefel's , Rastrigin's  and High Conditioned Elliptic Functions & \\ \hline
+$f_{18}$ (function 18 in CEC 2014) & \multirow{3}{2cm}{[-500, 500]} & \multirow{3}{1cm}{1800} \\
+p = [0.3, 0.4, 0.3] & \\
+Bent Cigar, HGBat and Rastrigin’s Functions & \\ \hline
+$f_{19}$ (function 19 in CEC 2014) & \multirow{3}{2cm}{[-500, 500]} & \multirow{3}{1cm}{1900} \\
+p = [ 0.2, 0.2, 0.3, 0.3] & \\
+Griewank’s, Weierstrass, Rosenbrock’s and Scaffer’s Functions & \\ \hline
+$f_{20}$ (function 20 in CEC 2014) & \multirow{3}{2cm}{[-500, 500]} & \multirow{3}{1cm}{2000} \\
+p =  [0.2, 0.2, 0.3, 0.3] & \\
+HGBat , Discus, Expanded Griewank’s plus Rosenbrock’s  and Rastrigin’s Functions & \\ \hline
+$f_{21}$ (function 6 in CEC 2015) & \multirow{3}{2cm}{[-500, 500]} & \multirow{3}{1cm}{600} \\
+p =  [0.3,0.3,0.4]  & \\
+Modified Schwefel's , Rastrigin's, High Conditioned Elliptic Functions & \\ \hline
+$f_{22}$ (function 7 in CEC 2015) & \multirow{3}{2cm}{[-500, 500]} & \multirow{3}{1cm}{700} \\
+p =[0.2,0.2,0.3,0.3]  & \\
+Griewank's , Weierstrass ,Rosenbrock's and Scaffer's Functions & \\ \hline
+$f_{23}$ (function 8 in CEC 2015) & \multirow{3}{2cm}{[-500, 500]} & \multirow{3}{1cm}{800} \\
+p = [0.1,0.2,0.2,0.2,0.3]  & \\
+Scaffer’s , HGBat ,Rosenbrock’s, Modified Schwefel’s and High Conditioned Elliptic Functions & \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[!t]
+\caption{Description of composition benchmark functions}
+\label{tbl_compos_funcs}
+\centering
+\begin{tabular}{p{9cm} p{2cm} p{1cm}}
+ \hline Mathematical Definition & Range & $f_{min}$  \\ 
+ \hline
+$f_{24}$ (function 9 in CEC 2015) & \multirow{4}{*}{[-500, 500]} & \multirow{3}{*}{900} \\
+$\sigma = $ [20, 20, 20] & \\
+$\lambda = $ [1, 1, 1] & \\
+Schwefel's , Rastrigin's  and  HGBat  Functions & \\ \hline
+$f_{25}$ (function 10 in CEC 2015) & \multirow{4}{*}{[-500, 500]} & \multirow{3}{*}{1000} \\
+$\sigma = $  [10, 30,50]  & \\
+$\lambda = $  [1, 1, 1]  & \\
+$f_{21}$, $f_{22}$ and $f_{23}$ Functions & \\ \hline
+$f_{26}$ (function 11 in CEC 2015) & \multirow{4}{*}{[-500, 500]} & \multirow{3}{*}{1100} \\
+$\sigma = $  [10, 10, 10, 20, 20]  & \\
+$\lambda = $  [10, 10, 2.5, 25,1e-6]  & \\
+ HGBat ,  Rastrigin’s  and   Schwefel's,  Weierstrass and  High Conditioned Elliptic   Functions & \\ \hline
+$f_{27}$ (function 12 in CEC 2015) & \multirow{4}{*}{[-500, 500]} & \multirow{3}{*}{1200} \\
+$\sigma = $  [10,20,20,30,30] & \\
+$\lambda = $ [0.25, 1, 1e-7, 10, 10]  & \\
+ Schwefel's  , Rastrigin's  and   High Conditioned Elliptic, Expanded Scaffer’s and  HappyCat Functions & \\ \hline
+$f_{28}$ (function 13 in CEC 2015) & \multirow{4}{*}{[-500, 500]} & \multirow{3}{*}{1300} \\
+$\sigma = $  [10, 10, 10, 20, 20]  & \\
+$\lambda = $  [1, 10, 1, 25, 10]  & \\
+$f_{23}$ , Rastrigin's  and  $f_{21}$,  Schwefel's  and  Expanded Scaffer’s  Functions & \\ \hline
+$f_{29}$ (function 14 in CEC 2015) & \multirow{4}{*}{[-500, 500]} & \multirow{3}{*}{1400} \\
+$\sigma = $  [10, 20, 30, 40, 50, 50, 50] & \\
+$\lambda = $  [10,2.5, 2.5, 10,1e-6,1e-6, 10] & \\
+HappyCat , Griewank’s plus Rosenbrock’s, Schwefel's, Expanded Scaffer’s, High Conditioned Elliptic, Cigar and  and Rastrigin’s  Functions & \\ \hline
+$f_{30}$ (function 15 in CEC 2015) & \multirow{4}{*}{[-500, 500]} & \multirow{3}{*}{1500} \\
+$\sigma = $  [10, 10, 20, 20, 30, 30, 40, 40, 50, 50] & \\
+$\lambda = $  [0.1,2.5e-1, 0.1, 2.5e-2, 1e-3, 0.1, 1e-5, 10, 2.5e-2, 1e-3] & \\
+Rastrigin’s  , Weierstrass, HappyCat, Schwefel's, Rosenbrock's, HGBat, Katsuura, Expanded Scaffer’s, Expanded Griewank’s  and  Ackley  Functions & \\ \hline
+
+\end{tabular}
+\end{table}
+
+\section{Application}
+\label{sec:exp_app}
 
 \chapter{Conclusions}
 

@@ -87,6 +87,23 @@ Martin L{\"a}ngkvist, Lars Karlsson, and Amy Loutfi.
   time-series modeling.
 \newblock {\em Pattern Recognition Letters}, 42:11--24, 2014.
 
+\bibitem{liang2013problem}
+JJ~Liang, BY~Qu, and PN~Suganthan.
+\newblock Problem definitions and evaluation criteria for the cec 2014 special
+  session and competition on single objective real-parameter numerical
+  optimization.
+\newblock {\em Computational Intelligence Laboratory, Zhengzhou University,
+  Zhengzhou China and Technical Report, Nanyang Technological University,
+  Singapore}, 635, 2013.
+
+\bibitem{liang2014problem}
+JJ~Liang, BY~Qu, PN~Suganthan, and Q~Chen.
+\newblock Problem definitions and evaluation criteria for the cec 2015
+  competition on learning-based real-parameter single objective optimization.
+\newblock {\em Technical Report201411A, Computational Intelligence Laboratory,
+  Zhengzhou University, Zhengzhou China and Technical Report, Nanyang
+  Technological University, Singapore}, 29:625--640, 2014.
+
 \bibitem{masadeh2019sea}
 Raja Masadeh, Basel~A Mahafzah, and Ahmad Sharieh.
 \newblock Sea lion optimization algorithm.
