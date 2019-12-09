@@ -11,4 +11,5 @@
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Encoding process transforming a parameter set in CFNN into an agent in ISLO algorithm. ($W^*$ indicates weights and biases between 2 layers)\relax }}{26}{figure.caption.16}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces The work flow of ISLO-CFNN model.\relax }}{26}{figure.caption.17}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Examples of 3D plot for each kind of benchmark functions.\relax }}{29}{figure.caption.18}
 \addvspace {10\p@ }

@@ -47,7 +47,7 @@
 
 
 \renewcommand{\baselinestretch}{1.5}
-% \DeclareUnicodeCharacter{2212}{-}
+\DeclareUnicodeCharacter{2212}{-}
 \begin{document}
 
 \setlength{\abovedisplayskip}{3pt}
@@ -641,8 +641,38 @@ The optimization capacity of ISLO algorithm developed in this study would be tes
 randomly divided into some sub-components and then different basic unimodal and multimodal functions are used for different sub-components.
 \item Composition functions: they merge the properties of the sub-functions better and maintains continuity around the global/local optima. 
 \end{itemize}
-The detail such as name, formula, search space and optimal value of each function is shown in Table. ***. Also, Fig. *** presents he typical 2D and 3D plots of
-the cost function for some test cases considered in this study. 
+
+\begin{figure}[!ht] 
+   \centering
+   \begin{subfigure}{0.24\textwidth}
+   	\includegraphics[width=1\linewidth]{png/functions/uni_f5}
+  	 \includegraphics[width=1\linewidth]{png/functions/uni_f7}
+  	\caption{Unimodal}
+  	\label{subfig:uni}
+  	\end{subfigure}
+    \begin{subfigure}{0.24\textwidth}
+   	\includegraphics[width=1\linewidth]{png/functions/multi_f9}
+  	 \includegraphics[width=1\linewidth]{png/functions/multi_f12}
+  	 \caption{Multimodal}
+  	\label{subfig:multi}
+  	\end{subfigure}
+   \begin{subfigure}{0.24\textwidth}
+   	\includegraphics[width=1\linewidth]{png/functions/hybrid_f21}
+  	 \includegraphics[width=1\linewidth]{png/functions/hybrid_f22}
+  	 \caption{Hybrid}
+  	\label{subfig:hybrid}
+  	\end{subfigure}
+  	\begin{subfigure}{0.24\textwidth}
+   	\includegraphics[width=1\linewidth]{png/functions/compos_f26}
+  	 \includegraphics[width=1\linewidth]{png/functions/compos_f30}
+  	 \caption{Composition}
+  	\label{subfig:compos}
+  	\end{subfigure}
+  \caption{Examples of 3D plot for each kind of benchmark functions.} 
+  \label{fig_functions} 
+\end{figure}
+
+The detail such as name, formula, search space and optimal value of each function is shown in Table. [\ref{tbl_uni_funcs}-\ref{tbl_compos_funcs}]. Also, Fig. \ref{fig_functions} presents the typical 3D plots of the cost function for some test cases considered in this study. 
 
 \begin{table}[!t]
 \caption{Description of unimodal benchmark functions}
@@ -682,6 +712,14 @@ $f_{16}(x) = 418.9829D -{\sum_{i=1}^{n} x_i sin(\sqrt{|x_i|})}. + 500$ & [-500, 
 \hline
 \end{tabular}
 \end{table}
+
+The performance of ISLO algorithm about optimizing 30 benchmark functions is compared with different optimizers including well-known algorithms as well as recent algorithms that belong to all four groups in nature-inspired meta-heuristic algorithms. Specifically, they are: 
+\begin{itemize}
+\item Generic Algorithm (GA) \cite{whitley1994genetic} and Differential evolution (DE) \cite{price2013differential} (Evolutionary algorithms)
+\item Particle Swarm Optimization (PSO) \cite{kennedy2010particle}, Whale Optimization Algorithm (WOA) \cite{mirjalili2016whale} and the origin Sea Lion Optimization Algorithm (SLnO) \cite{masadeh2019sea} (Swarm-based algorithms)
+\item Tug of War Optimization (TWO) \cite{kaveh2016novel} (Physics-based algorithms)
+\item Queuing Search Optimization (QSO) \cite{zhang2018queuing} (Human-based algorithms)
+\end{itemize}
 
 \begin{table}[!t]
 \caption{Description of hybrid benchmark functions}
@@ -752,6 +790,29 @@ Rastrigin’s  , Weierstrass, HappyCat, Schwefel's, Rosenbrock's, HGBat, Katsuur
 
 \end{tabular}
 \end{table}
+
+\subsection{Evaluation method and Parameter settings}
+
+	With compared algorithms and functions mentioned above, the experimental results of each model are produced by calculating mean and standard deviation ($std$) value (Eq. \ref{eq_mean} and \ref{eq_std}) of 20 times running for each algorithms. For all the algorithms, a population size and maximum iteration equal to 100 and 500 have been utilized to run on each function with 50-dimension search space. The choices  of parameters are based on existing setting up
+described in origin paper of each algorithm.
+\begin{equation} \label{eq_mean}
+mean = \frac{1}{n}\sum_{i=1}^n r_i
+\end{equation}
+\begin{equation}\label{eq_std}
+std = \sqrt{\frac{1}{n-1}\sum_{i=1}^n(r_i - r)^2}
+\end{equation}
+where $N$ is the number of values and $r_i$ $(i = 1, 2, ..., N)$ are observations.
+	
+	For each function, after calculating $mean$ and $std$ values of each algorithm, the best results will be highlighted in both. The best results are determined by following rules:
+\begin{itemize}
+\item $mean$ values are considered at first. If in a case, an algorithm own the best $mean$ value, it will be ranked as the best optimizer.
+\item In the case where there are two or more algorithms having the same $mean$ value, the one that has the most stable $std$ value will be chosen as the best one.
+\end{itemize}
+	
+	Finally, the experimental results of all functions and algorithms are shown in Table ***.
+	
+\subsection{Experiment results and discussion}
+\label{exp_results}
 
 \section{Application}
 \label{sec:exp_app}

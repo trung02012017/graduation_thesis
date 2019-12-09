@@ -69,6 +69,11 @@ Sepp Hochreiter and J{\"u}rgen Schmidhuber.
 \newblock Long short-term memory.
 \newblock {\em Neural computation}, 9(8):1735--1780, 1997.
 
+\bibitem{kaveh2016novel}
+A~Kaveh and A~Zolghadr.
+\newblock A novel meta-heuristic algorithm: tug of war optimization.
+\newblock {\em Iran University of Science \& Technology}, 6(4):469--492, 2016.
+
 \bibitem{kennedy2010particle}
 James Kennedy.
 \newblock Particle swarm optimization.
@@ -109,12 +114,22 @@ Raja Masadeh, Basel~A Mahafzah, and Ahmad Sharieh.
 \newblock Sea lion optimization algorithm.
 \newblock {\em Sea}, 10(5), 2019.
 
+\bibitem{mirjalili2016whale}
+Seyedali Mirjalili and Andrew Lewis.
+\newblock The whale optimization algorithm.
+\newblock {\em Advances in engineering software}, 95:51--67, 2016.
+
 \bibitem{nguyen2019efficient}
 Thieu Nguyen, Tu~Nguyen, Binh~Minh Nguyen, and Giang Nguyen.
 \newblock Efficient time-series forecasting using neural network and
   opposition-based coral reefs optimization.
 \newblock {\em International Journal of Computational Intelligence Systems},
   12(2):1144--1161, 2019.
+
+\bibitem{price2013differential}
+Kenneth~V Price.
+\newblock Differential evolution.
+\newblock In {\em Handbook of Optimization}, pages 187--214. Springer, 2013.
 
 \bibitem{rashid2010improved}
 Muhammad Rashid and Abdul~Rauf Baig.
@@ -154,9 +169,20 @@ Budi Warsito, Rukun Santoso, Hasbi Yasin, et~al.
 \newblock In {\em Journal of Physics: Conference Series}, volume 1025, page
   012097. IOP Publishing, 2018.
 
+\bibitem{whitley1994genetic}
+Darrell Whitley.
+\newblock A genetic algorithm tutorial.
+\newblock {\em Statistics and computing}, 4(2):65--85, 1994.
+
 \bibitem{zhang2000predicting}
 Jia-Shu Zhang and Xian-Ci Xiao.
 \newblock Predicting chaotic time series using recurrent neural network.
 \newblock {\em Chinese Physics Letters}, 17(2):88, 2000.
+
+\bibitem{zhang2018queuing}
+Jinhao Zhang, Mi~Xiao, Liang Gao, and Quanke Pan.
+\newblock Queuing search algorithm: A novel metaheuristic algorithm for solving
+  engineering optimization problems.
+\newblock {\em Applied Mathematical Modelling}, 63:464--490, 2018.
 
 \end{thebibliography}
