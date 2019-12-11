@@ -8,8 +8,6 @@
 \contentsline {table}{\numberline {4.2}{\ignorespaces Description of multimodal benchmark functions\relax }}{30}{table.caption.20}
 \contentsline {table}{\numberline {4.3}{\ignorespaces Description of hybrid benchmark functions\relax }}{30}{table.caption.21}
 \contentsline {table}{\numberline {4.4}{\ignorespaces Description of composition benchmark functions\relax }}{31}{table.caption.22}
-\contentsline {table}{\numberline {4.5}{\ignorespaces Comparison of optimization results obtained for the unimodal functions\relax }}{32}{table.caption.23}
-\contentsline {table}{\numberline {4.6}{\ignorespaces Comparison of optimization results obtained for the multimodal benchmark functions\relax }}{33}{table.caption.24}
-\contentsline {table}{\numberline {4.7}{\ignorespaces Comparison of optimization results obtained for the hybrid benchmark functions\relax }}{33}{table.caption.25}
-\contentsline {table}{\numberline {4.8}{\ignorespaces Comparison of optimization results obtained for the composition functions\relax }}{34}{table.caption.26}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Comparison of optimization results obtained for the unimodal and multimodal functions\relax }}{33}{table.caption.23}
+\contentsline {table}{\numberline {4.6}{\ignorespaces Comparison of optimization results obtained for the hybrid and composition benchmark functions\relax }}{35}{table.caption.25}
 \addvspace {10\p@ }

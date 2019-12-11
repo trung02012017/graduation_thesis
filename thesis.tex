@@ -436,7 +436,7 @@ h_t = z_t\odot h_{t-1} + (1 - z_t)\odot tanh(W_hx_t + U_h(r_th_{t-1}) + b_h)
 \chapter{Improved Sea Lion Optimization (ISLO) algorithm and Proposed Model for Auto-Scaling (ISLO-CFNN)}
 \section{Improved Sea Lion Optimization (ISLO)}
 \label{improved_ISLO}
-	Sea Lion Optimization (SLnO) is one of the newest swarm-based optimization algorithm. In experiments in SLnO origin paper \cite{masadeh2019sea}, SLnO is proved that it outperformed several well-known bio-inspired model such as Generic Algorithm (GA), Particle Swarm Optimization (PSO) and Whale Optimization Algorithm (WOA). However, like many other algorithms, SLnO also faces the problem of local minimum, slow convergence and diversity degradation of population. In SLnO's exploitation phase, the updating operation \ref{slno_eq2} only takes the distance between the current agent and the best solution into account, which makes updated position always oriented to one direction, leading to poverty of exploitation ability. Also, in exploration phase, although the participation of two agents that already exist in population in the updating operation \ref{slno_eq8} helps the new-born solution inherits current decent features of population, new solution has no way to reach another position outside of existing positions. This results in a dramatic decrease in the diversity of population, and significantly influences the ability of escaping local minimum of SLnO algorithm. All things considered, we decided to enhance those 2 operators by taking individual information into account for exploitation phase, and using a technique called opposition-based operation for exploration phase. These two improvements form a new version of SLnO called Improved Sea Lion Optimization (ISLO) algorithm. The pseudo code of the algorithm is presented in Algorithm \ref{algorithm_islo}, and  our improvements would be discussed in detail in \ref{imprv_exploit} and \ref{imprv_explore} as below.  
+	Sea Lion Optimization (SLnO) is one of the newest swarm-based optimization algorithm. In experiments in SLnO original paper \cite{masadeh2019sea}, SLnO is proved that it outperformed several well-known bio-inspired model such as Generic Algorithm (GA), Particle Swarm Optimization (PSO) and Whale Optimization Algorithm (WOA). However, like many other algorithms, SLnO also faces the problem of local minimum, slow convergence and diversity degradation of population. In SLnO's exploitation phase, the updating operation \ref{slno_eq2} only takes the distance between the current agent and the best solution into account, which makes updated position always oriented to one direction, leading to poverty of exploitation ability. Also, in exploration phase, although the participation of two agents that already exist in population in the updating operation \ref{slno_eq8} helps the new-born solution inherits current decent features of population, new solution has no way to reach another position outside of existing positions. This results in a dramatic decrease in the diversity of population, and significantly influences the ability of escaping local minimum of SLnO algorithm. All things considered, we decided to enhance those 2 operators by taking individual information into account for exploitation phase, and using a technique called opposition-based operation for exploration phase. These two improvements form a new version of SLnO called Improved Sea Lion Optimization (ISLO) algorithm. The pseudo code of the algorithm is presented in Algorithm \ref{algorithm_islo}, and  our improvements would be discussed in detail in \ref{imprv_exploit} and \ref{imprv_explore} as below.  
 \begin{algorithm}[!t]
 \caption{Improved Sea Lion Optimization (ISLO)}
 \label{algorithm_islo}
@@ -490,7 +490,7 @@ where $P_i(t)$ is the personal best position of agent $i$ up to time $t$, $c_1$,
 \subsection{Exploration phase improvement}
 \label{imprv_explore}
 	
-	In origin SLnO algorithm, new-born agents that are created in exploration phase cause a poor exploration search ability because of inheriting features of existing solutions. In order to tackle this problem, exploration phase is required the operation to have the ability of creating a decent new-born solution. New updated position need to satisfy two characteristics: carrying random features for ensuring a strong capability of exploration phase, and landing in a position decent enough (close enough to the best agent position) for updating positions in the next generation. From that motivation, a method called Opposition-based Learning (OBL) \cite{tizhoosh2005opposition}, which is successfully applied for enhancing bio-inspired optimization algorithms such as GA \cite{tizhoosh2005opposition}, PSO \cite{wang2007opposition} \cite{tang2009enhanced} in solving several optimization problems including finding parameter for deep learning models \cite{rashid2010improved} \cite{nguyen2019efficient} is utilized as a base model for our improvement in exploration operation of SLnO. 
+	In original SLnO algorithm, new-born agents that are created in exploration phase cause a poor exploration search ability because of inheriting features of existing solutions. In order to tackle this problem, exploration phase is required the operation to have the ability of creating a decent new-born solution. New updated position need to satisfy two characteristics: carrying random features for ensuring a strong capability of exploration phase, and landing in a position decent enough (close enough to the best agent position) for updating positions in the next generation. From that motivation, a method called Opposition-based Learning (OBL) \cite{tizhoosh2005opposition}, which is successfully applied for enhancing bio-inspired optimization algorithms such as GA \cite{tizhoosh2005opposition}, PSO \cite{wang2007opposition} \cite{tang2009enhanced} in solving several optimization problems including finding parameter for deep learning models \cite{rashid2010improved} \cite{nguyen2019efficient} is utilized as a base model for our improvement in exploration operation of SLnO. 
 	
 	
 	The idea of OBL is applied in the operation in the way of finding a new random optimal solution, but still retain a part of features from existing solutions. This is done by calculating the opposed position to the current position of an living agent in population. For ensuring random characteristics of new found position, a random agent from population, and a random agent in the search space will be chosen for participating in this operation. The mathematical formulas are given as follows:
@@ -508,11 +508,11 @@ SL_{rand} = 2*SL2_{rand} - SL1_{rand}
 	
 	In chapter \ref{ch:background}, we generally discussed about Cloud Computing and the problem of auto-scaling with the existing methods for solving this. In general, it is relatively necessary to build cloud computing servers with the capacity of automatically expanding and  shrinking the resources allocated. Although there are a number of solutions proposed for tackling this issue, they all have their own drawbacks.
 	
-	The FFNN model, which is widely used for solving many real-world issues, is too simple to capture the characteristics of time-series data because after feed-forwarding through hidden layers, the origin information of the input neural could be forgotten. On the other hand, RNN-based models such as LSTM or GRU have to face the problem of extremely complex structures that potentially lead to over-fitting, or the huge number of hyper-parameters which are needed to tuned.
+	The FFNN model, which is widely used for solving many real-world issues, is too simple to capture the characteristics of time-series data because after feed-forwarding through hidden layers, the original information of the input neural could be forgotten. On the other hand, RNN-based models such as LSTM or GRU have to face the problem of extremely complex structures that potentially lead to over-fitting, or the huge number of hyper-parameters which are needed to tuned.
 	
 	The CFNN can take the advantages of its structure and diminish the problem raising when the model structures are too simple (FFNN) or too complex (LSTM, GRU) because of the connection added between the input layer and output layer. However, the gradient descent (GD) algorithm which is used for optimizing CFNN still have its own drawback of being stuck in local minimum and slow convergence speed. 
 	
-	All thing considered, we proposed a new model ISLO-CFNN to improve the weak points of origin CFNN model by replacing GD algorithm by above proposed ISLO algorithm in optimizing the parameters of the network while training process. Also, in order to evaluate the performance of our proposed model, we would build both our model and existing models for the purposes of evaluation and comparison.
+	All thing considered, we proposed a new model ISLO-CFNN to improve the weak points of original CFNN model by replacing GD algorithm by above proposed ISLO algorithm in optimizing the parameters of the network while training process. Also, in order to evaluate the performance of our proposed model, we would build both our model and existing models for the purposes of evaluation and comparison.
 	
 	Fig. \ref{fig_model_phases} illustrates the skeleton of forecasting system designed. There are four main phases, each of them is indispensable in our model. The phases are Collecting data, Data pre-processing, Building and Training model and Deploy prediction model. Firstly, historical records about resources used are collected and saved in lines in a log file. These information is extracted and pre-processed before being used for training the prediction model that is designed. In the final stage, the trained model is applied for data in current time, and it will predict the amount of resources needed. Specifically, in Building and Training model stage, CFNN model is built with fixed nodes in all layers, and it will be optimized by ISLO algorithm, which is discussed in detail in Section \ref{improved_ISLO}. We will discuss about each phase as below.
 	
@@ -716,7 +716,7 @@ $f_{16}(x) = 418.9829D -{\sum_{i=1}^{n} x_i sin(\sqrt{|x_i|})}. + 500$ & [-500, 
 The performance of ISLO algorithm about optimizing 30 benchmark functions is compared with different optimizers including well-known algorithms as well as recent algorithms that belong to all four groups in nature-inspired meta-heuristic algorithms. Specifically, they are: 
 \begin{itemize}
 \item Generic Algorithm (GA) \cite{whitley1994genetic} and Differential evolution (DE) \cite{price2013differential} (Evolutionary algorithms)
-\item Particle Swarm Optimization (PSO) \cite{kennedy2010particle}, Whale Optimization Algorithm (WOA) \cite{mirjalili2016whale} and the origin Sea Lion Optimization Algorithm (SLnO) \cite{masadeh2019sea} (Swarm-based algorithms)
+\item Particle Swarm Optimization (PSO) \cite{kennedy2010particle}, Whale Optimization Algorithm (WOA) \cite{mirjalili2016whale} and the original Sea Lion Optimization Algorithm (SLnO) \cite{masadeh2019sea} (Swarm-based algorithms)
 \item Tug of War Optimization (TWO) \cite{kaveh2016novel} (Physics-based algorithms)
 \item Queuing Search Optimization (QSO) \cite{zhang2018queuing} (Human-based algorithms)
 \end{itemize}
@@ -793,8 +793,8 @@ Rastrigin’s  , Weierstrass, HappyCat, Schwefel's, Rosenbrock's, HGBat, Katsuur
 
 \subsection{Evaluation method and Parameter settings}
 
-	With compared algorithms and functions mentioned above, the experimental results of each model are produced by calculating mean and standard deviation ($std$) value (Eq. \ref{eq_mean} and \ref{eq_std}) of 20 times running for each algorithms. For all the algorithms, a population size and maximum iteration equal to 100 and 500 have been utilized to run on each function with 50-dimension search space. The choices  of parameters are based on existing setting up
-described in origin paper of each algorithm.
+	With compared algorithms and functions mentioned above, the experimental results of each model are produced by calculating mean and standard deviation ($std$) value (Eq. \ref{eq_mean} and \ref{eq_std}) of 20 times running starting from randomly generated populations for each algorithms. For all the algorithms, a population size and maximum iteration equal to 100 and 500 have been utilized to run on each function with 50-dimension search space. The choices  of parameters are based on existing setting up
+described in original paper of each algorithm.
 \begin{equation} \label{eq_mean}
 mean = \frac{1}{n}\sum_{i=1}^n r_i
 \end{equation}
@@ -809,14 +809,11 @@ where $N$ is the number of values and $r_i$ $(i = 1, 2, ..., N)$ are observation
 \item In the case where there are two or more algorithms having the same $mean$ value, the one that has the most stable $std$ value will be chosen as the best one.
 \end{itemize}
 	
-	Finally, the experimental results of all functions and algorithms are shown in Table ***.
-	
-\subsection{Experiment results and discussion}
-\label{exp_results}
+	Finally, the experimental results of all functions and algorithms are shown in Table \ref{tbl_results_uni_multi} and \ref{tbl_results_hybrid_compos}, and the convergence speeds of the algorithms in several functions are illustrated in Fig. \ref{fig_uni_multi_convergence} and \ref{fig_hybrid_compos_convergence}.
 
 \begin{table}[!t]
-\caption{Comparison of optimization results obtained for the unimodal functions}
-\label{tbl_results_uni}
+\caption{Comparison of optimization results obtained for the unimodal and multimodal functions}
+\label{tbl_results_uni_multi}
 \begin{tabular}{|l|l|l|l|l|l|l|l|l|}
 \hline
 Function             &      & GA       & PSO      & SLnO     & WOA               & ISLO               & TWO      & QSO               \\ \hline
@@ -844,16 +841,7 @@ Function             &      & GA       & PSO      & SLnO     & WOA              
 \multirow{3}{*}{$f_8$}  & mean & 4.54E+08 & 7.70E+09 & 6.52E+07 & 7.83E+05          & \textbf{1.60E+04}  & 1.02E+08 & 8.19E+06          \\ \cline{2-9} 
                      & std  & 1.10E+08 & 2.70E+09 & 2.65E+07 & 2.47E+05          & \textbf{1.20E+04}  & 1.42E+07 & 3.40E+06          \\ \cline{2-9} 
                      & rank & 6        & 7        & 4        & 2                 & \textbf{1}         & 5        & 3                 \\ \hline
-\end{tabular}
-\end{table}
-
-\begin{table}[!t]
-\caption{Comparison of optimization results obtained for the multimodal benchmark functions}
-\label{tbl_results_multi}
-\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
-\hline
-Function             &      & GA       & PSO      & SLnO     & WOA               & ISLO               & TWO      & QSO               \\ \hline
-\multirow{3}{*}{$f_9$}  & mean & 1.69E+01 & 2.04E+01 & 2.05E+01 & 2.82E-01          & \textbf{1.85E-02}  & 2.01E+01 & 2.08E+01          \\ \cline{2-9} 
+                     \multirow{3}{*}{$f_9$}  & mean & 1.69E+01 & 2.04E+01 & 2.05E+01 & 2.82E-01          & \textbf{1.85E-02}  & 2.01E+01 & 2.08E+01          \\ \cline{2-9} 
                      & std  & 3.02E-01 & 8.70E-01 & 3.00E-01 & 2.22E-01          & \textbf{1.11E-02}  & 3.89E-02 & 2.81E-02          \\ \cline{2-9} 
                      & rank & 3        & 5        & 6        & 2                 & \textbf{1}         & 4        & 7                 \\ \hline
 \multirow{3}{*}{$f_{10}$} & mean & 6.71E+00 & 1.42E+01 & 3.55E-01 & 3.41E-01          & \textbf{4.34E-04}  & 7.68E-01 & 7.05E-01          \\ \cline{2-9} 
@@ -879,10 +867,44 @@ Function             &      & GA       & PSO      & SLnO     & WOA              
                      & rank & 5        & 6        & 7        & 2                 & \textbf{1}         & 3        & 4                 \\ \hline
 \end{tabular}
 \end{table}
+	
+\subsection{Experiment results and discussion}
+\label{exp_results}
 
+\subsubsection{Unimodal and Multimodal benchmark functions}
+\begin{figure}[!ht] 
+   \centering
+   \begin{subfigure}{0.49\textwidth}
+   	\includegraphics[width=1\linewidth]{png/convergence/islo_uni_F2}
+  	 \includegraphics[width=1\linewidth]{png/convergence/islo_uni_F5}
+  	 \includegraphics[width=1\linewidth]{png/convergence/islo_uni_F8}
+  	\caption{Unimodal}
+  	\label{subfig:uni_convergence}
+  	\end{subfigure}
+   \begin{subfigure}{0.49\textwidth}
+   	\includegraphics[width=1\linewidth]{png/convergence/islo_multi_F10}
+  	 \includegraphics[width=1\linewidth]{png/convergence/islo_multi_F12}
+  	 \includegraphics[width=1\linewidth]{png/convergence/islo_multi_F15}
+  	 \caption{Multimodal}
+  	\label{subfig:multi_convergence}
+  	\end{subfigure}
+  \caption{Convergence speed of each algorithm on unimodal (a) and multimodal (b) functions.} 
+  \label{fig_uni_multi_convergence} 
+\end{figure}
+	Functions $f_1$ - $f_{16}$ are unimodal and multimodal functions. These kinds of functions are selected following a couple of testing purposes. Specifically, unimodal functions allow us to evaluate exploitation capacity of meta-heuristic optimizers since they only have one global optimal minimum; multimodal functions help us see algorithms' exploration performance with a number of local minimum points, which exponentially increases following the increase in search space dimension. In general, it can be seen from the Table \ref{tbl_results_uni_multi} that ISLO shows the best performance among all chosen algorithms in the most test cases except $f_{11}$. Furthermore, while optimizing several functions, ISLO is able to reach or nearly the optimal value with decent stability.
+	 
+	\textbf{The accuracy and the stability:} From the gained results of unimodal and multimodal funtions in Table. \ref{tbl_results_uni_multi}, it could be made the following observations:
+\begin{itemize}
+\item ISLO outperforms the others in all test cases except $f_{11}$. In the experiments with unimodal functions $f_1$-$f_8$, ISLO is the best algorithm in the term of exploitation capacity, being ranked at the first position among all chosen algorithms. The results with functions $f_1$ and $f_3$ indicate that ISLO could lead the population relatively near the global optimal position. Additionally, along with the best results in term of accuracy, ISLO also performs good stability since the standard deviation values are below 1 in all cases, especially in $f_1$ and $f_3$, the $std$ values are mostly 0. The results prove that compared with the original SLnO, ISLO's exploitation ability is significantly enhanced. 
+\item The results in Table. \ref{tbl_results_uni_multi} for multimodal functions $f_9$-$f_{16}$ indicate that ISLO also has a superior exploration ability. ISLO stands at the first ranking in 7 out of 8 functions, and with $f_{14}$ and $f_{16}$ ISLO reaches the global optimal values of the functions, accompanying with that is relatively small standard deviation values. It is notable that ISLO is less competitive at $f_{11}$ where it stands at $5th$ position, being outperformed by WOA, TWO and original SLnO. However, in $f_8$, $f_9$, $f_{10}$, $f_{13}$, $f_{14}$ and $f_{16}$, ISLO's results are much better than the others in both terms of accuracy and stability.
+\end{itemize}
+In summary, all gained results with unimodal and multimodal funtions figure out that ISLO has the excellent exploitation and exploration capacity. This is due to the fact that apart from considering and updating search agents' position following the best agent, taking the best experience of each agent into account (Eq. \ref{islo_eq3}) helps ISLO exploits population's information far better than SLnO. Apart from this, opposition-based updating operation in the exploration phase enrichs the diversity of population, helping ISLO easily jumps out of local minimums.
+
+	\textbf{The convergence speed:} The convergence speed of all algorithms working on several functions are shown in Fig. \ref{fig_uni_multi_convergence}. It is clear that ISLO always considerably enhance its global best fitness values in the second half of the iterations. The reason is that on the first half of th e iterations, ISLO is in its exploration phase (since the value of C during that time is always greater than 1, see Algorithm \ref{algorithm_islo}). After changing to exploitation phase, ISLO has the ability to exploit and converge to global minimum quickly, providing better results than the others. Fig. \ref{fig_uni_multi_convergence} indicates that ISLO is competitive with an acceptable convergence speed, and also providing decent fitness values in functions $f_2$, $f_5$, $f_8$, $f_{10}$, $f_{12} $ and $f_{15}$. SLnO has the same pattern of convergence curves compared with ISLO, but it coverges to mediocre fitness values, especially in $f_2$, $f_5$ and $f_{10}$. Also, WOA and QSO are competitive compared with ISLO in function $f_{15}$, where the final results of them are extremely close to ISLO's.
+	
 \begin{table}[!t]
-\caption{Comparison of optimization results obtained for the hybrid benchmark functions}
-\label{tbl_results_hybrid}
+\caption{Comparison of optimization results obtained for the hybrid and composition benchmark functions}
+\label{tbl_results_hybrid_compos}
 \begin{tabular}{|l|l|l|l|l|l|l|l|l|}
 \hline
 Function             &      & GA       & PSO      & SLnO     & WOA               & ISLO               & TWO      & QSO               \\ \hline
@@ -907,16 +929,7 @@ Function             &      & GA       & PSO      & SLnO     & WOA              
 \multirow{3}{*}{$f_{23}$} & mean & 5.29E+06 & 6.08E+07 & 2.65E+08 & 3.59E+04          & \textbf{1.26E+03}  & 2.74E+08 & 9.76E+08          \\ \cline{2-9} 
                      & std  & 1.29E+06 & 2.72E+07 & 3.12E+08 & 4.30E+04          & \textbf{1.19E+03}  & 1.57E+08 & 4.46E+08          \\ \cline{2-9} 
                      & rank & 3        & 4        & 5        & 2                 & \textbf{1}         & 6        & 7                 \\ \hline
-\end{tabular}
-\end{table}
-
-\begin{table}[!t]
-\caption{Comparison of optimization results obtained for the composition functions}
-\label{tbl_results_compos}
-\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
-\hline
-Function             &      & GA       & PSO      & SLnO     & WOA               & ISLO               & TWO      & QSO               \\ \hline
-\multirow{3}{*}{$f_{24}$} & mean & 1.12E+04 & 2.96E+04 & 3.46E+03 & 1.92E+03          & \textbf{1.81E+03}  & 1.15E+05 & 2.23E+03          \\ \cline{2-9} 
+                     \multirow{3}{*}{$f_{24}$} & mean & 1.12E+04 & 2.96E+04 & 3.46E+03 & 1.92E+03          & \textbf{1.81E+03}  & 1.15E+05 & 2.23E+03          \\ \cline{2-9} 
                      & std  & 2.35E+03 & 1.71E+04 & 1.04E+03 & 4.11E+01          & \textbf{1.62E+00}  & 4.71E+04 & 6.89E+02          \\ \cline{2-9} 
                      & rank & 5        & 6        & 4        & 2                 & \textbf{1}         & 7        & 3                 \\ \hline
 \multirow{3}{*}{$f_{25}$} & mean & 8.17E+06 & 1.26E+08 & 8.62E+08 & 1.23E+05          & \textbf{2.95E+03}  & 2.64E+08 & 6.98E+08          \\ \cline{2-9} 
@@ -939,6 +952,28 @@ Function             &      & GA       & PSO      & SLnO     & WOA              
                      & rank & 5        & 7        & 3        & 2                 & \textbf{1}         & 6        & 4                 \\ \hline
 \end{tabular}
 \end{table}
+\subsubsection{Hybrid and Composition benchmark functions}
+
+
+\begin{figure}[!ht] 
+   \centering
+   \begin{subfigure}{0.49\textwidth}
+   	\includegraphics[width=1\linewidth]{png/convergence/islo_hybrid_F17}
+  	 \includegraphics[width=1\linewidth]{png/convergence/islo_hybrid_F20}
+  	 \includegraphics[width=1\linewidth]{png/convergence/islo_hybrid_F21}
+  	\caption{Hybrid}
+  	\label{subfig:hybrid_convergence}
+  	\end{subfigure}
+   \begin{subfigure}{0.49\textwidth}
+   	\includegraphics[width=1\linewidth]{png/convergence/islo_compos_F24}
+  	 \includegraphics[width=1\linewidth]{png/convergence/islo_compos_F25}
+  	 \includegraphics[width=1\linewidth]{png/convergence/islo_compos_F28}
+  	 \caption{Composition}
+  	\label{subfig:compos_convergence}
+  	\end{subfigure}
+  \caption{Convergence speed of each algorithm on hybrid (a) and composition (b) functions.} 
+  \label{fig_hybrid_compos_convergence} 
+\end{figure}
 
 \section{Application}
 \label{sec:exp_app}
