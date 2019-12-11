@@ -47,7 +47,7 @@
 
 
 \renewcommand{\baselinestretch}{1.5}
-% \DeclareUnicodeCharacter{2212}{-}
+\DeclareUnicodeCharacter{2212}{-}
 \begin{document}
 
 \setlength{\abovedisplayskip}{3pt}
@@ -952,8 +952,6 @@ Function             &      & GA       & PSO      & SLnO     & WOA              
                      & rank & 5        & 7        & 3        & 2                 & \textbf{1}         & 6        & 4                 \\ \hline
 \end{tabular}
 \end{table}
-\subsubsection{Hybrid and Composition benchmark functions}
-
 
 \begin{figure}[!ht] 
    \centering
@@ -974,9 +972,24 @@ Function             &      & GA       & PSO      & SLnO     & WOA              
   \caption{Convergence speed of each algorithm on hybrid (a) and composition (b) functions.} 
   \label{fig_hybrid_compos_convergence} 
 \end{figure}
+\subsubsection{Hybrid and Composition benchmark functions}
+
+	Functions $f_{17}$-$f_{30}$ are hybrid and composition functions. In hybrid functions ($f_{17}$-$f_{23}$, the variables are randomly divided into subcomponents which play a role as input for different basic functions including both unimodal and multimodal functions. In order to work well on these functions, algorithms are required to be good at both exploitation and exploration capacity, because hybrid functions are both unimodal and multimodal, and they own different properties for different variables subcomponents. On the other hand, optimization of composite mathematical functions ($f_{24}$-$f_{30}$) is a very challenging task, because local optima is only avoided by a proper balance between exploitation and exploration. In general, Fig. \ref{tbl_results_hybrid_compos} shows that ISLO owns the best performance over all hybrid and compostion functions. The results from ISLO stand at first ranking in all cases except $f_8$ and $f_{28}$ where the first position belongs to QSO. Also, as what is observed in Fig. \ref{fig_hybrid_compos_convergence}, ISLO's convergence curves are similar to those in unimodal and multimodal functions, and ISLO still has a very fast convergence after the first half of iteration because of its updating mechanism.
+	
+
+	
+	\textbf{The accuracy and the stability:} 
+	
+	To resolve the optimization problem in hybrid functions $f_{17}$-$f_{23}$, it is evident that ISLO can work very well in almost cases. The results shown in Table. \ref{tbl_results_hybrid_compos} indicates that ISLO has the superior results at functions $f_{17}$, $f_{19}$, $f_{20}$ and $f_{23}$ compared with state-of-the-art algorithms such as WOA and QSO. Furthermore, with functions $f_{21}$ and $f_{23}$, ISLO's results are much better than the others', proving good capacity at both exploitation and exploration. Solving the case $f_{18}$, although ISLO does not account for the first place, it is still very competitive when its result is only worse than QSO's.
+	
+	For composition functions, ISLO shows the best performance among all the algorithms by standing at the first place in 6 out of 7 functions. Specifically, in $f_{24}$, $f_{27}$, $f_{29}$ and $f_{30}$, there is no big differences between ISLO'results and the others', while in $f_{25}$ and $f_{26}$, $mean$ and $std$ values from Table. \ref{tbl_results_hybrid_compos} indicates the dominance of ISLO in optimizing these functions. This proves that ISLO owns a superior balance between its exploitation and exploration while solving test problems. Also $std$ values from ISLO in most cases are below 10, showing the decent stability of this algorithm compared with GA or PSO algorithms.
+	
+	\textbf{The convergence speed:} As working on unimodal and multimodal functions, ISLO still owns the fast convergence in the second half of iterations. The convergence curves in Fig. \ref{fig_hybrid_compos_convergence} shows that ISLO starts to converge very fast right after exploration phase comes to an end. In $f_{17}$ and $f_{24}$, the convergence curves indicate that ISLO is very competitive with WOA because these 2 algorithm converge to almost one value. Also, the results comes from ISLO is far better than the original SLnO in all cases, proving that exploitation and exploration capacities in SLnO are considerably enhanced. QSO is observed to be superior in function $f_{28}$, in which the others including ISLO are stuck in local minimums.   
 
 \section{Application}
 \label{sec:exp_app}
+
+
 
 \chapter{Conclusions}
 
