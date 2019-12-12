@@ -33,6 +33,12 @@ Jerome~T Connor, R~Douglas Martin, and Les~E Atlas.
 \newblock Recurrent neural networks and robust time series prediction.
 \newblock {\em IEEE transactions on neural networks}, 5(2):240--254, 1994.
 
+\bibitem{cortez2012multi}
+Paulo Cortez, Miguel Rio, Miguel Rocha, and Pedro Sousa.
+\newblock Multi-scale internet traffic forecasting using neural networks and
+  time series methods.
+\newblock {\em Expert Systems}, 29(2):143--155, 2012.
+
 \bibitem{eberhart1995particle}
 Russell Eberhart and James Kennedy.
 \newblock Particle swarm optimization.
@@ -126,17 +132,17 @@ Thieu Nguyen, Tu~Nguyen, Binh~Minh Nguyen, and Giang Nguyen.
 \newblock {\em International Journal of Computational Intelligence Systems},
   12(2):1144--1161, 2019.
 
-\bibitem{price2013differential}
-Kenneth~V Price.
-\newblock Differential evolution.
-\newblock In {\em Handbook of Optimization}, pages 187--214. Springer, 2013.
-
 \bibitem{rashid2010improved}
 Muhammad Rashid and Abdul~Rauf Baig.
 \newblock Improved opposition-based pso for feedforward neural network
   training.
 \newblock In {\em 2010 International Conference on Information Science and
   Applications}, pages 1--6. IEEE, 2010.
+
+\bibitem{reiss2011google}
+Charles Reiss, John Wilkes, and Joseph~L Hellerstein.
+\newblock Google cluster-usage traces: format+ schema.
+\newblock {\em Google Inc., White Paper}, pages 1--14, 2011.
 
 \bibitem{rumelhart1988learning}
 David~E Rumelhart, Geoffrey~E Hinton, Ronald~J Williams, et~al.

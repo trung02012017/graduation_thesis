@@ -47,7 +47,7 @@
 
 
 \renewcommand{\baselinestretch}{1.5}
-% \DeclareUnicodeCharacter{2212}{-}
+\DeclareUnicodeCharacter{2212}{-}
 \begin{document}
 
 \setlength{\abovedisplayskip}{3pt}
@@ -995,17 +995,41 @@ Function             &      & GA       & PSO      & SLnO     & WOA              
 \section{Application}
 \label{sec:exp_app}
 	
-	In this section, proposed model in Section \ref{sec:application} is utilized for solving time-series prediction in the auto-scaling problem in cloud computing. Our experiment is done with 4 datasets: Google Trace CPU, Google Trace Memory, EU Internet Traffic and UK Internet Traffic. In this empirical study, ISLO-CFNN model is compared with several deep learning models such as simple MLP, the original CFNN, and two well-known and widely used models in time-series forecasting: LSTM and GRU in terms of accuracy, run time and the number of hyper-parameters. Also, optimizing capacity of ISLO on CFNN is compared with some algorithms in Section \ref{sec:exp_theory}.
+	In this section, proposed model in Section \ref{sec:application} is utilized for solving time-series prediction in the auto-scaling problem in cloud computing. Our experiment is done with 4 datasets: Google Trace CPU, Google Trace Memory, EU Internet Traffic and UK Internet Traffic. In this empirical study, ISLO-CFNN model is compared with several deep learning models such as simple MLP, the original CFNN, and two well-known and widely used models in time-series forecasting: LSTM and GRU in terms of accuracy, run time and the number of hyper-parameters. Also, optimizing capacity of ISLO on CFNN is compared with several swarm-based algorithms in Section \ref{sec:exp_theory}. The bio-inspired models used to validate against ISLO-CFNN are PSO-CFNN and SLnO-CFNN, which are CFNN models optimized by PSO and SLnO algorithms, respectively.
 	
 	We would first describe 4 datasets used in this experiment. Then, the parameter setting for each model and evaluation metrics are introduced in detail. Finally, ISLO-CFNN performance is compared with the deep learning models as well as bio-inspired models in different perspectives.
 
 \subsection{Dataset and Set up}
+\label{exp:data}
+
 \subsubsection{Google Trace dataset}
-\subsubsection{EU Internet Traffic dataset}
-\subsubsection{UK Internet Traffic dataset}
+	The most important dataset in our experiments is gathered by Google on a cluster of about $12500$ machines \cite{reiss2011google} during 29 days, starting from May 2011. Resources requirement and usage data for each jobs are recorded by each machine in cluster, and then the data is managed by cluster's management system. In Google Trace dataset, there are two columns, which are about two extremely important information of Central Processing Unit (CPU) and Random Access Memory (RAM) required for each job. For that reason, we decide to choose these two information as two time-series datasets (called Google Trace CPU and Google Trace RAM from here). The datasets are processed and summarized in 5-minute interval, considered as the total demand for resources in the whole Google's cluster. Visualization of Google Trace CPU and Google Trace RAM datasets is illustrated in Fig. ***.  
+\subsubsection{EU Internet Traffic and UK Internet Traffic datasets}
+	
+	These two sets of data, which is used for experiments in \cite{cortez2012multi}, are recorded by two distinct ISPs. The EU Internet Traffic dataset comes from a private ISP playing a role as a reporter with centers  in 11 European cities. The data corresponds to a a transatlantic link and was collected from 06:57 hours on 7 June to 11:17 hours on 29 July 2005. The UK Internet Traffic is derived from m UKERNA and represents aggregated traffic in the United Kingdom academic network backbone. It was
+reported between 19 November 2004, at 09:30
+hours and 27 January 2005, at 11:11 hours. Both of two datasets are processed and summarized in every 5 minutes, creating data as the input in our experiments. 2D visualization of the data is shown in Fig. *** as below.
+
+  
 
 \subsection{Parameter Setting and Evaluation Metrics}
+	
+	As mentioned above, ISLO-CFNN's performance is compared with 4 deep learning models: MLPs, CFNN, LSTM and GRU, and 2 bio-inspired models: PSO-CFNN and SLnO-CFNN models. The hyper-parameter settings for each model are described as below:
+\begin{itemize}
+\item 4 datasets used for these experiments are all divided into 2 sets: training set and testing set with the ratio 0.8:0.2. The training set accounts for the first 80\% of the datasets, and the remaining is of testing set because of the sequential characteristic of time-series data.
+\item CFNN's architectures in all models are configured with the same structure with three layers: input layer, one hidden layer and output layer which contains only one neuron in time-series prediction.
+\item The input size for all models is 3 as we use 3 historical data points to predict the output in current time (mentioned in Section \ref{sec:application}).
+\item RNN-based models as LSTM and GRU contains one input layer, LSTM (or GRU) blocks and one output layer with the same hyper-parameter setting as described in \cite{fu2016using}.
+\item In all test, including with deep learning models and swarm-based algorithms, the number of iterations is set to 1000. From the experiments, we figure out that the amount of 1000 iterations is enough for all algorithms to converge to their final results. 
+\end{itemize} 
 
+Besides the common settings for models, the following settings are applied for each swarm-based algorithms as they show the best empirical performance:
+
+\begin{itemize}
+\item The population size for each algorithm is set to 200.
+\item For PSO, based on the original paper \cite{eberhart1995particle}, cognitive learning rates $c_1=c_2=2.05$, and inertia factor $w$ is set linearly reducing from 0.9 to 0.4 over the course of iterations.
+\item For SLnO and ISLO, hyper-parameters are set as described in original paper \cite{masadeh2019sea}, and also, $c_1$ and $c_2$ in ISLO algorithm are the same as shown for PSO.
+\end{itemize}
 
 \subsection{Results and Discussion}  
 	
