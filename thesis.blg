@@ -7,46 +7,47 @@ Repeated entry---line 337 of file references.bib
  : @inproceedings{fu2016using
  :                           ,
 I'm skipping whatever remains of this entry
+Warning--empty journal in koza1997genetic
 Warning--can't use both volume and number fields in warsito2018cascade
-You've used 32 entries,
+You've used 37 entries,
             2118 wiz_defined-function locations,
-            693 strings with 10051 characters,
-and the built_in function-call counts, 12206 in all, are:
-= -- 1260
-> -- 541
-< -- 16
-+ -- 217
-- -- 180
-* -- 830
-:= -- 1949
-add.period$ -- 107
-call.type$ -- 32
-change.case$ -- 181
+            721 strings with 10795 characters,
+and the built_in function-call counts, 13931 in all, are:
+= -- 1441
+> -- 592
+< -- 18
++ -- 240
+- -- 196
+* -- 934
+:= -- 2214
+add.period$ -- 123
+call.type$ -- 37
+change.case$ -- 204
 chr.to.int$ -- 0
-cite$ -- 33
-duplicate$ -- 488
-empty$ -- 932
-format.name$ -- 180
-if$ -- 2624
+cite$ -- 39
+duplicate$ -- 566
+empty$ -- 1083
+format.name$ -- 196
+if$ -- 3002
 int.to.chr$ -- 0
-int.to.str$ -- 32
-missing$ -- 33
-newline$ -- 164
-num.names$ -- 64
-pop$ -- 184
+int.to.str$ -- 37
+missing$ -- 38
+newline$ -- 189
+num.names$ -- 74
+pop$ -- 211
 preamble$ -- 1
-purify$ -- 152
+purify$ -- 170
 quote$ -- 0
-skip$ -- 370
+skip$ -- 429
 stack$ -- 0
-substring$ -- 816
-swap$ -- 154
-text.length$ -- 16
+substring$ -- 951
+swap$ -- 178
+text.length$ -- 18
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 124
-warning$ -- 1
-while$ -- 124
-width$ -- 34
-write$ -- 367
+type$ -- 144
+warning$ -- 2
+while$ -- 144
+width$ -- 39
+write$ -- 421
 (There was 1 error message)

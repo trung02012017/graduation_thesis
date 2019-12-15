@@ -45,6 +45,13 @@ Russell Eberhart and James Kennedy.
 \newblock In {\em Proceedings of the IEEE international conference on neural
   networks}, volume~4, pages 1942--1948. Citeseer, 1995.
 
+\bibitem{fleetwood2004introduction}
+Kelly Fleetwood.
+\newblock An introduction to differential evolution.
+\newblock In {\em Proceedings of Mathematics and Statistics of Complex Systems
+  (MASCOS) One Day Symposium, 26th November, Brisbane, Australia}, pages
+  785--791, 2004.
+
 \bibitem{fu2016using}
 Rui Fu, Zuo Zhang, and Li~Li.
 \newblock Using lstm and gru neural network methods for traffic flow
@@ -75,6 +82,11 @@ Sepp Hochreiter and J{\"u}rgen Schmidhuber.
 \newblock Long short-term memory.
 \newblock {\em Neural computation}, 9(8):1735--1780, 1997.
 
+\bibitem{holland1992genetic}
+John~H Holland.
+\newblock Genetic algorithms.
+\newblock {\em Scientific american}, 267(1):66--73, 1992.
+
 \bibitem{kaveh2016novel}
 A~Kaveh and A~Zolghadr.
 \newblock A novel meta-heuristic algorithm: tug of war optimization.
@@ -91,6 +103,11 @@ Timo Koskela, Mikko Lehtokangas, Jukka Saarinen, and Kimmo Kaski.
   neural networks.
 \newblock In {\em Proceedings of the World Congress on Neural Networks}, pages
   491--496. Citeseer, 1996.
+
+\bibitem{koza1997genetic}
+John~R Koza.
+\newblock Genetic programming.
+\newblock 1997.
 
 \bibitem{langkvist2014review}
 Martin L{\"a}ngkvist, Lars Karlsson, and Amy Loutfi.
@@ -148,6 +165,20 @@ Charles Reiss, John Wilkes, and Joseph~L Hellerstein.
 David~E Rumelhart, Geoffrey~E Hinton, Ronald~J Williams, et~al.
 \newblock Learning representations by back-propagating errors.
 \newblock {\em Cognitive modeling}, 5(3):1, 1988.
+
+\bibitem{salcedo2013novel}
+Sancho Salcedo-Sanz, A~Pastor-S{\'a}nchez, D~Gallo-Marazuela, and Antonio
+  Portilla-Figueras.
+\newblock A novel coral reefs optimization algorithm for multi-objective
+  problems.
+\newblock In {\em International Conference on Intelligent Data Engineering and
+  Automated Learning}, pages 326--333. Springer, 2013.
+
+\bibitem{simon2008biogeography}
+Dan Simon.
+\newblock Biogeography-based optimization.
+\newblock {\em IEEE transactions on evolutionary computation}, 12(6):702--713,
+  2008.
 
 \bibitem{tang2009enhanced}
 Jun Tang and Xiaojuan Zhao.

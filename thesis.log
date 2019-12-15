@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.11.18)  13 DEC 2019 09:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.11.14)  15 DEC 2019 23:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -560,9 +560,6 @@ LaTeX Warning: Unused global option(s):
 
 LaTeX Warning: Label `model_lstm_gru' multiply defined.
 
-
-LaTeX Warning: Label `collect_data' multiply defined.
-
 )
 \openout1 = `thesis.aux'.
 
@@ -748,304 +745,303 @@ Chapter 1.
 
 ]
 Chapter 2.
-<./images/pdf/model/pso.pdf, id=166, 1062.21844pt x 515.67656pt>
-File: ./images/pdf/model/pso.pdf Graphic file (type pdf)
-<use ./images/pdf/model/pso.pdf>
-Package pdftex.def Info: ./images/pdf/model/pso.pdf  used on input line 90.
-(pdftex.def)             Requested size: 320.0935pt x 155.39659pt.
 [7
 
-] [8 <./images/pdf/model/pso.pdf>] [9] [10]
-<./images/png/sigmoid.png, id=262, 385.44pt x 187.70125pt>
+]
+<./images/pdf/model/pso.pdf, id=178, 1062.21844pt x 515.67656pt>
+File: ./images/pdf/model/pso.pdf Graphic file (type pdf)
+<use ./images/pdf/model/pso.pdf>
+Package pdftex.def Info: ./images/pdf/model/pso.pdf  used on input line 92.
+(pdftex.def)             Requested size: 320.0935pt x 155.39659pt.
+ [8 <./images/pdf/model/pso.pdf>] [9] [10] [11]
+<./images/png/sigmoid.png, id=278, 385.44pt x 187.70125pt>
 File: ./images/png/sigmoid.png Graphic file (type png)
 <use ./images/png/sigmoid.png>
-Package pdftex.def Info: ./images/png/sigmoid.png  used on input line 226.
+Package pdftex.def Info: ./images/png/sigmoid.png  used on input line 228.
 (pdftex.def)             Requested size: 140.84192pt x 68.58627pt.
-<./images/png/tanh.png, id=263, 419.5675pt x 179.67125pt>
+<./images/png/tanh.png, id=279, 419.5675pt x 179.67125pt>
 File: ./images/png/tanh.png Graphic file (type png)
 <use ./images/png/tanh.png>
-Package pdftex.def Info: ./images/png/tanh.png  used on input line 227.
+Package pdftex.def Info: ./images/png/tanh.png  used on input line 229.
 (pdftex.def)             Requested size: 140.84192pt x 60.31154pt.
-<./images/png/relu.png, id=264, 419.5675pt x 191.71625pt>
+<./images/png/relu.png, id=280, 419.5675pt x 191.71625pt>
 File: ./images/png/relu.png Graphic file (type png)
 <use ./images/png/relu.png>
-Package pdftex.def Info: ./images/png/relu.png  used on input line 228.
+Package pdftex.def Info: ./images/png/relu.png  used on input line 230.
 (pdftex.def)             Requested size: 140.84192pt x 64.35478pt.
-<./images/png/leakyrelu.png, id=265, 498.86375pt x 177.66376pt>
+<./images/png/leakyrelu.png, id=281, 498.86375pt x 177.66376pt>
 File: ./images/png/leakyrelu.png Graphic file (type png)
 <use ./images/png/leakyrelu.png>
-Package pdftex.def Info: ./images/png/leakyrelu.png  used on input line 229.
+Package pdftex.def Info: ./images/png/leakyrelu.png  used on input line 231.
 (pdftex.def)             Requested size: 140.84192pt x 50.15756pt.
- [11 <./images/png/sigmoid.png (PNG copy)> <./images/png/tanh.png (PNG copy)> <
-./images/png/relu.png (PNG copy)> <./images/png/leakyrelu.png (PNG copy)>] [12]
- [13]
-Overfull \hbox (2.76033pt too wide) in paragraph at lines 317--317
+ [12 <./images/png/sigmoid.png (PNG copy)> <./images/png/tanh.png (PNG copy)> <
+./images/png/relu.png (PNG copy)> <./images/png/leakyrelu.png (PNG copy)>] [13]
+
+Overfull \hbox (2.76033pt too wide) in paragraph at lines 319--319
 |[]\T1/cmr/bx/n/14.4 Time-series pre-dic-tion and Auto-scaling prob-lem in Clou
 d
  []
 
-[14]
-<./images/pdf/model/model_ffnn.pdf, id=324, 844.65562pt x 596.98032pt>
+[14] [15]
+<./images/pdf/model/model_ffnn.pdf, id=340, 844.65562pt x 596.98032pt>
 File: ./images/pdf/model/model_ffnn.pdf Graphic file (type pdf)
 <use ./images/pdf/model/model_ffnn.pdf>
 Package pdftex.def Info: ./images/pdf/model/model_ffnn.pdf  used on input line 
-343.
+345.
 (pdftex.def)             Requested size: 320.0935pt x 226.23544pt.
- [15] [16 <./images/pdf/model/model_ffnn.pdf>]
-<./images/pdf/model/model_cfnn.pdf, id=389, 844.65562pt x 596.98032pt>
+ [16 <./images/pdf/model/model_ffnn.pdf>]
+<./images/pdf/model/model_cfnn.pdf, id=394, 844.65562pt x 596.98032pt>
 File: ./images/pdf/model/model_cfnn.pdf Graphic file (type pdf)
 <use ./images/pdf/model/model_cfnn.pdf>
 Package pdftex.def Info: ./images/pdf/model/model_cfnn.pdf  used on input line 
-379.
+381.
 (pdftex.def)             Requested size: 320.0935pt x 226.23544pt.
-<./images/png/rnn_unrolled.png, id=394, 977.8131pt x 256.91985pt>
+<./images/png/rnn_unrolled.png, id=399, 977.8131pt x 256.91985pt>
 File: ./images/png/rnn_unrolled.png Graphic file (type png)
 <use ./images/png/rnn_unrolled.png>
-Package pdftex.def Info: ./images/png/rnn_unrolled.png  used on input line 390.
+Package pdftex.def Info: ./images/png/rnn_unrolled.png  used on input line 392.
 
 (pdftex.def)             Requested size: 426.79135pt x 112.13948pt.
- [17 <./images/pdf/model/model_cfnn.pdf>]
-<./images/png/lstm_gru.png, id=457, 1521.685pt x 967.615pt>
+ [17] [18 <./images/pdf/model/model_cfnn.pdf> <./images/png/rnn_unrolled.png>]
+<./images/png/lstm_gru.png, id=480, 1521.685pt x 967.615pt>
 File: ./images/png/lstm_gru.png Graphic file (type png)
 <use ./images/png/lstm_gru.png>
-Package pdftex.def Info: ./images/png/lstm_gru.png  used on input line 415.
+Package pdftex.def Info: ./images/png/lstm_gru.png  used on input line 417.
 (pdftex.def)             Requested size: 426.79135pt x 271.38806pt.
- [18 <./images/png/rnn_unrolled.png>]
-Missing character: There is no â in font cmr7!
-Missing character: There is no ˆ in font cmr7!
-Missing character: There is no ’ in font cmr7!
-Missing character: There is no â in font cmr7!
-Missing character: There is no ˆ in font cmr7!
-Missing character: There is no ’ in font cmr7!
  [19 <./images/png/lstm_gru.png (PNG copy)>]
+Missing character: There is no â in font cmr7!
+Missing character: There is no ˆ in font cmr7!
+Missing character: There is no ’ in font cmr7!
+Missing character: There is no â in font cmr7!
+Missing character: There is no ˆ in font cmr7!
+Missing character: There is no ’ in font cmr7!
+ [20]
 Chapter 3.
-[20
+[21
 
-] [21] [22]
-<./images//pdf/model/model_phases.pdf, id=566, 844.65562pt x 596.98032pt>
+] [22] [23]
+<./images//pdf/model/model_phases.pdf, id=580, 844.65562pt x 596.98032pt>
 File: ./images//pdf/model/model_phases.pdf Graphic file (type pdf)
 <use ./images//pdf/model/model_phases.pdf>
 Package pdftex.def Info: ./images//pdf/model/model_phases.pdf  used on input li
-ne 521.
+ne 523.
 (pdftex.def)             Requested size: 426.79135pt x 301.6503pt.
- [23] [24 <./images//pdf/model/model_phases.pdf>]
-<./images/pdf/model/solution_creation.pdf, id=773, 844.65562pt x 596.98032pt>
+ [24] [25 <./images//pdf/model/model_phases.pdf>]
+<./images/pdf/model/solution_creation.pdf, id=788, 844.65562pt x 596.98032pt>
 File: ./images/pdf/model/solution_creation.pdf Graphic file (type pdf)
 <use ./images/pdf/model/solution_creation.pdf>
 Package pdftex.def Info: ./images/pdf/model/solution_creation.pdf  used on inpu
-t line 595.
+t line 597.
 (pdftex.def)             Requested size: 320.0935pt x 226.23544pt.
-<./images/pdf/model/islo_cfnn_workflow.pdf, id=774, 844.65562pt x 596.98032pt>
+<./images/pdf/model/islo_cfnn_workflow.pdf, id=789, 844.65562pt x 596.98032pt>
 File: ./images/pdf/model/islo_cfnn_workflow.pdf Graphic file (type pdf)
 <use ./images/pdf/model/islo_cfnn_workflow.pdf>
 Package pdftex.def Info: ./images/pdf/model/islo_cfnn_workflow.pdf  used on inp
-ut line 603.
+ut line 605.
 (pdftex.def)             Requested size: 426.79135pt x 301.6503pt.
- [25] [26 <./images/pdf/model/solution_creation.pdf> <./images/pdf/model/islo_c
+ [26] [27 <./images/pdf/model/solution_creation.pdf> <./images/pdf/model/islo_c
 fnn_workflow.pdf
 
 pdfTeX warning: pdflatex (file ./images/pdf/model/islo_cfnn_workflow.pdf): PDF 
 inclusion: multiple pdfs with page group included in a single page
->] [27]
+>] [28]
 Chapter 4.
-[28
+[29
 
 ]
-<./images/png/functions/uni_f5.png, id=948, 462.528pt x 346.896pt>
+<./images/png/functions/uni_f5.png, id=962, 462.528pt x 346.896pt>
 File: ./images/png/functions/uni_f5.png Graphic file (type png)
 <use ./images/png/functions/uni_f5.png>
 Package pdftex.def Info: ./images/png/functions/uni_f5.png  used on input line 
-648.
+650.
 (pdftex.def)             Requested size: 102.43227pt x 76.8202pt.
-<./images/png/functions/uni_f7.png, id=949, 462.528pt x 346.896pt>
+<./images/png/functions/uni_f7.png, id=963, 462.528pt x 346.896pt>
 File: ./images/png/functions/uni_f7.png Graphic file (type png)
 <use ./images/png/functions/uni_f7.png>
 Package pdftex.def Info: ./images/png/functions/uni_f7.png  used on input line 
-649.
+651.
 (pdftex.def)             Requested size: 102.43227pt x 76.8202pt.
-<./images/png/functions/multi_f9.png, id=950, 462.528pt x 346.896pt>
+<./images/png/functions/multi_f9.png, id=964, 462.528pt x 346.896pt>
 File: ./images/png/functions/multi_f9.png Graphic file (type png)
 <use ./images/png/functions/multi_f9.png>
 Package pdftex.def Info: ./images/png/functions/multi_f9.png  used on input lin
-e 654.
+e 656.
 (pdftex.def)             Requested size: 102.43227pt x 76.8202pt.
-<./images/png/functions/multi_f12.png, id=951, 462.528pt x 346.896pt>
+<./images/png/functions/multi_f12.png, id=965, 462.528pt x 346.896pt>
 File: ./images/png/functions/multi_f12.png Graphic file (type png)
 <use ./images/png/functions/multi_f12.png>
 Package pdftex.def Info: ./images/png/functions/multi_f12.png  used on input li
-ne 655.
+ne 657.
 (pdftex.def)             Requested size: 102.43227pt x 76.8202pt.
-<./images/png/functions/hybrid_f21.png, id=952, 462.528pt x 346.896pt>
+<./images/png/functions/hybrid_f21.png, id=966, 462.528pt x 346.896pt>
 File: ./images/png/functions/hybrid_f21.png Graphic file (type png)
 <use ./images/png/functions/hybrid_f21.png>
 Package pdftex.def Info: ./images/png/functions/hybrid_f21.png  used on input l
-ine 660.
+ine 662.
 (pdftex.def)             Requested size: 102.43227pt x 76.8202pt.
-<./images/png/functions/hybrid_f22.png, id=953, 462.528pt x 346.896pt>
+<./images/png/functions/hybrid_f22.png, id=967, 462.528pt x 346.896pt>
 File: ./images/png/functions/hybrid_f22.png Graphic file (type png)
 <use ./images/png/functions/hybrid_f22.png>
 Package pdftex.def Info: ./images/png/functions/hybrid_f22.png  used on input l
-ine 661.
+ine 663.
 (pdftex.def)             Requested size: 102.43227pt x 76.8202pt.
-<./images/png/functions/compos_f26.png, id=954, 462.528pt x 346.896pt>
+<./images/png/functions/compos_f26.png, id=968, 462.528pt x 346.896pt>
 File: ./images/png/functions/compos_f26.png Graphic file (type png)
 <use ./images/png/functions/compos_f26.png>
 Package pdftex.def Info: ./images/png/functions/compos_f26.png  used on input l
-ine 666.
+ine 668.
 (pdftex.def)             Requested size: 102.43227pt x 76.8202pt.
-<./images/png/functions/compos_f30.png, id=955, 462.528pt x 346.896pt>
+<./images/png/functions/compos_f30.png, id=969, 462.528pt x 346.896pt>
 File: ./images/png/functions/compos_f30.png Graphic file (type png)
 <use ./images/png/functions/compos_f30.png>
 Package pdftex.def Info: ./images/png/functions/compos_f30.png  used on input l
-ine 667.
+ine 669.
 (pdftex.def)             Requested size: 102.43227pt x 76.8202pt.
- [29 <./images/png/functions/uni_f5.png> <./images/png/functions/uni_f7.png> <.
+ [30 <./images/png/functions/uni_f5.png> <./images/png/functions/uni_f7.png> <.
 /images/png/functions/multi_f9.png> <./images/png/functions/multi_f12.png> <./i
 mages/png/functions/hybrid_f21.png> <./images/png/functions/hybrid_f22.png> <./
 images/png/functions/compos_f26.png> <./images/png/functions/compos_f30.png>] [
-30] [31]
-<./images/png/convergence/islo_uni_F2.png, id=1001, 462.528pt x 346.896pt>
+31] [32]
+<./images/png/convergence/islo_uni_F2.png, id=1015, 462.528pt x 346.896pt>
 File: ./images/png/convergence/islo_uni_F2.png Graphic file (type png)
 <use ./images/png/convergence/islo_uni_F2.png>
 Package pdftex.def Info: ./images/png/convergence/islo_uni_F2.png  used on inpu
-t line 881.
+t line 883.
 (pdftex.def)             Requested size: 209.1301pt x 156.84808pt.
-<./images/png/convergence/islo_uni_F5.png, id=1002, 462.528pt x 346.896pt>
+<./images/png/convergence/islo_uni_F5.png, id=1016, 462.528pt x 346.896pt>
 File: ./images/png/convergence/islo_uni_F5.png Graphic file (type png)
 <use ./images/png/convergence/islo_uni_F5.png>
 Package pdftex.def Info: ./images/png/convergence/islo_uni_F5.png  used on inpu
-t line 882.
+t line 884.
 (pdftex.def)             Requested size: 209.1301pt x 156.84808pt.
-<./images/png/convergence/islo_uni_F8.png, id=1003, 462.528pt x 346.896pt>
+<./images/png/convergence/islo_uni_F8.png, id=1017, 462.528pt x 346.896pt>
 File: ./images/png/convergence/islo_uni_F8.png Graphic file (type png)
 <use ./images/png/convergence/islo_uni_F8.png>
 Package pdftex.def Info: ./images/png/convergence/islo_uni_F8.png  used on inpu
-t line 883.
+t line 885.
 (pdftex.def)             Requested size: 209.1301pt x 156.84808pt.
-<./images/png/convergence/islo_multi_F10.png, id=1004, 462.528pt x 346.896pt>
+<./images/png/convergence/islo_multi_F10.png, id=1018, 462.528pt x 346.896pt>
 File: ./images/png/convergence/islo_multi_F10.png Graphic file (type png)
 <use ./images/png/convergence/islo_multi_F10.png>
 Package pdftex.def Info: ./images/png/convergence/islo_multi_F10.png  used on i
-nput line 888.
+nput line 890.
 (pdftex.def)             Requested size: 209.1301pt x 156.84808pt.
-<./images/png/convergence/islo_multi_F12.png, id=1005, 462.528pt x 346.896pt>
+<./images/png/convergence/islo_multi_F12.png, id=1019, 462.528pt x 346.896pt>
 File: ./images/png/convergence/islo_multi_F12.png Graphic file (type png)
 <use ./images/png/convergence/islo_multi_F12.png>
 Package pdftex.def Info: ./images/png/convergence/islo_multi_F12.png  used on i
-nput line 889.
+nput line 891.
 (pdftex.def)             Requested size: 209.1301pt x 156.84808pt.
-<./images/png/convergence/islo_multi_F15.png, id=1006, 462.528pt x 346.896pt>
+<./images/png/convergence/islo_multi_F15.png, id=1020, 462.528pt x 346.896pt>
 File: ./images/png/convergence/islo_multi_F15.png Graphic file (type png)
 <use ./images/png/convergence/islo_multi_F15.png>
 Package pdftex.def Info: ./images/png/convergence/islo_multi_F15.png  used on i
-nput line 890.
+nput line 892.
 (pdftex.def)             Requested size: 209.1301pt x 156.84808pt.
- [32] [33 <./images/png/convergence/islo_uni_F2.png> <./images/png/convergence/
+ [33] [34 <./images/png/convergence/islo_uni_F2.png> <./images/png/convergence/
 islo_uni_F5.png> <./images/png/convergence/islo_uni_F8.png> <./images/png/conve
 rgence/islo_multi_F10.png> <./images/png/convergence/islo_multi_F12.png> <./ima
-ges/png/convergence/islo_multi_F15.png>] [34]
-<./images/png/convergence/islo_hybrid_F17.png, id=1033, 462.528pt x 346.896pt>
+ges/png/convergence/islo_multi_F15.png>] [35]
+<./images/png/convergence/islo_hybrid_F17.png, id=1047, 462.528pt x 346.896pt>
 File: ./images/png/convergence/islo_hybrid_F17.png Graphic file (type png)
 <use ./images/png/convergence/islo_hybrid_F17.png>
 Package pdftex.def Info: ./images/png/convergence/islo_hybrid_F17.png  used on 
-input line 965.
+input line 967.
 (pdftex.def)             Requested size: 209.1301pt x 156.84808pt.
-<./images/png/convergence/islo_hybrid_F20.png, id=1034, 462.528pt x 346.896pt>
+<./images/png/convergence/islo_hybrid_F20.png, id=1048, 462.528pt x 346.896pt>
 File: ./images/png/convergence/islo_hybrid_F20.png Graphic file (type png)
 <use ./images/png/convergence/islo_hybrid_F20.png>
 Package pdftex.def Info: ./images/png/convergence/islo_hybrid_F20.png  used on 
-input line 966.
+input line 968.
 (pdftex.def)             Requested size: 209.1301pt x 156.84808pt.
-<./images/png/convergence/islo_hybrid_F21.png, id=1035, 462.528pt x 346.896pt>
+<./images/png/convergence/islo_hybrid_F21.png, id=1049, 462.528pt x 346.896pt>
 File: ./images/png/convergence/islo_hybrid_F21.png Graphic file (type png)
 <use ./images/png/convergence/islo_hybrid_F21.png>
 Package pdftex.def Info: ./images/png/convergence/islo_hybrid_F21.png  used on 
-input line 967.
+input line 969.
 (pdftex.def)             Requested size: 209.1301pt x 156.84808pt.
-<./images/png/convergence/islo_compos_F24.png, id=1036, 462.528pt x 346.896pt>
+<./images/png/convergence/islo_compos_F24.png, id=1050, 462.528pt x 346.896pt>
 File: ./images/png/convergence/islo_compos_F24.png Graphic file (type png)
 <use ./images/png/convergence/islo_compos_F24.png>
 Package pdftex.def Info: ./images/png/convergence/islo_compos_F24.png  used on 
-input line 972.
+input line 974.
 (pdftex.def)             Requested size: 209.1301pt x 156.84808pt.
-<./images/png/convergence/islo_compos_F25.png, id=1037, 462.528pt x 346.896pt>
+<./images/png/convergence/islo_compos_F25.png, id=1051, 462.528pt x 346.896pt>
 File: ./images/png/convergence/islo_compos_F25.png Graphic file (type png)
 <use ./images/png/convergence/islo_compos_F25.png>
 Package pdftex.def Info: ./images/png/convergence/islo_compos_F25.png  used on 
-input line 973.
+input line 975.
 (pdftex.def)             Requested size: 209.1301pt x 156.84808pt.
-<./images/png/convergence/islo_compos_F28.png, id=1038, 462.528pt x 346.896pt>
+<./images/png/convergence/islo_compos_F28.png, id=1052, 462.528pt x 346.896pt>
 File: ./images/png/convergence/islo_compos_F28.png Graphic file (type png)
 <use ./images/png/convergence/islo_compos_F28.png>
 Package pdftex.def Info: ./images/png/convergence/islo_compos_F28.png  used on 
-input line 974.
+input line 976.
 (pdftex.def)             Requested size: 209.1301pt x 156.84808pt.
- [35] [36 <./images/png/convergence/islo_hybrid_F17.png> <./images/png/converge
+ [36] [37 <./images/png/convergence/islo_hybrid_F17.png> <./images/png/converge
 nce/islo_hybrid_F20.png> <./images/png/convergence/islo_hybrid_F21.png> <./imag
 es/png/convergence/islo_compos_F24.png> <./images/png/convergence/islo_compos_F
-25.png> <./images/png/convergence/islo_compos_F28.png>] [37]
-<./images//pdf/dataset/cpu_full.pdf, id=1068, 419.19548pt x 312.02145pt>
+25.png> <./images/png/convergence/islo_compos_F28.png>] [38]
+<./images//pdf/dataset/cpu_full.pdf, id=1082, 419.19548pt x 312.02145pt>
 File: ./images//pdf/dataset/cpu_full.pdf Graphic file (type pdf)
 <use ./images//pdf/dataset/cpu_full.pdf>
 Package pdftex.def Info: ./images//pdf/dataset/cpu_full.pdf  used on input line
- 1010.
+ 1012.
 (pdftex.def)             Requested size: 209.1301pt x 155.66277pt.
-<./images//pdf/dataset/ram_full.pdf, id=1069, 419.19548pt x 312.02145pt>
+<./images//pdf/dataset/ram_full.pdf, id=1083, 419.19548pt x 312.02145pt>
 File: ./images//pdf/dataset/ram_full.pdf Graphic file (type pdf)
 <use ./images//pdf/dataset/ram_full.pdf>
 Package pdftex.def Info: ./images//pdf/dataset/ram_full.pdf  used on input line
- 1011.
+ 1013.
 (pdftex.def)             Requested size: 209.1301pt x 155.66277pt.
- [38 <./images//pdf/dataset/cpu_full.pdf> <./images//pdf/dataset/ram_full.pdf
-
-pdfTeX warning: pdflatex (file ./images//pdf/dataset/ram_full.pdf): PDF inclusi
-on: multiple pdfs with page group included in a single page
->]
-<./images//pdf/dataset/it_eu.pdf, id=1136, 419.19548pt x 312.02145pt>
+<./images//pdf/dataset/it_eu.pdf, id=1086, 419.19548pt x 312.02145pt>
 File: ./images//pdf/dataset/it_eu.pdf Graphic file (type pdf)
 <use ./images//pdf/dataset/it_eu.pdf>
 Package pdftex.def Info: ./images//pdf/dataset/it_eu.pdf  used on input line 10
-27.
+26.
 (pdftex.def)             Requested size: 209.1301pt x 155.66277pt.
-<./images//pdf/dataset/it_uk.pdf, id=1137, 420.794pt x 312.02145pt>
+<./images//pdf/dataset/it_uk.pdf, id=1087, 420.794pt x 312.02145pt>
 File: ./images//pdf/dataset/it_uk.pdf Graphic file (type pdf)
 <use ./images//pdf/dataset/it_uk.pdf>
 Package pdftex.def Info: ./images//pdf/dataset/it_uk.pdf  used on input line 10
-28.
+27.
 (pdftex.def)             Requested size: 209.1301pt x 155.0724pt.
- [39 <./images//pdf/dataset/it_eu.pdf> <./images//pdf/dataset/it_uk.pdf
+ [39 <./images//pdf/dataset/cpu_full.pdf> <./images//pdf/dataset/ram_full.pdf
+
+pdfTeX warning: pdflatex (file ./images//pdf/dataset/ram_full.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
+>] [40 <./images//pdf/dataset/it_eu.pdf> <./images//pdf/dataset/it_uk.pdf
 
 pdfTeX warning: pdflatex (file ./images//pdf/dataset/it_uk.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
->] [40]
+>] [41]
 Chapter 5.
-(./thesis.bbl [41
+(./thesis.bbl [42
+
+] [43
 
 ]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 65.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 72.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-[42
-
-] [43])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1069.
- [44]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1069.
+) [44] [45])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1110.
+ [46]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1110.
  (./thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1069.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1069.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1110.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1110.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1069.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1110.
  ) 
 Here is how much of TeX's memory you used:
- 10902 strings out of 492982
- 164388 string characters out of 6134895
- 310353 words of memory out of 5000000
- 13967 multiletter control sequences out of 15000+600000
+ 10916 strings out of 492982
+ 164653 string characters out of 6134895
+ 310689 words of memory out of 5000000
+ 13974 multiletter control sequences out of 15000+600000
  20932 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,22n,39p,1722b,692s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1070,10 +1066,10 @@ re/texmf/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1
 m1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsl1000.pfb></usr/shar
 e/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/
 public/cm-super/sftt1000.pfb>
-Output written on thesis.pdf (44 pages, 3974636 bytes).
+Output written on thesis.pdf (46 pages, 3981872 bytes).
 PDF statistics:
- 1367 PDF objects out of 1440 (max. 8388607)
- 799 compressed objects within 8 object streams
- 267 named destinations out of 1000 (max. 500000)
+ 1387 PDF objects out of 1440 (max. 8388607)
+ 816 compressed objects within 9 object streams
+ 274 named destinations out of 1000 (max. 500000)
  186 words of extra memory for PDF output out of 10000 (max. 10000000)
 
