@@ -47,7 +47,7 @@
 
 
 \renewcommand{\baselinestretch}{1.5}
-\DeclareUnicodeCharacter{2212}{-}
+% \DeclareUnicodeCharacter{2212}{-}
 \begin{document}
 
 \setlength{\abovedisplayskip}{3pt}
@@ -526,7 +526,7 @@ SL_{rand} = 2*SL2_{rand} - SL1_{rand}
 \subsection{Collecting data}
 \label{collect_data}
 	
-	Before building any forecasting systems, the very first and the most important task that must be done is collecting data. Therefore, we collect data recording the resource usage of Google (Google Cluster Trace data) and Internet Traffic data collected from a private internet service provider (ISP) in Europe and the United Kingdom (these datasets  will be discuss in detail in Chapter \ref{experiments}). The data collected contains two main parts: the data from history that we use for training, and current time data that we use for predicting resource usage in the future.  
+	Before building any forecasting systems, the very first and the most important task that must be done is collecting data. Therefore, we collect data recording the resource usage of Google (Google Cluster Trace data) and Internet Traffic data collected from a private internet service provider (ISP) in Europe and the United Kingdom (these datasets  will be discuss in detail in Chapter \ref{ch:experiments}. The data collected contains two main parts: the data from history that we use for training, and current time data that we use for predicting resource usage in the future.  
 	
 
 \subsection{Data pre-processing}
@@ -1003,12 +1003,32 @@ Function             &      & GA       & PSO      & SLnO     & WOA              
 \label{exp:data}
 
 \subsubsection{Google Trace dataset}
-	The most important dataset in our experiments is gathered by Google on a cluster of about $12500$ machines \cite{reiss2011google} during 29 days, starting from May 2011. Resources requirement and usage data for each jobs are recorded by each machine in cluster, and then the data is managed by cluster's management system. In Google Trace dataset, there are two columns, which are about two extremely important information of Central Processing Unit (CPU) and Random Access Memory (RAM) required for each job. For that reason, we decide to choose these two information as two time-series datasets (called Google Trace CPU and Google Trace RAM from here). The datasets are processed and summarized in 5-minute interval, considered as the total demand for resources in the whole Google's cluster. Visualization of Google Trace CPU and Google Trace RAM datasets is illustrated in Fig. ***.  
+	The most important dataset in our experiments is gathered by Google on a cluster of about $12500$ machines \cite{reiss2011google} during 29 days, starting from May 2011. Resources requirement and usage data for each jobs are recorded by each machine in cluster, and then the data is managed by cluster's management system. In Google Trace dataset, there are two columns, which are about two extremely important information of Central Processing Unit (CPU) and Random Access Memory (RAM) required for each job. For that reason, we decide to choose these two information as two time-series datasets (called Google Trace CPU and Google Trace RAM from here). The datasets are processed and summarized in 5-minute interval, containing 8351 data points, and considered as the total demand for resources in the whole Google's cluster. Visualization of Google Trace CPU and Google Trace RAM datasets is illustrated in Fig. \ref{fig_data_ggtrace}. 
+	
+\begin{figure}[!ht] 
+   \centering
+   \includegraphics[width=0.49\linewidth]{/pdf/dataset/cpu_full}
+   \includegraphics[width=0.49\linewidth]{/pdf/dataset/ram_full}
+  \caption{Visualization of Google Trace CPU (left) and Google Trace RAM (right) datasets.} 
+  \label{fig_data_ggtrace} 
+\end{figure}
+	
+\subsection{Collecting data}
+\label{collect_data}
+ 
 \subsubsection{EU Internet Traffic and UK Internet Traffic datasets}
 	
 	These two sets of data, which is used for experiments in \cite{cortez2012multi}, are recorded by two distinct ISPs. The EU Internet Traffic dataset comes from a private ISP playing a role as a reporter with centers  in 11 European cities. The data corresponds to a a transatlantic link and was collected from 06:57 hours on 7 June to 11:17 hours on 29 July 2005. The UK Internet Traffic is derived from m UKERNA and represents aggregated traffic in the United Kingdom academic network backbone. It was
 reported between 19 November 2004, at 09:30
-hours and 27 January 2005, at 11:11 hours. Both of two datasets are processed and summarized in every 5 minutes, creating data as the input in our experiments. 2D visualization of the data is shown in Fig. *** as below.
+hours and 27 January 2005, at 11:11 hours. Both of two datasets are processed and summarized in every 5 minutes, creating EU Internet Traffic (14773 records) and UK Internet Traffic (19989 records) as the input in our experiments. 2D visualization of the data is shown in Fig. \ref{fig_data_it} as below.
+
+\begin{figure}[!ht] 
+   \centering
+   \includegraphics[width=0.49\linewidth]{/pdf/dataset/it_eu}
+   \includegraphics[width=0.49\linewidth]{/pdf/dataset/it_uk}
+  \caption{Visualization of EU Internet Traffic (left) and UK Internet Traffic (right) datasets.} 
+  \label{fig_data_it} 
+\end{figure}
 
   
 
