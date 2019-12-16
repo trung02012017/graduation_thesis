@@ -1,19 +1,21 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces PSO flowchart\relax }}{8}{figure.caption.4}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Activation functions. Source: https://medium.com/@srnghn/deep-learning-overview-of-neurons-and-activation-functions-1d98286cf1e4\relax }}{12}{figure.caption.6}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces An example of MLPs model in time-series prediction.\relax }}{16}{figure.caption.8}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces An example of CFNN model in time-series prediction.\relax }}{18}{figure.caption.9}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Traditional RNN architechture. Source: https://colah.github.io/posts/2015-08-Understanding-LSTMs/\relax }}{18}{figure.caption.10}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces LSTM and GRU architechture. Source: https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21\relax }}{19}{figure.caption.11}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces PSO flowchart\relax }}{9}{figure.caption.4}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Activation functions. Source: https://medium.com/@srnghn/deep-learning-overview-of-neurons-and-activation-functions-1d98286cf1e4\relax }}{13}{figure.caption.6}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces An example of MLPs model in time-series prediction.\relax }}{17}{figure.caption.8}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces An example of CFNN model in time-series prediction.\relax }}{19}{figure.caption.9}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Traditional RNN architechture. Source: https://colah.github.io/posts/2015-08-Understanding-LSTMs/\relax }}{19}{figure.caption.10}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces LSTM and GRU architechture. Source: https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21\relax }}{20}{figure.caption.11}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Proposed model design\relax }}{25}{figure.caption.13}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Encoding process transforming a parameter set in CFNN into an agent in ISLO algorithm. ($W^*$ indicates weights and biases between 2 layers)\relax }}{27}{figure.caption.16}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces The work flow of ISLO-CFNN model.\relax }}{27}{figure.caption.17}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Proposed model design\relax }}{26}{figure.caption.13}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Encoding process transforming a parameter set in CFNN into an agent in ISLO algorithm. ($W^*$ indicates weights and biases between 2 layers)\relax }}{28}{figure.caption.16}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces The work flow of ISLO-CFNN model.\relax }}{28}{figure.caption.17}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Examples of 3D plot for each kind of benchmark functions.\relax }}{30}{figure.caption.18}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Convergence speed of each algorithm on unimodal (a) and multimodal (b) functions.\relax }}{34}{figure.caption.24}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Convergence speed of each algorithm on hybrid (a) and composition (b) functions.\relax }}{37}{figure.caption.26}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Visualization of Google Trace CPU (left) and Google Trace RAM (right) datasets.\relax }}{39}{figure.caption.27}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Visualization of EU Internet Traffic (left) and UK Internet Traffic (right) datasets.\relax }}{40}{figure.caption.28}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Examples of 3D plot for each kind of benchmark functions.\relax }}{31}{figure.caption.18}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Convergence speed of each algorithm on unimodal (a) and multimodal (b) functions.\relax }}{35}{figure.caption.24}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Convergence speed of each algorithm on hybrid (a) and composition (b) functions.\relax }}{38}{figure.caption.26}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Visualization of Google Trace CPU (left) and Google Trace RAM (right) datasets.\relax }}{40}{figure.caption.27}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Visualization of EU Internet Traffic (left) and UK Internet Traffic (right) datasets.\relax }}{41}{figure.caption.28}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Performance comparision between ISLO-CFNN and different recurrent-based deep learning models on Google Trace CPU data.\relax }}{43}{figure.caption.30}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Performance comparision between ISLO and other algorithms including Gradient Descent, PSO and SLnO on optimizing CFNN (Google Trace RAM data).\relax }}{43}{figure.caption.31}
 \addvspace {10\p@ }

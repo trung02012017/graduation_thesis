@@ -1,5 +1,11 @@
 \begin{thebibliography}{10}
 
+\bibitem{alatas2011acroa}
+Bilal Alatas.
+\newblock Acroa: artificial chemical reaction optimization algorithm for global
+  optimization.
+\newblock {\em Expert Systems with Applications}, 38(10):13170--13180, 2011.
+
 \bibitem{amiri2017survey}
 Maryam Amiri and Leyli Mohammad-Khanli.
 \newblock Survey on prediction models of applications for resources
@@ -39,11 +45,34 @@ Paulo Cortez, Miguel Rio, Miguel Rocha, and Pedro Sousa.
   time series methods.
 \newblock {\em Expert Systems}, 29(2):143--155, 2012.
 
+\bibitem{de1989tabu}
+Dominique de~Werra and Alain Hertz.
+\newblock Tabu search techniques.
+\newblock {\em Operations-Research-Spektrum}, 11(3):131--141, 1989.
+
+\bibitem{dorigo1999ant}
+Marco Dorigo and Gianni Di~Caro.
+\newblock Ant colony optimization: a new meta-heuristic.
+\newblock In {\em Proceedings of the 1999 congress on evolutionary
+  computation-CEC99 (Cat. No. 99TH8406)}, volume~2, pages 1470--1477. IEEE,
+  1999.
+
+\bibitem{du2006small}
+Haifeng Du, Xiaodong Wu, and Jian Zhuang.
+\newblock Small-world optimization algorithm for function optimization.
+\newblock In {\em International Conference on Natural Computation}, pages
+  264--273. Springer, 2006.
+
 \bibitem{eberhart1995particle}
 Russell Eberhart and James Kennedy.
 \newblock Particle swarm optimization.
 \newblock In {\em Proceedings of the IEEE international conference on neural
   networks}, volume~4, pages 1942--1948. Citeseer, 1995.
+
+\bibitem{erol2006new}
+Osman~K Erol and Ibrahim Eksin.
+\newblock A new optimization method: big bang--big crunch.
+\newblock {\em Advances in Engineering Software}, 37(2):106--111, 2006.
 
 \bibitem{fleetwood2004introduction}
 Kelly Fleetwood.
@@ -52,12 +81,22 @@ Kelly Fleetwood.
   (MASCOS) One Day Symposium, 26th November, Brisbane, Australia}, pages
   785--791, 2004.
 
+\bibitem{formato2007central}
+Richard~A Formato.
+\newblock Central force optimization.
+\newblock {\em Prog Electromagn Res}, 77:425--491, 2007.
+
 \bibitem{fu2016using}
 Rui Fu, Zuo Zhang, and Li~Li.
 \newblock Using lstm and gru neural network methods for traffic flow
   prediction.
 \newblock In {\em 2016 31st Youth Academic Annual Conference of Chinese
   Association of Automation (YAC)}, pages 324--328. IEEE, 2016.
+
+\bibitem{geem2001new}
+Zong~Woo Geem, Joong~Hoon Kim, and Gobichettipalayam~Vasudevan Loganathan.
+\newblock A new heuristic optimization algorithm: harmony search.
+\newblock {\em simulation}, 76(2):60--68, 2001.
 
 \bibitem{gers2002applying}
 Felix~A Gers, Douglas Eck, and J{\"u}rgen Schmidhuber.
@@ -77,6 +116,12 @@ Tian Guo, Zhao Xu, Xin Yao, Haifeng Chen, Karl Aberer, and Koichi Funaya.
 \newblock In {\em 2016 IEEE International Conference on Data Science and
   Advanced Analytics (DSAA)}, pages 816--825. Ieee, 2016.
 
+\bibitem{hatamlou2013black}
+Abdolreza Hatamlou.
+\newblock Black hole: A new heuristic optimization approach for data
+  clustering.
+\newblock {\em Information sciences}, 222:175--184, 2013.
+
 \bibitem{hochreiter1997long}
 Sepp Hochreiter and J{\"u}rgen Schmidhuber.
 \newblock Long short-term memory.
@@ -87,10 +132,31 @@ John~H Holland.
 \newblock Genetic algorithms.
 \newblock {\em Scientific american}, 267(1):66--73, 1992.
 
+\bibitem{kashan2014league}
+Ali~Husseinzadeh Kashan.
+\newblock League championship algorithm (lca): An algorithm for global
+  optimization inspired by sport championships.
+\newblock {\em Applied Soft Computing}, 16:171--200, 2014.
+
+\bibitem{kaveh2012new}
+A~Kaveh and M~Khayatazad.
+\newblock A new meta-heuristic method: ray optimization.
+\newblock {\em Computers \& structures}, 112:283--294, 2012.
+
+\bibitem{kaveh2010novel}
+A~Kaveh and S~Talatahari.
+\newblock A novel heuristic optimization method: charged system search.
+\newblock {\em Acta Mechanica}, 213(3-4):267--289, 2010.
+
 \bibitem{kaveh2016novel}
 A~Kaveh and A~Zolghadr.
 \newblock A novel meta-heuristic algorithm: tug of war optimization.
 \newblock {\em Iran University of Science \& Technology}, 6(4):469--492, 2016.
+
+\bibitem{kaveh2014colliding}
+Ali Kaveh and Vahid~Reza Mahdavi.
+\newblock Colliding bodies optimization: a novel meta-heuristic method.
+\newblock {\em Computers \& Structures}, 139:18--27, 2014.
 
 \bibitem{kennedy2010particle}
 James Kennedy.
@@ -148,6 +214,11 @@ Thieu Nguyen, Tu~Nguyen, Binh~Minh Nguyen, and Giang Nguyen.
   opposition-based coral reefs optimization.
 \newblock {\em International Journal of Computational Intelligence Systems},
   12(2):1144--1161, 2019.
+
+\bibitem{rashedi2009gsa}
+Esmat Rashedi, Hossein Nezamabadi-Pour, and Saeid Saryazdi.
+\newblock Gsa: a gravitational search algorithm.
+\newblock {\em Information sciences}, 179(13):2232--2248, 2009.
 
 \bibitem{rashid2010improved}
 Muhammad Rashid and Abdul~Rauf Baig.
