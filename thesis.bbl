@@ -17,6 +17,13 @@ E~Michael Azoff.
 \newblock {\em Neural network time series forecasting of financial markets}.
 \newblock John Wiley \& Sons, Inc., 1994.
 
+\bibitem{bhesdadiya2016training}
+R~Bhesdadiya, Pradeep Jangir, Narottam Jangir, Indrajit~N Trivedi, and Dilip
+  Ladumor.
+\newblock Training multi-layer perceptron in neural network using whale
+  optimization algorithm.
+\newblock {\em Indian J. Sci. Technol}, 9(19):28--36, 2016.
+
 \bibitem{bone2000recurrent}
 R~Bon{\'e}.
 \newblock {\em Recurrent neural networks for time series forecasting}.
@@ -132,6 +139,17 @@ John~H Holland.
 \newblock Genetic algorithms.
 \newblock {\em Scientific american}, 267(1):66--73, 1992.
 
+\bibitem{hore2011edge}
+Alain Hore and Djemel Ziou.
+\newblock An edge-sensing generic demosaicing algorithm with application to
+  image resampling.
+\newblock {\em IEEE Transactions on Image Processing}, 20(11):3136--3150, 2011.
+
+\bibitem{karmakar2002generic}
+Gour~C Karmakar and Laurence~S Dooley.
+\newblock A generic fuzzy rule based image segmentation algorithm.
+\newblock {\em Pattern Recognition Letters}, 23(10):1215--1227, 2002.
+
 \bibitem{kashan2014league}
 Ali~Husseinzadeh Kashan.
 \newblock League championship algorithm (lca): An algorithm for global
@@ -203,6 +221,12 @@ Raja Masadeh, Basel~A Mahafzah, and Ahmad Sharieh.
 \newblock Sea lion optimization algorithm.
 \newblock {\em Sea}, 10(5), 2019.
 
+\bibitem{matias2014learning}
+Tiago Matias, Francisco Souza, Rui Ara{\'u}jo, and Carlos~Henggeler Antunes.
+\newblock Learning of a single-hidden layer feedforward neural network using an
+  optimized extreme learning machine.
+\newblock {\em Neurocomputing}, 129:428--436, 2014.
+
 \bibitem{mirjalili2016whale}
 Seyedali Mirjalili and Andrew Lewis.
 \newblock The whale optimization algorithm.
@@ -271,6 +295,13 @@ Hui Wang, Hui Li, Yong Liu, Changhe Li, and Sanyou Zeng.
 \newblock In {\em 2007 IEEE Congress on Evolutionary Computation}, pages
   4750--4756. IEEE, 2007.
 
+\bibitem{wang2003particle}
+Kang-Ping Wang, Lan Huang, Chun-Guang Zhou, and Wei Pang.
+\newblock Particle swarm optimization for traveling salesman problem.
+\newblock In {\em Proceedings of the 2003 international conference on machine
+  learning and cybernetics (IEEE cat. no. 03ex693)}, volume~3, pages
+  1583--1585. IEEE, 2003.
+
 \bibitem{warsito2018cascade}
 Budi Warsito, Rukun Santoso, Hasbi Yasin, et~al.
 \newblock Cascade forward neural network for time series prediction.
@@ -281,6 +312,12 @@ Budi Warsito, Rukun Santoso, Hasbi Yasin, et~al.
 Darrell Whitley.
 \newblock A genetic algorithm tutorial.
 \newblock {\em Statistics and computing}, 4(2):65--85, 1994.
+
+\bibitem{yuan2004survey}
+Xiao-hui Yuan, Cheng Wang, Yong-chuan Zhang, and Yan-bin Yuan.
+\newblock A survey on application of particle swarm optimization to electric
+  power systems [j].
+\newblock {\em Power System Technology}, 19:003, 2004.
 
 \bibitem{zhang2000predicting}
 Jia-Shu Zhang and Xian-Ci Xiao.
