@@ -47,7 +47,11 @@
 
 
 \renewcommand{\baselinestretch}{1.5}
+<<<<<<< HEAD
 %\DeclareUnicodeCharacter{2212}{-}
+=======
+% \DeclareUnicodeCharacter{2212}{-}
+>>>>>>> 8527643133fe490248e1ec0acc30f68fd1c8d65b
 \begin{document}
 
 \setlength{\abovedisplayskip}{3pt}
@@ -68,19 +72,34 @@
 
 \chapter{Introduction}
 \label{ch:introduction}
-\section{Problems}
-\section{Summary}
 
+	Meta-heuristic optimiztion algorithms are becoming more and more popular in engineering application due to their advantages: they (i) have simple concepts and the ease of implementation; (ii) do not require gradient information; (iii) have the ability to avoid local minima and (iv) can be utilized in a wide range of real-world problems covering different aspects. Among those optimization models, there is a group of algorithm that are called nature-inspired meta-heuristic algorithms. They solve optimization issues by mathematically modelling biological or physical phenomena. They can be divided into three main categories (see Fig ***): evolution-based, swarm-based and physics-based methods. 
+	
+	Evolution-based algorithm are derived from evolutionary laws in nature. The search process starts with randomly generated solutions which is continuously evolved over the course of generation. Each generation commonly contains the following components: reproduction, fitness evaluation and selection. Specifically, in the reproduction process, from which new-born solutions are generated, often adopts generic operators such as crossover or mutation; the fitness evaluation process obtains the quality of each solution in current population by assigning their fitness values; and selection process is willing to determine candidates with superior values among the population to survive in the next generation. The strength point of this kind of algorithms is that the best individuals are always chosen to generate potential candidate for the subsequent generation. This move the population towards and come closer to the optimal value. The most popular evolution-based algorithm is Generic Algorithm (GA) \cite{holland1992genetic}, which mathematically mimicks the Darwinian's evolutionary laws. Other later algorithms are Generic Programming (GP) \cite{koza1997genetic}, Differential Evolution (DE) \cite{fleetwood2004introduction}, Biogeography-based optimization (BBO) \cite{simon2008biogeography} and Coral Reefs Optimization Algorithm (CRO) \cite{salcedo2013novel}. 
+	
+	The second category is physics-based methods, which imitate physical principles in the universe including Big-Bang Big-Crunch(BBBC) \cite{erol2006new}, Gravitational Search Algorithm (GSA) \cite{rashedi2009gsa}, Charged System Search (CSS) \cite{kaveh2010novel}, Central Force Optimization (CFO) \cite{formato2007central}, Artificial Chemical Reaction Optimization Algorithm (ACROA) \cite{alatas2011acroa}, Black Hole (BH) algorithm \cite{hatamlou2013black}, Ray Optimization (RO) algorithm \cite{kaveh2012new}, Small-World Optimization Algorithm
+(SWOA)  \cite{du2006small}.
+
+	The third group of nature-inspired meta-heuristic optimization is swarm-based algorithms (or swarm intelligence (SI)). SI refers to the collectively intelligent activities emerging from a group of individuals called population, so swarm-based optimization is algorithms being inspired by living and foraging behaviors of animals in the nature. Unlike evolution-based methods, SI methods are based on artificial search agents' movement in a pre-defined search space. Such algorithms take advantages of exploration and exploitation phases and lead the population closer and closer to the optimal result over the course of iteration. For example, one of the most famous and widely used algorithm in SI group is Particle Swarm Optimization (PSO) \cite{eberhart1995particle}, which uses the information both from the best agent and all the agents' best experience to search for the optima of a fitness function. Another popular swarm-based algorithm is Ant Conoly Optimization (ACO) \cite{dorigo1999ant}, which is inspired by social foraging process of ants. This algorithm uses the idea of the social intelligence of ants in finding the closest path from the nest and a source of food. A pheromone matrix is
+enhanced over the course of iteration by the candidate solutions.  Several other SI algorithms have been regularly proposed, some of them are listed in Table ***. In general, this group of methods started to become more attractive since PSO is proven to be very competitive with evolution-based and physics-based algorithms. In fact, swarm-based methods have some advantages over the others. For example, swarm-based algorithms find new better by preserving the information from previous iterations, while evolution-based methods such as GA discard any information immediately when a new generation is formed. Also, they are usually formed of less updating operators compared to the others (crossover, mutation, selection $etc.$) and therefore it is easier to implement.
+
+	It is worth mentioning here that there is a group of methods derived from human's activities in daily life. They are human-based optimization algorithms. Some of the well-known algorithms are Harmony Search (HS) \cite{geem2001new}, Teaching Learning Based Optimization (TLBO) \cite{ao2011teaching}, League Championship Algorithm (LCA) \cite{kashan2014league}, Tabu Search (TS) \cite{de1989tabu} and Colliding Bodies Optimization (CBO) \cite{kaveh2014colliding}.
+	
+	Because of their prominent advantages, such algorithms have been applied to various aspects including solving travelling salesman problem \cite{wang2003particle}, apllication to electric power system \cite{yuan2004survey}, image processing \cite{karmakar2002generic} \cite{hore2011edge} and even optimizing artificial neural networks \cite{bhesdadiya2016training} \cite{matias2014learning}. 
+	
+	Due to the wide range of applications of these algorithms, in recent years, many bio-inspired optimization algorithms have been introduced, going along with their variants and applications. Sea Lion Optimization (SLnO) is among these algorithms. It was first introduced in \cite{masadeh2019sea} for solving global-scale optimization problems. SLnO imitates the hunting behaviors of sea lions consisting of the way they encircle and capture preys or how they use their tail as well as their whiskers. It has been proven that SLnO can provide very competitive results compared with other well-known algorithms such as Particle Swarm Optimization (PSO), Grey Wolf Optimization (GWO) and Whale Optimization Algorithm (WOA) when working on different benchmark functions. However, like many other methods in swarm-based optimization, SLnO still faces demerits with regard to slow convergence speed, low precision and easily being stuck into local minimums due to the degradation of population diversity over the course of iteration. To improve the performance of these algorithms, there is a number of techniques proposed, and they are proven that they can work very effectively on different algorithms such as Levy-Flight trajectory-based method \cite{chawla2018levy} or opposition-based learning \cite{wang2011enhanced} \cite{omran2010improving} \cite{wang2016opposition}. 
+	
+	According to the knowledge of authors, there have not been any improvement versions of SLnO as well as any proposed models based on this algorithm to solve a practical engineering problems. Therefore, in this paper, we propose an improved version of SLnO call Improved Sea Lion Optimization (ISLO) by embracing the idea from PSO, taking the best experience of each individual into account to improve SLnO's exploitation ability, and the idea of opposition-based learning for enhacing the use of exploration phase in SLnO. Also, *******
+	
+	 
 
 \chapter{Materials and background}
 \label{ch:background}
 
 
 \section{Meta-heuristic Optimization}
-\label{sec:meta_heuristic}
-\subsection{Idea and motivation}
-\label{meta_heuristic_idea}
-
+\label{sec:meta_heuristic}	
+	
 \subsection{Particle Swarm Optimization (PSO)}
 \label{pso_standard}
 PSO~\cite{kennedy2010particle} is a very first swarm-based optimization, which is the premise of many other algorithms proposed in recent years. It emulates the behaviors of birds, fish and so forth when they forage for food and communicate as a swarm. In PSO system, a swarm contains several candidate solutions (also known as particles), which coexist in the search space of the problem with $D$ dimensions. The solution often cooperate and fly together to land on personal optimal positions. Over the course of time, the best personal position (its own best position in the past) of each particle and the global best position (the current best position of entire swarm) are recorded. The next position of a particle is updated based on the personal best (cognitive behavior) and the global best (social communication). With this approach, PSO combines local search (through personal best) with global search (through global best) to balance exploitation and exploration processes. PSO operation workflow is presented in Figure~\ref{fig_pso_algo}.
@@ -173,7 +192,7 @@ Dist = |2B.P(t) - SL(t)|
 SL(t+1) = P(t) - Dist.C
 \end{equation}
 	
-	Where $Dist$ indicates the distance between the prey and the current sea lion; $P(t)$ and $SL(t)$ represent the position vectors of best solution and the sea lion in iteration $t$ respectively; $B$ is random vector in the range $[0, 1]$ which is multiplied by 2 to increase the search space, helping the search agent find optimal or near optimal position. $SL(t+1)$ is the new position of search agent after updating and $C$ is linearly decreased from 2 to 0 over the course of iterations, indicating the encircling mechanism of sea lion group when they move towards the prey and surround them.
+	Where $Dist$ indicates the distance between the prey and the current sea lion; $P(t)$ and $SL(t)$ represent the position vectors of best solution and the sea lion in iteration $t$ respectively; $B$ is random vector in the range $[0, 1]$ which is multiplied by 2 to increase the search space, helping the search agent find optimal or near optimal position. $SL(t+1)$ is the new position of search agent after updating and $C$ is linearly decreased from 2 to 0 over the course of iteration, indicating the encircling mechanism of sea lion group when they move towards the prey and surround them.
 
 \item \textbf{Vocalization phase}
 	
@@ -195,7 +214,7 @@ V_2 = \sin(\phi)
  	
 \begin{itemize}
 \item \textit{Dwindling encircling technique:}
-	This behavior depends on the value of $C$ in Eq. \ref{slno_eq2}. $C$ is linearly decreased from 2 to 0 over the course of iterations, so this allows the search space around the current best position to shrink and force other search agents to updated in this search space as well. Therefore, a new updated position of a sea lion can be located anywhere in the search space between its current position and the location of the present best agent.
+	This behavior depends on the value of $C$ in Eq. \ref{slno_eq2}. $C$ is linearly decreased from 2 to 0 over the course of iteration, so this allows the search space around the current best position to shrink and force other search agents to updated in this search space as well. Therefore, a new updated position of a sea lion can be located anywhere in the search space between its current position and the location of the present best agent.
 
 \item \textit{Circling updating position}: Sea lions chase bait ball of fishes and hunt them starting from edges. Eq. \ref{slno_eq6} is proposed in this regard:
 \begin{equation} \label{slno_eq6}
@@ -526,7 +545,7 @@ SL_{rand} = 2*SL2_{rand} - SL1_{rand}
 \subsection{Collecting data}
 \label{collect_data}
 	
-	Before building any forecasting systems, the very first and the most important task that must be done is collecting data. Therefore, we collect data recording the resource usage of Google (Google Cluster Trace data) and Internet Traffic data collected from a private internet service provider (ISP) in Europe and the United Kingdom (these datasets  will be discuss in detail in Chapter \ref{experiments}). The data collected contains two main parts: the data from history that we use for training, and current time data that we use for predicting resource usage in the future.  
+	Before building any forecasting systems, the very first and the most important task that must be done is collecting data. Therefore, we collect data recording the resource usage of Google (Google Cluster Trace data) and Internet Traffic data collected from a private internet service provider (ISP) in Europe and the United Kingdom (these datasets  will be discuss in detail in Chapter \ref{ch:experiments}. The data collected contains two main parts: the data from history that we use for training, and current time data that we use for predicting resource usage in the future.  
 	
 
 \subsection{Data pre-processing}
@@ -1003,12 +1022,29 @@ Function             &      & GA       & PSO      & SLnO     & WOA              
 \label{exp:data}
 
 \subsubsection{Google Trace dataset}
-	The most important dataset in our experiments is gathered by Google on a cluster of about $12500$ machines \cite{reiss2011google} during 29 days, starting from May 2011. Resources requirement and usage data for each jobs are recorded by each machine in cluster, and then the data is managed by cluster's management system. In Google Trace dataset, there are two columns, which are about two extremely important information of Central Processing Unit (CPU) and Random Access Memory (RAM) required for each job. For that reason, we decide to choose these two information as two time-series datasets (called Google Trace CPU and Google Trace RAM from here). The datasets are processed and summarized in 5-minute interval, considered as the total demand for resources in the whole Google's cluster. Visualization of Google Trace CPU and Google Trace RAM datasets is illustrated in Fig. ***.  
+	The most important dataset in our experiments is gathered by Google on a cluster of about $12500$ machines \cite{reiss2011google} during 29 days, starting from May 2011. Resources requirement and usage data for each jobs are recorded by each machine in cluster, and then the data is managed by cluster's management system. In Google Trace dataset, there are two columns, which are about two extremely important information of Central Processing Unit (CPU) and Random Access Memory (RAM) required for each job. For that reason, we decide to choose these two information as two time-series datasets (called Google Trace CPU and Google Trace RAM from here). The datasets are processed and summarized in 5-minute interval, containing 8351 data points, and considered as the total demand for resources in the whole Google's cluster. Visualization of Google Trace CPU and Google Trace RAM datasets is illustrated in Fig. \ref{fig_data_ggtrace}. 
+	
+\begin{figure}[!ht] 
+   \centering
+   \includegraphics[width=0.49\linewidth]{/pdf/dataset/cpu_full}
+   \includegraphics[width=0.49\linewidth]{/pdf/dataset/ram_full}
+  \caption{Visualization of Google Trace CPU (left) and Google Trace RAM (right) datasets.} 
+  \label{fig_data_ggtrace} 
+\end{figure}
+ 
 \subsubsection{EU Internet Traffic and UK Internet Traffic datasets}
 	
 	These two sets of data, which is used for experiments in \cite{cortez2012multi}, are recorded by two distinct ISPs. The EU Internet Traffic dataset comes from a private ISP playing a role as a reporter with centers  in 11 European cities. The data corresponds to a a transatlantic link and was collected from 06:57 hours on 7 June to 11:17 hours on 29 July 2005. The UK Internet Traffic is derived from m UKERNA and represents aggregated traffic in the United Kingdom academic network backbone. It was
 reported between 19 November 2004, at 09:30
-hours and 27 January 2005, at 11:11 hours. Both of two datasets are processed and summarized in every 5 minutes, creating data as the input in our experiments. 2D visualization of the data is shown in Fig. *** as below.
+hours and 27 January 2005, at 11:11 hours. Both of two datasets are processed and summarized in every 5 minutes, creating EU Internet Traffic (14773 records) and UK Internet Traffic (19989 records) as the input in our experiments. 2D visualization of the data is shown in Fig. \ref{fig_data_it} as below.
+
+\begin{figure}[!ht] 
+   \centering
+   \includegraphics[width=0.49\linewidth]{/pdf/dataset/it_eu}
+   \includegraphics[width=0.49\linewidth]{/pdf/dataset/it_uk}
+  \caption{Visualization of EU Internet Traffic (left) and UK Internet Traffic (right) datasets.} 
+  \label{fig_data_it} 
+\end{figure}
 
   
 
@@ -1027,13 +1063,81 @@ Besides the common settings for models, the following settings are applied for e
 
 \begin{itemize}
 \item The population size for each algorithm is set to 200.
-\item For PSO, based on the original paper \cite{eberhart1995particle}, cognitive learning rates $c_1=c_2=2.05$, and inertia factor $w$ is set linearly reducing from 0.9 to 0.4 over the course of iterations.
+\item For PSO, based on the original paper \cite{eberhart1995particle}, cognitive learning rates $c_1=c_2=2.05$, and inertia factor $w$ is set linearly reducing from 0.9 to 0.4 over the course of iteration.
 \item For SLnO and ISLO, hyper-parameters are set as described in original paper \cite{masadeh2019sea}, and also, $c_1$ and $c_2$ in ISLO algorithm are the same as shown for PSO.
 \end{itemize}
 
+	All 8 models' performance on 4 datasets are compared with each other in term of accuracy. In our experiments, mean absolute error (MAE) is used mainly for evaluation purposes. Beside MAE, root mean square error (RMSE) and median absolute error	(MedAE) are also used as measurements for comparision. These three measurement methods are very popular and widely used for evaluation in time-series prediction. Table. \ref{tbl_result_app} presents the results of all models on each dataset evaluated by MAE, RMSE and MedAE measurements. It is worth to mention here that the 2 best results on each evaluation measurement would be highlighted in bold. Also, Fig. \ref{fig_result_cpu_islo_rnn} illustrates the comparision between predicted output and the ground truth from ISLO-CFNN and RNN-based models running on Google Trace CPU dataset, while Fig. \ref{fig_result_ram} shows the performance of different optimizers including ISLO, SLnO, PSO and original Gradient Descent in optimizing CFNN parameters, running on Google Trace RAM dataset.
+
 \subsection{Results and Discussion}  
 	
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+\begin{table}[!t]
+\caption{Comparision between models on each dataset by different measurements.}
+\label{tbl_result_app}
+\centering
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+Dataset                              & Model     & RMSE            & MAE             & MedAE          & SMAPE (\%)    \\ \hline
+\multirow{8}{*}{Google Trace CPU}    & CFNN      & 199.77          & 126.80          & 80.05          & 4.03          \\ \cline{2-6} 
+                                     & FFNN      & 203.54          & 129.52          & 85.69          & 4.18          \\ \cline{2-6} 
+                                     & LSTM      & \textbf{200.89} & 129.88          & 84.65          & 4.10          \\ \cline{2-6} 
+                                     & GRU       & 201.88          & 130.50          & 82.96          & 4.12          \\ \cline{2-6} 
+                                     & RNN       & \textbf{200.40} & 129.30          & 85.49          & 4.10          \\ \cline{2-6} 
+                                     & PSO-CFNN  & 203.75          & 127.41          & 79.74          & 4.04          \\ \cline{2-6} 
+                                     & SLnO-CFNN & 201.40          & \textbf{126.60} & \textbf{79.64} & \textbf{4.02} \\ \cline{2-6} 
+                                     & ISLO-CFNN & 203.55          & \textbf{124.94} & \textbf{76.08} & \textbf{4.00} \\ \hline
+\multirow{8}{*}{Google Trace RAM}    & CFNN      & 52.54           & 35.35           & 24.87          & 1.21          \\ \cline{2-6} 
+                                     & FFNN      & 53.61           & 36.51           & 24.29          & 1.25          \\ \cline{2-6} 
+                                     & LSTM      & 48.47           & 30.40           & 20.51          & 1.05          \\ \cline{2-6} 
+                                     & GRU       & 48.43           & 30.74           & 20.78          & 1.06          \\ \cline{2-6} 
+                                     & RNN       & \textbf{47.00}  & \textbf{28.86}  & \textbf{18.90} & \textbf{0.99} \\ \cline{2-6} 
+                                     & PSO-CFNN  & 49.09           & 31.33           & 20.67          & 1.08          \\ \cline{2-6} 
+                                     & SLnO-CFNN & 49.33           & 31.62           & 20.53          & 1.09          \\ \cline{2-6} 
+                                     & ISLO-CFNN & \textbf{47.53}  & \textbf{29.80}  & \textbf{19.65} & \textbf{1.03} \\ \hline
+\multirow{8}{*}{EU Internet Traffic} & CFNN      & \textbf{15.85}  & \textbf{11.30}  & \textbf{8.01}  & \textbf{2.91} \\ \cline{2-6} 
+                                     & FFNN      & 16.48           & 11.79           & 8.41           & 3.03          \\ \cline{2-6} 
+                                     & LSTM      & \textbf{15.84}  & \textbf{11.37}  & \textbf{8.30}  & \textbf{2.92} \\ \cline{2-6} 
+                                     & GRU       & 17.39           & 13.09           & 10.29          & 3.51          \\ \cline{2-6} 
+                                     & RNN       & 16.90           & 12.49           & 9.55           & 3.31          \\ \cline{2-6} 
+                                     & PSO-CFNN  & 16.02           & 11.49           & 8.31           & 2.93          \\ \cline{2-6} 
+                                     & SLnO-CFNN & 16.37           & 11.74           & 8.47           & 3.00          \\ \cline{2-6} 
+                                     & ISLO-CFNN & 16.02           & 11.47           & 8.31           & 2.93          \\ \hline
+\multirow{8}{*}{UK Internet Traffic} & CFNN      & 10.74           & 8.09            & 6.31           & 1.56          \\ \cline{2-6} 
+                                     & FFNN      & 11.32           & 8.40            & 6.45           & 1.60          \\ \cline{2-6} 
+                                     & LSTM      & \textbf{10.34}  & 7.65            & 5.85           & 1.47          \\ \cline{2-6} 
+                                     & GRU       & 11.52           & 8.89            & 7.33           & 1.78          \\ \cline{2-6} 
+                                     & RNN       & 11.27           & 8.38            & 6.39           & 1.62          \\ \cline{2-6} 
+                                     & PSO-CFNN  & 10.43           & \textbf{7.59}   & \textbf{5.63}  & \textbf{1.44} \\ \cline{2-6} 
+                                     & SLnO-CFNN & 10.61           & 7.73            & 5.75           & 1.47          \\ \cline{2-6} 
+                                     & ISLO-CFNN & \textbf{10.46}  & \textbf{7.64}   & \textbf{5.77}  & \textbf{1.45} \\ \hline
+\end{tabular}
+\end{table}
 
+
+\begin{figure}[!ht] 
+   \centering
+   	\includegraphics[width=0.49\linewidth]{pdf/result_data/cpu/ISLO_CFNN_cpu}
+  	 \includegraphics[width=0.49\linewidth]{pdf/result_data/cpu/LSTM_cpu}
+  	 \includegraphics[width=0.49\linewidth]{pdf/result_data/cpu/RNN_cpu}
+  	 \includegraphics[width=0.49\linewidth]{pdf/result_data/cpu/GRU_cpu}
+	
+  \caption{Performance comparision between ISLO-CFNN and different recurrent-based deep learning models on Google Trace CPU data.} 
+  \label{fig_result_cpu_islo_rnn} 
+\end{figure}
+
+
+\begin{figure}[!ht] 
+   \centering
+   	\includegraphics[width=0.49\linewidth]{pdf/result_data/ram/ISLO_CFNN_ram}
+  	 \includegraphics[width=0.49\linewidth]{pdf/result_data/ram/SLnO_CFNN_ram}
+  	 \includegraphics[width=0.49\linewidth]{pdf/result_data/ram/PSO_CFNN_ram}
+  	 \includegraphics[width=0.49\linewidth]{pdf/result_data/ram/CFNN-1H_ram}
+	
+  \caption{Performance comparision between ISLO and other algorithms including Gradient Descent, PSO and SLnO on optimizing CFNN (Google Trace RAM data).} 
+  \label{fig_result_ram} 
+\end{figure}
 
 \chapter{Conclusions}
 
