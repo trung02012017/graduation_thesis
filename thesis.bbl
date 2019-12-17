@@ -35,6 +35,11 @@ Rohitash Chandra and Mengjie Zhang.
   chaotic time series prediction.
 \newblock {\em Neurocomputing}, 86:116--123, 2012.
 
+\bibitem{chawla2018levy}
+Mridul Chawla and Manoj Duhan.
+\newblock Levy flights in metaheuristics optimization algorithms--a review.
+\newblock {\em Applied Artificial Intelligence}, 32(9-10):802--821, 2018.
+
 \bibitem{chung2014empirical}
 Junyoung Chung, Caglar Gulcehre, KyungHyun Cho, and Yoshua Bengio.
 \newblock Empirical evaluation of gated recurrent neural networks on sequence
@@ -239,6 +244,13 @@ Thieu Nguyen, Tu~Nguyen, Binh~Minh Nguyen, and Giang Nguyen.
 \newblock {\em International Journal of Computational Intelligence Systems},
   12(2):1144--1161, 2019.
 
+\bibitem{omran2010improving}
+Mahamed~GH Omran, Zong~Woo Geem, and Ayed Salman.
+\newblock Improving the performance of harmony search using opposition-based
+  learning and quadratic interpolation.
+\newblock {\em International Journal of Mathematical Modelling and Numerical
+  Optimisation}, 2(1):28--50, 2010.
+
 \bibitem{rashedi2009gsa}
 Esmat Rashedi, Hossein Nezamabadi-Pour, and Saeid Saryazdi.
 \newblock Gsa: a gravitational search algorithm.
@@ -289,11 +301,23 @@ Hamid~R Tizhoosh.
   Agents, Web Technologies and Internet Commerce (CIMCA-IAWTIC'06)}, volume~1,
   pages 695--701. IEEE, 2005.
 
+\bibitem{wang2016opposition}
+Gai-Ge Wang, Suash Deb, Amir~H Gandomi, and Amir~H Alavi.
+\newblock Opposition-based krill herd algorithm with cauchy mutation and
+  position clamping.
+\newblock {\em Neurocomputing}, 177:147--157, 2016.
+
 \bibitem{wang2007opposition}
 Hui Wang, Hui Li, Yong Liu, Changhe Li, and Sanyou Zeng.
 \newblock Opposition-based particle swarm algorithm with cauchy mutation.
 \newblock In {\em 2007 IEEE Congress on Evolutionary Computation}, pages
   4750--4756. IEEE, 2007.
+
+\bibitem{wang2011enhanced}
+Hui Wang, Zhijian Wu, and Shahryar Rahnamayan.
+\newblock Enhanced opposition-based differential evolution for solving
+  high-dimensional continuous optimization problems.
+\newblock {\em Soft Computing}, 15(11):2127--2140, 2011.
 
 \bibitem{wang2003particle}
 Kang-Ping Wang, Lan Huang, Chun-Guang Zhou, and Wei Pang.

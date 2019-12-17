@@ -10,45 +10,45 @@ I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "ao2011teaching"
 Warning--empty journal in koza1997genetic
 Warning--can't use both volume and number fields in warsito2018cascade
-You've used 56 entries,
+You've used 60 entries,
             2118 wiz_defined-function locations,
-            837 strings with 13906 characters,
-and the built_in function-call counts, 20946 in all, are:
-= -- 2177
-> -- 875
+            862 strings with 14730 characters,
+and the built_in function-call counts, 22397 in all, are:
+= -- 2325
+> -- 947
 < -- 23
-+ -- 358
-- -- 288
-* -- 1452
-:= -- 3341
-add.period$ -- 183
-call.type$ -- 56
-change.case$ -- 307
++ -- 386
+- -- 312
+* -- 1572
+:= -- 3585
+add.period$ -- 195
+call.type$ -- 60
+change.case$ -- 331
 chr.to.int$ -- 0
-cite$ -- 58
-duplicate$ -- 815
-empty$ -- 1637
-format.name$ -- 288
-if$ -- 4470
+cite$ -- 62
+duplicate$ -- 859
+empty$ -- 1744
+format.name$ -- 312
+if$ -- 4761
 int.to.chr$ -- 0
-int.to.str$ -- 56
-missing$ -- 57
-newline$ -- 284
-num.names$ -- 112
-pop$ -- 289
+int.to.str$ -- 60
+missing$ -- 61
+newline$ -- 304
+num.names$ -- 120
+pop$ -- 305
 preamble$ -- 1
-purify$ -- 254
+purify$ -- 274
 quote$ -- 0
-skip$ -- 611
+skip$ -- 640
 stack$ -- 0
-substring$ -- 1561
-swap$ -- 233
+substring$ -- 1681
+swap$ -- 237
 text.length$ -- 23
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 220
+type$ -- 236
 warning$ -- 2
-while$ -- 222
-width$ -- 58
-write$ -- 635
+while$ -- 238
+width$ -- 62
+write$ -- 679
 (There was 1 error message)
