@@ -12,10 +12,10 @@
 \contentsline {figure}{\numberline {3.3}{\ignorespaces The work flow of ISLO-CFNN model.\relax }}{28}{figure.caption.17}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Examples of 3D plot for each kind of benchmark functions.\relax }}{31}{figure.caption.18}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Convergence speed of each algorithm on unimodal (a) and multimodal (b) functions.\relax }}{35}{figure.caption.24}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Convergence speed of each algorithm on unimodal (a) and multimodal (b) functions.\relax }}{36}{figure.caption.24}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Convergence speed of each algorithm on hybrid (a) and composition (b) functions.\relax }}{38}{figure.caption.26}
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Visualization of Google Trace CPU (left) and Google Trace RAM (right) datasets.\relax }}{40}{figure.caption.27}
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Visualization of EU Internet Traffic (left) and UK Internet Traffic (right) datasets.\relax }}{41}{figure.caption.28}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Performance comparision between ISLO-CFNN and different recurrent-based deep learning models on Google Trace CPU data.\relax }}{42}{figure.caption.30}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Performance comparision between ISLO-CFNN and different recurrent-based deep learning models on Google Trace CPU data.\relax }}{44}{figure.caption.30}
 \contentsline {figure}{\numberline {4.7}{\ignorespaces Performance comparision between ISLO and other algorithms including Gradient Descent, PSO and SLnO on optimizing CFNN (Google Trace RAM data).\relax }}{44}{figure.caption.31}
 \addvspace {10\p@ }

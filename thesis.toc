@@ -30,13 +30,15 @@
 \contentsline {chapter}{\numberline {4}Experiments}{30}{chapter.4}
 \contentsline {section}{\numberline {4.1}Theoretical experiments}{30}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Evaluation method and Parameter settings}{32}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Experiment results and discussion}{35}{subsection.4.1.2}
-\contentsline {subsubsection}{\numberline {4.1.2.1}Unimodal and Multimodal benchmark functions}{35}{subsubsection.4.1.2.1}
-\contentsline {subsubsection}{\numberline {4.1.2.2}Hybrid and Composition benchmark functions}{37}{subsubsection.4.1.2.2}
+\contentsline {subsection}{\numberline {4.1.2}Experiment results and discussion}{33}{subsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.2.1}Unimodal and Multimodal benchmark functions}{33}{subsubsection.4.1.2.1}
+\contentsline {subsubsection}{\numberline {4.1.2.2}Hybrid and Composition benchmark functions}{38}{subsubsection.4.1.2.2}
 \contentsline {section}{\numberline {4.2}Application}{39}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Dataset and Set up}{40}{subsection.4.2.1}
 \contentsline {subsubsection}{\numberline {4.2.1.1}Google Trace dataset}{40}{subsubsection.4.2.1.1}
-\contentsline {subsubsection}{\numberline {4.2.1.2}EU Internet Traffic and UK Internet Traffic datasets}{40}{subsubsection.4.2.1.2}
+\contentsline {subsubsection}{\numberline {4.2.1.2}EU Internet Traffic and UK Internet Traffic datasets}{41}{subsubsection.4.2.1.2}
 \contentsline {subsection}{\numberline {4.2.2}Parameter Setting and Evaluation Metrics}{41}{subsection.4.2.2}
 \contentsline {subsection}{\numberline {4.2.3}Results and Discussion}{42}{subsection.4.2.3}
-\contentsline {chapter}{\numberline {5}Conclusions}{45}{chapter.5}
+\contentsline {subsubsection}{\numberline {4.2.3.1}Accuracy comparision}{42}{subsubsection.4.2.3.1}
+\contentsline {subsubsection}{\numberline {4.2.3.2}Run-time comparision}{45}{subsubsection.4.2.3.2}
+\contentsline {chapter}{\numberline {5}Conclusions and Future work}{46}{chapter.5}
