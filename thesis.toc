@@ -1,44 +1,44 @@
 \contentsline {chapter}{\numberline {1}Introduction}{6}{chapter.1}
-\contentsline {chapter}{\numberline {2}Materials and background}{9}{chapter.2}
-\contentsline {section}{\numberline {2.1}Meta-heuristic Optimization}{9}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Particle Swarm Optimization (PSO)}{9}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Sea Lion Optimization Algorithm (SLnO)}{10}{subsection.2.1.2}
-\contentsline {section}{\numberline {2.2}Artificial Neural Network (ANN)}{13}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Activation functions}{13}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Loss functions}{14}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Backpropagation - the ANN Training Algorithm}{15}{subsection.2.2.3}
-\contentsline {subsubsection}{\numberline {2.2.3.1}Forward propagation phase}{15}{subsubsection.2.2.3.1}
-\contentsline {subsubsection}{\numberline {2.2.3.2}Weights updating phase}{16}{subsubsection.2.2.3.2}
-\contentsline {section}{\numberline {2.3}Time-series prediction and Auto-scaling problem in Cloud Computing}{16}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Cloud Computing}{16}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Auto-scaling problem}{16}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Well-known machine learning models for Auto-scaling in cloud computing}{16}{subsection.2.3.3}
-\contentsline {subsubsection}{\numberline {2.3.3.1}Multi-Layer Perceptrons (MLPs)}{17}{subsubsection.2.3.3.1}
-\contentsline {subsubsection}{\numberline {2.3.3.2}Cascade Forward Neural Network (CFNN)}{18}{subsubsection.2.3.3.2}
-\contentsline {subsubsection}{\numberline {2.3.3.3}Recurrent Neural Network (RNN)}{19}{subsubsection.2.3.3.3}
-\contentsline {subsubsection}{\numberline {2.3.3.4}Long Short-Term Memory (LSTM)}{20}{subsubsection.2.3.3.4}
-\contentsline {subsubsection}{\numberline {2.3.3.5}Gated Recurrent Units (GRU)}{20}{subsubsection.2.3.3.5}
-\contentsline {chapter}{\numberline {3}Improved Sea Lion Optimization (ISLO) algorithm and Proposed Model for Auto-Scaling (ISLO-CFNN)}{22}{chapter.3}
-\contentsline {section}{\numberline {3.1}Improved Sea Lion Optimization (ISLO)}{22}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Exploitation phase improvement}{23}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Exploration phase improvement}{24}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}Proposed model for auto-scaling problem in Cloud Computing}{25}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Collecting data}{26}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Data pre-processing}{26}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Building and Training model}{27}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Deploy prediction model}{29}{subsection.3.2.4}
-\contentsline {chapter}{\numberline {4}Experiments}{30}{chapter.4}
-\contentsline {section}{\numberline {4.1}Theoretical experiments}{30}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Evaluation method and Parameter settings}{32}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Experiment results and discussion}{33}{subsection.4.1.2}
-\contentsline {subsubsection}{\numberline {4.1.2.1}Unimodal and Multimodal benchmark functions}{33}{subsubsection.4.1.2.1}
-\contentsline {subsubsection}{\numberline {4.1.2.2}Hybrid and Composition benchmark functions}{38}{subsubsection.4.1.2.2}
-\contentsline {section}{\numberline {4.2}Application}{39}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Dataset and Set up}{40}{subsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.1.1}Google Trace dataset}{40}{subsubsection.4.2.1.1}
-\contentsline {subsubsection}{\numberline {4.2.1.2}EU Internet Traffic and UK Internet Traffic datasets}{41}{subsubsection.4.2.1.2}
-\contentsline {subsection}{\numberline {4.2.2}Parameter Setting and Evaluation Metrics}{41}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Results and Discussion}{42}{subsection.4.2.3}
-\contentsline {subsubsection}{\numberline {4.2.3.1}Accuracy comparision}{42}{subsubsection.4.2.3.1}
-\contentsline {subsubsection}{\numberline {4.2.3.2}Run-time comparision}{45}{subsubsection.4.2.3.2}
-\contentsline {chapter}{\numberline {5}Conclusions and Future work}{46}{chapter.5}
+\contentsline {chapter}{\numberline {2}Materials and background}{10}{chapter.2}
+\contentsline {section}{\numberline {2.1}Meta-heuristic Optimization}{10}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Particle Swarm Optimization (PSO)}{10}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Sea Lion Optimization Algorithm (SLnO)}{11}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}Artificial Neural Network (ANN)}{14}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Activation functions}{14}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Loss functions}{15}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Backpropagation - the ANN Training Algorithm}{16}{subsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.3.1}Forward propagation phase}{16}{subsubsection.2.2.3.1}
+\contentsline {subsubsection}{\numberline {2.2.3.2}Weights updating phase}{17}{subsubsection.2.2.3.2}
+\contentsline {section}{\numberline {2.3}Time-series prediction and Auto-scaling problem in Cloud Computing}{17}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Cloud Computing}{17}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Auto-scaling problem}{17}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Well-known machine learning models for Auto-scaling in cloud computing}{17}{subsection.2.3.3}
+\contentsline {subsubsection}{\numberline {2.3.3.1}Multi-Layer Perceptrons (MLPs)}{18}{subsubsection.2.3.3.1}
+\contentsline {subsubsection}{\numberline {2.3.3.2}Cascade Forward Neural Network (CFNN)}{19}{subsubsection.2.3.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3.3}Recurrent Neural Network (RNN)}{20}{subsubsection.2.3.3.3}
+\contentsline {subsubsection}{\numberline {2.3.3.4}Long Short-Term Memory (LSTM)}{21}{subsubsection.2.3.3.4}
+\contentsline {subsubsection}{\numberline {2.3.3.5}Gated Recurrent Units (GRU)}{21}{subsubsection.2.3.3.5}
+\contentsline {chapter}{\numberline {3}Improved Sea Lion Optimization (ISLO) algorithm and Proposed Model for Auto-Scaling (ISLO-CFNN)}{23}{chapter.3}
+\contentsline {section}{\numberline {3.1}Improved Sea Lion Optimization (ISLO)}{23}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Exploitation phase improvement}{24}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Exploration phase improvement}{25}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Proposed model for auto-scaling problem in Cloud Computing}{26}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Collecting data}{27}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Data pre-processing}{27}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Building and Training model}{28}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Deploy prediction model}{30}{subsection.3.2.4}
+\contentsline {chapter}{\numberline {4}Experiments}{31}{chapter.4}
+\contentsline {section}{\numberline {4.1}Theoretical experiments}{31}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Evaluation method and Parameter settings}{33}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Experiment results and discussion}{34}{subsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.2.1}Unimodal and Multimodal benchmark functions}{34}{subsubsection.4.1.2.1}
+\contentsline {subsubsection}{\numberline {4.1.2.2}Hybrid and Composition benchmark functions}{39}{subsubsection.4.1.2.2}
+\contentsline {section}{\numberline {4.2}Application}{40}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Dataset and Set up}{41}{subsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.1.1}Google Trace dataset}{41}{subsubsection.4.2.1.1}
+\contentsline {subsubsection}{\numberline {4.2.1.2}EU Internet Traffic and UK Internet Traffic datasets}{42}{subsubsection.4.2.1.2}
+\contentsline {subsection}{\numberline {4.2.2}Parameter Setting and Evaluation Metrics}{42}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Results and Discussion}{43}{subsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.3.1}Accuracy comparision}{43}{subsubsection.4.2.3.1}
+\contentsline {subsubsection}{\numberline {4.2.3.2}Run-time comparision}{46}{subsubsection.4.2.3.2}
+\contentsline {chapter}{\numberline {5}Conclusions and Future work}{47}{chapter.5}

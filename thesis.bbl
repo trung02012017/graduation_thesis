@@ -6,6 +6,12 @@ Bilal Alatas.
   optimization.
 \newblock {\em Expert Systems with Applications}, 38(10):13170--13180, 2011.
 
+\bibitem{aljarah2018optimizing}
+Ibrahim Aljarah, Hossam Faris, and Seyedali Mirjalili.
+\newblock Optimizing connection weights in neural networks using the whale
+  optimization algorithm.
+\newblock {\em Soft Computing}, 22(1):1--15, 2018.
+
 \bibitem{amiri2017survey}
 Maryam Amiri and Leyli Mohammad-Khanli.
 \newblock Survey on prediction models of applications for resources
@@ -28,6 +34,11 @@ R~Bhesdadiya, Pradeep Jangir, Narottam Jangir, Indrajit~N Trivedi, and Dilip
 R~Bon{\'e}.
 \newblock {\em Recurrent neural networks for time series forecasting}.
 \newblock PhD thesis, PhD thesis, Universit{\'e} de Tours, Tours, FRANCE, 2000.
+
+\bibitem{castillo2000g}
+Pedro~A Castillo, JJ~Merelo, Alberto Prieto, V~Rivas, and Gustavo Romero.
+\newblock G-prop: Global optimization of multilayer perceptrons using gas.
+\newblock {\em Neurocomputing}, 35(1-4):149--163, 2000.
 
 \bibitem{chandra2012cooperative}
 Rohitash Chandra and Mengjie Zhang.
@@ -181,6 +192,12 @@ Ali Kaveh and Vahid~Reza Mahdavi.
 \newblock Colliding bodies optimization: a novel meta-heuristic method.
 \newblock {\em Computers \& Structures}, 139:18--27, 2014.
 
+\bibitem{kawam2012metaheuristic}
+Ahmad~AL Kawam and Nashat Mansour.
+\newblock Metaheuristic optimization algorithms for training artificial neural
+  networks.
+\newblock {\em Int. J. Comput. Inf. Technol}, 1(2):156--161, 2012.
+
 \bibitem{kennedy2010particle}
 James Kennedy.
 \newblock Particle swarm optimization.
@@ -221,6 +238,13 @@ JJ~Liang, BY~Qu, PN~Suganthan, and Q~Chen.
   Zhengzhou University, Zhengzhou China and Technical Report, Nanyang
   Technological University, Singapore}, 29:625--640, 2014.
 
+\bibitem{liu2013experimental}
+Hui Liu, Hong-qi Tian, Chao Chen, and Yan-fei Li.
+\newblock An experimental investigation of two wavelet-mlp hybrid frameworks
+  for wind speed prediction using ga and pso optimization.
+\newblock {\em International Journal of Electrical Power \& Energy Systems},
+  52:161--173, 2013.
+
 \bibitem{masadeh2019sea}
 Raja Masadeh, Basel~A Mahafzah, and Ahmad Sharieh.
 \newblock Sea lion optimization algorithm.
@@ -236,6 +260,12 @@ Tiago Matias, Francisco Souza, Rui Ara{\'u}jo, and Carlos~Henggeler Antunes.
 Seyedali Mirjalili and Andrew Lewis.
 \newblock The whale optimization algorithm.
 \newblock {\em Advances in engineering software}, 95:51--67, 2016.
+
+\bibitem{nasseri2008optimized}
+Mohsen Nasseri, Keyvan Asghari, and MJ~Abedini.
+\newblock Optimized scenario for rainfall forecasting using genetic algorithm
+  coupled with artificial neural network.
+\newblock {\em Expert systems with applications}, 35(3):1415--1421, 2008.
 
 \bibitem{nguyen2019efficient}
 Thieu Nguyen, Tu~Nguyen, Binh~Minh Nguyen, and Giang Nguyen.
@@ -273,6 +303,11 @@ Muhammad Rashid and Abdul~Rauf Baig.
 Charles Reiss, John Wilkes, and Joseph~L Hellerstein.
 \newblock Google cluster-usage traces: format+ schema.
 \newblock {\em Google Inc., White Paper}, pages 1--14, 2011.
+
+\bibitem{ruder2016overview}
+Sebastian Ruder.
+\newblock An overview of gradient descent optimization algorithms.
+\newblock {\em arXiv preprint arXiv:1609.04747}, 2016.
 
 \bibitem{rumelhart1988learning}
 David~E Rumelhart, Geoffrey~E Hinton, Ronald~J Williams, et~al.
