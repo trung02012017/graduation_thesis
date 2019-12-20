@@ -7,48 +7,47 @@ Repeated entry---line 337 of file references.bib
  : @inproceedings{fu2016using
  :                           ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "ao2011teaching"
 Warning--empty journal in koza1997genetic
 Warning--can't use both volume and number fields in warsito2018cascade
-You've used 60 entries,
+You've used 67 entries,
             2118 wiz_defined-function locations,
-            862 strings with 14730 characters,
-and the built_in function-call counts, 22397 in all, are:
-= -- 2325
-> -- 947
+            898 strings with 16045 characters,
+and the built_in function-call counts, 24837 in all, are:
+= -- 2570
+> -- 1072
 < -- 23
-+ -- 386
-- -- 312
-* -- 1572
-:= -- 3585
-add.period$ -- 195
-call.type$ -- 60
-change.case$ -- 331
++ -- 437
+- -- 354
+* -- 1769
+:= -- 4001
+add.period$ -- 216
+call.type$ -- 67
+change.case$ -- 373
 chr.to.int$ -- 0
-cite$ -- 62
-duplicate$ -- 859
-empty$ -- 1744
-format.name$ -- 312
-if$ -- 4761
+cite$ -- 69
+duplicate$ -- 935
+empty$ -- 1921
+format.name$ -- 354
+if$ -- 5247
 int.to.chr$ -- 0
-int.to.str$ -- 60
-missing$ -- 61
-newline$ -- 304
-num.names$ -- 120
-pop$ -- 305
+int.to.str$ -- 67
+missing$ -- 68
+newline$ -- 339
+num.names$ -- 134
+pop$ -- 335
 preamble$ -- 1
-purify$ -- 274
+purify$ -- 309
 quote$ -- 0
-skip$ -- 640
+skip$ -- 690
 stack$ -- 0
-substring$ -- 1681
-swap$ -- 237
+substring$ -- 1865
+swap$ -- 244
 text.length$ -- 23
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 236
+type$ -- 264
 warning$ -- 2
-while$ -- 238
-width$ -- 62
-write$ -- 679
+while$ -- 264
+width$ -- 69
+write$ -- 755
 (There was 1 error message)
