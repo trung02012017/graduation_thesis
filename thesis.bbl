@@ -1,5 +1,12 @@
 \begin{thebibliography}{10}
 
+\bibitem{abbass2001mbo}
+Hussein~A Abbass.
+\newblock Mbo: Marriage in honey bees optimization-a haplometrosis polygynous
+  swarming approach.
+\newblock In {\em Proceedings of the 2001 Congress on Evolutionary Computation
+  (IEEE Cat. No. 01TH8546)}, volume~1, pages 207--214. IEEE, 2001.
+
 \bibitem{alatas2011acroa}
 Bilal Alatas.
 \newblock Acroa: artificial chemical reaction optimization algorithm for global
@@ -23,17 +30,23 @@ E~Michael Azoff.
 \newblock {\em Neural network time series forecasting of financial markets}.
 \newblock John Wiley \& Sons, Inc., 1994.
 
-\bibitem{bhesdadiya2016training}
-R~Bhesdadiya, Pradeep Jangir, Narottam Jangir, Indrajit~N Trivedi, and Dilip
-  Ladumor.
-\newblock Training multi-layer perceptron in neural network using whale
-  optimization algorithm.
-\newblock {\em Indian J. Sci. Technol}, 9(19):28--36, 2016.
+\bibitem{basturk2006artificial}
+Bahriye Basturk.
+\newblock An artificial bee colony (abc) algorithm for numeric function
+  optimization.
+\newblock In {\em IEEE Swarm Intelligence Symposium, Indianapolis, IN, USA,
+  2006}, 2006.
 
 \bibitem{bone2000recurrent}
 R~Bon{\'e}.
 \newblock {\em Recurrent neural networks for time series forecasting}.
 \newblock PhD thesis, PhD thesis, Universit{\'e} de Tours, Tours, FRANCE, 2000.
+
+\bibitem{calheiros2014workload}
+Rodrigo~N Calheiros, Enayat Masoumi, Rajiv Ranjan, and Rajkumar Buyya.
+\newblock Workload prediction using arima model and its impact on cloud
+  applications’ qos.
+\newblock {\em IEEE Transactions on Cloud Computing}, 3(4):449--458, 2014.
 
 \bibitem{castillo2000g}
 Pedro~A Castillo, JJ~Merelo, Alberto Prieto, V~Rivas, and Gustavo Romero.
@@ -50,6 +63,12 @@ Rohitash Chandra and Mengjie Zhang.
 Mridul Chawla and Manoj Duhan.
 \newblock Levy flights in metaheuristics optimization algorithms--a review.
 \newblock {\em Applied Artificial Intelligence}, 32(9-10):802--821, 2018.
+
+\bibitem{chen2015efficient}
+Chia-Ching Chen, Shao-Jui Chen, Fan Yin, and Wei-Jen Wang.
+\newblock Efficient hybriding auto-scaling for openstack platforms.
+\newblock In {\em 2015 IEEE International Conference on Smart
+  City/SocialCom/SustainCom (SmartCity)}, pages 1079--1085. IEEE, 2015.
 
 \bibitem{chung2014empirical}
 Junyoung Chung, Caglar Gulcehre, KyungHyun Cho, and Yoshua Bengio.
@@ -72,6 +91,12 @@ Paulo Cortez, Miguel Rio, Miguel Rocha, and Pedro Sousa.
 Dominique de~Werra and Alain Hertz.
 \newblock Tabu search techniques.
 \newblock {\em Operations-Research-Spektrum}, 11(3):131--141, 1989.
+
+\bibitem{dhiman2019seagull}
+Gaurav Dhiman and Vijay Kumar.
+\newblock Seagull optimization algorithm: Theory and its applications for
+  large-scale industrial engineering problems.
+\newblock {\em Knowledge-Based Systems}, 165:169--196, 2019.
 
 \bibitem{dorigo1999ant}
 Marco Dorigo and Gianni Di~Caro.
@@ -172,6 +197,11 @@ Ali~Husseinzadeh Kashan.
   optimization inspired by sport championships.
 \newblock {\em Applied Soft Computing}, 16:171--200, 2014.
 
+\bibitem{kaveh2013new}
+A~Kaveh and N~Farhoudi.
+\newblock A new optimization method: Dolphin echolocation.
+\newblock {\em Advances in Engineering Software}, 59:53--70, 2013.
+
 \bibitem{kaveh2012new}
 A~Kaveh and M~Khayatazad.
 \newblock A new meta-heuristic method: ray optimization.
@@ -245,21 +275,32 @@ Hui Liu, Hong-qi Tian, Chao Chen, and Yan-fei Li.
 \newblock {\em International Journal of Electrical Power \& Energy Systems},
   52:161--173, 2013.
 
+\bibitem{lorido2012auto}
+Tania Lorido-Botr{\'a}n, Jos{\'e} Miguel-Alonso, and Jose~Antonio Lozano.
+\newblock Auto-scaling techniques for elastic applications in cloud
+  environments.
+\newblock {\em Department of Computer Architecture and Technology, University
+  of Basque Country, Tech. Rep. EHU-KAT-IK-09}, 12:2012, 2012.
+
 \bibitem{masadeh2019sea}
 Raja Masadeh, Basel~A Mahafzah, and Ahmad Sharieh.
 \newblock Sea lion optimization algorithm.
 \newblock {\em Sea}, 10(5), 2019.
 
-\bibitem{matias2014learning}
-Tiago Matias, Francisco Souza, Rui Ara{\'u}jo, and Carlos~Henggeler Antunes.
-\newblock Learning of a single-hidden layer feedforward neural network using an
-  optimized extreme learning machine.
-\newblock {\em Neurocomputing}, 129:428--436, 2014.
+\bibitem{mell2011nist}
+Peter Mell, Tim Grance, et~al.
+\newblock The nist definition of cloud computing.
+\newblock 2011.
 
 \bibitem{mirjalili2016whale}
 Seyedali Mirjalili and Andrew Lewis.
 \newblock The whale optimization algorithm.
 \newblock {\em Advances in engineering software}, 95:51--67, 2016.
+
+\bibitem{mirjalili2014grey}
+Seyedali Mirjalili, Seyed~Mohammad Mirjalili, and Andrew Lewis.
+\newblock Grey wolf optimizer.
+\newblock {\em Advances in engineering software}, 69:46--61, 2014.
 
 \bibitem{nasseri2008optimized}
 Mohsen Nasseri, Keyvan Asghari, and MJ~Abedini.
@@ -274,12 +315,26 @@ Thieu Nguyen, Tu~Nguyen, Binh~Minh Nguyen, and Giang Nguyen.
 \newblock {\em International Journal of Computational Intelligence Systems},
   12(2):1144--1161, 2019.
 
+\bibitem{nikravesh2015towards}
+Ali~Yadavar Nikravesh, Samuel~A Ajila, and Chung-Horng Lung.
+\newblock Towards an autonomic auto-scaling prediction system for cloud
+  resource provisioning.
+\newblock In {\em Proceedings of the 10th International Symposium on Software
+  Engineering for Adaptive and Self-Managing Systems}, pages 35--45. IEEE
+  Press, 2015.
+
 \bibitem{omran2010improving}
 Mahamed~GH Omran, Zong~Woo Geem, and Ayed Salman.
 \newblock Improving the performance of harmony search using opposition-based
   learning and quadratic interpolation.
 \newblock {\em International Journal of Mathematical Modelling and Numerical
   Optimisation}, 2(1):28--50, 2010.
+
+\bibitem{passino2002biomimicry}
+Kevin~M Passino.
+\newblock Biomimicry of bacterial foraging for distributed optimization and
+  control.
+\newblock {\em IEEE control systems magazine}, 22(3):52--67, 2002.
 
 \bibitem{rao2011teaching}
 R~Venkata Rao, Vimal~J Savsani, and DP~Vakharia.
@@ -322,6 +377,12 @@ Sancho Salcedo-Sanz, A~Pastor-S{\'a}nchez, D~Gallo-Marazuela, and Antonio
 \newblock In {\em International Conference on Intelligent Data Engineering and
   Automated Learning}, pages 326--333. Springer, 2013.
 
+\bibitem{shahin2017automatic}
+Ashraf~A Shahin.
+\newblock Automatic cloud resource scaling algorithm based on long short-term
+  memory recurrent neural network.
+\newblock {\em arXiv preprint arXiv:1701.03295}, 2017.
+
 \bibitem{simon2008biogeography}
 Dan Simon.
 \newblock Biogeography-based optimization.
@@ -341,6 +402,12 @@ Hamid~R Tizhoosh.
   Modelling, Control and Automation and International Conference on Intelligent
   Agents, Web Technologies and Internet Commerce (CIMCA-IAWTIC'06)}, volume~1,
   pages 695--701. IEEE, 2005.
+
+\bibitem{tran2018multivariate}
+Nhuan Tran, Thang Nguyen, Binh~Minh Nguyen, and Giang Nguyen.
+\newblock A multivariate fuzzy time series resource forecast model for clouds
+  using lstm and data correlation analysis.
+\newblock {\em Procedia Computer Science}, 126:636--645, 2018.
 
 \bibitem{wang2016opposition}
 Gai-Ge Wang, Suash Deb, Amir~H Gandomi, and Amir~H Alavi.
@@ -378,6 +445,30 @@ Darrell Whitley.
 \newblock A genetic algorithm tutorial.
 \newblock {\em Statistics and computing}, 4(2):65--85, 1994.
 
+\bibitem{yang2013workload}
+Jingqi Yang, Chuanchang Liu, Yanlei Shang, Zexiang Mao, and Junliang Chen.
+\newblock Workload predicting-based automatic scaling in service clouds.
+\newblock In {\em 2013 IEEE Sixth International Conference on Cloud Computing},
+  pages 810--815. IEEE, 2013.
+
+\bibitem{yang2009firefly}
+Xin-She Yang.
+\newblock Firefly algorithms for multimodal optimization.
+\newblock In {\em International symposium on stochastic algorithms}, pages
+  169--178. Springer, 2009.
+
+\bibitem{yang2012bat}
+Xin-She Yang and Amir Hossein~Gandomi.
+\newblock Bat algorithm: a novel approach for global engineering optimization.
+\newblock {\em Engineering Computations}, 29(5):464--483, 2012.
+
+\bibitem{yazdani2016lion}
+Maziar Yazdani and Fariborz Jolai.
+\newblock Lion optimization algorithm (loa): a nature-inspired metaheuristic
+  algorithm.
+\newblock {\em Journal of computational design and engineering}, 3(1):24--36,
+  2016.
+
 \bibitem{yuan2004survey}
 Xiao-hui Yuan, Cheng Wang, Yong-chuan Zhang, and Yan-bin Yuan.
 \newblock A survey on application of particle swarm optimization to electric
@@ -394,5 +485,11 @@ Jinhao Zhang, Mi~Xiao, Liang Gao, and Quanke Pan.
 \newblock Queuing search algorithm: A novel metaheuristic algorithm for solving
   engineering optimization problems.
 \newblock {\em Applied Mathematical Modelling}, 63:464--490, 2018.
+
+\bibitem{zhu2017deep}
+Lingxue Zhu and Nikolay Laptev.
+\newblock Deep and confident prediction for time series at uber.
+\newblock In {\em 2017 IEEE International Conference on Data Mining Workshops
+  (ICDMW)}, pages 103--110. IEEE, 2017.
 
 \end{thebibliography}

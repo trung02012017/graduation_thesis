@@ -7,47 +7,56 @@ Repeated entry---line 337 of file references.bib
  : @inproceedings{fu2016using
  :                           ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 730 of file references.bib
+ : @inproceedings{eberhart1995particle
+ :                                    ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 740 of file references.bib
+ : @inproceedings{dorigo1999ant
+ :                             ,
+I'm skipping whatever remains of this entry
 Warning--empty journal in koza1997genetic
+Warning--empty journal in mell2011nist
 Warning--can't use both volume and number fields in warsito2018cascade
-You've used 67 entries,
+You've used 83 entries,
             2118 wiz_defined-function locations,
-            898 strings with 16045 characters,
-and the built_in function-call counts, 24837 in all, are:
-= -- 2570
-> -- 1072
-< -- 23
-+ -- 437
-- -- 354
-* -- 1769
-:= -- 4001
-add.period$ -- 216
-call.type$ -- 67
-change.case$ -- 373
+            979 strings with 18984 characters,
+and the built_in function-call counts, 30679 in all, are:
+= -- 3184
+> -- 1290
+< -- 30
++ -- 527
+- -- 424
+* -- 2136
+:= -- 4913
+add.period$ -- 270
+call.type$ -- 83
+change.case$ -- 455
 chr.to.int$ -- 0
-cite$ -- 69
-duplicate$ -- 935
-empty$ -- 1921
-format.name$ -- 354
-if$ -- 5247
+cite$ -- 86
+duplicate$ -- 1184
+empty$ -- 2405
+format.name$ -- 424
+if$ -- 6526
 int.to.chr$ -- 0
-int.to.str$ -- 67
-missing$ -- 68
-newline$ -- 339
-num.names$ -- 134
-pop$ -- 335
+int.to.str$ -- 83
+missing$ -- 84
+newline$ -- 419
+num.names$ -- 166
+pop$ -- 426
 preamble$ -- 1
-purify$ -- 309
+purify$ -- 375
 quote$ -- 0
-skip$ -- 690
+skip$ -- 875
 stack$ -- 0
-substring$ -- 1865
-swap$ -- 244
-text.length$ -- 23
+substring$ -- 2285
+swap$ -- 321
+text.length$ -- 30
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 264
-warning$ -- 2
-while$ -- 264
-width$ -- 69
-write$ -- 755
-(There was 1 error message)
+type$ -- 328
+warning$ -- 3
+while$ -- 327
+width$ -- 85
+write$ -- 934
+(There were 3 error messages)
