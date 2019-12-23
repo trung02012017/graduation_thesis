@@ -1,0 +1,2460 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.11.18)  23 DEC 2019 17:02
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrextend.sty
+Package: scrextend 2017/09/07 v3.24 KOMA-Script package (extend other classes w
+ith features of KOMA-Script classes)
+
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrkbase.sty
+Package: scrkbase 2017/09/07 v3.24 KOMA-Script package (KOMA-Script-dependent b
+asics and keyval usage)
+
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2017/09/07 v3.24 KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2017/09/07 v3.24 KOMA-Script package (loading files)
+)))
+LaTeX Info: Redefining \textsubscript on input line 1318.
+)
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <13> not available
+(Font)              size <12> substituted on input line 3.
+
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count88
+\Gm@cntv=\count89
+\c@Gm@tempcnt=\count90
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks15
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen111
+\Gin@req@width=\dimen112
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancybox/fancybox.sty
+Package: fancybox 2010/05/15 1.4
+
+Style option: `fancybox' v1.4 <2010/05/15> (tvz)
+\@fancybox=\box26
+\shadowsize=\dimen113
+\@Sbox=\box27
+\do@VerbBox=\toks16
+\the@fancyput=\toks17
+\this@fancyput=\toks18
+\EndVerbatimTokens=\toks19
+\Verbatim@Outfile=\write3
+\Verbatim@Infile=\read1
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2017/10/31 v2.20.4
+\thm@style=\toks20
+\thm@bodyfont=\toks21
+\thm@headfont=\toks22
+\thm@notefont=\toks23
+\thm@headpunct=\toks24
+\thm@preskip=\skip43
+\thm@postskip=\skip44
+\thm@headsep=\skip45
+\dth@everypar=\toks25
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip46
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks26
+\ex@=\dimen114
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen115
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count91
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count92
+\leftroot@=\count93
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count94
+\DOTSCASE@=\count95
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box28
+\strutbox@=\box29
+\big@size=\dimen116
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count96
+\c@MaxMatrixCols=\count97
+\dotsspace@=\muskip10
+\c@parentequation=\count98
+\dspbrk@lvl=\count99
+\tag@help=\toks27
+\row@=\count100
+\column@=\count101
+\maxfields@=\count102
+\andhelp@=\toks28
+\eqnshift@=\dimen117
+\alignsep@=\dimen118
+\tagshift@=\dimen119
+\tagwidth@=\dimen120
+\totwidth@=\dimen121
+\lineht@=\dimen122
+\@envbody=\toks29
+\multlinegap=\skip47
+\multlinetaggap=\skip48
+\mathdisplay@stack=\toks30
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+\col@sep=\dimen123
+\extrarowheight=\dimen124
+\NC@list=\toks31
+\extratabsurround=\skip49
+\backup@length=\skip50
+)
+(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip51
+\enit@outerparindent=\dimen125
+\enit@toks=\toks32
+\enit@inbox=\box30
+\enitdp@description=\count103
+)
+(/usr/share/texlive/texmf-dist/tex/latex/subfiles/subfiles.sty
+Package: subfiles 2012/05/23 Federico Garcia
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks33
+\verbatim@line=\toks34
+\verbatim@in@stream=\read2
+))
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
+\ttl@box=\box31
+\beforetitleunit=\skip52
+\aftertitleunit=\skip53
+\ttl@plus=\dimen126
+\ttl@minus=\dimen127
+\ttl@toksa=\toks35
+\titlewidth=\dimen128
+\titlewidthlast=\dimen129
+\titlewidthfirst=\dimen130
+)
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titletoc.sty
+Package: titletoc 2011/12/15 v1.6 TOC entries
+\ttl@leftsep=\dimen131
+)
+(/usr/share/texlive/texmf-dist/tex/latex/chngcntr/chngcntr.sty
+Package: chngcntr 2009/09/02 v1.0a change counter resetting
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/afterpage.sty
+Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
+\AP@output=\toks36
+\AP@partial=\box32
+\AP@footins=\box33
+)
+(/usr/share/texlive/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+Package: algorithm2e 2017/07/18 v5.2 algorithms environments
+\c@AlgoLine=\count104
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\algocf@hangindent=\skip54
+
+(/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count105
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+\skiptotal=\skip55
+\skiplinenumber=\skip56
+\skiprule=\skip57
+\skiphlne=\skip58
+\skiptext=\skip59
+\skiplength=\skip60
+\algomargin=\skip61
+\skipalgocfslide=\skip62
+\algowidth=\dimen132
+\inoutsize=\dimen133
+\inoutindent=\dimen134
+\interspacetitleruled=\dimen135
+\interspacealgoruled=\dimen136
+\interspacetitleboxruled=\dimen137
+\algocf@ruledwidth=\skip63
+\algocf@inoutbox=\box34
+\algocf@inputbox=\box35
+\AlCapSkip=\skip64
+\AlCapHSkip=\skip65
+\algoskipindent=\skip66
+\algocf@nlbox=\box36
+\algocf@hangingbox=\box37
+\algocf@untilbox=\box38
+\algocf@skipuntil=\skip67
+\algocf@capbox=\box39
+\algocf@lcaptionbox=\skip68
+\algoheightruledefault=\skip69
+\algoheightrule=\skip70
+\algotitleheightruledefault=\skip71
+\algotitleheightrule=\skip72
+\c@algocfline=\count106
+\c@algocfproc=\count107
+\c@algocf=\count108
+\algocf@algoframe=\box40
+\algocf@algobox=\box41
+)
+(/usr/share/texlive/texmf-dist/tex/latex/capt-of/capt-of.sty
+Package: capt-of 2009/12/29 v0.2 standard captions outside of floats
+)
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
+\multirow@colwidth=\skip73
+\multirow@cntb=\count109
+\multirow@dima=\skip74
+\bigstrutjot=\dimen138
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip75
+\f@nch@O@elh=\skip76
+\f@nch@O@erh=\skip77
+\f@nch@O@olh=\skip78
+\f@nch@O@orh=\skip79
+\f@nch@O@elf=\skip80
+\f@nch@O@erf=\skip81
+\f@nch@O@olf=\skip82
+\f@nch@O@orf=\skip83
+)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count110
+\float@exts=\toks37
+\float@box=\box42
+\@float@everytoks=\toks38
+\@floatcapt=\box43
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen139
+\captionmargin@=\dimen140
+\captionwidth=\dimen141
+\caption@tempdima=\dimen142
+\caption@indent=\dimen143
+\caption@parindent=\dimen144
+\caption@hangindent=\dimen145
+)
+\c@ContinuedFloat=\count111
+Package caption Info: float package is loaded.
+)
+\c@subfigure=\count112
+\c@subtable=\count113
+)
+(/usr/share/texlive/texmf-dist/tex/latex/glossaries/base/glossaries.sty
+Package: glossaries 2017/11/14 v4.35 (NLCT)
+
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks39
+\XKV@tempa@toks=\toks40
+)
+\XKV@depth=\count114
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/mfirstuc/mfirstuc.sty
+Package: mfirstuc 2017/11/14 v2.06 (NLCT)
+
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count115
+)
+\@glsmfirst=\toks41
+\@glsmrest=\toks42
+)
+(/usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
+Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xfor/xfor.sty
+Package: xfor 2009/02/05 v1.05 (NLCT)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/datatool/datatool-base.sty
+Package: datatool-base 2017/11/12 v2.29 (NLCT)
+
+(/usr/share/texlive/texmf-dist/tex/latex/substr/substr.sty
+Package: substr 2009/10/20 v1.2 Handle substrings
+\c@su@anzahl=\count116
+)
+(/usr/share/texlive/texmf-dist/tex/latex/datatool/datatool-fp.sty
+Package: datatool-fp 2017/11/12 v2.29 (NLCT)
+
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp.sty
+Package: fp 1995/04/02
+
+`Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
+(/usr/share/texlive/texmf-dist/tex/latex/fp/defpattern.sty
+Package: defpattern 1994/10/12
+\actioncount=\count117
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-basic.sty
+Package: fp-basic 1996/05/13
+\FP@xs=\count118
+\FP@xia=\count119
+\FP@xib=\count120
+\FP@xfa=\count121
+\FP@xfb=\count122
+\FP@rega=\count123
+\FP@regb=\count124
+\FP@regs=\count125
+\FP@times=\count126
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-addons.sty
+Package: fp-addons 1995/03/15
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-snap.sty
+Package: fp-snap 1995/04/05
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-exp.sty
+Package: fp-exp 1995/04/03
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-trigo.sty
+Package: fp-trigo 1995/04/14
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-pas.sty
+Package: fp-pas 1994/08/29
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-random.sty
+Package: fp-random 1995/02/23
+\FPseed=\count127
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-eqn.sty
+Package: fp-eqn 1995/04/03
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-upn.sty
+Package: fp-upn 1996/10/21
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-eval.sty
+Package: fp-eval 1995/04/03
+)))
+\@dtl@toks=\toks43
+\@dtl@tmpcount=\count128
+\dtl@tmplength=\skip84
+\dtl@sortresult=\count129
+\@dtl@numgrpsepcount=\count130
+\@dtl@datatype=\count131
+\dtl@codeA=\count132
+\dtl@codeB=\count133
+\@dtl@foreach@level=\count134
+)
+(/usr/share/texlive/texmf-dist/tex/latex/glossaries/base/glossaries-compatible-
+307.sty
+Package: glossaries-compatible-307 2017/11/14 v4.35 (NLCT)
+)
+\gls@level=\count135
+\@gls@tmpb=\toks44
+\gls@tmplen=\skip85
+\glskeylisttok=\toks45
+\glslabeltok=\toks46
+\glsshorttok=\toks47
+\glslongtok=\toks48
+
+(/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-hypernav.st
+y
+Package: glossary-hypernav 2017/11/14 v4.35 (NLCT)
+) (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-list.sty
+Package: glossary-list 2017/11/14 v4.35 (NLCT)
+\glslistdottedwidth=\skip86
+) (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-long.sty
+Package: glossary-long 2017/11/14 v4.35 (NLCT)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip87
+\LTright=\skip88
+\LTpre=\skip89
+\LTpost=\skip90
+\LTchunksize=\count136
+\LTcapwidth=\dimen146
+\LT@head=\box44
+\LT@firsthead=\box45
+\LT@foot=\box46
+\LT@lastfoot=\box47
+\LT@cols=\count137
+\LT@rows=\count138
+\c@LT@tables=\count139
+\c@LT@chunks=\count140
+\LT@p@ftn=\toks49
+)
+\glsdescwidth=\skip91
+\glspagelistwidth=\skip92
+)
+(/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-super.sty
+Package: glossary-super 2017/11/14 v4.35 (NLCT)
+
+(/usr/share/texlive/texmf-dist/tex/latex/supertabular/supertabular.sty
+Package: supertabular 2004/02/20 v4.1e the supertabular environment
+\c@tracingst=\count141
+\ST@wd=\dimen147
+\ST@rightskip=\skip93
+\ST@leftskip=\skip94
+\ST@parfillskip=\skip95
+\ST@pageleft=\dimen148
+\ST@headht=\dimen149
+\ST@tailht=\dimen150
+\ST@pagesofar=\dimen151
+\ST@pboxht=\dimen152
+\ST@lineht=\dimen153
+\ST@stretchht=\dimen154
+\ST@prevht=\dimen155
+\ST@toadd=\dimen156
+\ST@dimen=\dimen157
+\ST@pbox=\box48
+))
+(/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-tree.sty
+Package: glossary-tree 2017/11/14 v4.35 (NLCT)
+\glstreeindent=\skip96
+))
+(/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-superragged
+.sty
+Package: glossary-superragged 2017/11/14 v4.35 (NLCT)
+) (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+(/usr/share/texlive/texmf-dist/tex/latex/parskip/parskip.sty
+Package: parskip 2001/04/09 non-zero parskip adjustments
+)
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/tocstyle.sty
+Package: tocstyle 2017/02/23 v0.2i-alpha KOMA-Script package (versatile toc sty
+les)
+
+
+Package tocstyle Warning: THIS IS AN ALPHA VERSION!
+(tocstyle)                USAGE OF THIS VERSION IS ON YOUR OWN RISK!
+(tocstyle)                EVERYTHING MAY HAPPEN!
+(tocstyle)                EVERYTHING MAY CHANGE IN FUTURE!
+(tocstyle)                THERE IS NO SUPPORT, IF YOU USE THIS PACKAGE!
+(tocstyle)                Maybe it would be better, not to load this package.
+
+\tocstyle@indentstyle=\count142
+Package tocstyle Info: no tocstyle.cfg found on input line 942.
+)
+exclude: 
+exclude: 
+exclude: 
+exclude: 
+exclude: 
+exclude: 
+exclude: 
+(/usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+\c@blindtext=\count143
+\c@Blindtext=\count144
+\c@blind@countparstart=\count145
+\blind@countxx=\count146
+\blindtext@numBlindtext=\count147
+\blind@countyy=\count148
+\c@blindlist=\count149
+\c@blindlistlevel=\count150
+\c@blindlist@level=\count151
+\blind@listitem=\count152
+\c@blind@listcount=\count153
+\c@blind@levelcount=\count154
+\blind@mathformula=\count155
+\blind@Mathformula=\count156
+\c@blind@randomcount=\count157
+\c@blind@randommax=\count158
+\c@blind@pangramcount=\count159
+\c@blind@pangrammax=\count160
+)
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2017/12/19 v3.10 programmable bibliographies (PK/JW/AB)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count161
+
+(/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
+\@xs@message=\write4
+\integerpart=\count162
+\decimalpart=\count163
+)
+Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
+)
+\c@tabx@nest=\count164
+\c@listtotal=\count165
+\c@listcount=\count166
+\c@liststart=\count167
+\c@liststop=\count168
+\c@citecount=\count169
+\c@citetotal=\count170
+\c@multicitecount=\count171
+\c@multicitetotal=\count172
+\c@instcount=\count173
+\c@maxnames=\count174
+\c@minnames=\count175
+\c@maxitems=\count176
+\c@minitems=\count177
+\c@citecounter=\count178
+\c@savedcitecounter=\count179
+\c@uniquelist=\count180
+\c@uniquename=\count181
+\c@refsection=\count182
+\c@refsegment=\count183
+\c@maxextratitle=\count184
+\c@maxextratitleyear=\count185
+\c@maxextradate=\count186
+\c@maxextraalpha=\count187
+\c@abbrvpenalty=\count188
+\c@highnamepenalty=\count189
+\c@lownamepenalty=\count190
+\c@maxparens=\count191
+\c@parenlevel=\count192
+\blx@tempcnta=\count193
+\blx@tempcntb=\count194
+\blx@tempcntc=\count195
+\blx@maxsection=\count196
+\blx@maxsegment@0=\count197
+\blx@notetype=\count198
+\blx@parenlevel@text=\count199
+\blx@parenlevel@foot=\count266
+\blx@sectionciteorder@0=\count267
+\labelnumberwidth=\skip97
+\labelalphawidth=\skip98
+\biblabelsep=\skip99
+\bibitemsep=\skip100
+\bibnamesep=\skip101
+\bibinitsep=\skip102
+\bibparsep=\skip103
+\bibhang=\skip104
+\blx@bcfin=\read3
+\blx@bcfout=\write5
+\c@mincomprange=\count268
+\c@maxcomprange=\count269
+\c@mincompwidth=\count270
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'ieee.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count271
+\c@savedafterword=\count272
+\c@annotator=\count273
+\c@savedannotator=\count274
+\c@author=\count275
+\c@savedauthor=\count276
+\c@bookauthor=\count277
+\c@savedbookauthor=\count278
+\c@commentator=\count279
+\c@savedcommentator=\count280
+\c@editor=\count281
+\c@savededitor=\count282
+\c@editora=\count283
+\c@savededitora=\count284
+\c@editorb=\count285
+\c@savededitorb=\count286
+\c@editorc=\count287
+\c@savededitorc=\count288
+\c@foreword=\count289
+\c@savedforeword=\count290
+\c@holder=\count291
+\c@savedholder=\count292
+\c@introduction=\count293
+\c@savedintroduction=\count294
+\c@namea=\count295
+\c@savednamea=\count296
+\c@nameb=\count297
+\c@savednameb=\count298
+\c@namec=\count299
+\c@savednamec=\count300
+\c@translator=\count301
+\c@savedtranslator=\count302
+\c@shortauthor=\count303
+\c@savedshortauthor=\count304
+\c@shorteditor=\count305
+\c@savedshorteditor=\count306
+\c@labelname=\count307
+\c@savedlabelname=\count308
+\c@institution=\count309
+\c@savedinstitution=\count310
+\c@lista=\count311
+\c@savedlista=\count312
+\c@listb=\count313
+\c@savedlistb=\count314
+\c@listc=\count315
+\c@savedlistc=\count316
+\c@listd=\count317
+\c@savedlistd=\count318
+\c@liste=\count319
+\c@savedliste=\count320
+\c@listf=\count321
+\c@savedlistf=\count322
+\c@location=\count323
+\c@savedlocation=\count324
+\c@organization=\count325
+\c@savedorganization=\count326
+\c@origlocation=\count327
+\c@savedoriglocation=\count328
+\c@origpublisher=\count329
+\c@savedorigpublisher=\count330
+\c@publisher=\count331
+\c@savedpublisher=\count332
+\c@language=\count333
+\c@savedlanguage=\count334
+\c@origlanguage=\count335
+\c@savedoriglanguage=\count336
+\c@pageref=\count337
+\c@savedpageref=\count338
+\shorthandwidth=\skip105
+\shortjournalwidth=\skip106
+\shortserieswidth=\skip107
+\shorttitlewidth=\skip108
+\shortauthorwidth=\skip109
+\shorteditorwidth=\skip110
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2017/12/19 v3.10 biblatex compatibility (PK/JW/AB)
+)
+Package biblatex Info: Trying to load BibTeX backend compatibility...
+Package biblatex Info: ... file 'blx-bibtex.def' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-bibtex.def
+File: blx-bibtex.def 2017/12/19 v3.10 biblatex compatibility (PK/JW/AB)
+
+
+Package biblatex Warning: Using fall-back BibTeX(8) backend:
+(biblatex)                functionality may be reduced/unavailable.
+
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2017/12/19 v3.10 biblatex compatibility (PK/JW/AB)
+\c@textcitecount=\count339
+\c@textcitetotal=\count340
+\c@textcitemaxnames=\count341
+\c@biburlnumpenalty=\count342
+\c@biburlucpenalty=\count343
+\c@biburllcpenalty=\count344
+\c@smartand=\count345
+)
+Package biblatex Info: Trying to load bibliography style 'ieee'...
+Package biblatex Info: ... file 'ieee.bbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex-ieee/ieee.bbx
+File: ieee.bbx 2017/03/27 v1.2d biblatex bibliography style
+Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.bbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/numeric-comp.bbx
+File: numeric-comp.bbx 2017/12/19 v3.10 biblatex bibliography style (PK/JW/AB)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2017/12/19 v3.10 biblatex bibliography style (PK/JW/AB)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2017/12/19 v3.10 biblatex bibliography style (PK/JW/AB)
+\c@bbx:relatedcount=\count346
+\c@bbx:relatedtotal=\count347
+))))
+Package biblatex Info: Trying to load citation style 'ieee'...
+Package biblatex Info: ... file 'ieee.cbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex-ieee/ieee.cbx
+File: ieee.cbx 2017/03/27 v1.2d biblatex citation style
+Package biblatex Info: Trying to load citation style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.cbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
+File: numeric-comp.cbx 2017/12/19 v3.10 biblatex citation style (PK/JW/AB)
+\c@cbx@tempcnta=\count348
+\c@cbx@tempcntb=\count349
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\cites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+))
+\@input{lstlisting.aux}
+\openout2 = `lstlisting.aux'.
+
+No file lstlisting.tex.
+(./glossary.tex) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package hobsub Info: Skipping package `ifluatex' (already loaded).
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package hobsub Info: Skipping package `etexcmds' (already loaded).
+Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package hobsub Info: Skipping package `pdftexcmds' (already loaded).
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \AP@enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+\@linkdim=\dimen158
+\Hy@linkcounter=\count350
+\Hy@pagecounter=\count351
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count352
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4509.
+Package hyperref Info: Link nesting OFF on input line 4514.
+Package hyperref Info: Hyper index ON on input line 4517.
+Package hyperref Info: Plain pages OFF on input line 4524.
+Package hyperref Info: Backreferencing OFF on input line 4529.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4762.
+\c@Hy@tempcnt=\count353
+LaTeX Info: Redefining \url on input line 5115.
+\XeTeXLinkMargin=\dimen159
+\Fld@menulength=\count354
+\Field@Width=\dimen160
+\Fld@charsize=\dimen161
+Package hyperref Info: Hyper figures OFF on input line 6369.
+Package hyperref Info: Link nesting OFF on input line 6374.
+Package hyperref Info: Hyper index ON on input line 6377.
+Package hyperref Info: backreferencing OFF on input line 6384.
+Package hyperref Info: Link coloring OFF on input line 6389.
+Package hyperref Info: Link coloring with OCG OFF on input line 6394.
+Package hyperref Info: PDF/A mode OFF on input line 6399.
+LaTeX Info: Redefining \ref on input line 6439.
+LaTeX Info: Redefining \pageref on input line 6443.
+\Hy@abspage=\count355
+\c@Item=\count356
+\c@Hfootnote=\count357
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
+\Fld@listcount=\count358
+\c@bookmark@seq@number=\count359
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip111
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/hypcap.sty
+Package: hypcap 2016/05/16 v1.12 Adjusting the anchors of captions (HO)
+)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2017/12/19 v3.10 biblatex localization (PK/JW/AB)
+)
+\@quotelevel=\count360
+\@quotereset=\count361
+
+
+LaTeX Warning: Unused global option(s):
+    [13pt,3p].
+
+(./main.aux
+
+LaTeX Warning: Label `model_lstm_gru' multiply defined.
+
+)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 155.
+LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 155.
+
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(99.58464pt, 426.79135pt, 71.13188pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=426.79135pt
+* \textheight=731.23584pt
+* \oddsidemargin=27.31465pt
+* \evensidemargin=27.31465pt
+* \topmargin=-52.36449pt
+* \headheight=14.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=57.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=11.69997pt plus 5.19942pt minus 2.60054pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count362
+\scratchdimen=\dimen162
+\scratchbox=\box49
+\nofMPsegments=\count363
+\nofMParguments=\count364
+\everyMPshowfont=\toks50
+\MPscratchCnt=\count365
+\MPscratchDim=\dimen163
+\MPnumerator=\count366
+\makeMPintoPDFobject=\count367
+\everyMPtoPDFconversion=\toks51
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.jpeg,.png,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: hypcap package is loaded.
+Package caption Info: longtable package is loaded.
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
+)
+Package caption Info: supertabular package is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+
+Package tocstyle Warning: Usage of `tocstyle' with `titletoc' detected.
+(tocstyle)                I suggest to use either `tocstyle' or `titletoc'
+(tocstyle)                but not both of them together. I expect even
+(tocstyle)                error messages because of this combination.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <15.59996> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 155.
+Package tocstyle Info: prepare \l@part for redefinition on input line 155.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <13> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 155.
+Package tocstyle Info: prepare \l@chapter for redefinition on input line 155.
+Package tocstyle Info: prepare \l@section for redefinition on input line 155.
+LaTeX Font Info:    Calculating math sizes for size <13> on input line 155.
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <6.5> not available
+(Font)              size <6> substituted on input line 155.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <13> not available
+(Font)              size <12> substituted on input line 155.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <6.5> not available
+(Font)              size <6> substituted on input line 155.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <13> not available
+(Font)              size <12> substituted on input line 155.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <6.5> not available
+(Font)              size <6> substituted on input line 155.
+
+LaTeX Font Info:    Try loading font information for U+lasy on input line 155.
+(/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+
+LaTeX Font Warning: Font shape `U/lasy/m/n' in size <13> not available
+(Font)              size <12> substituted on input line 155.
+
+
+LaTeX Font Warning: Font shape `U/lasy/m/n' in size <6.5> not available
+(Font)              size <6> substituted on input line 155.
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 155.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 155.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Package tocstyle Info: prepare \l@subsection for redefinition on input line 155
+.
+Package tocstyle Info: prepare \l@table for redefinition on input line 155.
+Package tocstyle Info: prepare \l@subtable for redefinition on input line 155.
+Package tocstyle Info: prepare \l@figure for redefinition on input line 155.
+Package tocstyle Info: prepare \l@subfigure for redefinition on input line 155.
+
+Package biblatex Info: No input encoding detected.
+(biblatex)             Assuming 'ascii'.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'ascii'.
+Package biblatex Info: Input encoding 'ascii' specified.
+Package biblatex Info: Data encoding 'ascii' specified.
+(biblatex)             No need to reencode data.
+\openout5 = `main-blx.bib'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'main.bbl' found.
+ (./main.bbl)
+Package biblatex Info: Reference section=0 on input line 155.
+Package biblatex Info: Reference segment=0 on input line 155.
+\AtBeginShipoutBox=\box50
+Package hyperref Info: Link coloring OFF on input line 155.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count368
+)
+LaTeX Info: Redefining \ref on input line 155.
+LaTeX Info: Redefining \pageref on input line 155.
+LaTeX Info: Redefining \nameref on input line 155.
+
+(./main.out) (./main.out)
+\@outlinefile=\write6
+\openout6 = `main.out'.
+
+ (./cover.tex
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <26.96207> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <18.72003> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 16.
+ [1
+
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (./chapters/0_1_subject.t
+ex
+Missing character: There is no · in font ptmr7t!
+Missing character: There is no ª in font ptmr7t!
+Missing character: There is no É in font ptmr7t!
+Missing character: There is no · in font ptmr7t!
+Missing character: There is no ∫ in font ptmr7t!
+Missing character: There is no ´ in font ptmr7t!
+Missing character: There is no · in font ptmr7t!
+Missing character: There is no ª in font ptmr7t!
+Missing character: There is no ß in font ptmr7t!
+Missing character: There is no ƒ in font ptmr7t!
+Missing character: There is no ê in font ptmr7t!
+Missing character: There is no · in font ptmr7t!
+Missing character: There is no ª in font ptmr7t!
+Missing character: There is no Å in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no † in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ≥ in font ptmr7t!
+Missing character: There is no · in font ptmr7t!
+Missing character: There is no ∫ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+Missing character: There is no · in font ptmr7t!
+Missing character: There is no ª in font ptmr7t!
+Missing character: There is no ë in font ptmr7t!
+Missing character: There is no · in font ptmr7t!
+Missing character: There is no ª in font ptmr7t!
+Missing character: There is no á in font ptmr7t!
+Missing character: There is no ƒ in font ptmr7t!
+Missing character: There is no ë in font ptmr7t!
+Missing character: There is no · in font ptmr7t!
+Missing character: There is no ª in font ptmr7t!
+Missing character: There is no ã in font ptmr7t!
+Missing character: There is no · in font ptmr7t!
+Missing character: There is no ª in font ptmr7t!
+Missing character: There is no ß in font ptmr7t!
+Missing character: There is no · in font ptmr7t!
+Missing character: There is no ª in font ptmr7t!
+Missing character: There is no á in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no · in font ptmr7t!
+Missing character: There is no ∫ in font ptmr7t!
+Missing character: There is no ß in font ptmr7t!
+Missing character: There is no ƒ in font ptmr7t!
+Missing character: There is no ë in font ptmr7t!
+Missing character: There is no · in font ptmr7t!
+Missing character: There is no ∫ in font ptmr7t!
+Missing character: There is no £ in font ptmr7t!
+Missing character: There is no · in font ptmr7t!
+Missing character: There is no ∫ in font ptmr7t!
+Missing character: There is no £ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ° in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ƒ in font ptmr7t!
+Missing character: There is no ë in font ptmr7t!
+Missing character: There is no · in font ptmr7t!
+Missing character: There is no ª in font ptmr7t!
+Missing character: There is no Å in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no † in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no Ω in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no † in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no µ in font ptmr7t!
+Missing character: There is no · in font ptmr7t!
+Missing character: There is no ª in font ptmr7t!
+Missing character: There is no ç in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no † in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ∆ in font ptmr7t!
+Missing character: There is no ∞ in font ptmr7t!
+Missing character: There is no · in font ptmr7t!
+Missing character: There is no ª in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+Missing character: There is no · in font ptmr7t!
+Missing character: There is no ª in font ptmr7t!
+Missing character: There is no £ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ≥ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ° in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ∆ in font ptmr7t!
+Missing character: There is no ∞ in font ptmr7t!
+Missing character: There is no · in font ptmr7t!
+Missing character: There is no ª in font ptmr7t!
+Missing character: There is no õ in font ptmr7t!
+Missing character: There is no · in font ptmr7t!
+Missing character: There is no ∫ in font ptmr7t!
+Missing character: There is no ´ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ¨ in font ptmr7t!
+Missing character: There is no · in font ptmr7t!
+Missing character: There is no ∫ in font ptmr7t!
+Missing character: There is no Ω in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no π in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no Ω in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+) [1] (./chapters/0_2_thanks.tex)pdfTeX warning (ext4): destination with the sa
+me identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.173 \newpage
+               [1] (./main.toc
+LaTeX Font Info:    Font shape `OT1/ptm/bx/sc' in size <13> not available
+(Font)              Font shape `OT1/ptm/b/sc' tried instead on input line 15.
+
+
+Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
+less on input line 75.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.75 ...EXPERIMENTS AND DISCUSSION}{32}{chapter.4}
+                                                   [1
+
+])
+\tf@toc=\write7
+\openout7 = `main.toc'.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.198 \newpage
+               [2] (./main.lof
+number indent by \l@... (lof, 1):  19.5pt
+text indent by \l@... (lof, 1):  29.90004pt
+number indent by parent (lof, 1):  19.5pt
+text indent calculated (lof, 1): 22.75pt
+number indent calculated (lof, 1): 19.5pt
+text noindent (lof, 1): 22.75pt
+number noindent (lof, 1): 0.0pt
+number indent by \l@... (lof, 1):  19.5pt
+text indent by \l@... (lof, 1):  29.90004pt
+number indent by parent (lof, 1):  19.5pt
+text indent calculated (lof, 1): 22.75pt
+number indent calculated (lof, 1): 19.5pt
+text noindent (lof, 1): 22.75pt
+number noindent (lof, 1): 0.0pt
+
+Overfull \hbox (19.33823pt too wide) in paragraph at lines 9--9
+ [][] [][]\OT1/ptm/m/n/13 Activation func-tions. Source: https://medium.com/@sr
+nghn/deep-learning- 
+ []
+
+number indent by \l@... (lof, 1):  19.5pt
+text indent by \l@... (lof, 1):  29.90004pt
+number indent by parent (lof, 1):  19.5pt
+text indent calculated (lof, 1): 22.75pt
+number indent calculated (lof, 1): 19.5pt
+text noindent (lof, 1): 22.75pt
+number noindent (lof, 1): 0.0pt
+number indent by \l@... (lof, 1):  19.5pt
+text indent by \l@... (lof, 1):  29.90004pt
+number indent by parent (lof, 1):  19.5pt
+text indent calculated (lof, 1): 22.75pt
+number indent calculated (lof, 1): 19.5pt
+text noindent (lof, 1): 22.75pt
+number noindent (lof, 1): 0.0pt
+number indent by \l@... (lof, 1):  19.5pt
+text indent by \l@... (lof, 1):  29.90004pt
+number indent by parent (lof, 1):  19.5pt
+text indent calculated (lof, 1): 22.75pt
+number indent calculated (lof, 1): 19.5pt
+text noindent (lof, 1): 22.75pt
+number noindent (lof, 1): 0.0pt
+
+Overfull \hbox (14.93056pt too wide) in paragraph at lines 15--15
+ [][] [][]\OT1/ptm/m/n/13 Traditional RNN ar-chitech-ture. Source: https://cola
+h.github.io/posts/2015- 
+ []
+
+number indent by \l@... (lof, 1):  19.5pt
+text indent by \l@... (lof, 1):  29.90004pt
+number indent by parent (lof, 1):  19.5pt
+text indent calculated (lof, 1): 22.75pt
+number indent calculated (lof, 1): 19.5pt
+text noindent (lof, 1): 22.75pt
+number noindent (lof, 1): 0.0pt
+
+Overfull \hbox (57.43898pt too wide) in paragraph at lines 17--17
+ [][] [][]\OT1/ptm/m/n/13 LSTM and GRU ar-chitech-ture. Source: https://towards
+datascience.com/illustrated- 
+ []
+
+number indent by \l@... (lof, 1):  19.5pt
+text indent by \l@... (lof, 1):  29.90004pt
+number indent by parent (lof, 1):  19.5pt
+text indent calculated (lof, 1): 22.75pt
+number indent calculated (lof, 1): 19.5pt
+text noindent (lof, 1): 22.75pt
+number noindent (lof, 1): 0.0pt
+
+Overfull \hbox (16.10068pt too wide) in paragraph at lines 19--19
+ \OT1/ptm/m/n/13 ing. (source: https://dachou.github.io/2018/09/28/cloud-servic
+e-models.html)[] []  
+ []
+
+number indent by \l@... (lof, 1):  19.5pt
+text indent by \l@... (lof, 1):  29.90004pt
+number indent by parent (lof, 1):  19.5pt
+text indent calculated (lof, 1): 22.75pt
+number indent calculated (lof, 1): 19.5pt
+text noindent (lof, 1): 22.75pt
+number noindent (lof, 1): 0.0pt
+number indent by \l@... (lof, 1):  19.5pt
+text indent by \l@... (lof, 1):  29.90004pt
+number indent by parent (lof, 1):  19.5pt
+text indent calculated (lof, 1): 22.75pt
+number indent calculated (lof, 1): 19.5pt
+text noindent (lof, 1): 22.75pt
+number noindent (lof, 1): 0.0pt
+number indent by \l@... (lof, 1):  19.5pt
+text indent by \l@... (lof, 1):  29.90004pt
+number indent by parent (lof, 1):  19.5pt
+text indent calculated (lof, 1): 22.75pt
+number indent calculated (lof, 1): 19.5pt
+text noindent (lof, 1): 22.75pt
+number noindent (lof, 1): 0.0pt
+number indent by \l@... (lof, 1):  19.5pt
+text indent by \l@... (lof, 1):  29.90004pt
+number indent by parent (lof, 1):  19.5pt
+text indent calculated (lof, 1): 22.75pt
+number indent calculated (lof, 1): 19.5pt
+text noindent (lof, 1): 22.75pt
+number noindent (lof, 1): 0.0pt
+number indent by \l@... (lof, 1):  19.5pt
+text indent by \l@... (lof, 1):  29.90004pt
+number indent by parent (lof, 1):  19.5pt
+text indent calculated (lof, 1): 22.75pt
+number indent calculated (lof, 1): 19.5pt
+text noindent (lof, 1): 22.75pt
+number noindent (lof, 1): 0.0pt
+number indent by \l@... (lof, 1):  19.5pt
+text indent by \l@... (lof, 1):  29.90004pt
+number indent by parent (lof, 1):  19.5pt
+text indent calculated (lof, 1): 22.75pt
+number indent calculated (lof, 1): 19.5pt
+text noindent (lof, 1): 22.75pt
+number noindent (lof, 1): 0.0pt
+number indent by \l@... (lof, 1):  19.5pt
+text indent by \l@... (lof, 1):  29.90004pt
+number indent by parent (lof, 1):  19.5pt
+text indent calculated (lof, 1): 22.75pt
+number indent calculated (lof, 1): 19.5pt
+text noindent (lof, 1): 22.75pt
+number noindent (lof, 1): 0.0pt
+
+Overfull \hbox (0.86475pt too wide) in paragraph at lines 37--37
+ [][] [][]\OT1/ptm/m/n/13 Visualization of Google Trace CPU (left) and Google T
+race RAM (right) 
+ []
+
+number indent by \l@... (lof, 1):  19.5pt
+text indent by \l@... (lof, 1):  29.90004pt
+number indent by parent (lof, 1):  19.5pt
+text indent calculated (lof, 1): 22.75pt
+number indent calculated (lof, 1): 19.5pt
+text noindent (lof, 1): 22.75pt
+number noindent (lof, 1): 0.0pt
+number indent by \l@... (lof, 1):  19.5pt
+text indent by \l@... (lof, 1):  29.90004pt
+number indent by parent (lof, 1):  19.5pt
+text indent calculated (lof, 1): 22.75pt
+number indent calculated (lof, 1): 19.5pt
+text noindent (lof, 1): 22.75pt
+number noindent (lof, 1): 0.0pt
+
+Overfull \hbox (0.26755pt too wide) in paragraph at lines 41--41
+ [][] [][]\OT1/ptm/m/n/13 Performance com-par-i-sion be-tween ISLO-CFNN and dif
+-fer-ent recurrent- 
+ []
+
+number indent by \l@... (lof, 1):  19.5pt
+text indent by \l@... (lof, 1):  29.90004pt
+number indent by parent (lof, 1):  19.5pt
+text indent calculated (lof, 1): 22.75pt
+number indent calculated (lof, 1): 19.5pt
+text noindent (lof, 1): 22.75pt
+number noindent (lof, 1): 0.0pt
+)
+\tf@lof=\write8
+\openout8 = `main.lof'.
+
+
+
+Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
+less on input line 203.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.203 \newpage
+               [3
+
+] (./main.lot
+number indent by \l@... (lot, 1):  19.5pt
+text indent by \l@... (lot, 1):  29.90004pt
+number indent by parent (lot, 1):  19.5pt
+text indent calculated (lot, 1): 22.75pt
+number indent calculated (lot, 1): 19.5pt
+text noindent (lot, 1): 22.75pt
+number noindent (lot, 1): 0.0pt
+number indent by \l@... (lot, 1):  19.5pt
+text indent by \l@... (lot, 1):  29.90004pt
+number indent by parent (lot, 1):  19.5pt
+text indent calculated (lot, 1): 22.75pt
+number indent calculated (lot, 1): 19.5pt
+text noindent (lot, 1): 22.75pt
+number noindent (lot, 1): 0.0pt
+number indent by \l@... (lot, 1):  19.5pt
+text indent by \l@... (lot, 1):  29.90004pt
+number indent by parent (lot, 1):  19.5pt
+text indent calculated (lot, 1): 22.75pt
+number indent calculated (lot, 1): 19.5pt
+text noindent (lot, 1): 22.75pt
+number noindent (lot, 1): 0.0pt
+number indent by \l@... (lot, 1):  19.5pt
+text indent by \l@... (lot, 1):  29.90004pt
+number indent by parent (lot, 1):  19.5pt
+text indent calculated (lot, 1): 22.75pt
+number indent calculated (lot, 1): 19.5pt
+text noindent (lot, 1): 22.75pt
+number noindent (lot, 1): 0.0pt
+number indent by \l@... (lot, 1):  19.5pt
+text indent by \l@... (lot, 1):  29.90004pt
+number indent by parent (lot, 1):  19.5pt
+text indent calculated (lot, 1): 22.75pt
+number indent calculated (lot, 1): 19.5pt
+text noindent (lot, 1): 22.75pt
+number noindent (lot, 1): 0.0pt
+number indent by \l@... (lot, 1):  19.5pt
+text indent by \l@... (lot, 1):  29.90004pt
+number indent by parent (lot, 1):  19.5pt
+text indent calculated (lot, 1): 22.75pt
+number indent calculated (lot, 1): 19.5pt
+text noindent (lot, 1): 22.75pt
+number noindent (lot, 1): 0.0pt
+number indent by \l@... (lot, 1):  19.5pt
+text indent by \l@... (lot, 1):  29.90004pt
+number indent by parent (lot, 1):  19.5pt
+text indent calculated (lot, 1): 22.75pt
+number indent calculated (lot, 1): 19.5pt
+text noindent (lot, 1): 22.75pt
+number noindent (lot, 1): 0.0pt
+number indent by \l@... (lot, 1):  19.5pt
+text indent by \l@... (lot, 1):  29.90004pt
+number indent by parent (lot, 1):  19.5pt
+text indent calculated (lot, 1): 22.75pt
+number indent calculated (lot, 1): 19.5pt
+text noindent (lot, 1): 22.75pt
+number noindent (lot, 1): 0.0pt
+number indent by \l@... (lot, 1):  19.5pt
+text indent by \l@... (lot, 1):  29.90004pt
+number indent by parent (lot, 1):  19.5pt
+text indent calculated (lot, 1): 22.75pt
+number indent calculated (lot, 1): 19.5pt
+text noindent (lot, 1): 22.75pt
+number noindent (lot, 1): 0.0pt
+number indent by \l@... (lot, 1):  19.5pt
+text indent by \l@... (lot, 1):  29.90004pt
+number indent by parent (lot, 1):  19.5pt
+text indent calculated (lot, 1): 22.75pt
+number indent calculated (lot, 1): 19.5pt
+text noindent (lot, 1): 22.75pt
+number noindent (lot, 1): 0.0pt
+)
+\tf@lot=\write9
+\openout9 = `main.lot'.
+
+
+
+Package glossaries Warning: Empty glossary for \printnoidxglossary[type={main}]
+. Rerun may be required (or you may have forgotten to use commands like \gls) o
+n input line 212.
+
+Using TeX to sort glossary entries---this may take a while
+
+Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
+less on input line 212.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.212 \printnoidxglossaries
+                            [4
+
+]
+Missing character: There is no · in font ptmr7t!
+Missing character: There is no ª in font ptmr7t!
+Missing character: There is no ã in font ptmr7t!
+Missing character: There is no · in font ptmr7t!
+Missing character: There is no ª in font ptmr7t!
+Missing character: There is no • in font ptmr7t!
+Missing character: There is no · in font ptmr7t!
+Missing character: There is no ∫ in font ptmr7t!
+Missing character: There is no ° in font ptmr7t!
+Missing character: There is no · in font ptmr7t!
+Missing character: There is no ∫ in font ptmr7t!
+Missing character: There is no ß in font ptmr7t!
+
+
+Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
+less on input line 217.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.217 \newpage
+               [5
+
+
+]
+Chapter 1.
+(./chapters/1_introduction.tex
+
+Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
+less on input line 8.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.8 
+     [1
+
+] [2] [3]) [4]
+Chapter 2.
+(./chapters/2_related_work.tex
+Overfull \hbox (0.92668pt too wide) in paragraph at lines 10--11
+[]\OT1/ptm/m/n/13 Evolution-based meth-ods are those that op-ti-mize fol-low-in
+g evo-lu-tion-ary rules
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+[]|\OT1/ptm/m/n/13 Year of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
+[]|\OT1/ptm/m/n/13 Particle Swarm Op-ti-miza-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+[]|\OT1/ptm/m/n/13 Marriage in honey
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+[]|\OT1/ptm/m/n/13 echolocation be-hav-
+ []
+
+
+Underfull \hbox (badness 2538) in paragraph at lines 28--28
+[]|\OT1/ptm/m/n/13 Grey Wolf Op-ti-mizer (GWO)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+[]|\OT1/ptm/m/n/13 Humppack whale
+ []
+
+
+Underfull \hbox (badness 8094) in paragraph at lines 30--30
+[]|\OT1/ptm/m/n/13 Lion Op-ti-miza-tion Al-go-rithm
+ []
+
+
+Underfull \hbox (badness 1748) in paragraph at lines 30--30
+[]|\OT1/ptm/m/n/13 Lion hunt-ing ac-tiv-i-
+ []
+
+
+Underfull \hbox (badness 1199) in paragraph at lines 31--31
+[]|\OT1/ptm/m/n/13 Seagull op-ti-miza-tion al-go-rithm
+ []
+
+
+Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
+less on input line 44.
+
+[5
+
+] [6]
+<./images/pdf/model/pso.pdf, id=438, 1062.21844pt x 515.67656pt>
+File: ./images/pdf/model/pso.pdf Graphic file (type pdf)
+<use ./images/pdf/model/pso.pdf>
+Package pdftex.def Info: ./images/pdf/model/pso.pdf  used on input line 53.
+(pdftex.def)             Requested size: 320.0935pt x 155.39659pt.
+ [7 <./images/pdf/model/pso.pdf>]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 117.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <13> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 117.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <13> not available
+(Font)              size <12> substituted on input line 117.
+
+[8] [9] [10]
+<./images/png/sigmoid.png, id=512, 385.44pt x 187.70125pt>
+File: ./images/png/sigmoid.png Graphic file (type png)
+<use ./images/png/sigmoid.png>
+Package pdftex.def Info: ./images/png/sigmoid.png  used on input line 188.
+(pdftex.def)             Requested size: 140.84192pt x 68.58627pt.
+<./images/png/tanh.png, id=513, 419.5675pt x 179.67125pt>
+File: ./images/png/tanh.png Graphic file (type png)
+<use ./images/png/tanh.png>
+Package pdftex.def Info: ./images/png/tanh.png  used on input line 189.
+(pdftex.def)             Requested size: 140.84192pt x 60.31154pt.
+<./images/png/relu.png, id=514, 419.5675pt x 191.71625pt>
+File: ./images/png/relu.png Graphic file (type png)
+<use ./images/png/relu.png>
+Package pdftex.def Info: ./images/png/relu.png  used on input line 190.
+(pdftex.def)             Requested size: 140.84192pt x 64.35478pt.
+<./images/png/leakyrelu.png, id=515, 498.86375pt x 177.66376pt>
+File: ./images/png/leakyrelu.png Graphic file (type png)
+<use ./images/png/leakyrelu.png>
+Package pdftex.def Info: ./images/png/leakyrelu.png  used on input line 191.
+(pdftex.def)             Requested size: 140.84192pt x 50.15756pt.
+ [11 <./images/png/sigmoid.png (PNG copy)> <./images/png/tanh.png (PNG copy)> <
+./images/png/relu.png (PNG copy)> <./images/png/leakyrelu.png (PNG copy)>] [12]
+ [13] [14] [15]
+<./images/pdf/model/model_ffnn.pdf, id=562, 844.65562pt x 596.98032pt>
+File: ./images/pdf/model/model_ffnn.pdf Graphic file (type pdf)
+<use ./images/pdf/model/model_ffnn.pdf>
+Package pdftex.def Info: ./images/pdf/model/model_ffnn.pdf  used on input line 
+296.
+(pdftex.def)             Requested size: 320.0935pt x 226.23544pt.
+
+Overfull \hbox (6.50734pt too wide) in paragraph at lines 304--305
+\OT1/ptm/m/n/13 work ar-chi-tec-ture con-tain hid-den lay-ers and called Multi-
+Layer Per-cep-trons (MLPs).
+ []
+
+[16 <./images/pdf/model/model_ffnn.pdf>]
+<./images/pdf/model/model_cfnn.pdf, id=617, 844.65562pt x 596.98032pt>
+File: ./images/pdf/model/model_cfnn.pdf Graphic file (type pdf)
+<use ./images/pdf/model/model_cfnn.pdf>
+Package pdftex.def Info: ./images/pdf/model/model_cfnn.pdf  used on input line 
+332.
+(pdftex.def)             Requested size: 320.0935pt x 226.23544pt.
+<./images/png/rnn_unrolled.png, id=622, 977.8131pt x 256.91985pt>
+File: ./images/png/rnn_unrolled.png Graphic file (type png)
+<use ./images/png/rnn_unrolled.png>
+Package pdftex.def Info: ./images/png/rnn_unrolled.png  used on input line 343.
+
+(pdftex.def)             Requested size: 426.79135pt x 112.13948pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 344--344
+[]\OT1/ptm/m/n/13 Figure 2.5: |Tra-di-tional RNN ar-chitech-ture. Source:
+ []
+
+[17 <./images/pdf/model/model_cfnn.pdf>] [18 <./images/png/rnn_unrolled.png>]
+<./images/png/lstm_gru.png, id=703, 1521.685pt x 967.615pt>
+File: ./images/png/lstm_gru.png Graphic file (type png)
+<use ./images/png/lstm_gru.png>
+Package pdftex.def Info: ./images/png/lstm_gru.png  used on input line 368.
+(pdftex.def)             Requested size: 426.79135pt x 271.38806pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 369--369
+[]\OT1/ptm/m/n/13 Figure 2.6: |LSTM and GRU ar-chitech-ture. Source:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 369--369
+\OT1/ptm/m/n/13 https://towardsdatascience.com/illustrated-guide-to-lstms-and-g
+ru-s-a-step-
+ []
+
+[19 <./images/png/lstm_gru.png (PNG copy)>]
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no à in font cmr9!
+Missing character: There is no í in font cmr9!
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no à in font cmr9!
+Missing character: There is no í in font cmr9!
+<./images//png/cloud_models.png, id=718, 642.4pt x 349.305pt>
+File: ./images//png/cloud_models.png Graphic file (type png)
+<use ./images//png/cloud_models.png>
+Package pdftex.def Info: ./images//png/cloud_models.png  used on input line 400
+.
+(pdftex.def)             Requested size: 426.79135pt x 232.0717pt.
+ [20]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ü in font ptmr7t!
+ [21 <./images//png/cloud_models.png>]) [22] [23]
+Chapter 3.
+(./chapters/3_methodology.tex
+
+Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
+less on input line 43.
+
+[24
+
+] [25] [26]
+<./images//pdf/model/model_phases.pdf, id=809, 844.65562pt x 596.98032pt>
+File: ./images//pdf/model/model_phases.pdf Graphic file (type pdf)
+<use ./images//pdf/model/model_phases.pdf>
+Package pdftex.def Info: ./images//pdf/model/model_phases.pdf  used on input li
+ne 88.
+(pdftex.def)             Requested size: 426.79135pt x 301.6503pt.
+ [27] [28 <./images//pdf/model/model_phases.pdf>] [29]
+<./images/pdf/model/solution_creation.pdf, id=1021, 844.65562pt x 596.98032pt>
+File: ./images/pdf/model/solution_creation.pdf Graphic file (type pdf)
+<use ./images/pdf/model/solution_creation.pdf>
+Package pdftex.def Info: ./images/pdf/model/solution_creation.pdf  used on inpu
+t line 162.
+(pdftex.def)             Requested size: 320.0935pt x 226.23544pt.
+<./images/pdf/model/islo_cfnn_workflow.pdf, id=1022, 844.65562pt x 596.98032pt>
+
+File: ./images/pdf/model/islo_cfnn_workflow.pdf Graphic file (type pdf)
+<use ./images/pdf/model/islo_cfnn_workflow.pdf>
+Package pdftex.def Info: ./images/pdf/model/islo_cfnn_workflow.pdf  used on inp
+ut line 170.
+(pdftex.def)             Requested size: 426.79135pt x 301.6503pt.
+ [30 <./images/pdf/model/solution_creation.pdf>]) [31 <./images/pdf/model/islo_
+cfnn_workflow.pdf>]
+Chapter 4.
+(./chapters/4_experiment.tex
+Overfull \hbox (10.18782pt too wide) in paragraph at lines 18--20
+[]\OT1/ptm/m/n/13 Hybrid func-tions: the vari-ables are ran-domly di-vided into
+ some sub-components
+ []
+
+<./images/png/functions/islo_uni_F4.png, id=1187, 462.528pt x 346.896pt>
+File: ./images/png/functions/islo_uni_F4.png Graphic file (type png)
+<use ./images/png/functions/islo_uni_F4.png>
+Package pdftex.def Info: ./images/png/functions/islo_uni_F4.png  used on input 
+line 26.
+(pdftex.def)             Requested size: 102.43227pt x 76.8202pt.
+<./images/png/functions/islo_uni_F5.png, id=1188, 462.528pt x 346.896pt>
+File: ./images/png/functions/islo_uni_F5.png Graphic file (type png)
+<use ./images/png/functions/islo_uni_F5.png>
+Package pdftex.def Info: ./images/png/functions/islo_uni_F5.png  used on input 
+line 27.
+(pdftex.def)             Requested size: 102.43227pt x 76.8202pt.
+<./images/png/functions/islo_uni_F7.png, id=1189, 462.528pt x 346.896pt>
+File: ./images/png/functions/islo_uni_F7.png Graphic file (type png)
+<use ./images/png/functions/islo_uni_F7.png>
+Package pdftex.def Info: ./images/png/functions/islo_uni_F7.png  used on input 
+line 28.
+(pdftex.def)             Requested size: 102.43227pt x 76.8202pt.
+<./images/png/functions/islo_uni_F8.png, id=1190, 462.528pt x 346.896pt>
+File: ./images/png/functions/islo_uni_F8.png Graphic file (type png)
+<use ./images/png/functions/islo_uni_F8.png>
+Package pdftex.def Info: ./images/png/functions/islo_uni_F8.png  used on input 
+line 29.
+(pdftex.def)             Requested size: 102.43227pt x 76.8202pt.
+<./images/png/functions/islo_multi_F9.png, id=1191, 462.528pt x 346.896pt>
+File: ./images/png/functions/islo_multi_F9.png Graphic file (type png)
+<use ./images/png/functions/islo_multi_F9.png>
+Package pdftex.def Info: ./images/png/functions/islo_multi_F9.png  used on inpu
+t line 34.
+(pdftex.def)             Requested size: 102.43227pt x 76.8202pt.
+<./images/png/functions/islo_multi_F11.png, id=1192, 462.528pt x 346.896pt>
+File: ./images/png/functions/islo_multi_F11.png Graphic file (type png)
+<use ./images/png/functions/islo_multi_F11.png>
+Package pdftex.def Info: ./images/png/functions/islo_multi_F11.png  used on inp
+ut line 35.
+(pdftex.def)             Requested size: 102.43227pt x 76.8202pt.
+<./images/png/functions/islo_multi_F15.png, id=1193, 462.528pt x 346.896pt>
+File: ./images/png/functions/islo_multi_F15.png Graphic file (type png)
+<use ./images/png/functions/islo_multi_F15.png>
+Package pdftex.def Info: ./images/png/functions/islo_multi_F15.png  used on inp
+ut line 36.
+(pdftex.def)             Requested size: 102.43227pt x 76.8202pt.
+<./images/png/functions/islo_multi_F16.png, id=1194, 462.528pt x 346.896pt>
+File: ./images/png/functions/islo_multi_F16.png Graphic file (type png)
+<use ./images/png/functions/islo_multi_F16.png>
+Package pdftex.def Info: ./images/png/functions/islo_multi_F16.png  used on inp
+ut line 37.
+(pdftex.def)             Requested size: 102.43227pt x 76.8202pt.
+<./images/png/functions/islo_hybrid_F17.png, id=1195, 462.528pt x 346.896pt>
+File: ./images/png/functions/islo_hybrid_F17.png Graphic file (type png)
+<use ./images/png/functions/islo_hybrid_F17.png>
+Package pdftex.def Info: ./images/png/functions/islo_hybrid_F17.png  used on in
+put line 42.
+(pdftex.def)             Requested size: 102.43227pt x 76.8202pt.
+<./images/png/functions/islo_hybrid_F19.png, id=1196, 462.528pt x 346.896pt>
+File: ./images/png/functions/islo_hybrid_F19.png Graphic file (type png)
+<use ./images/png/functions/islo_hybrid_F19.png>
+Package pdftex.def Info: ./images/png/functions/islo_hybrid_F19.png  used on in
+put line 43.
+(pdftex.def)             Requested size: 102.43227pt x 76.8202pt.
+<./images/png/functions/islo_hybrid_F21.png, id=1197, 462.528pt x 346.896pt>
+File: ./images/png/functions/islo_hybrid_F21.png Graphic file (type png)
+<use ./images/png/functions/islo_hybrid_F21.png>
+Package pdftex.def Info: ./images/png/functions/islo_hybrid_F21.png  used on in
+put line 44.
+(pdftex.def)             Requested size: 102.43227pt x 76.8202pt.
+<./images/png/functions/islo_hybrid_F22.png, id=1198, 462.528pt x 346.896pt>
+File: ./images/png/functions/islo_hybrid_F22.png Graphic file (type png)
+<use ./images/png/functions/islo_hybrid_F22.png>
+Package pdftex.def Info: ./images/png/functions/islo_hybrid_F22.png  used on in
+put line 45.
+(pdftex.def)             Requested size: 102.43227pt x 76.8202pt.
+<./images/png/functions/islo_compos_F26.png, id=1199, 462.528pt x 346.896pt>
+File: ./images/png/functions/islo_compos_F26.png Graphic file (type png)
+<use ./images/png/functions/islo_compos_F26.png>
+Package pdftex.def Info: ./images/png/functions/islo_compos_F26.png  used on in
+put line 50.
+(pdftex.def)             Requested size: 102.43227pt x 76.8202pt.
+<./images/png/functions/islo_compos_F28.png, id=1200, 462.528pt x 346.896pt>
+File: ./images/png/functions/islo_compos_F28.png Graphic file (type png)
+<use ./images/png/functions/islo_compos_F28.png>
+Package pdftex.def Info: ./images/png/functions/islo_compos_F28.png  used on in
+put line 51.
+(pdftex.def)             Requested size: 102.43227pt x 76.8202pt.
+<./images/png/functions/islo_compos_F29.png, id=1201, 462.528pt x 346.896pt>
+File: ./images/png/functions/islo_compos_F29.png Graphic file (type png)
+<use ./images/png/functions/islo_compos_F29.png>
+Package pdftex.def Info: ./images/png/functions/islo_compos_F29.png  used on in
+put line 52.
+(pdftex.def)             Requested size: 102.43227pt x 76.8202pt.
+<./images/png/functions/islo_compos_F30.png, id=1202, 462.528pt x 346.896pt>
+File: ./images/png/functions/islo_compos_F30.png Graphic file (type png)
+<use ./images/png/functions/islo_compos_F30.png>
+Package pdftex.def Info: ./images/png/functions/islo_compos_F30.png  used on in
+put line 53.
+(pdftex.def)             Requested size: 102.43227pt x 76.8202pt.
+
+Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
+less on input line 59.
+
+[32
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+[]|\OT1/ptm/m/n/13 [-500,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
+[]|\OT1/ptm/m/n/13 [-500,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]|\OT1/ptm/m/n/13 [-500,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--73
+[]|\OT1/ptm/m/n/13 [-500,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--74
+[]|\OT1/ptm/m/n/13 [-500,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--75
+[]|\OT1/ptm/m/n/13 [-500,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--76
+[]|\OT1/ptm/m/n/13 [-500,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--77
+[]|\OT1/ptm/m/n/13 [-500,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--90
+[]|$\OML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) = 
+\OMS/cmsy/m/n/12 ^^@\OML/cmm/m/it/12 a:exp\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 ^^@
+\OML/cmm/m/it/12 b[]\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Underfull \hbox (badness 2529) in paragraph at lines 90--90
+\OML/cmm/m/it/12 exp\OT1/cmr/m/n/12 ([] [][] \OML/cmm/m/it/12 cos\OT1/cmr/m/n/1
+2 (\OML/cmm/m/it/12 cx[]\OT1/cmr/m/n/12 )) + \OML/cmm/m/it/12 a \OT1/cmr/m/n/12
+ + \OML/cmm/m/it/12 exp\OT1/cmr/m/n/12 (1)$ \OT1/ptm/m/n/13 with a =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--90
+[]|\OT1/ptm/m/n/13 [-500,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--91
+[]|$\OML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) = 
+[][] +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--91
+[]|\OT1/ptm/m/n/13 [-500,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
+[]|\OT1/ptm/m/n/13 [-500,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--93
+[]|\OT1/ptm/m/n/13 [-500,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--94
+[]|\OT1/ptm/m/n/13 [-500,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--95
+[]|\OT1/ptm/m/n/13 [-500,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
+[]|\OT1/ptm/m/n/13 [-500,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+[]|\OT1/ptm/m/n/13 [-500,
+ []
+
+
+Overfull \hbox (16.19244pt too wide) in paragraph at lines 105--106
+[]\OT1/ptm/m/n/13 Particle Swarm Op-ti-miza-tion (PSO) [[]48[]], Whale Op-ti-mi
+za-tion Al-go-rithm (WOA)
+ []
+
+
+Overfull \hbox (1.58134pt too wide) in paragraph at lines 117--117
+[]|[]| 
+ []
+
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+
+Underfull \hbox (badness 2547) in paragraph at lines 128--128
+[]|\OT1/ptm/m/n/13 HGBat , Dis-cus, Ex-panded Griewanks plus
+ []
+
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+
+Overfull \hbox (1.58134pt too wide) in paragraph at lines 148--148
+[]|[]| 
+ []
+
+
+Overfull \hbox (1.58134pt too wide) in paragraph at lines 152--152
+[]|[]| 
+ []
+
+
+Overfull \hbox (1.58134pt too wide) in paragraph at lines 156--156
+[]|[]| 
+ []
+
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+
+Overfull \hbox (1.58134pt too wide) in paragraph at lines 160--160
+[]|[]| 
+ []
+
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+
+Overfull \hbox (1.58134pt too wide) in paragraph at lines 164--164
+[]|[]| 
+ []
+
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+
+Overfull \hbox (1.58134pt too wide) in paragraph at lines 168--168
+[]|[]| 
+ []
+
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+
+Overfull \hbox (1.58134pt too wide) in paragraph at lines 172--172
+[]|[]| 
+ []
+
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+[33 <./images/png/functions/islo_uni_F4.png> <./images/png/functions/islo_uni_F
+5.png> <./images/png/functions/islo_uni_F7.png> <./images/png/functions/islo_un
+i_F8.png> <./images/png/functions/islo_multi_F9.png> <./images/png/functions/is
+lo_multi_F11.png> <./images/png/functions/islo_multi_F15.png> <./images/png/fun
+ctions/islo_multi_F16.png> <./images/png/functions/islo_hybrid_F17.png> <./imag
+es/png/functions/islo_hybrid_F19.png> <./images/png/functions/islo_hybrid_F21.p
+ng> <./images/png/functions/islo_hybrid_F22.png> <./images/png/functions/islo_c
+ompos_F26.png> <./images/png/functions/islo_compos_F28.png> <./images/png/funct
+ions/islo_compos_F29.png> <./images/png/functions/islo_compos_F30.png>]
+[34] [35] [36]
+<./images/png/convergence/islo_uni_F2.png, id=1263, 462.528pt x 346.896pt>
+File: ./images/png/convergence/islo_uni_F2.png Graphic file (type png)
+<use ./images/png/convergence/islo_uni_F2.png>
+Package pdftex.def Info: ./images/png/convergence/islo_uni_F2.png  used on inpu
+t line 267.
+(pdftex.def)             Requested size: 209.1301pt x 156.84808pt.
+<./images/png/convergence/islo_uni_F5.png, id=1264, 462.528pt x 346.896pt>
+File: ./images/png/convergence/islo_uni_F5.png Graphic file (type png)
+<use ./images/png/convergence/islo_uni_F5.png>
+Package pdftex.def Info: ./images/png/convergence/islo_uni_F5.png  used on inpu
+t line 268.
+(pdftex.def)             Requested size: 209.1301pt x 156.84808pt.
+<./images/png/convergence/islo_uni_F8.png, id=1265, 462.528pt x 346.896pt>
+File: ./images/png/convergence/islo_uni_F8.png Graphic file (type png)
+<use ./images/png/convergence/islo_uni_F8.png>
+Package pdftex.def Info: ./images/png/convergence/islo_uni_F8.png  used on inpu
+t line 269.
+(pdftex.def)             Requested size: 209.1301pt x 156.84808pt.
+<./images/png/convergence/islo_multi_F10.png, id=1266, 462.528pt x 346.896pt>
+File: ./images/png/convergence/islo_multi_F10.png Graphic file (type png)
+<use ./images/png/convergence/islo_multi_F10.png>
+Package pdftex.def Info: ./images/png/convergence/islo_multi_F10.png  used on i
+nput line 274.
+(pdftex.def)             Requested size: 209.1301pt x 156.84808pt.
+<./images/png/convergence/islo_multi_F12.png, id=1267, 462.528pt x 346.896pt>
+File: ./images/png/convergence/islo_multi_F12.png Graphic file (type png)
+<use ./images/png/convergence/islo_multi_F12.png>
+Package pdftex.def Info: ./images/png/convergence/islo_multi_F12.png  used on i
+nput line 275.
+(pdftex.def)             Requested size: 209.1301pt x 156.84808pt.
+<./images/png/convergence/islo_multi_F15.png, id=1268, 462.528pt x 346.896pt>
+File: ./images/png/convergence/islo_multi_F15.png Graphic file (type png)
+<use ./images/png/convergence/islo_multi_F15.png>
+Package pdftex.def Info: ./images/png/convergence/islo_multi_F15.png  used on i
+nput line 276.
+(pdftex.def)             Requested size: 209.1301pt x 156.84808pt.
+ [37 <./images/png/convergence/islo_uni_F2.png> <./images/png/convergence/islo_
+uni_F5.png> <./images/png/convergence/islo_uni_F8.png> <./images/png/convergenc
+e/islo_multi_F10.png> <./images/png/convergence/islo_multi_F12.png> <./images/p
+ng/convergence/islo_multi_F15.png>] [38] [39]
+<./images/png/convergence/islo_hybrid_F17.png, id=1295, 462.528pt x 346.896pt>
+File: ./images/png/convergence/islo_hybrid_F17.png Graphic file (type png)
+<use ./images/png/convergence/islo_hybrid_F17.png>
+Package pdftex.def Info: ./images/png/convergence/islo_hybrid_F17.png  used on 
+input line 351.
+(pdftex.def)             Requested size: 209.1301pt x 156.84808pt.
+<./images/png/convergence/islo_hybrid_F20.png, id=1296, 462.528pt x 346.896pt>
+File: ./images/png/convergence/islo_hybrid_F20.png Graphic file (type png)
+<use ./images/png/convergence/islo_hybrid_F20.png>
+Package pdftex.def Info: ./images/png/convergence/islo_hybrid_F20.png  used on 
+input line 352.
+(pdftex.def)             Requested size: 209.1301pt x 156.84808pt.
+<./images/png/convergence/islo_hybrid_F21.png, id=1297, 462.528pt x 346.896pt>
+File: ./images/png/convergence/islo_hybrid_F21.png Graphic file (type png)
+<use ./images/png/convergence/islo_hybrid_F21.png>
+Package pdftex.def Info: ./images/png/convergence/islo_hybrid_F21.png  used on 
+input line 353.
+(pdftex.def)             Requested size: 209.1301pt x 156.84808pt.
+<./images/png/convergence/islo_compos_F24.png, id=1298, 462.528pt x 346.896pt>
+File: ./images/png/convergence/islo_compos_F24.png Graphic file (type png)
+<use ./images/png/convergence/islo_compos_F24.png>
+Package pdftex.def Info: ./images/png/convergence/islo_compos_F24.png  used on 
+input line 358.
+(pdftex.def)             Requested size: 209.1301pt x 156.84808pt.
+<./images/png/convergence/islo_compos_F25.png, id=1299, 462.528pt x 346.896pt>
+File: ./images/png/convergence/islo_compos_F25.png Graphic file (type png)
+<use ./images/png/convergence/islo_compos_F25.png>
+Package pdftex.def Info: ./images/png/convergence/islo_compos_F25.png  used on 
+input line 359.
+(pdftex.def)             Requested size: 209.1301pt x 156.84808pt.
+<./images/png/convergence/islo_compos_F28.png, id=1300, 462.528pt x 346.896pt>
+File: ./images/png/convergence/islo_compos_F28.png Graphic file (type png)
+<use ./images/png/convergence/islo_compos_F28.png>
+Package pdftex.def Info: ./images/png/convergence/islo_compos_F28.png  used on 
+input line 360.
+(pdftex.def)             Requested size: 209.1301pt x 156.84808pt.
+ [40 <./images/png/convergence/islo_hybrid_F17.png> <./images/png/convergence/i
+slo_hybrid_F20.png> <./images/png/convergence/islo_hybrid_F21.png> <./images/pn
+g/convergence/islo_compos_F24.png> <./images/png/convergence/islo_compos_F25.pn
+g> <./images/png/convergence/islo_compos_F28.png>] [41] [42]
+<./images//pdf/dataset/cpu_full.pdf, id=1330, 419.19548pt x 312.02145pt>
+File: ./images//pdf/dataset/cpu_full.pdf Graphic file (type pdf)
+<use ./images//pdf/dataset/cpu_full.pdf>
+Package pdftex.def Info: ./images//pdf/dataset/cpu_full.pdf  used on input line
+ 396.
+(pdftex.def)             Requested size: 209.1301pt x 155.66277pt.
+<./images//pdf/dataset/ram_full.pdf, id=1331, 419.19548pt x 312.02145pt>
+File: ./images//pdf/dataset/ram_full.pdf Graphic file (type pdf)
+<use ./images//pdf/dataset/ram_full.pdf>
+Package pdftex.def Info: ./images//pdf/dataset/ram_full.pdf  used on input line
+ 397.
+(pdftex.def)             Requested size: 209.1301pt x 155.66277pt.
+ [43]
+<./images//pdf/dataset/it_eu.pdf, id=1340, 419.19548pt x 312.02145pt>
+File: ./images//pdf/dataset/it_eu.pdf Graphic file (type pdf)
+<use ./images//pdf/dataset/it_eu.pdf>
+Package pdftex.def Info: ./images//pdf/dataset/it_eu.pdf  used on input line 41
+0.
+(pdftex.def)             Requested size: 209.1301pt x 155.66277pt.
+<./images//pdf/dataset/it_uk.pdf, id=1341, 420.794pt x 312.02145pt>
+File: ./images//pdf/dataset/it_uk.pdf Graphic file (type pdf)
+<use ./images//pdf/dataset/it_uk.pdf>
+Package pdftex.def Info: ./images//pdf/dataset/it_uk.pdf  used on input line 41
+1.
+(pdftex.def)             Requested size: 209.1301pt x 155.0724pt.
+ [44 <./images//pdf/dataset/cpu_full.pdf> <./images//pdf/dataset/ram_full.pdf
+
+pdfTeX warning: pdflatex (file ./images//pdf/dataset/ram_full.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
+> <./images//pdf/dataset/it_eu.pdf
+
+pdfTeX warning: pdflatex (file ./images//pdf/dataset/it_eu.pdf): PDF inclusion:
+ multiple pdfs with page group included in a single page
+> <./images//pdf/dataset/it_uk.pdf
+
+pdfTeX warning: pdflatex (file ./images//pdf/dataset/it_uk.pdf): PDF inclusion:
+ multiple pdfs with page group included in a single page
+>] [45] [46]
+<./images/pdf/result_data/cpu/ISLO_CFNN_cpu.pdf, id=1481, 462.52798pt x 346.896
+01pt>
+File: ./images/pdf/result_data/cpu/ISLO_CFNN_cpu.pdf Graphic file (type pdf)
+<use ./images/pdf/result_data/cpu/ISLO_CFNN_cpu.pdf>
+Package pdftex.def Info: ./images/pdf/result_data/cpu/ISLO_CFNN_cpu.pdf  used o
+n input line 490.
+(pdftex.def)             Requested size: 209.1301pt x 156.8481pt.
+<./images/pdf/result_data/cpu/LSTM_cpu.pdf, id=1482, 462.52798pt x 346.89601pt>
+
+File: ./images/pdf/result_data/cpu/LSTM_cpu.pdf Graphic file (type pdf)
+<use ./images/pdf/result_data/cpu/LSTM_cpu.pdf>
+Package pdftex.def Info: ./images/pdf/result_data/cpu/LSTM_cpu.pdf  used on inp
+ut line 491.
+(pdftex.def)             Requested size: 209.1301pt x 156.8481pt.
+<./images/pdf/result_data/cpu/RNN_cpu.pdf, id=1483, 462.52798pt x 346.89601pt>
+File: ./images/pdf/result_data/cpu/RNN_cpu.pdf Graphic file (type pdf)
+<use ./images/pdf/result_data/cpu/RNN_cpu.pdf>
+Package pdftex.def Info: ./images/pdf/result_data/cpu/RNN_cpu.pdf  used on inpu
+t line 492.
+(pdftex.def)             Requested size: 209.1301pt x 156.8481pt.
+<./images/pdf/result_data/cpu/GRU_cpu.pdf, id=1484, 462.52798pt x 346.89601pt>
+File: ./images/pdf/result_data/cpu/GRU_cpu.pdf Graphic file (type pdf)
+<use ./images/pdf/result_data/cpu/GRU_cpu.pdf>
+Package pdftex.def Info: ./images/pdf/result_data/cpu/GRU_cpu.pdf  used on inpu
+t line 493.
+(pdftex.def)             Requested size: 209.1301pt x 156.8481pt.
+
+Underfull \hbox (badness 2293) in paragraph at lines 495--495
+[]\OT1/ptm/m/n/13 Figure 4.6: |Per-for-mance com-par-i-sion be-tween ISLO-CFNN 
+and dif-fer-ent
+ []
+
+<./images/pdf/result_data/ram/ISLO_CFNN_ram.pdf, id=1486, 462.52798pt x 346.896
+01pt>
+File: ./images/pdf/result_data/ram/ISLO_CFNN_ram.pdf Graphic file (type pdf)
+<use ./images/pdf/result_data/ram/ISLO_CFNN_ram.pdf>
+Package pdftex.def Info: ./images/pdf/result_data/ram/ISLO_CFNN_ram.pdf  used o
+n input line 503.
+(pdftex.def)             Requested size: 209.1301pt x 156.8481pt.
+<./images/pdf/result_data/ram/SLnO_CFNN_ram.pdf, id=1487, 462.52798pt x 346.896
+01pt>
+File: ./images/pdf/result_data/ram/SLnO_CFNN_ram.pdf Graphic file (type pdf)
+<use ./images/pdf/result_data/ram/SLnO_CFNN_ram.pdf>
+Package pdftex.def Info: ./images/pdf/result_data/ram/SLnO_CFNN_ram.pdf  used o
+n input line 504.
+(pdftex.def)             Requested size: 209.1301pt x 156.8481pt.
+<./images/pdf/result_data/ram/PSO_CFNN_ram.pdf, id=1488, 462.52798pt x 346.8960
+1pt>
+File: ./images/pdf/result_data/ram/PSO_CFNN_ram.pdf Graphic file (type pdf)
+<use ./images/pdf/result_data/ram/PSO_CFNN_ram.pdf>
+Package pdftex.def Info: ./images/pdf/result_data/ram/PSO_CFNN_ram.pdf  used on
+ input line 505.
+(pdftex.def)             Requested size: 209.1301pt x 156.8481pt.
+<./images/pdf/result_data/ram/CFNN-1H_ram.pdf, id=1489, 462.52798pt x 346.89601
+pt>
+File: ./images/pdf/result_data/ram/CFNN-1H_ram.pdf Graphic file (type pdf)
+<use ./images/pdf/result_data/ram/CFNN-1H_ram.pdf>
+Package pdftex.def Info: ./images/pdf/result_data/ram/CFNN-1H_ram.pdf  used on 
+input line 506.
+(pdftex.def)             Requested size: 209.1301pt x 156.8481pt.
+[47 <./images/pdf/result_data/cpu/ISLO_CFNN_cpu.pdf> <./images/pdf/result_data/
+cpu/LSTM_cpu.pdf
+
+pdfTeX warning: pdflatex (file ./images/pdf/result_data/cpu/LSTM_cpu.pdf): PDF 
+inclusion: multiple pdfs with page group included in a single page
+> <./images/pdf/result_data/cpu/RNN_cpu.pdf
+
+pdfTeX warning: pdflatex (file ./images/pdf/result_data/cpu/RNN_cpu.pdf): PDF i
+nclusion: multiple pdfs with page group included in a single page
+> <./images/pdf/result_data/cpu/GRU_cpu.pdf
+
+pdfTeX warning: pdflatex (file ./images/pdf/result_data/cpu/GRU_cpu.pdf): PDF i
+nclusion: multiple pdfs with page group included in a single page
+>]) [48 <./images/pdf/result_data/ram/ISLO_CFNN_ram.pdf> <./images/pdf/result_d
+ata/ram/SLnO_CFNN_ram.pdf
+
+pdfTeX warning: pdflatex (file ./images/pdf/result_data/ram/SLnO_CFNN_ram.pdf):
+ PDF inclusion: multiple pdfs with page group included in a single page
+> <./images/pdf/result_data/ram/PSO_CFNN_ram.pdf
+
+pdfTeX warning: pdflatex (file ./images/pdf/result_data/ram/PSO_CFNN_ram.pdf): 
+PDF inclusion: multiple pdfs with page group included in a single page
+> <./images/pdf/result_data/ram/CFNN-1H_ram.pdf
+
+pdfTeX warning: pdflatex (file ./images/pdf/result_data/ram/CFNN-1H_ram.pdf): P
+DF inclusion: multiple pdfs with page group included in a single page
+>]
+Chapter 5.
+(./chapters/5_conclusion.tex)
+
+Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
+less on input line 251.
+
+[49
+
+]
+Overfull \hbox (33.11371pt too wide) in paragraph at lines 255--255
+[]\OT1/ptm/m/n/13 M. Chawla and M. Duhan, ``Levy flights in meta-heuris-tics op
+-ti-miza-tion algorithms--
+ []
+
+
+Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
+less on input line 254.
+
+[50
+
+] [51]
+Overfull \hbox (5.27182pt too wide) in paragraph at lines 255--255
+[]\OT1/ptm/m/n/13 M. Yaz-dani and F. Jo-lai, ``Lion op-ti-miza-tion al-go-rithm
+ (loa): A nature-inspired
+ []
+
+[52]
+Overfull \hbox (31.35107pt too wide) in paragraph at lines 255--255
+\OT1/ptm/m/n/13 global op-ti-miza-tion,'' \OT1/ptm/m/it/13 Ex-pert Sys-tems wit
+h Ap-pli-ca-tions\OT1/ptm/m/n/13 , vol. 38, no. 10, pp. 13 170{
+ []
+
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 254.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+) [53]
+Overfull \hbox (62.72536pt too wide) in paragraph at lines 255--255
+\OT1/ptm/m/n/13 gated re-cur-rent neu-ral net-works on se-quence mod-el-ing,'' 
+\OT1/ptm/m/it/13 arXiv preprint arXiv:1412.3555\OT1/ptm/m/n/13 ,
+ []
+
+[54]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no † in font ptmr7t!
+Missing character: There is no π in font ptmr7t!
+
+Overfull \hbox (18.86337pt too wide) in paragraph at lines 255--255
+\OT1/ptm/m/n/13 short-term mem-ory re-cur-rent neu-ral net-work,'' \OT1/ptm/m/i
+t/13 arXiv preprint arXiv:1701.03295\OT1/ptm/m/n/13 ,
+ []
+
+
+Overfull \hbox (5.22705pt too wide) in paragraph at lines 255--255
+\OT1/ptm/m/it/13 gent Agents, Web Tech-nolo-gies and In-ter-net Com-merce (CIMC
+A-IAWTIC'06)\OT1/ptm/m/n/13 ,
+ []
+
+[55]
+Overfull \hbox (0.35388pt too wide) in paragraph at lines 255--255
+\OT1/ptm/m/n/13 sin-gle ob-jec-tive op-ti-miza-tion,'' \OT1/ptm/m/it/13 Tech-ni
+-cal Re-port201411A, Com-pu-ta-tional In-
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 255.
+[56]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 255.
+ (./main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 255.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 255.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: B59C71A1A1EFB83C60BCAFCA8FC24040;2634.
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 1.0pt have occurred.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 255.
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 22542 strings out of 492982
+ 384782 string characters out of 6134895
+ 928954 words of memory out of 5000000
+ 25332 multiletter control sequences out of 15000+600000
+ 29108 words of font info for 63 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 56i,20n,78p,2189b,1298s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/time
+s/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (64 pages, 3876351 bytes).
+PDF statistics:
+ 1879 PDF objects out of 2073 (max. 8388607)
+ 1060 compressed objects within 11 object streams
+ 277 named destinations out of 1000 (max. 500000)
+ 530 words of extra memory for PDF output out of 10000 (max. 10000000)
+

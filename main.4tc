@@ -1,0 +1,22 @@
+\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi
+\doTocEntry\toc{}{\csname a:TocLink\endcsname{1}{x1-1000}{QQ2-1-1}{{}}}{2}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-2000}{QQ2-1-2}{M\IeC {\d U}C L\IeC {\d U}C}}{2}\relax 
+\doTocEntry\toc{}{\csname a:TocLink\endcsname{1}{x1-3000}{QQ2-1-3}{{}}}{4}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-4000}{QQ2-1-4}{DANH M\IeC {\d U}C H\IeC {\`I}NH V\IeC {\~ E}}}{4}\relax 
+\doTocEntry\toc{}{\csname a:TocLink\endcsname{1}{x1-5000}{QQ2-1-5}{{}}}{6}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-6000}{QQ2-1-6}{DANH M\IeC {\d U}C B\IeC {\h A}NG BI\IeC {\h \ECIRCUMFLEX }U}}{6}\relax 
+\doTocEntry\toc{}{\csname a:TocLink\endcsname{1}{x1-7000}{QQ2-1-7}{{}}}{8}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-8000}{QQ2-1-8}{DANH M\IeC {\d U}C THU\IeC {\d \ACIRCUMFLEX }T NG\IeC {\~\UHORN } V\IeC {\`A} T\IeC {\`\UHORN } VI\IeC {\'\ECIRCUMFLEX }T T\IeC {\'\ABREVE }T}}{8}\relax 
+\doTocEntry\tocchapter{1}{\csname a:TocLink\endcsname{1}{x1-90001}{QQ2-1-9}{GI\IeC {\'\OHORN }I THI\IeC {\d \ECIRCUMFLEX }U \IeC {\DJ }\IeC {\`\ECIRCUMFLEX } T\IeC {\`A}I}}{2}\relax 
+\doTocEntry\tocsection{1.1}{\csname a:TocLink\endcsname{1}{x1-100001}{QQ2-1-10}{\IeC {\DJ }\IeC {\d \abreve }t v\IeC {\'\acircumflex }n \IeC {\dj }\IeC {\`\ecircumflex }}}{2}\relax 
+\doTocEntry\tocsection{1.2}{\csname a:TocLink\endcsname{1}{x1-110002}{QQ2-1-11}{B\IeC {\'\ocircumflex } c\IeC {\d u}c \IeC {\dj }\IeC {\`\ocircumflex } \IeC {\'a}n}}{2}\relax 
+\doTocEntry\tocchapter{2}{\csname a:TocLink\endcsname{1}{x1-120002}{QQ2-1-12}{C\IeC {\'A}C NGHI\IeC {\^E}N C\IeC {\'\UHORN }U LI\IeC {\^E}N QUAN V\IeC {\`A} C\IeC {\OHORN } S\IeC {\h \OHORN } L\IeC {\'Y} THUY\IeC {\'\ECIRCUMFLEX }T}}{4}\relax 
+\doTocEntry\tocsection{2.1}{\csname a:TocLink\endcsname{1}{x1-130001}{QQ2-1-13}{S\IeC {\h \uhorn } d\IeC {\d u}ng c\IeC {\'a}c \IeC {\dj }\IeC {\d i}nh d\IeC {\d a}ng v\IeC {\u a}n b\IeC {\h a}n theo qui \IeC {\dj }\IeC {\d i}nh}}{4}\relax 
+\doTocEntry\tocsubsection{2.1.1}{\csname a:TocLink\endcsname{1}{x1-140001}{QQ2-1-14}{Qui \IeC {\dj }\IeC {\d i}nh v\IeC {\`\ecircumflex } c\IeC {\u a}n l\IeC {\`\ecircumflex } v\IeC {\u a}n b\IeC {\h a}n}}{4}\relax 
+\doTocEntry\tocsubsubsection{a}{\csname a:TocLink\endcsname{1}{x1-150001}{QQ2-1-15}{T\IeC {\d a}o ch\IeC {\uhorn }\IeC {\ohorn }ng m\IeC {\'\ohorn }i}}{4}\relax 
+\doTocEntry\toclof{20}{\csname a:TocLink\endcsname{1}{x1-15001r0}{}{\ignorespaces ANN}}{figure}\relax 
+\doTocEntry\tocchapter{3}{\csname a:TocLink\endcsname{1}{x1-160003}{QQ2-1-17}{M\IeC {\^O} H\IeC {\`I}NH \IeC {\DJ }\IeC {\`\ECIRCUMFLEX } XU\IeC {\'\ACIRCUMFLEX }T}}{9}\relax 
+\doTocEntry\toclot{3.0}{\csname a:TocLink\endcsname{1}{x1-16001r0}{}{\ignorespaces B\IeC {\h a}ng test}}{table}\relax 
+\doTocEntry\tocchapter{4}{\csname a:TocLink\endcsname{1}{x1-170004}{QQ2-1-19}{TH\IeC {\d \UHORN }C NGHI\IeC {\d \ECIRCUMFLEX }M V\IeC {\`A} \IeC {\DJ }\IeC {\'A}NG GI\IeC {\'A}}}{14}\relax 
+\doTocEntry\tocchapter{5}{\csname a:TocLink\endcsname{1}{x1-180005}{QQ2-1-20}{K\IeC {\'\ECIRCUMFLEX }T LU\IeC {\d \ACIRCUMFLEX }N V\IeC {\`A} H\IeC {\UHORN }\IeC {\'\OHORN }NG PH\IeC {\'A}T TRI\IeC {\h \ECIRCUMFLEX }N}}{16}\relax 
+\doTocEntry\tocchapter{}{\csname a:TocLink\endcsname{1}{Q1-1-21}{}{T\IeC {\protect \`A}I LI\IeC {\protect \d \ECIRCUMFLEX }U THAM KH\IeC {\protect \h A}O}}{17}\relax 

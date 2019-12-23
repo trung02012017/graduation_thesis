@@ -1,0 +1,80 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: main.aux
+The style file: biblatex.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated field_info (elt_size=4) to 16676 items from 5000.
+Database file #1: main-blx.bib
+Database file #2: references.bib
+Repeated entry---line 345 of file references.bib
+ : @inproceedings{fu2016using
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 738 of file references.bib
+ : @inproceedings{eberhart1995particle
+ :                                    ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 748 of file references.bib
+ : @inproceedings{dorigo1999ant
+ :                             ,
+I'm skipping whatever remains of this entry
+Biblatex version: 3.8
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Too many commas in name 1 of "PhD thesis, Universit{\'e} de Tours, Tours, FRANCE" for entry bone2000recurrent
+while executing---line 2749 of file biblatex.bst
+You've used 84 entries,
+            6268 wiz_defined-function locations,
+            1651 strings with 23535 characters,
+and the built_in function-call counts, 463622 in all, are:
+= -- 31643
+> -- 9822
+< -- 2485
++ -- 11868
+- -- 3684
+* -- 33226
+:= -- 45915
+add.period$ -- 0
+call.type$ -- 84
+change.case$ -- 1387
+chr.to.int$ -- 30
+cite$ -- 166
+duplicate$ -- 50818
+empty$ -- 42467
+format.name$ -- 5932
+if$ -- 95933
+int.to.chr$ -- 0
+int.to.str$ -- 235
+missing$ -- 0
+newline$ -- 2641
+num.names$ -- 4098
+pop$ -- 28485
+preamble$ -- 1
+purify$ -- 1991
+quote$ -- 0
+skip$ -- 15340
+stack$ -- 0
+substring$ -- 50177
+swap$ -- 12189
+text.length$ -- 1985
+text.prefix$ -- 13
+top$ -- 1
+type$ -- 2843
+warning$ -- 0
+while$ -- 5605
+width$ -- 0
+write$ -- 2558
+(There were 4 error messages)

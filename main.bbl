@@ -1,0 +1,2712 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{none/global//global/global}
+  \entry{holland1992genetic}{article}{}
+    \name{author}{1}{}{%
+      {{hash=HJH}{%
+         family={Holland},
+         familyi={H\bibinitperiod},
+         given={John\bibnamedelima H},
+         giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {JSTOR}%
+    }
+    \strng{namehash}{HJH1}
+    \strng{fullhash}{HJH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{66\bibrangedash 73}
+    \field{title}{Genetic algorithms}
+    \field{volume}{267}
+    \field{journaltitle}{Scientific american}
+    \field{year}{1992}
+  \endentry
+
+  \entry{masadeh2019sea}{article}{}
+    \name{author}{3}{}{%
+      {{hash=MR}{%
+         family={Masadeh},
+         familyi={M\bibinitperiod},
+         given={Raja},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=MBA}{%
+         family={Mahafzah},
+         familyi={M\bibinitperiod},
+         given={Basel\bibnamedelima A},
+         giveni={B\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Sharieh},
+         familyi={S\bibinitperiod},
+         given={Ahmad},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MRMBASA1}
+    \strng{fullhash}{MRMBASA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{5}
+    \field{title}{Sea Lion Optimization Algorithm}
+    \field{volume}{10}
+    \field{journaltitle}{Sea}
+    \field{year}{2019}
+  \endentry
+
+  \entry{chawla2018levy}{article}{}
+    \name{author}{2}{}{%
+      {{hash=CM}{%
+         family={Chawla},
+         familyi={C\bibinitperiod},
+         given={Mridul},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=DM}{%
+         family={Duhan},
+         familyi={D\bibinitperiod},
+         given={Manoj},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Taylor \& Francis}%
+    }
+    \strng{namehash}{CMDM1}
+    \strng{fullhash}{CMDM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{9-10}
+    \field{pages}{802\bibrangedash 821}
+    \field{title}{Levy Flights in Metaheuristics Optimization Algorithms--A
+  Review}
+    \field{volume}{32}
+    \field{journaltitle}{Applied Artificial Intelligence}
+    \field{year}{2018}
+  \endentry
+
+  \entry{wang2011enhanced}{article}{}
+    \name{author}{3}{}{%
+      {{hash=WH}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Hui},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=WZ}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={Zhijian},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=RS}{%
+         family={Rahnamayan},
+         familyi={R\bibinitperiod},
+         given={Shahryar},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{WHWZRS1}
+    \strng{fullhash}{WHWZRS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{11}
+    \field{pages}{2127\bibrangedash 2140}
+    \field{title}{Enhanced opposition-based differential evolution for solving
+  high-dimensional continuous optimization problems}
+    \field{volume}{15}
+    \field{journaltitle}{Soft Computing}
+    \field{year}{2011}
+  \endentry
+
+  \entry{omran2010improving}{article}{}
+    \name{author}{3}{}{%
+      {{hash=OMG}{%
+         family={Omran},
+         familyi={O\bibinitperiod},
+         given={Mahamed\bibnamedelima GH},
+         giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=GZW}{%
+         family={Geem},
+         familyi={G\bibinitperiod},
+         given={Zong\bibnamedelima Woo},
+         giveni={Z\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Salman},
+         familyi={S\bibinitperiod},
+         given={Ayed},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Inderscience Publishers}%
+    }
+    \strng{namehash}{OMGGZWSA1}
+    \strng{fullhash}{OMGGZWSA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{28\bibrangedash 50}
+    \field{title}{Improving the performance of harmony search using
+  opposition-based learning and quadratic interpolation}
+    \field{volume}{2}
+    \field{journaltitle}{International Journal of Mathematical Modelling and
+  Numerical Optimisation}
+    \field{year}{2010}
+  \endentry
+
+  \entry{wang2016opposition}{article}{}
+    \name{author}{4}{}{%
+      {{hash=WGG}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Gai-Ge},
+         giveni={G\bibinitperiod-G\bibinitperiod},
+      }}%
+      {{hash=DS}{%
+         family={Deb},
+         familyi={D\bibinitperiod},
+         given={Suash},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=GAH}{%
+         family={Gandomi},
+         familyi={G\bibinitperiod},
+         given={Amir\bibnamedelima H},
+         giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=AAH}{%
+         family={Alavi},
+         familyi={A\bibinitperiod},
+         given={Amir\bibnamedelima H},
+         giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{WGGDSGAH+1}
+    \strng{fullhash}{WGGDSGAHAAH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{147\bibrangedash 157}
+    \field{title}{Opposition-based krill herd algorithm with Cauchy mutation
+  and position clamping}
+    \field{volume}{177}
+    \field{journaltitle}{Neurocomputing}
+    \field{year}{2016}
+  \endentry
+
+  \entry{wang2003particle}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=WKP}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Kang-Ping},
+         giveni={K\bibinitperiod-P\bibinitperiod},
+      }}%
+      {{hash=HL}{%
+         family={Huang},
+         familyi={H\bibinitperiod},
+         given={Lan},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=ZCG}{%
+         family={Zhou},
+         familyi={Z\bibinitperiod},
+         given={Chun-Guang},
+         giveni={C\bibinitperiod-G\bibinitperiod},
+      }}%
+      {{hash=PW}{%
+         family={Pang},
+         familyi={P\bibinitperiod},
+         given={Wei},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{WKPHLZCG+1}
+    \strng{fullhash}{WKPHLZCGPW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 2003 international conference on
+  machine learning and cybernetics (IEEE cat. no. 03ex693)}
+    \field{pages}{1583\bibrangedash 1585}
+    \field{title}{Particle swarm optimization for traveling salesman problem}
+    \field{volume}{3}
+    \field{year}{2003}
+  \endentry
+
+  \entry{yuan2004survey}{article}{}
+    \name{author}{4}{}{%
+      {{hash=YXh}{%
+         family={Yuan},
+         familyi={Y\bibinitperiod},
+         given={Xiao-hui},
+         giveni={X\bibinitperiod-h\bibinitperiod},
+      }}%
+      {{hash=WC}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Cheng},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=ZYc}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Yong-chuan},
+         giveni={Y\bibinitperiod-c\bibinitperiod},
+      }}%
+      {{hash=YYb}{%
+         family={Yuan},
+         familyi={Y\bibinitperiod},
+         given={Yan-bin},
+         giveni={Y\bibinitperiod-b\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{YXhWCZYc+1}
+    \strng{fullhash}{YXhWCZYcYYb1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{003}
+    \field{title}{A survey on application of particle swarm optimization to
+  electric power systems [J]}
+    \field{volume}{19}
+    \field{journaltitle}{Power System Technology}
+    \field{year}{2004}
+  \endentry
+
+  \entry{karmakar2002generic}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KGC}{%
+         family={Karmakar},
+         familyi={K\bibinitperiod},
+         given={Gour\bibnamedelima C},
+         giveni={G\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=DLS}{%
+         family={Dooley},
+         familyi={D\bibinitperiod},
+         given={Laurence\bibnamedelima S},
+         giveni={L\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{KGCDLS1}
+    \strng{fullhash}{KGCDLS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{10}
+    \field{pages}{1215\bibrangedash 1227}
+    \field{title}{A generic fuzzy rule based image segmentation algorithm}
+    \field{volume}{23}
+    \field{journaltitle}{Pattern Recognition Letters}
+    \field{year}{2002}
+  \endentry
+
+  \entry{hore2011edge}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HA}{%
+         family={Hore},
+         familyi={H\bibinitperiod},
+         given={Alain},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=ZD}{%
+         family={Ziou},
+         familyi={Z\bibinitperiod},
+         given={Djemel},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{HAZD1}
+    \strng{fullhash}{HAZD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{11}
+    \field{pages}{3136\bibrangedash 3150}
+    \field{title}{An edge-sensing generic demosaicing algorithm with
+  application to image resampling}
+    \field{volume}{20}
+    \field{journaltitle}{IEEE Transactions on Image Processing}
+    \field{year}{2011}
+  \endentry
+
+  \entry{ruder2016overview}{article}{}
+    \name{author}{1}{}{%
+      {{hash=RS}{%
+         family={Ruder},
+         familyi={R\bibinitperiod},
+         given={Sebastian},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RS1}
+    \strng{fullhash}{RS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{An overview of gradient descent optimization algorithms}
+    \field{journaltitle}{arXiv preprint arXiv:1609.04747}
+    \field{year}{2016}
+  \endentry
+
+  \entry{liu2013experimental}{article}{}
+    \name{author}{4}{}{%
+      {{hash=LH}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Hui},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=THq}{%
+         family={Tian},
+         familyi={T\bibinitperiod},
+         given={Hong-qi},
+         giveni={H\bibinitperiod-q\bibinitperiod},
+      }}%
+      {{hash=CC}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Chao},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=LYf}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Yan-fei},
+         giveni={Y\bibinitperiod-f\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{LHTHqCC+1}
+    \strng{fullhash}{LHTHqCCLYf1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{161\bibrangedash 173}
+    \field{title}{An experimental investigation of two Wavelet-MLP hybrid
+  frameworks for wind speed prediction using GA and PSO optimization}
+    \field{volume}{52}
+    \field{journaltitle}{International Journal of Electrical Power \& Energy
+  Systems}
+    \field{year}{2013}
+  \endentry
+
+  \entry{aljarah2018optimizing}{article}{}
+    \name{author}{3}{}{%
+      {{hash=AI}{%
+         family={Aljarah},
+         familyi={A\bibinitperiod},
+         given={Ibrahim},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=FH}{%
+         family={Faris},
+         familyi={F\bibinitperiod},
+         given={Hossam},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Mirjalili},
+         familyi={M\bibinitperiod},
+         given={Seyedali},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{AIFHMS1}
+    \strng{fullhash}{AIFHMS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 15}
+    \field{title}{Optimizing connection weights in neural networks using the
+  whale optimization algorithm}
+    \field{volume}{22}
+    \field{journaltitle}{Soft Computing}
+    \field{year}{2018}
+  \endentry
+
+  \entry{castillo2000g}{article}{}
+    \name{author}{5}{}{%
+      {{hash=CPA}{%
+         family={Castillo},
+         familyi={C\bibinitperiod},
+         given={Pedro\bibnamedelima A},
+         giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={Merelo},
+         familyi={M\bibinitperiod},
+         given={JJ},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=PA}{%
+         family={Prieto},
+         familyi={P\bibinitperiod},
+         given={Alberto},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=RV}{%
+         family={Rivas},
+         familyi={R\bibinitperiod},
+         given={V},
+         giveni={V},
+      }}%
+      {{hash=RG}{%
+         family={Romero},
+         familyi={R\bibinitperiod},
+         given={Gustavo},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{CPAMJPA+1}
+    \strng{fullhash}{CPAMJPARVRG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1-4}
+    \field{pages}{149\bibrangedash 163}
+    \field{title}{G-Prop: Global optimization of multilayer perceptrons using
+  GAs}
+    \field{volume}{35}
+    \field{journaltitle}{Neurocomputing}
+    \field{year}{2000}
+  \endentry
+
+  \entry{nasseri2008optimized}{article}{}
+    \name{author}{3}{}{%
+      {{hash=NM}{%
+         family={Nasseri},
+         familyi={N\bibinitperiod},
+         given={Mohsen},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=AK}{%
+         family={Asghari},
+         familyi={A\bibinitperiod},
+         given={Keyvan},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=AM}{%
+         family={Abedini},
+         familyi={A\bibinitperiod},
+         given={MJ},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{NMAKAM1}
+    \strng{fullhash}{NMAKAM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{3}
+    \field{pages}{1415\bibrangedash 1421}
+    \field{title}{Optimized scenario for rainfall forecasting using genetic
+  algorithm coupled with artificial neural network}
+    \field{volume}{35}
+    \field{journaltitle}{Expert systems with applications}
+    \field{year}{2008}
+  \endentry
+
+  \entry{kawam2012metaheuristic}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KAA}{%
+         family={Kawam},
+         familyi={K\bibinitperiod},
+         given={Ahmad\bibnamedelima AL},
+         giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=MN}{%
+         family={Mansour},
+         familyi={M\bibinitperiod},
+         given={Nashat},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KAAMN1}
+    \strng{fullhash}{KAAMN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{2}
+    \field{pages}{156\bibrangedash 161}
+    \field{title}{Metaheuristic optimization algorithms for training artificial
+  neural networks}
+    \field{volume}{1}
+    \field{journaltitle}{Int. J. Comput. Inf. Technol}
+    \field{year}{2012}
+  \endentry
+
+  \entry{nikravesh2015towards}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=NAY}{%
+         family={Nikravesh},
+         familyi={N\bibinitperiod},
+         given={Ali\bibnamedelima Yadavar},
+         giveni={A\bibinitperiod\bibinitdelim Y\bibinitperiod},
+      }}%
+      {{hash=ASA}{%
+         family={Ajila},
+         familyi={A\bibinitperiod},
+         given={Samuel\bibnamedelima A},
+         giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=LCH}{%
+         family={Lung},
+         familyi={L\bibinitperiod},
+         given={Chung-Horng},
+         giveni={C\bibinitperiod-H\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE Press}%
+    }
+    \strng{namehash}{NAYASALCH1}
+    \strng{fullhash}{NAYASALCH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 10th International Symposium on
+  Software Engineering for Adaptive and Self-Managing Systems}
+    \field{pages}{35\bibrangedash 45}
+    \field{title}{Towards an autonomic auto-scaling prediction system for cloud
+  resource provisioning}
+    \field{year}{2015}
+  \endentry
+
+  \entry{lorido2012auto}{article}{}
+    \name{author}{3}{}{%
+      {{hash=LBT}{%
+         family={Lorido-Botr{\'a}n},
+         familyi={L\bibinitperiod-B\bibinitperiod},
+         given={Tania},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=MAJ}{%
+         family={Miguel-Alonso},
+         familyi={M\bibinitperiod-A\bibinitperiod},
+         given={Jos{\'e}},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LJA}{%
+         family={Lozano},
+         familyi={L\bibinitperiod},
+         given={Jose\bibnamedelima Antonio},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LBTMAJLJA1}
+    \strng{fullhash}{LBTMAJLJA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{2012}
+    \field{title}{Auto-scaling techniques for elastic applications in cloud
+  environments}
+    \field{volume}{12}
+    \field{journaltitle}{Department of Computer Architecture and Technology,
+  University of Basque Country, Tech. Rep. EHU-KAT-IK-09}
+    \field{year}{2012}
+  \endentry
+
+  \entry{koza1997genetic}{article}{}
+    \name{author}{1}{}{%
+      {{hash=KJR}{%
+         family={Koza},
+         familyi={K\bibinitperiod},
+         given={John\bibnamedelima R},
+         giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Citeseer}%
+    }
+    \strng{namehash}{KJR1}
+    \strng{fullhash}{KJR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Genetic programming}
+    \field{year}{1997}
+  \endentry
+
+  \entry{fleetwood2004introduction}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=FK}{%
+         family={Fleetwood},
+         familyi={F\bibinitperiod},
+         given={Kelly},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FK1}
+    \strng{fullhash}{FK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of Mathematics and Statistics of Complex
+  Systems (MASCOS) One Day Symposium, 26th November, Brisbane, Australia}
+    \field{pages}{785\bibrangedash 791}
+    \field{title}{An introduction to differential evolution}
+    \field{year}{2004}
+  \endentry
+
+  \entry{simon2008biogeography}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SD}{%
+         family={Simon},
+         familyi={S\bibinitperiod},
+         given={Dan},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{SD1}
+    \strng{fullhash}{SD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{6}
+    \field{pages}{702\bibrangedash 713}
+    \field{title}{Biogeography-based optimization}
+    \field{volume}{12}
+    \field{journaltitle}{IEEE transactions on evolutionary computation}
+    \field{year}{2008}
+  \endentry
+
+  \entry{salcedo2013novel}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=SSS}{%
+         family={Salcedo-Sanz},
+         familyi={S\bibinitperiod-S\bibinitperiod},
+         given={Sancho},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=PSA}{%
+         family={Pastor-S{\'a}nchez},
+         familyi={P\bibinitperiod-S\bibinitperiod},
+         given={A},
+         giveni={A},
+      }}%
+      {{hash=GMD}{%
+         family={Gallo-Marazuela},
+         familyi={G\bibinitperiod-M\bibinitperiod},
+         given={D},
+         giveni={D},
+      }}%
+      {{hash=PFA}{%
+         family={Portilla-Figueras},
+         familyi={P\bibinitperiod-F\bibinitperiod},
+         given={Antonio},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{SSSPSAGMD+1}
+    \strng{fullhash}{SSSPSAGMDPFA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{International Conference on Intelligent Data Engineering
+  and Automated Learning}
+    \field{pages}{326\bibrangedash 333}
+    \field{title}{A novel coral reefs optimization algorithm for
+  multi-objective problems}
+    \field{year}{2013}
+  \endentry
+
+  \entry{eberhart1995particle}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=ER}{%
+         family={Eberhart},
+         familyi={E\bibinitperiod},
+         given={Russell},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Kennedy},
+         familyi={K\bibinitperiod},
+         given={James},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Citeseer}%
+    }
+    \strng{namehash}{ERKJ1}
+    \strng{fullhash}{ERKJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the IEEE international conference on
+  neural networks}
+    \field{pages}{1942\bibrangedash 1948}
+    \field{title}{Particle swarm optimization}
+    \field{volume}{4}
+    \field{year}{1995}
+  \endentry
+
+  \entry{dorigo1999ant}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=DM}{%
+         family={Dorigo},
+         familyi={D\bibinitperiod},
+         given={Marco},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=DCG}{%
+         family={Di\bibnamedelima Caro},
+         familyi={D\bibinitperiod\bibinitdelim C\bibinitperiod},
+         given={Gianni},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{DMDCG1}
+    \strng{fullhash}{DMDCG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 1999 congress on evolutionary
+  computation-CEC99 (Cat. No. 99TH8406)}
+    \field{pages}{1470\bibrangedash 1477}
+    \field{title}{Ant colony optimization: a new meta-heuristic}
+    \field{volume}{2}
+    \field{year}{1999}
+  \endentry
+
+  \entry{abbass2001mbo}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=AHA}{%
+         family={Abbass},
+         familyi={A\bibinitperiod},
+         given={Hussein\bibnamedelima A},
+         giveni={H\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{AHA1}
+    \strng{fullhash}{AHA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 2001 Congress on Evolutionary
+  Computation (IEEE Cat. No. 01TH8546)}
+    \field{pages}{207\bibrangedash 214}
+    \field{title}{MBO: Marriage in honey bees optimization-A haplometrosis
+  polygynous swarming approach}
+    \field{volume}{1}
+    \field{year}{2001}
+  \endentry
+
+  \entry{passino2002biomimicry}{article}{}
+    \name{author}{1}{}{%
+      {{hash=PKM}{%
+         family={Passino},
+         familyi={P\bibinitperiod},
+         given={Kevin\bibnamedelima M},
+         giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{PKM1}
+    \strng{fullhash}{PKM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{3}
+    \field{pages}{52\bibrangedash 67}
+    \field{title}{Biomimicry of bacterial foraging for distributed optimization
+  and control}
+    \field{volume}{22}
+    \field{journaltitle}{IEEE control systems magazine}
+    \field{year}{2002}
+  \endentry
+
+  \entry{basturk2006artificial}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=BB}{%
+         family={Basturk},
+         familyi={B\bibinitperiod},
+         given={Bahriye},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BB1}
+    \strng{fullhash}{BB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{IEEE Swarm Intelligence Symposium, Indianapolis, IN, USA,
+  2006}
+    \field{title}{An artificial bee colony (ABC) algorithm for numeric function
+  optimization}
+    \field{year}{2006}
+  \endentry
+
+  \entry{yang2009firefly}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=YXS}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Xin-She},
+         giveni={X\bibinitperiod-S\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{YXS1}
+    \strng{fullhash}{YXS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{International symposium on stochastic algorithms}
+    \field{pages}{169\bibrangedash 178}
+    \field{title}{Firefly algorithms for multimodal optimization}
+    \field{year}{2009}
+  \endentry
+
+  \entry{yang2012bat}{article}{}
+    \name{author}{2}{}{%
+      {{hash=YXS}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Xin-She},
+         giveni={X\bibinitperiod-S\bibinitperiod},
+      }}%
+      {{hash=HGA}{%
+         family={Hossein\bibnamedelima Gandomi},
+         familyi={H\bibinitperiod\bibinitdelim G\bibinitperiod},
+         given={Amir},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Emerald Group Publishing Limited}%
+    }
+    \strng{namehash}{YXSHGA1}
+    \strng{fullhash}{YXSHGA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{5}
+    \field{pages}{464\bibrangedash 483}
+    \field{title}{Bat algorithm: a novel approach for global engineering
+  optimization}
+    \field{volume}{29}
+    \field{journaltitle}{Engineering Computations}
+    \field{year}{2012}
+  \endentry
+
+  \entry{kaveh2013new}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KA}{%
+         family={Kaveh},
+         familyi={K\bibinitperiod},
+         given={A},
+         giveni={A},
+      }}%
+      {{hash=FN}{%
+         family={Farhoudi},
+         familyi={F\bibinitperiod},
+         given={N},
+         giveni={N},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{KAFN1}
+    \strng{fullhash}{KAFN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{53\bibrangedash 70}
+    \field{title}{A new optimization method: Dolphin echolocation}
+    \field{volume}{59}
+    \field{journaltitle}{Advances in Engineering Software}
+    \field{year}{2013}
+  \endentry
+
+  \entry{mirjalili2014grey}{article}{}
+    \name{author}{3}{}{%
+      {{hash=MS}{%
+         family={Mirjalili},
+         familyi={M\bibinitperiod},
+         given={Seyedali},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=MSM}{%
+         family={Mirjalili},
+         familyi={M\bibinitperiod},
+         given={Seyed\bibnamedelima Mohammad},
+         giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=LA}{%
+         family={Lewis},
+         familyi={L\bibinitperiod},
+         given={Andrew},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{MSMSMLA1}
+    \strng{fullhash}{MSMSMLA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{46\bibrangedash 61}
+    \field{title}{Grey wolf optimizer}
+    \field{volume}{69}
+    \field{journaltitle}{Advances in engineering software}
+    \field{year}{2014}
+  \endentry
+
+  \entry{mirjalili2016whale}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MS}{%
+         family={Mirjalili},
+         familyi={M\bibinitperiod},
+         given={Seyedali},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LA}{%
+         family={Lewis},
+         familyi={L\bibinitperiod},
+         given={Andrew},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{MSLA1}
+    \strng{fullhash}{MSLA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{51\bibrangedash 67}
+    \field{title}{The whale optimization algorithm}
+    \field{volume}{95}
+    \field{journaltitle}{Advances in engineering software}
+    \field{year}{2016}
+  \endentry
+
+  \entry{yazdani2016lion}{article}{}
+    \name{author}{2}{}{%
+      {{hash=YM}{%
+         family={Yazdani},
+         familyi={Y\bibinitperiod},
+         given={Maziar},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=JF}{%
+         family={Jolai},
+         familyi={J\bibinitperiod},
+         given={Fariborz},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{YMJF1}
+    \strng{fullhash}{YMJF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{24\bibrangedash 36}
+    \field{title}{Lion optimization algorithm (LOA): a nature-inspired
+  metaheuristic algorithm}
+    \field{volume}{3}
+    \field{journaltitle}{Journal of computational design and engineering}
+    \field{year}{2016}
+  \endentry
+
+  \entry{dhiman2019seagull}{article}{}
+    \name{author}{2}{}{%
+      {{hash=DG}{%
+         family={Dhiman},
+         familyi={D\bibinitperiod},
+         given={Gaurav},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=KV}{%
+         family={Kumar},
+         familyi={K\bibinitperiod},
+         given={Vijay},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{DGKV1}
+    \strng{fullhash}{DGKV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{169\bibrangedash 196}
+    \field{title}{Seagull optimization algorithm: Theory and its applications
+  for large-scale industrial engineering problems}
+    \field{volume}{165}
+    \field{journaltitle}{Knowledge-Based Systems}
+    \field{year}{2019}
+  \endentry
+
+  \entry{erol2006new}{article}{}
+    \name{author}{2}{}{%
+      {{hash=EOK}{%
+         family={Erol},
+         familyi={E\bibinitperiod},
+         given={Osman\bibnamedelima K},
+         giveni={O\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=EI}{%
+         family={Eksin},
+         familyi={E\bibinitperiod},
+         given={Ibrahim},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{EOKEI1}
+    \strng{fullhash}{EOKEI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{2}
+    \field{pages}{106\bibrangedash 111}
+    \field{title}{A new optimization method: big bang--big crunch}
+    \field{volume}{37}
+    \field{journaltitle}{Advances in Engineering Software}
+    \field{year}{2006}
+  \endentry
+
+  \entry{rashedi2009gsa}{article}{}
+    \name{author}{3}{}{%
+      {{hash=RE}{%
+         family={Rashedi},
+         familyi={R\bibinitperiod},
+         given={Esmat},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=NPH}{%
+         family={Nezamabadi-Pour},
+         familyi={N\bibinitperiod-P\bibinitperiod},
+         given={Hossein},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Saryazdi},
+         familyi={S\bibinitperiod},
+         given={Saeid},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{RENPHSS1}
+    \strng{fullhash}{RENPHSS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{13}
+    \field{pages}{2232\bibrangedash 2248}
+    \field{title}{GSA: a gravitational search algorithm}
+    \field{volume}{179}
+    \field{journaltitle}{Information sciences}
+    \field{year}{2009}
+  \endentry
+
+  \entry{kaveh2010novel}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KA}{%
+         family={Kaveh},
+         familyi={K\bibinitperiod},
+         given={A},
+         giveni={A},
+      }}%
+      {{hash=TS}{%
+         family={Talatahari},
+         familyi={T\bibinitperiod},
+         given={S},
+         giveni={S},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{KATS1}
+    \strng{fullhash}{KATS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{3-4}
+    \field{pages}{267\bibrangedash 289}
+    \field{title}{A novel heuristic optimization method: charged system search}
+    \field{volume}{213}
+    \field{journaltitle}{Acta Mechanica}
+    \field{year}{2010}
+  \endentry
+
+  \entry{formato2007central}{article}{}
+    \name{author}{1}{}{%
+      {{hash=FRA}{%
+         family={Formato},
+         familyi={F\bibinitperiod},
+         given={Richard\bibnamedelima A},
+         giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FRA1}
+    \strng{fullhash}{FRA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{425\bibrangedash 491}
+    \field{title}{Central force optimization}
+    \field{volume}{77}
+    \field{journaltitle}{Prog Electromagn Res}
+    \field{year}{2007}
+  \endentry
+
+  \entry{alatas2011acroa}{article}{}
+    \name{author}{1}{}{%
+      {{hash=AB}{%
+         family={Alatas},
+         familyi={A\bibinitperiod},
+         given={Bilal},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{AB1}
+    \strng{fullhash}{AB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{10}
+    \field{pages}{13170\bibrangedash 13180}
+    \field{title}{ACROA: artificial chemical reaction optimization algorithm
+  for global optimization}
+    \field{volume}{38}
+    \field{journaltitle}{Expert Systems with Applications}
+    \field{year}{2011}
+  \endentry
+
+  \entry{hatamlou2013black}{article}{}
+    \name{author}{1}{}{%
+      {{hash=HA}{%
+         family={Hatamlou},
+         familyi={H\bibinitperiod},
+         given={Abdolreza},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{HA1}
+    \strng{fullhash}{HA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{175\bibrangedash 184}
+    \field{title}{Black hole: A new heuristic optimization approach for data
+  clustering}
+    \field{volume}{222}
+    \field{journaltitle}{Information sciences}
+    \field{year}{2013}
+  \endentry
+
+  \entry{kaveh2012new}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KA}{%
+         family={Kaveh},
+         familyi={K\bibinitperiod},
+         given={A},
+         giveni={A},
+      }}%
+      {{hash=KM}{%
+         family={Khayatazad},
+         familyi={K\bibinitperiod},
+         given={M},
+         giveni={M},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{KAKM1}
+    \strng{fullhash}{KAKM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{283\bibrangedash 294}
+    \field{title}{A new meta-heuristic method: ray optimization}
+    \field{volume}{112}
+    \field{journaltitle}{Computers \& structures}
+    \field{year}{2012}
+  \endentry
+
+  \entry{du2006small}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=DH}{%
+         family={Du},
+         familyi={D\bibinitperiod},
+         given={Haifeng},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=WX}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={Xiaodong},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=ZJ}{%
+         family={Zhuang},
+         familyi={Z\bibinitperiod},
+         given={Jian},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{DHWXZJ1}
+    \strng{fullhash}{DHWXZJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{International Conference on Natural Computation}
+    \field{pages}{264\bibrangedash 273}
+    \field{title}{Small-world optimization algorithm for function optimization}
+    \field{year}{2006}
+  \endentry
+
+  \entry{geem2001new}{article}{}
+    \name{author}{3}{}{%
+      {{hash=GZW}{%
+         family={Geem},
+         familyi={G\bibinitperiod},
+         given={Zong\bibnamedelima Woo},
+         giveni={Z\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=KJH}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Joong\bibnamedelima Hoon},
+         giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=LGV}{%
+         family={Loganathan},
+         familyi={L\bibinitperiod},
+         given={Gobichettipalayam\bibnamedelima Vasudevan},
+         giveni={G\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Sage Publications Sage CA: Thousand Oaks, CA}%
+    }
+    \strng{namehash}{GZWKJHLGV1}
+    \strng{fullhash}{GZWKJHLGV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{2}
+    \field{pages}{60\bibrangedash 68}
+    \field{title}{A new heuristic optimization algorithm: harmony search}
+    \field{volume}{76}
+    \field{journaltitle}{simulation}
+    \field{year}{2001}
+  \endentry
+
+  \entry{rao2011teaching}{article}{}
+    \name{author}{3}{}{%
+      {{hash=RRV}{%
+         family={Rao},
+         familyi={R\bibinitperiod},
+         given={R\bibnamedelima Venkata},
+         giveni={R\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+      {{hash=SVJ}{%
+         family={Savsani},
+         familyi={S\bibinitperiod},
+         given={Vimal\bibnamedelima J},
+         giveni={V\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=VD}{%
+         family={Vakharia},
+         familyi={V\bibinitperiod},
+         given={DP},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{RRVSVJVD1}
+    \strng{fullhash}{RRVSVJVD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{3}
+    \field{pages}{303\bibrangedash 315}
+    \field{title}{Teaching--learning-based optimization: a novel method for
+  constrained mechanical design optimization problems}
+    \field{volume}{43}
+    \field{journaltitle}{Computer-Aided Design}
+    \field{year}{2011}
+  \endentry
+
+  \entry{kashan2014league}{article}{}
+    \name{author}{1}{}{%
+      {{hash=KAH}{%
+         family={Kashan},
+         familyi={K\bibinitperiod},
+         given={Ali\bibnamedelima Husseinzadeh},
+         giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{KAH1}
+    \strng{fullhash}{KAH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{171\bibrangedash 200}
+    \field{title}{League Championship Algorithm (LCA): An algorithm for global
+  optimization inspired by sport championships}
+    \field{volume}{16}
+    \field{journaltitle}{Applied Soft Computing}
+    \field{year}{2014}
+  \endentry
+
+  \entry{de1989tabu}{article}{}
+    \name{author}{2}{}{%
+      {{hash=dWD}{%
+         prefix={de},
+         prefixi={d\bibinitperiod},
+         family={Werra},
+         familyi={W\bibinitperiod},
+         given={Dominique},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=HA}{%
+         family={Hertz},
+         familyi={H\bibinitperiod},
+         given={Alain},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{WDdHA1}
+    \strng{fullhash}{WDdHA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{3}
+    \field{pages}{131\bibrangedash 141}
+    \field{title}{Tabu search techniques}
+    \field{volume}{11}
+    \field{journaltitle}{Operations-Research-Spektrum}
+    \field{year}{1989}
+  \endentry
+
+  \entry{kaveh2014colliding}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KA}{%
+         family={Kaveh},
+         familyi={K\bibinitperiod},
+         given={Ali},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MVR}{%
+         family={Mahdavi},
+         familyi={M\bibinitperiod},
+         given={Vahid\bibnamedelima Reza},
+         giveni={V\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{KAMVR1}
+    \strng{fullhash}{KAMVR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{18\bibrangedash 27}
+    \field{title}{Colliding bodies optimization: a novel meta-heuristic method}
+    \field{volume}{139}
+    \field{journaltitle}{Computers \& Structures}
+    \field{year}{2014}
+  \endentry
+
+  \entry{kennedy2010particle}{article}{}
+    \name{author}{1}{}{%
+      {{hash=KJ}{%
+         family={Kennedy},
+         familyi={K\bibinitperiod},
+         given={James},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{KJ1}
+    \strng{fullhash}{KJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{760\bibrangedash 766}
+    \field{title}{Particle swarm optimization}
+    \field{journaltitle}{Encyclopedia of machine learning}
+    \field{year}{2010}
+  \endentry
+
+  \entry{rumelhart1988learning}{article}{}
+    \true{moreauthor}
+    \name{author}{3}{}{%
+      {{hash=RDE}{%
+         family={Rumelhart},
+         familyi={R\bibinitperiod},
+         given={David\bibnamedelima E},
+         giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=HGE}{%
+         family={Hinton},
+         familyi={H\bibinitperiod},
+         given={Geoffrey\bibnamedelima E},
+         giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=WRJ}{%
+         family={Williams},
+         familyi={W\bibinitperiod},
+         given={Ronald\bibnamedelima J},
+         giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RDEHGEWRJ+1}
+    \strng{fullhash}{RDEHGEWRJ+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{3}
+    \field{pages}{1}
+    \field{title}{Learning representations by back-propagating errors}
+    \field{volume}{5}
+    \field{journaltitle}{Cognitive modeling}
+    \field{year}{1988}
+  \endentry
+
+  \entry{amiri2017survey}{article}{}
+    \name{author}{2}{}{%
+      {{hash=AM}{%
+         family={Amiri},
+         familyi={A\bibinitperiod},
+         given={Maryam},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MKL}{%
+         family={Mohammad-Khanli},
+         familyi={M\bibinitperiod-K\bibinitperiod},
+         given={Leyli},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{AMMKL1}
+    \strng{fullhash}{AMMKL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{93\bibrangedash 113}
+    \field{title}{Survey on prediction models of applications for resources
+  provisioning in cloud}
+    \field{volume}{82}
+    \field{journaltitle}{Journal of Network and Computer Applications}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Goodfellow-et-al-2016}{book}{}
+    \name{author}{3}{}{%
+      {{hash=GI}{%
+         family={Goodfellow},
+         familyi={G\bibinitperiod},
+         given={Ian},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=BY}{%
+         family={Bengio},
+         familyi={B\bibinitperiod},
+         given={Yoshua},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=CA}{%
+         family={Courville},
+         familyi={C\bibinitperiod},
+         given={Aaron},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {MIT Press}%
+    }
+    \strng{namehash}{GIBYCA1}
+    \strng{fullhash}{GIBYCA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{\url{http://www.deeplearningbook.org}}
+    \field{title}{Deep Learning}
+    \field{year}{2016}
+  \endentry
+
+  \entry{azoff1994neural}{book}{}
+    \name{author}{1}{}{%
+      {{hash=AEM}{%
+         family={Azoff},
+         familyi={A\bibinitperiod},
+         given={E\bibnamedelima Michael},
+         giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {John Wiley \& Sons, Inc.}%
+    }
+    \strng{namehash}{AEM1}
+    \strng{fullhash}{AEM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Neural network time series forecasting of financial markets}
+    \field{year}{1994}
+  \endentry
+
+  \entry{koskela1996time}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=KT}{%
+         family={Koskela},
+         familyi={K\bibinitperiod},
+         given={Timo},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=LM}{%
+         family={Lehtokangas},
+         familyi={L\bibinitperiod},
+         given={Mikko},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Saarinen},
+         familyi={S\bibinitperiod},
+         given={Jukka},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=KK}{%
+         family={Kaski},
+         familyi={K\bibinitperiod},
+         given={Kimmo},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Citeseer}%
+    }
+    \strng{namehash}{KTLMSJ+1}
+    \strng{fullhash}{KTLMSJKK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the World Congress on Neural Networks}
+    \field{pages}{491\bibrangedash 496}
+    \field{title}{Time series prediction with multilayer perceptron, FIR and
+  Elman neural networks}
+    \field{year}{1996}
+  \endentry
+
+  \entry{warsito2018cascade}{inproceedings}{}
+    \true{moreauthor}
+    \name{author}{3}{}{%
+      {{hash=WB}{%
+         family={Warsito},
+         familyi={W\bibinitperiod},
+         given={Budi},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Santoso},
+         familyi={S\bibinitperiod},
+         given={Rukun},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=YH}{%
+         family={Yasin},
+         familyi={Y\bibinitperiod},
+         given={Hasbi},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IOP Publishing}%
+    }
+    \strng{namehash}{WBSRYH+1}
+    \strng{fullhash}{WBSRYH+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Journal of Physics: Conference Series}
+    \field{number}{1}
+    \field{pages}{012097}
+    \field{title}{Cascade Forward Neural Network for Time Series Prediction}
+    \field{volume}{1025}
+    \field{year}{2018}
+  \endentry
+
+  \entry{zhang2000predicting}{article}{}
+    \name{author}{2}{}{%
+      {{hash=ZJS}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Jia-Shu},
+         giveni={J\bibinitperiod-S\bibinitperiod},
+      }}%
+      {{hash=XXC}{%
+         family={Xiao},
+         familyi={X\bibinitperiod},
+         given={Xian-Ci},
+         giveni={X\bibinitperiod-C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IOP Publishing}%
+    }
+    \strng{namehash}{ZJSXXC1}
+    \strng{fullhash}{ZJSXXC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{2}
+    \field{pages}{88}
+    \field{title}{Predicting chaotic time series using recurrent neural
+  network}
+    \field{volume}{17}
+    \field{journaltitle}{Chinese Physics Letters}
+    \field{year}{2000}
+  \endentry
+
+  \entry{connor1994recurrent}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CJT}{%
+         family={Connor},
+         familyi={C\bibinitperiod},
+         given={Jerome\bibnamedelima T},
+         giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=MRD}{%
+         family={Martin},
+         familyi={M\bibinitperiod},
+         given={R\bibnamedelima Douglas},
+         giveni={R\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=ALE}{%
+         family={Atlas},
+         familyi={A\bibinitperiod},
+         given={Les\bibnamedelima E},
+         giveni={L\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{CJTMRDALE1}
+    \strng{fullhash}{CJTMRDALE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{2}
+    \field{pages}{240\bibrangedash 254}
+    \field{title}{Recurrent neural networks and robust time series prediction}
+    \field{volume}{5}
+    \field{journaltitle}{IEEE transactions on neural networks}
+    \field{year}{1994}
+  \endentry
+
+  \entry{chandra2012cooperative}{article}{}
+    \name{author}{2}{}{%
+      {{hash=CR}{%
+         family={Chandra},
+         familyi={C\bibinitperiod},
+         given={Rohitash},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=ZM}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Mengjie},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{CRZM1}
+    \strng{fullhash}{CRZM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{116\bibrangedash 123}
+    \field{title}{Cooperative coevolution of Elman recurrent neural networks
+  for chaotic time series prediction}
+    \field{volume}{86}
+    \field{journaltitle}{Neurocomputing}
+    \field{year}{2012}
+  \endentry
+
+  \entry{hochreiter1997long}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HS}{%
+         family={Hochreiter},
+         familyi={H\bibinitperiod},
+         given={Sepp},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Schmidhuber},
+         familyi={S\bibinitperiod},
+         given={J{\"u}rgen},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {MIT Press}%
+    }
+    \strng{namehash}{HSSJ1}
+    \strng{fullhash}{HSSJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{8}
+    \field{pages}{1735\bibrangedash 1780}
+    \field{title}{Long short-term memory}
+    \field{volume}{9}
+    \field{journaltitle}{Neural computation}
+    \field{year}{1997}
+  \endentry
+
+  \entry{gers2002applying}{incollection}{}
+    \name{author}{3}{}{%
+      {{hash=GFA}{%
+         family={Gers},
+         familyi={G\bibinitperiod},
+         given={Felix\bibnamedelima A},
+         giveni={F\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=ED}{%
+         family={Eck},
+         familyi={E\bibinitperiod},
+         given={Douglas},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Schmidhuber},
+         familyi={S\bibinitperiod},
+         given={J{\"u}rgen},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{GFAEDSJ1}
+    \strng{fullhash}{GFAEDSJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Neural Nets WIRN Vietri-01}
+    \field{pages}{193\bibrangedash 200}
+    \field{title}{Applying LSTM to time series predictable through time-window
+  approaches}
+    \field{year}{2002}
+  \endentry
+
+  \entry{guo2016robust}{inproceedings}{}
+    \name{author}{6}{}{%
+      {{hash=GT}{%
+         family={Guo},
+         familyi={G\bibinitperiod},
+         given={Tian},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=XZ}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={Zhao},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=YX}{%
+         family={Yao},
+         familyi={Y\bibinitperiod},
+         given={Xin},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=CH}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Haifeng},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=AK}{%
+         family={Aberer},
+         familyi={A\bibinitperiod},
+         given={Karl},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=FK}{%
+         family={Funaya},
+         familyi={F\bibinitperiod},
+         given={Koichi},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Ieee}%
+    }
+    \strng{namehash}{GTXZYX+1}
+    \strng{fullhash}{GTXZYXCHAKFK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2016 IEEE International Conference on Data Science and
+  Advanced Analytics (DSAA)}
+    \field{pages}{816\bibrangedash 825}
+    \field{title}{Robust online time series prediction with recurrent neural
+  networks}
+    \field{year}{2016}
+  \endentry
+
+  \entry{fu2016using}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=FR}{%
+         family={Fu},
+         familyi={F\bibinitperiod},
+         given={Rui},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=ZZ}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Zuo},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=LL}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Li},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{FRZZLL1}
+    \strng{fullhash}{FRZZLL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2016 31st Youth Academic Annual Conference of Chinese
+  Association of Automation (YAC)}
+    \field{pages}{324\bibrangedash 328}
+    \field{title}{Using LSTM and GRU neural network methods for traffic flow
+  prediction}
+    \field{year}{2016}
+  \endentry
+
+  \entry{chung2014empirical}{article}{}
+    \name{author}{4}{}{%
+      {{hash=CJ}{%
+         family={Chung},
+         familyi={C\bibinitperiod},
+         given={Junyoung},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=GC}{%
+         family={Gulcehre},
+         familyi={G\bibinitperiod},
+         given={Caglar},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=CK}{%
+         family={Cho},
+         familyi={C\bibinitperiod},
+         given={KyungHyun},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=BY}{%
+         family={Bengio},
+         familyi={B\bibinitperiod},
+         given={Yoshua},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CJGCCK+1}
+    \strng{fullhash}{CJGCCKBY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Empirical evaluation of gated recurrent neural networks on
+  sequence modeling}
+    \field{journaltitle}{arXiv preprint arXiv:1412.3555}
+    \field{year}{2014}
+  \endentry
+
+  \entry{langkvist2014review}{article}{}
+    \name{author}{3}{}{%
+      {{hash=LM}{%
+         family={L{\"a}ngkvist},
+         familyi={L\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KL}{%
+         family={Karlsson},
+         familyi={K\bibinitperiod},
+         given={Lars},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=LA}{%
+         family={Loutfi},
+         familyi={L\bibinitperiod},
+         given={Amy},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{LMKLLA1}
+    \strng{fullhash}{LMKLLA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{11\bibrangedash 24}
+    \field{title}{A review of unsupervised feature learning and deep learning
+  for time-series modeling}
+    \field{volume}{42}
+    \field{journaltitle}{Pattern Recognition Letters}
+    \field{year}{2014}
+  \endentry
+
+  \entry{bone2000recurrent}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=BR}{%
+         family={Bon{\'e}},
+         familyi={B\bibinitperiod},
+         given={R},
+         giveni={R},
+      }}%
+    }
+    \strng{namehash}{BR1}
+    \strng{fullhash}{BR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Recurrent neural networks for time series forecasting}
+    \list{institution}{1}{%
+      {PhD thesis, Universit{\'e} de Tours, Tours, FRANCE}%
+    }
+    \field{type}{phdthesis}
+    \field{year}{2000}
+  \endentry
+
+  \entry{mell2011nist}{article}{}
+    \true{moreauthor}
+    \name{author}{2}{}{%
+      {{hash=MP}{%
+         family={Mell},
+         familyi={M\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=GT}{%
+         family={Grance},
+         familyi={G\bibinitperiod},
+         given={Tim},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Computer Security Division, Information Technology Laboratory,
+  National~…}%
+    }
+    \strng{namehash}{MPGT+1}
+    \strng{fullhash}{MPGT+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{The NIST definition of cloud computing}
+    \field{year}{2011}
+  \endentry
+
+  \entry{chen2015efficient}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=CCC}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Chia-Ching},
+         giveni={C\bibinitperiod-C\bibinitperiod},
+      }}%
+      {{hash=CSJ}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Shao-Jui},
+         giveni={S\bibinitperiod-J\bibinitperiod},
+      }}%
+      {{hash=YF}{%
+         family={Yin},
+         familyi={Y\bibinitperiod},
+         given={Fan},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=WWJ}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Wei-Jen},
+         giveni={W\bibinitperiod-J\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{CCCCSJYF+1}
+    \strng{fullhash}{CCCCSJYFWWJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2015 IEEE International Conference on Smart
+  City/SocialCom/SustainCom (SmartCity)}
+    \field{pages}{1079\bibrangedash 1085}
+    \field{title}{Efficient hybriding auto-scaling for openstack platforms}
+    \field{year}{2015}
+  \endentry
+
+  \entry{yang2013workload}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=YJ}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Jingqi},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LC}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Chuanchang},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SY}{%
+         family={Shang},
+         familyi={S\bibinitperiod},
+         given={Yanlei},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=MZ}{%
+         family={Mao},
+         familyi={M\bibinitperiod},
+         given={Zexiang},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=CJ}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Junliang},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{YJLCSY+1}
+    \strng{fullhash}{YJLCSYMZCJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2013 IEEE Sixth International Conference on Cloud
+  Computing}
+    \field{pages}{810\bibrangedash 815}
+    \field{title}{Workload predicting-based automatic scaling in service
+  clouds}
+    \field{year}{2013}
+  \endentry
+
+  \entry{calheiros2014workload}{article}{}
+    \name{author}{4}{}{%
+      {{hash=CRN}{%
+         family={Calheiros},
+         familyi={C\bibinitperiod},
+         given={Rodrigo\bibnamedelima N},
+         giveni={R\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=ME}{%
+         family={Masoumi},
+         familyi={M\bibinitperiod},
+         given={Enayat},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=RR}{%
+         family={Ranjan},
+         familyi={R\bibinitperiod},
+         given={Rajiv},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=BR}{%
+         family={Buyya},
+         familyi={B\bibinitperiod},
+         given={Rajkumar},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{CRNMERR+1}
+    \strng{fullhash}{CRNMERRBR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{4}
+    \field{pages}{449\bibrangedash 458}
+    \field{title}{Workload prediction using ARIMA model and its impact on cloud
+  applications’ QoS}
+    \field{volume}{3}
+    \field{journaltitle}{IEEE Transactions on Cloud Computing}
+    \field{year}{2014}
+  \endentry
+
+  \entry{shahin2017automatic}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SAA}{%
+         family={Shahin},
+         familyi={S\bibinitperiod},
+         given={Ashraf\bibnamedelima A},
+         giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SAA1}
+    \strng{fullhash}{SAA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Automatic cloud resource scaling algorithm based on long
+  short-term memory recurrent neural network}
+    \field{journaltitle}{arXiv preprint arXiv:1701.03295}
+    \field{year}{2017}
+  \endentry
+
+  \entry{zhu2017deep}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=ZL}{%
+         family={Zhu},
+         familyi={Z\bibinitperiod},
+         given={Lingxue},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=LN}{%
+         family={Laptev},
+         familyi={L\bibinitperiod},
+         given={Nikolay},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{ZLLN1}
+    \strng{fullhash}{ZLLN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2017 IEEE International Conference on Data Mining
+  Workshops (ICDMW)}
+    \field{pages}{103\bibrangedash 110}
+    \field{title}{Deep and confident prediction for time series at uber}
+    \field{year}{2017}
+  \endentry
+
+  \entry{tran2018multivariate}{article}{}
+    \name{author}{4}{}{%
+      {{hash=TN}{%
+         family={Tran},
+         familyi={T\bibinitperiod},
+         given={Nhuan},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=NT}{%
+         family={Nguyen},
+         familyi={N\bibinitperiod},
+         given={Thang},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=NBM}{%
+         family={Nguyen},
+         familyi={N\bibinitperiod},
+         given={Binh\bibnamedelima Minh},
+         giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=NG}{%
+         family={Nguyen},
+         familyi={N\bibinitperiod},
+         given={Giang},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{TNNTNBM+1}
+    \strng{fullhash}{TNNTNBMNG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{636\bibrangedash 645}
+    \field{title}{A Multivariate Fuzzy Time Series Resource Forecast Model for
+  Clouds using LSTM and Data Correlation Analysis}
+    \field{volume}{126}
+    \field{journaltitle}{Procedia Computer Science}
+    \field{year}{2018}
+  \endentry
+
+  \entry{tizhoosh2005opposition}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=THR}{%
+         family={Tizhoosh},
+         familyi={T\bibinitperiod},
+         given={Hamid\bibnamedelima R},
+         giveni={H\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{THR1}
+    \strng{fullhash}{THR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{International Conference on Computational Intelligence
+  for Modelling, Control and Automation and International Conference on
+  Intelligent Agents, Web Technologies and Internet Commerce (CIMCA-IAWTIC'06)}
+    \field{pages}{695\bibrangedash 701}
+    \field{title}{Opposition-based learning: a new scheme for machine
+  intelligence}
+    \field{volume}{1}
+    \field{year}{2005}
+  \endentry
+
+  \entry{wang2007opposition}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=WH}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Hui},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=LH}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Hui},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=LY}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Yong},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=LC}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Changhe},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=ZS}{%
+         family={Zeng},
+         familyi={Z\bibinitperiod},
+         given={Sanyou},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{WHLHLY+1}
+    \strng{fullhash}{WHLHLYLCZS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2007 IEEE Congress on Evolutionary Computation}
+    \field{pages}{4750\bibrangedash 4756}
+    \field{title}{Opposition-based particle swarm algorithm with Cauchy
+  mutation}
+    \field{year}{2007}
+  \endentry
+
+  \entry{tang2009enhanced}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=TJ}{%
+         family={Tang},
+         familyi={T\bibinitperiod},
+         given={Jun},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=ZX}{%
+         family={Zhao},
+         familyi={Z\bibinitperiod},
+         given={Xiaojuan},
+         giveni={X\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{TJZX1}
+    \strng{fullhash}{TJZX1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2009 WRI Global Congress on Intelligent Systems}
+    \field{pages}{149\bibrangedash 153}
+    \field{title}{An enhanced opposition-based particle swarm optimization}
+    \field{volume}{1}
+    \field{year}{2009}
+  \endentry
+
+  \entry{rashid2010improved}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=RM}{%
+         family={Rashid},
+         familyi={R\bibinitperiod},
+         given={Muhammad},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BAR}{%
+         family={Baig},
+         familyi={B\bibinitperiod},
+         given={Abdul\bibnamedelima Rauf},
+         giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{RMBAR1}
+    \strng{fullhash}{RMBAR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2010 International Conference on Information Science and
+  Applications}
+    \field{pages}{1\bibrangedash 6}
+    \field{title}{Improved opposition-based PSO for feedforward neural network
+  training}
+    \field{year}{2010}
+  \endentry
+
+  \entry{nguyen2019efficient}{article}{}
+    \name{author}{4}{}{%
+      {{hash=NT}{%
+         family={Nguyen},
+         familyi={N\bibinitperiod},
+         given={Thieu},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=NT}{%
+         family={Nguyen},
+         familyi={N\bibinitperiod},
+         given={Tu},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=NBM}{%
+         family={Nguyen},
+         familyi={N\bibinitperiod},
+         given={Binh\bibnamedelima Minh},
+         giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=NG}{%
+         family={Nguyen},
+         familyi={N\bibinitperiod},
+         given={Giang},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Atlantis Press}%
+    }
+    \strng{namehash}{NTNTNBM+1}
+    \strng{fullhash}{NTNTNBMNG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{2}
+    \field{pages}{1144\bibrangedash 1161}
+    \field{title}{Efficient Time-Series Forecasting Using Neural Network and
+  Opposition-Based Coral Reefs Optimization}
+    \field{volume}{12}
+    \field{journaltitle}{International Journal of Computational Intelligence
+  Systems}
+    \field{year}{2019}
+  \endentry
+
+  \entry{liang2013problem}{article}{}
+    \name{author}{3}{}{%
+      {{hash=LJ}{%
+         family={Liang},
+         familyi={L\bibinitperiod},
+         given={JJ},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=QB}{%
+         family={Qu},
+         familyi={Q\bibinitperiod},
+         given={BY},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=SP}{%
+         family={Suganthan},
+         familyi={S\bibinitperiod},
+         given={PN},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LJQBSP1}
+    \strng{fullhash}{LJQBSP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Problem definitions and evaluation criteria for the CEC 2014
+  special session and competition on single objective real-parameter numerical
+  optimization}
+    \field{volume}{635}
+    \field{journaltitle}{Computational Intelligence Laboratory, Zhengzhou
+  University, Zhengzhou China and Technical Report, Nanyang Technological
+  University, Singapore}
+    \field{year}{2013}
+  \endentry
+
+  \entry{liang2014problem}{article}{}
+    \name{author}{4}{}{%
+      {{hash=LJ}{%
+         family={Liang},
+         familyi={L\bibinitperiod},
+         given={JJ},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=QB}{%
+         family={Qu},
+         familyi={Q\bibinitperiod},
+         given={BY},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=SP}{%
+         family={Suganthan},
+         familyi={S\bibinitperiod},
+         given={PN},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=CQ}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Q},
+         giveni={Q},
+      }}%
+    }
+    \strng{namehash}{LJQBSP+1}
+    \strng{fullhash}{LJQBSPCQ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{625\bibrangedash 640}
+    \field{title}{Problem definitions and evaluation criteria for the CEC 2015
+  competition on learning-based real-parameter single objective optimization}
+    \field{volume}{29}
+    \field{journaltitle}{Technical Report201411A, Computational Intelligence
+  Laboratory, Zhengzhou University, Zhengzhou China and Technical Report,
+  Nanyang Technological University, Singapore}
+    \field{year}{2014}
+  \endentry
+
+  \entry{whitley1994genetic}{article}{}
+    \name{author}{1}{}{%
+      {{hash=WD}{%
+         family={Whitley},
+         familyi={W\bibinitperiod},
+         given={Darrell},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{WD1}
+    \strng{fullhash}{WD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{2}
+    \field{pages}{65\bibrangedash 85}
+    \field{title}{A genetic algorithm tutorial}
+    \field{volume}{4}
+    \field{journaltitle}{Statistics and computing}
+    \field{year}{1994}
+  \endentry
+
+  \entry{kaveh2016novel}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KA}{%
+         family={Kaveh},
+         familyi={K\bibinitperiod},
+         given={A},
+         giveni={A},
+      }}%
+      {{hash=ZA}{%
+         family={Zolghadr},
+         familyi={Z\bibinitperiod},
+         given={A},
+         giveni={A},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Iran University of Science \& Technology}%
+    }
+    \strng{namehash}{KAZA1}
+    \strng{fullhash}{KAZA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{4}
+    \field{pages}{469\bibrangedash 492}
+    \field{title}{A novel meta-heuristic algorithm: tug of war optimization}
+    \field{volume}{6}
+    \field{journaltitle}{Iran University of Science \& Technology}
+    \field{year}{2016}
+  \endentry
+
+  \entry{zhang2018queuing}{article}{}
+    \name{author}{4}{}{%
+      {{hash=ZJ}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Jinhao},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=XM}{%
+         family={Xiao},
+         familyi={X\bibinitperiod},
+         given={Mi},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GL}{%
+         family={Gao},
+         familyi={G\bibinitperiod},
+         given={Liang},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=PQ}{%
+         family={Pan},
+         familyi={P\bibinitperiod},
+         given={Quanke},
+         giveni={Q\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{ZJXMGL+1}
+    \strng{fullhash}{ZJXMGLPQ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{464\bibrangedash 490}
+    \field{title}{Queuing search algorithm: A novel metaheuristic algorithm for
+  solving engineering optimization problems}
+    \field{volume}{63}
+    \field{journaltitle}{Applied Mathematical Modelling}
+    \field{year}{2018}
+  \endentry
+
+  \entry{reiss2011google}{article}{}
+    \name{author}{3}{}{%
+      {{hash=RC}{%
+         family={Reiss},
+         familyi={R\bibinitperiod},
+         given={Charles},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=WJ}{%
+         family={Wilkes},
+         familyi={W\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=HJL}{%
+         family={Hellerstein},
+         familyi={H\bibinitperiod},
+         given={Joseph\bibnamedelima L},
+         giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RCWJHJL1}
+    \strng{fullhash}{RCWJHJL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{1\bibrangedash 14}
+    \field{title}{Google cluster-usage traces: format+ schema}
+    \field{journaltitle}{Google Inc., White Paper}
+    \field{year}{2011}
+  \endentry
+
+  \entry{cortez2012multi}{article}{}
+    \name{author}{4}{}{%
+      {{hash=CP}{%
+         family={Cortez},
+         familyi={C\bibinitperiod},
+         given={Paulo},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=RM}{%
+         family={Rio},
+         familyi={R\bibinitperiod},
+         given={Miguel},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=RM}{%
+         family={Rocha},
+         familyi={R\bibinitperiod},
+         given={Miguel},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SP}{%
+         family={Sousa},
+         familyi={S\bibinitperiod},
+         given={Pedro},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{CPRMRM+1}
+    \strng{fullhash}{CPRMRMSP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{2}
+    \field{pages}{143\bibrangedash 155}
+    \field{title}{Multi-scale Internet traffic forecasting using neural
+  networks and time series methods}
+    \field{volume}{29}
+    \field{journaltitle}{Expert Systems}
+    \field{year}{2012}
+  \endentry
+\enddatalist
+\endinput
