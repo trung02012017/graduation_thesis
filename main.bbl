@@ -372,8 +372,8 @@
          giveni={S\bibinitperiod},
       }}%
     }
-    \strng{namehash}{RS1}
-    \strng{fullhash}{RS1}
+    \strng{namehash}{RS2}
+    \strng{fullhash}{RS2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{title}{An overview of gradient descent optimization algorithms}
@@ -1496,6 +1496,27 @@
     \field{year}{2010}
   \endentry
 
+  \entry{stacey2018activation}{article}{}
+    \name{author}{1}{}{%
+      {{hash=RS}{%
+         family={Ronaghan},
+         familyi={R\bibinitperiod},
+         given={Stacey},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RS1}
+    \strng{fullhash}{RS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Deep Learning: Overview of Neurons and Activation Functions}
+    \verb{url}
+    \verb https://medium.com/@srnghn/deep-learning-overview-of-neurons-and-acti
+    \verb vation-functions-1d98286cf1e4
+    \endverb
+    \field{year}{2018}
+  \endentry
+
   \entry{rumelhart1988learning}{article}{}
     \true{moreauthor}
     \name{author}{3}{}{%
@@ -1788,6 +1809,26 @@
     \field{year}{2012}
   \endentry
 
+  \entry{chris2015lstm}{article}{}
+    \name{author}{1}{}{%
+      {{hash=OC}{%
+         family={Olah},
+         familyi={O\bibinitperiod},
+         given={Christopher},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{OC1}
+    \strng{fullhash}{OC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Understanding LSTM Networks}
+    \verb{url}
+    \verb https://colah.github.io/posts/2015-08-Understanding-LSTMs/
+    \endverb
+    \field{year}{2015}
+  \endentry
+
   \entry{hochreiter1997long}{article}{}
     \name{author}{2}{}{%
       {{hash=HS}{%
@@ -1943,6 +1984,28 @@
     \field{year}{2016}
   \endentry
 
+  \entry{michael2018lstm}{article}{}
+    \name{author}{1}{}{%
+      {{hash=NM}{%
+         family={Nguyen},
+         familyi={N\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{NM1}
+    \strng{fullhash}{NM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Illustrated Guide to LSTM’s and GRU’s: A step by step
+  explanation}
+    \verb{url}
+    \verb https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a
+    \verb -step-by-step-explanation-44e9eb85bf21
+    \endverb
+    \field{year}{2018}
+  \endentry
+
   \entry{chung2014empirical}{article}{}
     \name{author}{4}{}{%
       {{hash=CJ}{%
@@ -2063,6 +2126,26 @@
     \field{labeltitlesource}{title}
     \field{title}{The NIST definition of cloud computing}
     \field{year}{2011}
+  \endentry
+
+  \entry{david2018cloud}{article}{}
+    \name{author}{1}{}{%
+      {{hash=CD}{%
+         family={Chou},
+         familyi={C\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CD1}
+    \strng{fullhash}{CD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Cloud Service Models (IaaS, PaaS, SaaS) Diagram}
+    \verb{url}
+    \verb https://dachou.github.io/2018/09/28/cloud-service-models.html
+    \endverb
+    \field{year}{2018}
   \endentry
 
   \entry{chen2015efficient}{inproceedings}{}

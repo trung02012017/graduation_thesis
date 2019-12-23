@@ -16,7 +16,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 16676 items from 5000.
+Reallocated field_info (elt_size=4) to 17232 items from 5000.
 Database file #1: main-blx.bib
 Database file #2: references.bib
 Repeated entry---line 345 of file references.bib
@@ -36,45 +36,45 @@ Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Too many commas in name 1 of "PhD thesis, Universit{\'e} de Tours, Tours, FRANCE" for entry bone2000recurrent
 while executing---line 2749 of file biblatex.bst
-You've used 84 entries,
+You've used 88 entries,
             6268 wiz_defined-function locations,
-            1651 strings with 23535 characters,
-and the built_in function-call counts, 463622 in all, are:
-= -- 31643
-> -- 9822
-< -- 2485
-+ -- 11868
-- -- 3684
-* -- 33226
-:= -- 45915
+            1667 strings with 24178 characters,
+and the built_in function-call counts, 476527 in all, are:
+= -- 32324
+> -- 10117
+< -- 2549
++ -- 12088
+- -- 3782
+* -- 33977
+:= -- 46986
 add.period$ -- 0
-call.type$ -- 84
-change.case$ -- 1387
+call.type$ -- 88
+change.case$ -- 1415
 chr.to.int$ -- 30
-cite$ -- 166
-duplicate$ -- 50818
-empty$ -- 42467
-format.name$ -- 5932
-if$ -- 95933
+cite$ -- 174
+duplicate$ -- 52366
+empty$ -- 43873
+format.name$ -- 6114
+if$ -- 98718
 int.to.chr$ -- 0
-int.to.str$ -- 235
+int.to.str$ -- 245
 missing$ -- 0
-newline$ -- 2641
-num.names$ -- 4098
-pop$ -- 28485
+newline$ -- 2723
+num.names$ -- 4256
+pop$ -- 29799
 preamble$ -- 1
-purify$ -- 1991
+purify$ -- 2031
 quote$ -- 0
-skip$ -- 15340
+skip$ -- 15899
 stack$ -- 0
-substring$ -- 50177
-swap$ -- 12189
-text.length$ -- 1985
+substring$ -- 50976
+swap$ -- 12567
+text.length$ -- 2053
 text.prefix$ -- 13
 top$ -- 1
-type$ -- 2843
+type$ -- 2979
 warning$ -- 0
-while$ -- 5605
+while$ -- 5747
 width$ -- 0
-write$ -- 2558
+write$ -- 2636
 (There were 4 error messages)

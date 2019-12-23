@@ -55,11 +55,14 @@
 % ===================================================
 
 
-\fancypagestyle{plain}{%
-\fancyhf{} % clear all header and footer fields
-\fancyfoot[RO,RE]{\thepage} %RO=right odd, RE=right even
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}}
+\usepackage{fancyhdr}
+% Turn on the style
+\pagestyle{fancy}
+% Clear the header and footer
+\fancyhead{}
+\fancyfoot{}
+% Set the right side of the footer to be the page number
+\fancyfoot[R]{\thepage}
 
 
 \setlength{\headheight}{14pt}
