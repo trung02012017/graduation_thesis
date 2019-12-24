@@ -99,6 +99,4 @@
 \contentsline {subsubsection}{\numberline {a}Accuracy comparision}{46}{subsubsection.4.2.3.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}CONCLUSION AND FUTURE WORKS}{48}{chapter.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{References}{49}{chapter.5}
 \contentsfinish 
