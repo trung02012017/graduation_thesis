@@ -12,21 +12,24 @@
 \BOOKMARK [1][-]{section.2.3}{Auto-scaling problem in Cloud Computing}{chapter.2}% 12
 \BOOKMARK [2][-]{subsection.2.3.1}{Cloud Computing}{section.2.3}% 13
 \BOOKMARK [2][-]{subsection.2.3.2}{Auto-scaling demand in Cloud Computing.}{section.2.3}% 14
-\BOOKMARK [0][-]{chapter.3}{IMPROVED SEA LION OPTIMIZATION \(ISLO\) ALGORITHM and PROPOSED MODEL FOR AUTO-SCALING \(ISLO-CFNN\)}{}% 15
-\BOOKMARK [1][-]{section.3.1}{Improved Sea Lion Optimization \(ISLO\)}{chapter.3}% 16
-\BOOKMARK [2][-]{subsection.3.1.1}{Exploitation phase improvement}{section.3.1}% 17
-\BOOKMARK [2][-]{subsection.3.1.2}{Exploration phase improvement}{section.3.1}% 18
-\BOOKMARK [1][-]{section.3.2}{Proposed model for auto-scaling problem in Cloud Computing}{chapter.3}% 19
-\BOOKMARK [2][-]{subsection.3.2.1}{Collecting data}{section.3.2}% 20
-\BOOKMARK [2][-]{subsection.3.2.2}{Data pre-processing}{section.3.2}% 21
-\BOOKMARK [2][-]{subsection.3.2.3}{Building and Training model}{section.3.2}% 22
-\BOOKMARK [2][-]{subsection.3.2.4}{Deploy prediction model}{section.3.2}% 23
-\BOOKMARK [0][-]{chapter.4}{EXPERIMENTS AND DISCUSSION}{}% 24
-\BOOKMARK [1][-]{section.4.1}{Theoretical experiments}{chapter.4}% 25
-\BOOKMARK [2][-]{subsection.4.1.1}{Evaluation method and Parameter settings}{section.4.1}% 26
-\BOOKMARK [2][-]{subsection.4.1.2}{Experiment results and discussion}{section.4.1}% 27
-\BOOKMARK [1][-]{section.4.2}{Application}{chapter.4}% 28
-\BOOKMARK [2][-]{subsection.4.2.1}{Dataset and Set up}{section.4.2}% 29
-\BOOKMARK [2][-]{subsection.4.2.2}{Parameter Setting and Evaluation Metrics}{section.4.2}% 30
-\BOOKMARK [2][-]{subsection.4.2.3}{Results and Discussion}{section.4.2}% 31
-\BOOKMARK [0][-]{chapter.5}{CONCLUSION AND FUTURE WORKS}{}% 32
+\BOOKMARK [1][-]{section.2.4}{Chapter conclusion}{chapter.2}% 15
+\BOOKMARK [0][-]{chapter.3}{IMPROVED SEA LION OPTIMIZATION \(ISLO\) ALGORITHM and PROPOSED MODEL FOR AUTO-SCALING \(ISLO-CFNN\)}{}% 16
+\BOOKMARK [1][-]{section.3.1}{Improved Sea Lion Optimization \(ISLO\)}{chapter.3}% 17
+\BOOKMARK [2][-]{subsection.3.1.1}{Exploitation phase improvement}{section.3.1}% 18
+\BOOKMARK [2][-]{subsection.3.1.2}{Exploration phase improvement}{section.3.1}% 19
+\BOOKMARK [1][-]{section.3.2}{Proposed model for auto-scaling problem in Cloud Computing}{chapter.3}% 20
+\BOOKMARK [2][-]{subsection.3.2.1}{Collecting data}{section.3.2}% 21
+\BOOKMARK [2][-]{subsection.3.2.2}{Data pre-processing}{section.3.2}% 22
+\BOOKMARK [2][-]{subsection.3.2.3}{Building and Training model}{section.3.2}% 23
+\BOOKMARK [2][-]{subsection.3.2.4}{Deploy prediction model}{section.3.2}% 24
+\BOOKMARK [1][-]{section.3.3}{Chapter conclusion}{chapter.3}% 25
+\BOOKMARK [0][-]{chapter.4}{EXPERIMENTS AND DISCUSSION}{}% 26
+\BOOKMARK [1][-]{section.4.1}{Theoretical experiments}{chapter.4}% 27
+\BOOKMARK [2][-]{subsection.4.1.1}{Evaluation method and Parameter settings}{section.4.1}% 28
+\BOOKMARK [2][-]{subsection.4.1.2}{Experiment results and discussion}{section.4.1}% 29
+\BOOKMARK [1][-]{section.4.2}{Application}{chapter.4}% 30
+\BOOKMARK [2][-]{subsection.4.2.1}{Dataset and Set up}{section.4.2}% 31
+\BOOKMARK [2][-]{subsection.4.2.2}{Parameter Setting and Evaluation Metrics}{section.4.2}% 32
+\BOOKMARK [2][-]{subsection.4.2.3}{Results and Discussion}{section.4.2}% 33
+\BOOKMARK [1][-]{section.4.3}{Chapter conclusion}{chapter.4}% 34
+\BOOKMARK [0][-]{chapter.5}{CONCLUSION AND FUTURE WORKS}{}% 35

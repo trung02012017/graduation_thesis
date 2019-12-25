@@ -21,7 +21,7 @@
 				}
 			\Else {
 				Choose a random search agent $SL1_{rand}$ and $SL2_{rand}$ \\
-				Update the location of current search agent by Eq. \ref{islo_eq4} \\
+				Update the location of current search agent by Eq. \ref{islo_eq6} \\
 			}
 		}	
 		\Else{
@@ -38,7 +38,7 @@
    
 \subsection{Exploitation phase improvement}
 \label{imprv_exploit}
-	As mentioned above, SLnO have its own drawbacks in its exploitation phase. In order to enhance the performance of the operation \ref{slno_eq2}, not only distance between the current agent and the best agent, but also the influences of an individual experiment in history is considered in new improved operation. This idea stems from the updating mechanism of PSO \cite{eberhart1995particle} where the velocity of a particular particle is influenced by both the best individual and best personal information. This combination can take advantages of both the intelligence of the whole swarm and of each individual, and therefore there is more information for agents to exploit, leading to more potential exploitation capacity of algorithms. 
+	As mentioned above, SLnO have its own drawbacks in its exploitation phase. In order to enhance the performance of the operation \ref{slno_eq2}, not only distance between the current agent and the best agent, but also the influences of an individual experiment in history is considered in new improved operation. This idea stems from the updating mechanism of PSO \cite{eberhart1995particle} where the velocity of a particular particle is influenced by both the best individual and best personal information. This combination can take advantages of both the intelligence of the whole swarm and of each individual, and therefore there is more information for agents to exploit, leading to more potential exploitation capability of algorithms. 
 	
 	Following that idea, we apply the information sent from best individual experiment in the same way as best agent position. The formulas of new updating mechanism for exploitation phase is as follows:
 \begin{equation}\label{islo_eq1}
@@ -68,12 +68,19 @@ where $P_i(t)$ is the personal best position of agent $i$ up to time $t$, $c_1$,
 \begin{equation} \label{islo_eq4}
 SL_{rand} = 2*SL2_{rand} - SL1_{rand}
 \end{equation}
+\item Update new position for current agent following $SL_{rand}$.
+\begin{equation}\label{islo_eq5}
+Dist = |2B.SL_{rand}(t) - SL(t)|
+\end{equation}
+\begin{equation}\label{islo_eq6}
+SL(t+1) = SL_{rand}(t) - Dist.C 
+\end{equation}
 \end{enumerate}
 
 \section{Proposed model for auto-scaling problem in Cloud Computing}
 \label{sec:proposed_model}
 	
-	In chapter \ref{ch:background}, we generally discussed about Cloud Computing and the problem of auto-scaling with the existing methods for solving this. In general, it is relatively necessary to build cloud computing servers with the capacity of automatically expanding and  shrinking the resources allocated. Although there are a number of solutions proposed for tackling this issue, they all have their own drawbacks.
+	In chapter \ref{ch:background}, we generally discussed about Cloud Computing and the problem of auto-scaling with the existing methods for solving this. In general, it is relatively necessary to build cloud computing servers with the capability of automatically expanding and  shrinking the resources allocated. Although there are a number of solutions proposed for tackling this issue, they all have their own drawbacks.
 	
 	The FFNN model, which is widely used for solving many real-world issues, is too simple to capture the characteristics of time-series data because after feed-forwarding through hidden layers, the original information of the input neural could be forgotten. On the other hand, RNN-based models such as LSTM or GRU have to face the problem of extremely complex structures that potentially lead to over-fitting, or the huge number of hyper-parameters which are needed to tuned.
 	
@@ -186,4 +193,9 @@ Where $i, h, o$ is the number of input, hidden and output neurons,  respectively
 \label{deploy}
 	
 	After obtaining CFNN model with the best parameter set by ISLO algorithm, the model is installed on servers and ready to predict the demand for resources in the future based on historical data.
+
+
+\section{Chapter conclusion}
+	
+	In this chapter, we propose ISLO algorithm with two improvements on the original SLnO algorithm. One of them is based on the idea of PSO algorithm, taking individuals' best position into consideration for enhancing exploitation phase, and another is choosing new random agent following the OBL technique for the increase in the diversity of population. Furthermore, proposed ISLO algorithm is applied to optimizing Cascade Feedforward Neural Network (CFNN), forming ISLO-CFNN model. This model is introduced for tackling the time-series prediction problem, especially workload prediction in cloud computing.
 \end{document}
