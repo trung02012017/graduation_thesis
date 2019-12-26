@@ -54,6 +54,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.2}Auto-scaling demand in Cloud Computing.}{21}{subsection.2.3.2}
 \defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}Chapter conclusion}{22}{section.2.4}
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}IMPROVED SEA LION OPTIMIZATION (ISLO) ALGORITHM and PROPOSED MODEL FOR AUTO-SCALING (ISLO-CFNN)}{23}{chapter.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.1}Improved Sea Lion Optimization (ISLO)}{23}{section.3.1}
@@ -72,31 +74,35 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.4}Deploy prediction model}{30}{subsection.3.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}EXPERIMENTS AND DISCUSSION}{31}{chapter.4}
+\contentsline {section}{\numberline {3.3}Chapter conclusion}{30}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Theoretical experiments}{31}{section.4.1}
+\contentsline {chapter}{\numberline {4}EXPERIMENTS AND DISCUSSION}{32}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}Evaluation method and Parameter settings}{32}{subsection.4.1.1}
+\contentsline {section}{\numberline {4.1}Theoretical experiments}{32}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}Experiment results and discussion}{36}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.1}Evaluation method and Parameter settings}{33}{subsection.4.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {a}Unimodal and Multimodal benchmark functions}{36}{subsubsection.4.1.2.1}
+\contentsline {subsection}{\numberline {4.1.2}Experiment results and discussion}{37}{subsection.4.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {b}Hybrid and Composition benchmark functions}{40}{subsubsection.4.1.2.2}
+\contentsline {subsubsection}{\numberline {a}Unimodal and Multimodal benchmark functions}{37}{subsubsection.4.1.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Application}{42}{section.4.2}
+\contentsline {subsubsection}{\numberline {b}Hybrid and Composition benchmark functions}{41}{subsubsection.4.1.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}Dataset and Set up}{42}{subsection.4.2.1}
+\contentsline {section}{\numberline {4.2}Application}{43}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {a}Google Trace dataset}{42}{subsubsection.4.2.1.1}
+\contentsline {subsection}{\numberline {4.2.1}Dataset and Set up}{43}{subsection.4.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {b}EU Internet Traffic and UK Internet Traffic datasets}{43}{subsubsection.4.2.1.2}
+\contentsline {subsubsection}{\numberline {a}Google Trace dataset}{43}{subsubsection.4.2.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}Parameter Setting and Evaluation Metrics}{44}{subsection.4.2.2}
+\contentsline {subsubsection}{\numberline {b}EU Internet Traffic and UK Internet Traffic datasets}{44}{subsubsection.4.2.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.3}Results and Discussion}{46}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.2}Parameter Setting and Evaluation Metrics}{45}{subsection.4.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {a}Accuracy comparision}{46}{subsubsection.4.2.3.1}
+\contentsline {subsection}{\numberline {4.2.3}Results and Discussion}{47}{subsection.4.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}CONCLUSION AND FUTURE WORKS}{48}{chapter.5}
+\contentsline {subsubsection}{\numberline {a}Accuracy comparision}{47}{subsubsection.4.2.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Chapter conclusion}{49}{section.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}CONCLUSION AND FUTURE WORKS}{50}{chapter.5}
 \contentsfinish 
